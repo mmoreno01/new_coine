@@ -1,0 +1,270 @@
+#titulo-inversion
+{
+    position: relative;
+    margin-top: 50px;
+    .titulo-inversion
+    {
+        color: #005c9b;
+    }
+    .texto-inversion
+    {
+        color: #005c9b;
+        font-size: 22px
+    }
+    .vertical-inversion
+    {
+        width: 2px;
+        background-color: #747477;
+        height:77px;
+        margin-left: 270px;
+        margin-top:-50px;
+        position:absolute;
+    }
+    .horizontal-inversion
+    {
+        width: 710px;
+        background-color: #747477;
+        height:1px;
+        margin-left: 230px;
+        margin-top:82px;
+        position:absolute;
+    }
+}
+
+#secciones-inversiones
+{
+    position: relative;
+    width: 1200px;
+    margin-top: 50px;
+    max-width: 100%;   
+    ul.tabs
+    {
+        width: 100%;
+        background: #4F6A90;
+        list-style: none;
+        display: flex;
+    }
+    li
+    {
+        width: 18%;
+    }
+    a
+    {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        text-align: center;
+        display: block;
+        padding: 20px 0px;
+    }
+}
+
+#img-inversiones
+{
+    .inversion-secciones
+    {
+        width: 100%;
+    }
+    .iversion-secciones article
+    {
+        padding: 30px;
+    }
+
+}
+#imagen-inversiones
+{
+    width: 100%;
+    height: 10%;
+}
+.video-inversiones
+{
+    width: 100%;
+}
+
+ /*--------------------------
+        Responsive
+-----------------------------*/
+@media (max-width:1200px)
+{
+    #titulo-inversion
+    {
+        .vertical-inversion
+        {
+            width: 2px;
+            background-color: #747477;
+            height:103px;
+            margin-left: 230px;
+            margin-top:-50px;
+            position:absolute;
+        }
+        .horizontal-inversion
+        {
+            width: 600px;
+            background-color: #747477;
+            height:1px;
+            margin-left: 200px;
+            margin-top:108px;
+            position:absolute;
+        }
+    }
+    #secciones-inversiones
+    {
+        padding: 30px;
+    }
+}
+
+@media (max-width:992px)
+{
+    #titulo-inversion
+    {
+        .titulo-inversion
+        {
+            font-size: 28px;
+            margin-top: 20px;
+        }
+        .texto-inversion
+        {
+            font-size: 18px
+        }
+        
+          .vertical-inversion
+        {
+            margin-left: 170px;
+            height:97px;
+            margin-top:-67px;
+        }
+    
+        .horizontal-inversion
+        {
+            margin-left: 150px;
+            width: 450px;
+            margin-top:90px;
+        }    
+    }
+    #secciones-inversiones
+    {
+        padding: 30px;
+        ul.tabs
+        {
+            padding: 10px;
+            li a
+            {
+                padding: 15px 0px;
+
+                color: #fff;
+                text-decoration: none;
+                font-size: 12px;
+                text-align: center;
+                display: block;
+                padding: 10px 0px;
+            }
+        }
+    }
+}
+@media (max-width:768px)
+{
+    #titulo-inversion
+    {
+        .titulo-inversion
+        {
+            font-size: 28px;
+        }
+        .texto-inversion
+        {
+            font-size: 22px
+        }
+        .vertical-inversion
+        {
+            display: none;
+        }
+        .horizontal-inversion
+        {
+            display: none;
+        }
+    }
+    #secciones-inversiones
+    {
+        padding: 50px;
+        ul.tabs
+        {
+            width: 100%;
+            background: #4F6A90;
+            list-style: none;
+            display: flex;
+            padding: 10px;
+            li a
+            {
+                padding: 15px 0px;
+
+                color: #fff;
+                text-decoration: none;
+                font-size: 10px;
+                text-align: center;
+                display: block;
+                padding: 10px 0px;
+            }
+        }
+    }
+
+    .video-inversiones
+    {
+        width: 100%;
+        padding: 20px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:576px)
+{
+    #titulo-inversion
+    {
+        .titulo-inversion
+        {
+            font-size: 26px;
+        }
+        .texto-inversion
+        {
+            font-size: 20px
+        }
+        .vertical-inversion
+        {   
+            display: none;
+        }
+        .horizontal-inversion
+        {
+            display: none
+        }
+    }
+
+    #secciones-inversiones
+    {   
+        padding: 10px;
+        ul.tabs
+        {
+            list-style: none;
+            display: flex;
+            padding: 10px;
+            li a
+            {
+                padding: 15px 0px;
+                width: 15%;
+                color: #fff;
+                text-decoration: none;
+                font-size: 10px;
+                text-align: center;
+                display: block;
+            }
+        }
+    }
+
+    .video-inversiones
+    {
+        width: 100%;
+        padding: 20px;
+        margin-top: 10px;
+    }
+}
+
+ /*--------------------------
+        Fin Responsive
+-----------------------------*/

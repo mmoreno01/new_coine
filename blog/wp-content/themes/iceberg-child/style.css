@@ -1,0 +1,15 @@
+/*
+ Theme Name:   Iceberg Child
+ Theme URI:    http://themeforest.net/user/nordstudio
+ Description:  Child Theme for Iceberg
+ Author:       Nord Studio
+ Author URI:   http://themeforest.net/user/nordstudio
+ Template:     iceberg
+ Version:      1.0
+ License:      
+ License URI:  http://themeforest.net/licenses
+ Tags:         black, green, silver, white, dark, light, two-columns, left-sidebar, fixed-layout, fluid-layout, responsive-layout, flexible-header, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, photoblogging
+ Text Domain:  iceberg
+*/
+
+@import url("../iceberg/style.css");

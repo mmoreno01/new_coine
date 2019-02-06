@@ -1,0 +1,311 @@
+#titulo-sectores
+{
+    position: relative;
+    margin-top: 50px;
+    .titulo-sectores
+    {
+        color: #005c9b;
+    }
+    .texto-sectores
+    {
+        color: #005c9b;
+        font-size: 20px
+    }
+    .vertical-sectores
+    {
+        width: 2px;
+        background-color: #747477;
+        height:96px;
+        margin-left: 270px;
+        margin-top:-50px;
+        position:absolute;
+    }
+    .horizontal-sectores
+    {
+        width: 710px;
+        background-color: #747477;
+        height:1px;
+        margin-left: 240px;
+        margin-top:103px;
+        position:absolute;
+    }
+    .titulo-sectores-ingles
+    {
+        color: #005c9b;
+    }
+    .texto-sectores-ingles
+    {
+        color: #005c9b;
+        font-size: 20px
+    }
+    .vertical-sectores-ingles
+    {
+        width: 2px;
+        background-color: #747477;
+        height:70px;
+        margin-left: 270px;
+        margin-top:-50px;
+        position:absolute;
+    }
+    .horizontal-sectores-ingles
+    {
+        width: 710px;
+        background-color: #747477;
+        height:1px;
+        margin-left: 240px;
+        margin-top:75px;
+        position:absolute;
+    }
+}
+
+#sectores
+{
+    position: relative;
+    margin-top: 50px;
+}
+
+#img-circulos
+{
+    width: 150px;
+    padding: 10px;
+    margin-left: 10px
+}
+
+
+#beneficios
+{
+    position: relative;
+    background-color: #f4f4f4;
+    .titulo-beneficios
+    {
+        text-align: center;
+        font-weight: bold;
+        color:#005c9b;
+        padding: 20px;
+    }   
+    .contenido-beneficios
+    {
+        color: #4f6a90; 
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+
+ /*--------------------------
+        Responsive
+-----------------------------*/
+@media (max-width:1200px)
+{   
+    #titulo-sectores
+    {
+        .vertical-sectores
+        {
+            width: 2px;
+            background-color: #747477;
+            height:116px;
+            margin-left: 210px;
+            margin-top:-50px;
+            position:absolute;
+        }
+    
+        .horizontal-sectores
+        {
+            width: 610px;
+            background-color: #747477;
+            height:1px;
+            margin-left: 200px;
+            margin-top:123px;
+            position:absolute;
+        }
+        .vertical-sectores-ingles
+        {
+            width: 2px;
+            background-color: #747477;
+            height:125px;
+            margin-left: 190px;
+            margin-top:-65px;
+            position:absolute;
+        }
+        .horizontal-sectores-ingles
+        {
+            width: 500px;
+            background-color: #747477;
+            height:1px;
+            margin-left: 200px;
+            margin-top:115px;
+            position:absolute;
+        }
+    
+    }
+    
+}
+
+@media (max-width:992px)
+{   
+    #titulo-sectores
+    {
+        .vertical-sectores
+        {
+            width: 2px;
+            background-color: #747477;
+            height:166px;
+            margin-left: 170px;
+            margin-top:-50px;
+            position:absolute;
+        }
+        .horizontal-sectores
+        {
+            width: 500px;
+            background-color: #747477;
+            height:1px;
+            margin-left: 120px;
+            margin-top:173px;
+            position:absolute;
+        }
+        .titulo-sectores-ingles
+        {
+            font-size: 28px;
+            margin-top: 40px;
+        }
+        .texto-sectores-ingles
+        {
+            font-size: 16px;
+            padding: 10px
+        }
+        .vertical-sectores-ingles
+        {
+            width: 2px;
+            background-color: #747477;
+            height:125px;
+            margin-left: 170px;
+            margin-top:-90px;
+            position:absolute;
+        }
+        .horizontal-sectores-ingles
+        {
+            width: 500px;
+            background-color: #747477;
+            height:1px;
+            margin-left: 120px;
+            margin-top:115px;
+            position:absolute;
+        }
+    }   
+    .titulo-beneficios
+    {
+       font-size: 28px;
+        padding: 20px
+    }
+}
+@media (max-width:768px)
+{
+    #titulo-sectores
+    {
+        .vertical-sectores
+        {
+            display: none;
+        }
+        .horizontal-sectores
+        {
+            display: none;
+        }
+
+        .titulo-sectores-ingles
+        {
+            font-size: 28px;
+        }
+    
+        .texto-sectores-ingles
+        {
+            font-size: 16px;
+            padding: 10px
+        }
+    
+        .vertical-sectores-ingles
+        {
+            display: none
+        }
+    
+        .horizontal-sectores-ingles
+        {
+            display: none
+        }
+    }
+    #beneficios
+    {
+        .titulo-beneficios
+        {
+           font-size: 30px;
+            padding: 20px
+        }
+    }
+    #img-circulos
+    {
+        width: 150px;
+        padding: 10px;
+        margin-left: 50px
+    }  
+}
+
+@media (max-width:576px)
+{
+    #titulo-sectores
+    {
+        .titulo-sectores
+        {
+            font-size: 28px;
+        }
+        .texto-sectores
+        {
+            font-size: 18px;
+        }
+        .vertical-sectores
+        {
+            display: none;
+        }
+        
+        .horizontal-sectores
+        {
+            display: none;
+        }
+        .titulo-sectores-ingles
+        {
+            font-size: 28px;
+        }
+        .texto-sectores-ingles
+        {
+            font-size: 16px;
+            padding: 10px
+        }
+        .vertical-sectores-ingles
+        {
+            display: none
+        }   
+        .horizontal-sectores-ingles
+        {
+            display: none
+        }
+    }
+    #beneficios
+    {
+        .titulo-beneficios
+        {
+           font-size: 28px;
+            padding: 20px
+        }
+    }
+    
+    #img-circulos
+    {
+    width: 150px;
+    padding: 10px;
+    margin-left: 70px
+    }  
+}
+
+ /*--------------------------
+        Fin Responsive
+-----------------------------*/
+

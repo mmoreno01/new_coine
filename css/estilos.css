@@ -1,0 +1,1914 @@
+*
+{
+  padding:0px;
+  margin:0px;
+   -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;     
+}
+/*----------------------
+        menu
+-----------------------*/
+.img-menu
+{
+    width: 15%
+}
+.img-nav
+{
+    width: 130px;
+    margin-top: -15px;
+    position: relative;
+}
+
+/*----------------------
+      fin menu
+-----------------------*/
+
+/*------------------
+    estilos video
+-------------------*/
+#seccion-video
+{
+    position: absolute;
+}
+
+.video-principal
+{
+    width: 100%;
+    max-width: 100%;
+    margin-top: -250px;
+    position: relative;
+}
+
+/*------------------
+    estilos video
+-------------------*/
+
+/*------------------
+    texto inicio
+--------------------*/
+
+.texto-inicio
+{
+    font-size: 24px;
+    margin-top: 0px;
+    color: #4f6a90;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+/*-------------------
+    fin estilos texto inicio
+---------------------*/
+
+/*-------------------
+estilos texto/imagen
+---------------------*/
+#seccion-texto-imagen
+{
+    position: relative;
+    background-color: #005c9b;
+}
+
+.imagen-texto
+{
+    width: 100%;
+    height: 550px;
+    padding: 10px
+}
+
+.titulo-txt-img
+{
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contenido-txt-img
+{
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+}
+/*-------------------
+fin estilos texto/imagen
+---------------------*/
+
+/*---------------------
+    seccion alianza
+-----------------------*/
+#seccion-alianza
+{
+    position: relative;
+    margin-bottom: 100px;
+}
+
+#seccion-alianza h1
+{
+    color: #005c9b;
+    text-transform: uppercase;
+    margin: 50px;
+}
+
+.imagen-alianza
+{
+    margin: 10px;
+}
+/*---------------------
+  fin seccion alianza
+-----------------------*/
+
+/*---------------------
+    parallax
+-----------------------*/
+#parallax-inicio
+{
+    background: url(../img/parallax/INICIO.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-top: 100px;
+    max-width: 100%;
+}
+
+.titulo-parallax
+{
+    padding: 100px 20px;
+    color: white;
+    margin-left: 10px;
+}
+/*-----------------------
+     fin parallax
+------------------------*/
+
+/*------------------------
+    seccion testimoniales
+--------------------------*/
+#seccion-testimonios
+{
+    position: relative;
+    margin-bottom: 100px;
+}
+
+#seccion-testimonios h1
+{
+    color: #005c9b;
+    text-transform: uppercase;
+    margin: 50px;
+}
+
+.imagen-testimonios
+{
+     margin: 10px;
+}
+/*-------------------------
+ fin seccion testimoniales
+---------------------------*/
+
+/*-------------------------
+        footer
+---------------------------*/
+.foter
+{
+    background-color: #005c9b;
+}
+
+.foter ul
+{
+    list-style: none;
+    margin-top: 20px;
+}
+.foter li a
+{
+    list-style: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+    display: none;
+}
+
+.foter li
+{
+    padding: 7px;
+}
+
+.foter #foter_img
+{
+    margin-left: -28px;
+}
+#foter-redes
+{
+    background-color: #005c9b;
+    height: 70px;
+}
+#foter-redes ul
+{
+    list-style: none;
+    margin: 5px;
+    margin-top: 0px;
+    float: right;
+}
+#foter-redes a
+{
+    list-style: none;
+    margin: 5px;
+    margin-top: 0px;
+}
+#foter-redes a img
+{
+  margin-left:1px;
+}
+#foter-redes li
+{
+    margin-left: -40px;
+    margin-top: 0px;
+    color: white;
+    font-size: 12px;
+}
+
+/*-------------------------
+        fin footer
+---------------------------*/
+
+/*--------------------
+responsive de pagina inicio
+----------------------*/
+@media screen and (max-width:1200px) and (min-width:995px)
+{
+      .imagen-alianza
+    {
+        margin: 10px;
+        margin-left: -80px;
+        width: 170px;
+    }
+    .imagen-testimonios
+    {
+        margin: 10px;
+        margin-left: -80px;
+        width: 170px;
+    }
+        .texto-inicio
+    {
+        font-size: 24px;
+        margin-top: -200px;
+        color: #4f6a90;
+        padding: 10px;
+        text-align: center;
+    }
+}
+ @media screen and (max-width:994px) and (min-width: 768px)
+{
+     .video-principal
+    {
+        margin-top: -310px;
+    }
+    
+       .texto-inicio
+    {
+        font-size: 24px;
+        margin-top: -200px;
+        color: #4f6a90;
+        padding: 10px;
+        text-align: center;
+    }
+     .imagen-texto
+    {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin-top: 100px;
+    }
+    
+    .titulo-txt-img
+    {
+        font-size: 22px;
+    }
+    
+    .contenido-txt-img
+    {
+        padding: 20px;
+        font-size: 14px;
+        text-align: justify;
+    }
+     .imagen-alianza
+    {
+        margin: 10px;
+        margin-left: -80px;
+        width: 170px;
+    }
+    .imagen-testimonios
+    {
+        margin: 10px;
+        margin-left: -80px;
+        width: 170px;
+    }
+    .img-menu
+    {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    .video-principal
+    {
+        margin-top: -350px;
+    }
+     .texto-inicio
+    {
+        font-size: 20px;
+        margin-top: -200px;
+        color: #4f6a90;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .imagen-texto
+    {
+        width: 100%;
+        height: auto;
+        padding: 10px
+    }
+    
+    .titulo-txt-img
+    {
+        font-size: 28px;
+    }
+    
+    .contenido-txt-img
+    {
+        font-size: 16px;
+        padding: 20px;
+        text-align: justify;
+    }
+    .img-menu
+    {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    .video-principal
+    {
+        margin-top: -400px;
+    }
+    
+    .texto-inicio
+    {
+        font-size: 16px;
+        margin-top: -300px;
+        color: #4f6a90;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .imagen-texto
+    {
+        width: 100%;
+        height: auto;
+        padding: 10px
+    }
+    
+    .titulo-txt-img
+    {
+        font-size: 26px;
+    }
+    
+    .contenido-txt-img
+    {
+        padding: 30px;
+        font-size: 14px;
+        text-align: justify
+    }
+    
+    .titulo-parallax
+    {
+       font-size: 16px;
+    }
+    .img-menu
+    {
+        width: 30px;
+    }
+}
+/*--------------------
+fin responsive de pagina inicio
+----------------------*/
+
+/*---------------------
+    apartado de conocenos
+-----------------------*/
+
+/*---------------------
+   estilos de banner conocenos
+-----------------------*/
+.img-conocenos
+{
+    width: 100%;
+    height: auto;
+}
+/*---------------------
+  fin estilos de banner conocenos
+-----------------------*/
+/*----------------------------------
+    estilos textos y lineas conocenos
+------------------------------------*/
+#titulo
+{
+    position: relative;
+    margin-top: 50px;
+}
+
+.titulo-conocenos
+{
+    color: #005c9b;
+}
+
+.texto-conocenos
+{
+    color: #005c9b;
+    font-size: 26px
+}
+
+.vertical-conocenos
+{
+     width: 2px;
+    background-color: #747477;
+    height:57px;
+    margin-left: 270px;
+    margin-top:-50px;
+    position:absolute;
+}
+
+.horizontal-conocenos
+{
+    width: 710px;
+    background-color: #747477;
+    height:1px;
+    margin-left: 230px;
+    margin-top:65px;
+    position:absolute;
+}
+/*----------------------------------
+fin estilos textos y lineas conocenos
+------------------------------------*/
+
+/*----------------------------------
+    estilos textos y lineas conocenos ingles
+------------------------------------*/
+#titulo
+{
+    position: relative;
+    margin-top: 50px;
+}
+
+.titulo-conocenos-ingles
+{
+    color: #005c9b;
+    font-size: 35px;
+}
+
+.texto-conocenos-ingles
+{
+    color: #005c9b;
+    font-size: 24px
+}
+
+.vertical-conocenos-ingles
+{
+     width: 2px;
+    background-color: #747477;
+    height:65px;
+    margin-left: 270px;
+    margin-top:-50px;
+    position:absolute;
+}
+
+.horizontal-conocenos-ingles
+{
+    width: 710px;
+    background-color: #747477;
+    height:1px;
+    margin-left: 230px;
+    margin-top:65px;
+    position:absolute;
+}
+/*----------------------------------
+fin estilos textos y lineas conocenos ingles
+------------------------------------*/
+
+/*---------------------------------
+    estilos circulos-barras
+-----------------------------------*/
+#cir-barr
+{
+    position: relative;
+    margin-top: 50px
+}
+
+.titulo-quienes
+{
+    color: #005c9b;   
+    margin-bottom: 30px;
+}
+
+.fondo-quines
+{
+    background-color: #f4f4f4;
+}
+.contenido-quienes
+{
+    font-size: 16px;
+    padding: 20px;
+    text-align: justify;
+    padding: 20px;
+}
+
+#barras
+{
+    position: relative;
+}
+
+.titulos_barras 
+{
+    color: #9B9B9B;   
+    font-size: 20px;
+    list-style: none;
+}
+
+.titulos_barras a:hover
+{
+    text-decoration: none;
+    color: #9B9B9B;  
+}
+/*---------------------------------
+    estilos circulos-barras
+-----------------------------------*/
+
+/*-----------------------------------
+    seccion de especializamos
+-------------------------------------*/
+
+#especializados
+{
+    position: relative;
+    margin-top: 50px;
+}
+
+.titulo-especialidad
+{
+    color:#005c9b;
+    font-size: 34px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#redes-conocenos
+{
+     margin-top: 50px;
+    margin-bottom: 50px;
+}
+/*-----------------------------------
+   fin seccion de especializamos
+-------------------------------------*/
+
+/*--------------------------
+responsive hoja de conocenos
+----------------------------*/
+@media screen and (max-width:1200px) and (min-width:995px)
+{
+     .vertical-conocenos
+    {
+        width: 2px;
+        background-color: #747477;
+        height:90px;
+        margin-left: 230px;
+        margin-top:-50px;
+        position:absolute;
+    }
+
+    .horizontal-conocenos
+    {
+        width: 670px;
+        background-color: #747477;
+        height:1px;
+        margin-left: 130px;
+        margin-top:95px;
+        position:absolute;
+    }  
+      .vertical-conocenos-ingles
+    {
+        width: 2px;
+        background-color: #747477;
+        height:84px;
+        margin-left: 230px;
+        margin-top:-80px;
+        position:absolute;
+    }
+
+    .horizontal-conocenos-ingles
+    {
+        width: 670px;
+        background-color: #747477;
+        height:1px;
+        margin-left: 130px;
+        margin-top:95px;
+        position:absolute;
+    }
+}
+ @media screen and (max-width:994px) and (min-width: 768px)
+{
+    .titulo-conocenos
+    {
+        font-size: 30px;
+    }
+    .texto-conocenos
+    {
+        font-size: 20px;
+    }
+    .vertical-conocenos
+    {
+        width: 2px;
+        background-color: #747477;
+        height:80px;
+        margin-left: 170px;
+        margin-top:-50px;
+        position:absolute;
+    }
+
+    .horizontal-conocenos
+    {
+        width: 470px;
+        background-color: #747477;
+        height:1px;
+        margin-left: 130px;
+        margin-top:75px;
+        position:absolute;
+    }
+    .titulos_barras a
+    {
+        font-size: 14px;
+    }
+     .titulo-conocenos-ingles
+    {
+        font-size: 28px;
+    }
+    .texto-conocenos-ingles
+    {
+        font-size: 20px;
+    }
+       .vertical-conocenos-ingles
+    {
+        width: 2px;
+        background-color: #747477;
+        height:80px;
+        margin-left: 170px;
+        margin-top:-80px;
+        position:absolute;
+    }
+
+    .horizontal-conocenos-ingles
+    {
+        width: 470px;
+        background-color: #747477;
+        height:1px;
+        margin-left: 130px;
+        margin-top:75px;
+        position:absolute;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+   .titulo-conocenos
+    {
+        font-size: 30px;
+    }
+    .texto-conocenos
+    {
+        font-size: 22px;
+    }
+    .vertical-conocenos
+    {
+        display: none;
+    }
+    .horizontal-conocenos
+    {
+        display: none;
+    }
+    .titulos_barras a
+    {
+       font-size: 16px
+    }
+    .fondo-quines
+    {
+        margin-left: 0px;
+        padding: 10px
+    }
+    
+     .titulo-conocenos-ingles
+    {
+        font-size: 30px;
+    }
+    .texto-conocenos-ingles
+    {
+        font-size: 20px;
+    }
+    .vertical-conocenos-ingles
+    {
+        display: none;
+    }
+    .horizontal-conocenos-ingles
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+     .titulo-conocenos
+    {
+        font-size: 30px;
+    }
+    .texto-conocenos
+    {
+        font-size: 22px;
+    }
+    .vertical-conocenos
+    {
+        display: none;
+    }
+    .horizontal-conocenos
+    {
+        display: none;
+    }
+    #barras
+    {
+        padding: 20px;
+    }
+    .titulos_barras a
+    {
+       font-size: 16px
+    }
+    .fondo-quines
+    {
+        margin-left: 0px;
+        padding: 10px
+    }
+    
+     .titulo-conocenos-ingles
+    {
+        font-size: 30px;
+    }
+    .texto-conocenos-ingles
+    {
+        font-size: 20px;
+    }
+    .vertical-conocenos-ingles
+    {
+        display: none;
+    }
+    .horizontal-conocenos-ingles
+    {
+        display: none;
+    }
+}
+/*------------------------------
+fin responsive hoja de conocenos
+--------------------------------*/
+
+/*----------------------------------
+    estilos textos y lineas inversion
+------------------------------------*/
+#titulo-inversion
+{
+    position: relative;
+    margin-top: 50px;
+}
+
+.titulo-inversion
+{
+    color: #005c9b;
+}
+
+.texto-inversion
+{
+    color: #005c9b;
+    font-size: 22px
+}
+
+.vertical-inversion
+{
+     width: 2px;
+    background-color: #747477;
+    height:77px;
+    margin-left: 270px;
+    margin-top:-50px;
+    position:absolute;
+}
+
+.horizontal-inversion
+{
+    width: 710px;
+    background-color: #747477;
+    height:1px;
+    margin-left: 230px;
+    margin-top:82px;
+    position:absolute;
+}
+/*----------------------------------
+fin estilos textos y lineas inversion
+------------------------------------*/
+
+
+/*--------------------------------
+     estilos seccion inversion
+----------------------------------*/
+#secciones-inversiones
+{
+    position: relative;
+    width: 1200px;
+    margin-top: 50px;
+    max-width: 100%;
+}
+
+ul.tabs
+{
+    width: 100%;
+    background: #4F6A90;
+    list-style: none;
+    display: flex;
+}
+
+ul.tabs li
+{
+    width: 18%;
+    
+}
+
+ul.tabs li a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 20px 0px;
+}
+
+.inversion-secciones
+{
+    width: 100%;
+}
+
+.iversion-secciones article
+{
+    padding: 30px;
+}
+
+#imagen-inversiones
+{
+    width: 100%;
+    height: 10%;
+}
+
+.video-inversiones
+{
+    width: 100%;
+}
+/*--------------------------------
+   fin  estilos seccion inversion
+----------------------------------*/
+
+/*--------------------------
+responsive hoja de inversion
+----------------------------*/
+@media screen and (max-width:1200px) and (min-width:995px)
+{
+   .vertical-inversion
+    {
+        width: 2px;
+        background-color: #747477;
+        height:103px;
+        margin-left: 210px;
+        margin-top:-50px;
+        position:absolute;
+}
+
+.horizontal-inversion
+{
+    width: 600px;
+    background-color: #747477;
+    height:1px;
+    margin-left: 200px;
+    margin-top:108px;
+    position:absolute;
+}
+}
+ @media screen and (max-width:994px) and (min-width: 768px)
+{
+      .titulo-inversion
+    {
+        font-size: 28px;
+        margin-top: 50px
+    }
+    
+    .texto-inversion
+    {
+        font-size: 20px
+    }
+    
+      .vertical-inversion
+    {
+        margin-left: 150px;
+        height:137px;
+        margin-top:-97px;
+    }
+
+    .horizontal-inversion
+    {
+        margin-left: 150px;
+        width: 450px;
+        margin-top:130px;
+    }
+     
+    #secciones-inversiones
+    {
+        padding: 20px
+    }
+    
+    ul.tabs
+    {
+        width: 100%;
+        background: #4F6A90;
+        list-style: none;
+        display: flex;
+        padding: 10px
+    }
+
+      ul.tabs li a
+    {
+        padding: 15px 0px;
+    }
+    
+    ul.tabs li a
+    {
+        color: #fff;
+        text-decoration: none;
+        font-size: 12px;
+        text-align: center;
+        display: block;
+        padding: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+   .titulo-inversion
+    {
+        font-size: 28px;
+    }
+    
+    .texto-inversion
+    {
+        font-size: 22px
+    }
+    
+    .vertical-inversion
+    {
+        display: none;
+    }
+
+    .horizontal-inversion
+    {
+        display: none;
+    }
+     ul.tabs
+    {
+        width: 100%;
+        background: #4F6A90;
+        list-style: none;
+        display: flex;
+        padding: 10px
+    }
+
+      ul.tabs li a
+    {
+        padding: 15px 0px;
+    }
+    
+    ul.tabs li a
+    {
+        color: #fff;
+        text-decoration: none;
+        font-size: 10px;
+        text-align: center;
+        display: block;
+        padding: 10px 0px;
+    }
+    
+     .video-inversiones
+    {
+        width: 100%;
+        padding: 20px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    .titulo-inversion
+    {
+        font-size: 26px;
+    }
+    
+    .texto-inversion
+    {
+        font-size: 20px
+    }
+    
+    .vertical-inversion
+    {
+        display: none;
+    }
+
+    .horizontal-inversion
+    {
+        display: none
+    }
+    
+    ul.tabs
+    {
+        width: 100%;
+        background: #4F6A90;
+        list-style: none;
+        display: flex;
+        padding: 10px
+    }
+
+      ul.tabs li a
+    {
+        padding: 15px 0px;
+    }
+    
+    ul.tabs li a
+    {
+        color: #fff;
+        text-decoration: none;
+        font-size: 10px;
+        text-align: center;
+        display: block;
+        padding: 10px 0px;
+    }
+    
+    .video-inversiones
+    {
+        width: 100%;
+        padding: 20px;
+        margin-top: 10px;
+    }
+}
+/*------------------------------
+fin responsive hoja de inversion
+--------------------------------*/
+
+ /*_------------------------------
+     estilos sectores
+----------------------------------*/
+#sectores
+{
+    position: relative;
+    margin-top: 50px;
+}
+
+#titulo-sectores
+{
+    position: relative;
+    margin-top: 50px;
+}
+
+.titulo-sectores
+{
+    color: #005c9b;
+}
+
+.texto-sectores
+{
+    color: #005c9b;
+    font-size: 20px
+}
+
+.vertical-sectores
+{
+     width: 2px;
+    background-color: #747477;
+    height:96px;
+    margin-left: 270px;
+    margin-top:-50px;
+    position:absolute;
+}
+
+.horizontal-sectores
+{
+    width: 710px;
+    background-color: #747477;
+    height:1px;
+    margin-left: 240px;
+    margin-top:103px;
+    position:absolute;
+}
+
+.titulo-sectores-ingles
+{
+    color: #005c9b;
+}
+
+.texto-sectores-ingles
+{
+    color: #005c9b;
+    font-size: 20px
+}
+
+.vertical-sectores-ingles
+{
+     width: 2px;
+    background-color: #747477;
+    height:70px;
+    margin-left: 270px;
+    margin-top:-50px;
+    position:absolute;
+}
+
+.horizontal-sectores-ingles
+{
+    width: 710px;
+    background-color: #747477;
+    height:1px;
+    margin-left: 240px;
+    margin-top:75px;
+    position:absolute;
+}
+
+
+#img-circulos
+{
+    width: 150px;
+    padding: 10px;
+    margin-left: 10px
+}
+
+ /*_------------------------------
+    fin estilos sectores
+----------------------------------*/
+
+/*---------------------------------
+    estilos beneficios
+----------------------------------*/
+#beneficios
+{
+    position: relative;
+    background-color: #f4f4f4;
+}
+
+.titulo-beneficios
+{
+    text-align: center;
+    font-weight: bold;
+    color:#005c9b;
+    padding: 20px;
+}
+
+.contenido-beneficios
+{
+    color: #4f6a90; 
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/*---------------------------------
+    estilos beneficios
+----------------------------------*/
+
+/*--------------------------
+responsive hoja de sectores
+----------------------------*/
+@media screen and (max-width:1200px) and (min-width:995px)
+{
+  .vertical-sectores
+    {
+        width: 2px;
+        background-color: #747477;
+        height:116px;
+        margin-left: 210px;
+        margin-top:-50px;
+        position:absolute;
+    }
+
+    .horizontal-sectores
+    {
+        width: 610px;
+        background-color: #747477;
+        height:1px;
+        margin-left: 200px;
+        margin-top:123px;
+        position:absolute;
+    }
+}
+ @media screen and (max-width:994px) and (min-width: 768px)
+{
+    .vertical-sectores
+    {
+        width: 2px;
+        background-color: #747477;
+        height:166px;
+        margin-left: 170px;
+        margin-top:-50px;
+        position:absolute;
+    }
+
+    .horizontal-sectores
+    {
+        width: 500px;
+        background-color: #747477;
+        height:1px;
+        margin-left: 120px;
+        margin-top:173px;
+        position:absolute;
+    }
+    
+       .titulo-beneficios
+    {
+       font-size: 28px;
+        padding: 20px
+    }
+    
+    .titulo-sectores-ingles
+    {
+        font-size: 28px;
+        margin-top: 40px;
+    }
+
+    .texto-sectores-ingles
+    {
+        font-size: 16px;
+        padding: 10px
+    }
+    
+    .vertical-sectores-ingles
+    {
+        width: 2px;
+        background-color: #747477;
+        height:115px;
+        margin-left: 170px;
+        margin-top:-90px;
+        position:absolute;
+    }
+
+    .horizontal-sectores-ingles
+    {
+        width: 500px;
+        background-color: #747477;
+        height:1px;
+        margin-left: 120px;
+        margin-top:105px;
+        position:absolute;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+   
+    .vertical-sectores
+    {
+        display: none;
+    }
+    .horizontal-sectores
+    {
+        display: none;
+    }
+    
+       .titulo-beneficios
+    {
+       font-size: 30px;
+        padding: 20px
+    }
+    
+      .titulo-sectores-ingles
+    {
+        font-size: 28px;
+    }
+
+    .texto-sectores-ingles
+    {
+        font-size: 16px;
+        padding: 10px
+    }
+
+    .vertical-sectores-ingles
+    {
+        display: none
+    }
+
+    .horizontal-sectores-ingles
+    {
+        display: none
+    }
+     #img-circulos
+    {
+        width: 150px;
+        padding: 10px;
+        margin-left: 130px
+    }  
+}
+
+@media screen and (max-width: 450px)
+{
+    .titulo-sectores
+    {
+        font-size: 28px;
+    }
+    
+    .texto-sectores
+    {
+        
+        font-size: 18px;
+    }
+    
+    .vertical-sectores
+    {
+        display: none;
+    }
+    
+    .horizontal-sectores
+    {
+        display: none;
+    }
+    
+    .titulo-beneficios
+    {
+       font-size: 28px;
+        padding: 20px
+    }
+    #img-circulos
+    {
+    width: 150px;
+    padding: 10px;
+    margin-left: 130px
+    }  
+    .titulo-sectores-ingles
+    {
+        font-size: 28px;
+    }
+
+    .texto-sectores-ingles
+    {
+        font-size: 16px;
+        padding: 10px
+    }
+
+    .vertical-sectores-ingles
+    {
+        display: none
+    }
+
+    .horizontal-sectores-ingles
+    {
+        display: none
+    }
+}
+/*------------------------------
+fin responsive hoja de sectores
+--------------------------------*/
+
+
+/*-------------------------------
+ estilos noticias nacionales
+---------------------------------*/
+#noticias
+{
+    top: 10px;
+    padding: 100px;
+    margin-left: 0px;
+    position: relative;
+}
+
+.titulo-nacional
+{
+    text-align: center;
+    color: #005c9b;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+.titulo-internacional
+{
+    text-align: center;
+    color: #005c9b;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+/*--------------------------------
+fin de estilos nacionales
+---------------------------------*/
+
+/*--------------------------
+responsive hoja de sectores
+----------------------------*/
+@media screen and (max-width:1200px) and (min-width:995px)
+{
+   #noticias
+    {
+        padding: 10px;
+        margin-bottom: 20px
+    }
+}
+ @media screen and (max-width:994px) and (min-width: 768px)
+{
+    #noticias
+    {
+        padding: 20px;
+        margin-bottom: 20px
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+   #noticias
+    {
+        padding: 20px;
+    
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    #noticias
+    {
+        padding: 10px;
+        margin-bottom: 20px
+    }
+}    
+/*------------------------------
+fin responsive hoja de sectores
+--------------------------------*/
+
+/*----------------------------------
+    estilos textos y lineas alianzas
+------------------------------------*/
+#titulo-alianzas
+{
+    position: relative;
+    margin-top: 50px;
+}
+
+.titulo-alianzas
+{
+    color: #005c9b;
+}
+
+.texto-alianzas
+{
+    color: #005c9b;
+    font-size: 22px;
+}
+
+.vertical-alianzas
+{
+     width: 2px;
+    background-color: #747477;
+    height:77px;
+    margin-left: 270px;
+    margin-top:-50px;
+    position:absolute;
+}
+
+.horizontal-alianzas
+{
+    width: 710px;
+    background-color: #747477;
+    height:1px;
+    margin-left: 230px;
+    margin-top:82px;
+    position:absolute;
+}
+/*----------------------------------
+fin estilos textos y lineas alianzas
+------------------------------------*/
+
+/*------------------------------------
+estilos alianza
+--------------------------------------*/
+#alianza-video
+{
+    position: relative;
+    margin-top: 50px;
+}
+
+.video-inversiones
+{
+    max-width: 100%;
+    margin-top: 0px;
+    height: auto;
+}
+/*------------------------------------
+fin estilos alianza
+--------------------------------------*/
+
+/*--------------------------
+responsive hoja de alianzas
+----------------------------*/
+@media screen and (max-width:1200px) and (min-width:995px)
+{
+    .vertical-alianzas
+    {
+        width: 2px;
+        background-color: #747477;
+        height:107px;
+        margin-left: 210px;
+        margin-top:-50px;
+        position:absolute;
+    }
+    .horizontal-alianzas
+    {
+        width: 600px;
+        background-color: #747477;
+        height:1px;
+        margin-left: 190px;
+        margin-top:112px;
+        position:absolute;
+    }
+}
+ @media screen and (max-width:994px) and (min-width: 768px)
+{
+    .titulo-alianzas
+    {
+        font-size: 30px;
+    }
+    .texto-alianzas
+    {
+        font-size: 20px
+    }
+    .vertical-alianzas
+    {
+        width: 2px;
+        background-color: #747477;
+        height:130px;
+        margin-left: 170px;
+        margin-top:-50px;
+        position:absolute;
+    }
+    .horizontal-alianzas
+    {
+        width: 440px;
+        background-color: #747477;
+        height:1px;
+        margin-left: 150px;
+        margin-top:123px;
+        position:absolute;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    .titulo-alianzas
+    {
+        font-size: 30px;
+    }
+    .texto-alianzas
+    {
+        font-size: 20px
+    }
+    .vertical-alianzas
+    {
+        display: none;
+    }
+    .horizontal-alianzas
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+   .titulo-alianzas
+    {
+        font-size: 30px;
+    }
+    .texto-alianzas
+    {
+        font-size: 20px
+    }
+    .vertical-alianzas
+    {
+        display: none;
+    }
+    .horizontal-alianzas
+    {
+        display: none;
+    }
+}    
+/*------------------------------
+fin responsive hoja de alianzas
+--------------------------------*/
+
+/*--------------------------------
+    banner proximamente
+----------------------------------*/
+#proximamente
+{
+    position: relative;
+    margin-top: 100px; 
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.imagen-proximamente
+{
+    width: 100%;
+    height: auto;
+}
+/*--------------------------------
+    fin banner proximamente
+----------------------------------*/
+
+/*---------------------------------
+    estilos hoja de eventos 
+-----------------------------------*/
+.titulo-eventos
+{
+    text-align: center;
+    color: #005c9b;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+/*---------------------------------
+  estilos mapa y formulario
+-----------------------------------*/
+#contacto
+{
+    position: relative;
+    margin-top: 100px;
+}
+
+#mapa
+{
+	width: 500px;
+	max-width: 100%;
+	height: 400px;
+	max-height: 100vh;
+    margin-right: 70px;
+   -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+
+form
+{
+    width: 100%;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    border-radius: 20px;
+    font-family: 'Questrial', sans-serif;
+    background-color: #E8E5E5;
+    margin-bottom: 30px;
+    box-shadow: 1px white solid;
+}
+
+form h2
+{
+    color: #005c9b;
+    font-size: 30px;
+    text-align: center;
+}
+
+form b
+{
+    color: #005c9b;
+    font-size: 28px;
+}
+
+form h3{
+    color:black;
+    font-size: 24px;
+    text-align: left;
+}
+input, textarea, select
+{
+    width: 100%;
+    margin-bottom:  10px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border-spacing: 10px;
+    margin-right: 200px;
+    font-family: 'Questrial', sans-serif;
+}
+
+textarea
+{
+   min-height: 100px;
+   max-height: 200px;
+    max-width: 100%;
+    border-bottom: 10px;
+}
+    
+#btn
+{
+    background: #005c9b;
+    color: #fff;
+    padding: 20px;
+    border: none;
+}
+
+#btn:hover
+{
+    background:rgba(0, 100, 151, 0.8);
+    
+}
+/*---------------------------------
+   fin mapa y formulario
+-----------------------------------*/
+
+/*--------------------------
+responsive hoja de alianzas
+----------------------------*/
+@media screen and (max-width:1200px) and (min-width:995px)
+{
+   
+}
+ @media screen and (max-width:994px) and (min-width: 768px)
+{
+    form
+    {
+        padding: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    #mapa
+    {
+        padding: 10px;
+        margin-bottom: 0px;
+    } 
+}
+
+@media screen and (max-width: 450px)
+{
+    #mapa
+    {
+        padding: 10px;
+        margin-bottom: 0px;
+    }    
+}    
+/*------------------------------
+fin responsive hoja de alianzas
+--------------------------------*/
+
+/*--------------------------------
+    efectos lestras banner
+----------------------------------*/
+.flotante {
+    position:relative;
+    color: white;
+    left:30px;
+    z-index: 1;
+    border: none;
+    font-family: 'Questrial', sans-serif;
+    -webkit-animation-name:anim1;
+    -webkit-animation-duration: 4s;
+    margin-top: -250px
+}
+
+.flotante h2
+{
+    color: #0f223c;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+@media (max-width:1200px){
+    .flotante {
+    display:none;
+}
+}
+
+@-webkit-keyframes anim1{
+    0%{
+       left:-450px;
+    }
+  
+    100%{
+        left: 50px;
+    }
+}
+
+/*--------------------------------
+   fin efectos lestras banner
+----------------------------------*
+
+/*---------------------------------
+    seccion de corre
+-----------------------------------*/
+.titulo_correo
+{
+    color: #005c9b;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contenido_correcto
+{
+    color: #005c9b;
+    font-size: 20px;
+}
+
+.btn_1
+{
+    background-color: transparent;
+    border: 1px solid #005c9b;
+    margin-bottom: 50px;
+    padding: 10px;
+    color: #747477;
+}
+/*---------------------------------
+    seccion de corre
+-----------------------------------*/
+
+.slider-for
+{
+    background-color: red;
+}
+
+.slider-nav
+{
+    background-color: yellow;
+}
+
+#carrusel-panorama .owl-nav
+{
+    text-align: center;
+    font-size: 50px;
+    color: #005c9b;
+    padding: 0px 10px;
+}
+
+#carrusel-panoramas button
+{
+    padding: 0px 10px;
+}
+
+#noticias {
+    padding: 100px 0px;
+}
+
+#noticias .content-noticias .content-img-noticia {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    overflow: hidden;
+}
+#noticias .content-noticias {
+    margin: auto;
+    width: 92%;
+}
+#noticias .content-noticias .content-img-noticia .img-responsive {
+    width: 100%;
+}
+#noticias .content-noticias .titutlo-noticia {
+    color: #00387a;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    min-height: 55px;
+}
+#noticias .content-noticias .texto-noticia p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0!important;
+    letter-spacing: 0.3px;
+    min-height: 136px;
+    height: 136px;
+    text-align: justify;
+    overflow: hidden;
+}
+#noticias .seeMore {
+    background-color: #033c72;
+    color: #fff;
+    padding: 6px 12px;
+    text-align: center;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+}
+

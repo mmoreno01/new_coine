@@ -1,0 +1,608 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Iceberg 1.4\n"
+"POT-Creation-Date: 2018-10-17 14:26+0700\n"
+"PO-Revision-Date: 2018-10-17 14:27+0700\n"
+"Last-Translator: \n"
+"Language-Team: Nord Studio <nordthemes@gmail.com>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: esc_html__;esc_html_e;esc_attr__;esc_attr_e;__;_e;"
+"_x:1,2c;_nx:1,2,4c;esc_attr_x:1,2c;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:14
+msgid "Page not found"
+msgstr "Pagina niet gevonden"
+
+#: 404.php:20
+msgid "Whoops!"
+msgstr "Oeps!"
+
+#: 404.php:21
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+"Het lijkt erop dat hier niets kon worden gevonden. Probeer het eens met de "
+"zoekfunctie."
+
+#: 404.php:25 content-none.php:30
+msgid "Back To Homepage &rarr;"
+msgstr "Terug naar de startpagina &rarr;"
+
+#: author-bio.php:12
+#, php-format
+msgid "Published by %s"
+msgstr "Gepubliceerd door %s"
+
+#: author-bio.php:24
+#, php-format
+msgid "View all posts by %s &rarr;"
+msgstr "Alle berichten tonen van %s &rarr;"
+
+#: comments.php:24
+#, php-format
+msgctxt "comments title"
+msgid "One comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
+msgstr[0] "Een gedachte over &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s gedachten over &ldquo;%2$s&rdquo;"
+
+#: comments.php:39
+msgid "&larr; Older Comments"
+msgstr "&larr; Oudere reacties"
+
+#: comments.php:40
+msgid "Newer Comments &rarr;"
+msgstr "Nieuwere reacties &rarr;"
+
+#: comments.php:45
+msgid "Comments are closed."
+msgstr "Reacties zijn gesloten."
+
+#: comments.php:52
+msgid "Comment"
+msgstr "Reactie"
+
+#: content-gallery.php:49 content-video.php:38 content.php:38
+msgid "Continue reading &rarr;"
+msgstr "Lees verder %s"
+
+#: content-gallery.php:52 content-page-gallery.php:34 content-page-video.php:23
+#: content-page.php:23 content-video.php:41 content.php:41 image.php:41
+msgid "Pages:"
+msgstr "Pagina&#39;s:"
+
+#: content-none.php:11
+msgid "Nothing Found"
+msgstr "Niets gevonden"
+
+#: content-none.php:21
+msgid "Ready to publish your first post?"
+msgstr "Klaar om je eerste bericht te publiceren?"
+
+#: content-none.php:21
+msgid "Get started here"
+msgstr "Start hier"
+
+#: content-none.php:26
+msgid "No Results Found"
+msgstr "Geen resultaten gevonden"
+
+#: content-none.php:27
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Helaas, er waren geen overeenkomsten met jouw zoekterm. Probeer het opnieuw "
+"met enkele andere zoekwoorden."
+
+#: content-none.php:34
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Het lijkt erop dat we niet kunnen vinden waar je naar zoekt. Misschien kun "
+"je er naar zoeken."
+
+#: functions.php:58
+msgid "Primary Navigation"
+msgstr "Hoofdnavigatie"
+
+#: functions.php:187
+msgctxt "Nunito font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:192
+msgctxt "PT Serif font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:197
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr "no-subset"
+
+#: functions.php:247
+msgid "Post author"
+msgstr "Auteur"
+
+#: functions.php:509
+msgid "Widget Area"
+msgstr "Widgetruimte"
+
+#: functions.php:511
+msgid "Add widgets here to appear in sidebar"
+msgstr "Widgets hier toevoegen om in de sidebar te tonen."
+
+#: functions.php:527 inc/customizer.php:581
+msgid "Read More"
+msgstr "Lees meer"
+
+#: functions.php:548
+msgctxt "placeholder"
+msgid "Search"
+msgstr "Zoek"
+
+#: functions.php:548
+msgctxt "title tag"
+msgid "Search for:"
+msgstr "Zoek voor:"
+
+#: functions.php:628
+msgid "Name"
+msgstr "Naam"
+
+#: functions.php:633 functions.php:667 inc/customizer.php:543
+#: inc/template-tags.php:494
+msgid "Email"
+msgstr "E-mail"
+
+#: functions.php:638 inc/template-tags.php:473
+msgid "Website"
+msgstr "Website"
+
+#: functions.php:652 inc/customizer.php:277 inc/customizer.php:707
+#: inc/template-tags.php:479
+msgid "Facebook"
+msgstr "Facebook"
+
+#: functions.php:653 inc/customizer.php:291 inc/customizer.php:721
+#: inc/template-tags.php:480
+msgid "Twitter"
+msgstr "Twitter"
+
+#: functions.php:654 inc/customizer.php:305 inc/customizer.php:735
+#: inc/template-tags.php:481
+msgid "Google Plus"
+msgstr "Google Plus"
+
+#: functions.php:655 inc/customizer.php:333 inc/template-tags.php:482
+#: inc/widgets.php:69
+msgid "Instagram"
+msgstr "Instagram"
+
+#: functions.php:656 inc/customizer.php:347 inc/customizer.php:749
+#: inc/template-tags.php:483
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: functions.php:657 inc/customizer.php:361 inc/customizer.php:777
+#: inc/template-tags.php:484
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: functions.php:658 inc/customizer.php:403 inc/template-tags.php:485
+msgid "Vkontakte"
+msgstr "Vkontakte"
+
+#: functions.php:659 inc/customizer.php:445 inc/template-tags.php:486
+msgid "Dribbble"
+msgstr "Dribbble"
+
+#: functions.php:660 inc/customizer.php:459 inc/template-tags.php:487
+msgid "Behance"
+msgstr "Behance"
+
+#: functions.php:661 inc/customizer.php:431 inc/customizer.php:763
+#: inc/template-tags.php:488
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: functions.php:662 inc/customizer.php:389 inc/template-tags.php:489
+msgid "Medium"
+msgstr "Medium"
+
+#: functions.php:663 inc/customizer.php:375 inc/template-tags.php:490
+msgid "Flickr"
+msgstr "Flickr"
+
+#: functions.php:664 inc/customizer.php:501 inc/template-tags.php:491
+msgid "Github"
+msgstr "Github"
+
+#: functions.php:665 inc/customizer.php:473 inc/template-tags.php:492
+msgid "YouTube"
+msgstr "YouTube"
+
+#: functions.php:666 inc/customizer.php:515 inc/template-tags.php:493
+msgid "SoundCloud"
+msgstr "SoundCloud"
+
+#: image.php:66
+msgid "Previous Image"
+msgstr "Vorige afbeelding"
+
+#: image.php:66
+msgid "Next Image"
+msgstr "Volgende afbeelding"
+
+#: inc/category-form-fields.php:41 inc/category-form-fields.php:54
+msgid "Color"
+msgstr "Kleur"
+
+#: inc/customizer.php:21
+msgid "Site Description"
+msgstr "Site-omschrijving"
+
+#: inc/customizer.php:22
+msgid "Logo Image"
+msgstr "Logo afbeelding"
+
+#: inc/customizer.php:39
+msgid "Display Site Title"
+msgstr "Weergave titel"
+
+#: inc/customizer.php:56
+msgid "Tagline"
+msgstr "Beschrijving onder het logo"
+
+#: inc/customizer.php:57 inc/customizer.php:803
+msgid ""
+"You may use these HTML tags and attributes: a[href,title,target], strong, b, "
+"em, i, p, span, br, img[src,title,alt]"
+msgstr ""
+"De volgende HTML-tags en -attributen zijn toegestaan: a[href,title,target], "
+"strong, b, em, i, p, span, br, img[src,title,alt]"
+
+#: inc/customizer.php:76
+msgid "Max width (px)"
+msgstr "Breedte (px)"
+
+#: inc/customizer.php:90
+msgid "Margin bottom (px)"
+msgstr "Ondermarge (px)"
+
+#: inc/customizer.php:104
+msgid "Rounded (recomended for square images)"
+msgstr "Afgeronde (aanbevolen voor vierkante foto's)"
+
+#: inc/customizer.php:112
+msgid "Layout"
+msgstr "Layout"
+
+#: inc/customizer.php:128
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: inc/customizer.php:131
+msgid "Right (default)"
+msgstr "Rechts (standaard)"
+
+#: inc/customizer.php:131
+msgid "Left (default)"
+msgstr "Links (standaard)"
+
+#: inc/customizer.php:132
+msgid "Left"
+msgstr "Links"
+
+#: inc/customizer.php:132
+msgid "Right"
+msgstr "Recht"
+
+#: inc/customizer.php:153
+msgid "Link color"
+msgstr "Link kleur"
+
+#: inc/customizer.php:172
+msgid "Link color on hover"
+msgstr "Link kleur on Hover"
+
+#: inc/customizer.php:192
+msgid "Button Color"
+msgstr "Knop kleur"
+
+#: inc/customizer.php:211
+msgid "Button Color on Hover"
+msgstr "Knop kleur on Hover"
+
+#: inc/customizer.php:231
+msgid "Button Text Color"
+msgstr "Knop tekstkleur"
+
+#: inc/customizer.php:250
+msgid "Category color"
+msgstr "Categoriekleur"
+
+#: inc/customizer.php:262
+msgid "Social Profiles"
+msgstr "Social media profielen"
+
+#: inc/customizer.php:319
+msgid "Bloglovin"
+msgstr "Bloglovin"
+
+#: inc/customizer.php:417
+msgid "500px"
+msgstr "500px"
+
+#: inc/customizer.php:487
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: inc/customizer.php:529
+msgid "Rss"
+msgstr "Rss"
+
+#: inc/customizer.php:551
+msgid "Titles & Headings"
+msgstr "Titels en koppen"
+
+#: inc/customizer.php:565
+msgid "Sticky post"
+msgstr "Sticky post"
+
+#: inc/customizer.php:567
+msgid "Default: &laquo;Featured&raquo;"
+msgstr "Standaard: &laquo;Uitgelicht&raquo;"
+
+#: inc/customizer.php:583
+msgid "Default: &laquo;Read More&raquo;"
+msgstr "Standaard: &laquo;Lees meer&raquo;"
+
+#: inc/customizer.php:591
+msgid "Post Options"
+msgstr "Berichtopties"
+
+#: inc/customizer.php:605
+msgid "Display categories"
+msgstr "Categorieen weergeven"
+
+#: inc/customizer.php:619
+msgid "Display post date"
+msgstr "Datum weergeven"
+
+#: inc/customizer.php:633
+msgid "Display tags list"
+msgstr "Tags weergeven"
+
+#: inc/customizer.php:647 inc/customizer.php:684
+msgid "Display share buttons"
+msgstr "Social sharing knoppen weergeven"
+
+#: inc/customizer.php:661
+msgid "Display author"
+msgstr "Auteur weergeven"
+
+#: inc/customizer.php:670
+msgid "Page Options"
+msgstr "Paginaopties"
+
+#: inc/customizer.php:693
+msgid "Share Buttons"
+msgstr "Share buttons"
+
+#: inc/customizer.php:786
+msgid "Footer"
+msgstr "Footer"
+
+#: inc/customizer.php:802
+msgid "Copyright"
+msgstr "Auteursrecht"
+
+#: inc/customizer.php:813
+msgid "Custom CSS"
+msgstr "﻿Aangepaste CSS"
+
+#: inc/customizer.php:838
+msgid "Other Options"
+msgstr "Andere opties"
+
+#: inc/customizer.php:852
+msgid "Show preloader"
+msgstr "Preloader weergeven"
+
+#: inc/template-tags.php:213
+#, php-format
+msgctxt "Post date"
+msgid "Posted on %s"
+msgstr "Geplaatst op %s"
+
+#: inc/template-tags.php:220
+#, php-format
+msgctxt "Post author"
+msgid "by %s"
+msgstr "door %s"
+
+#: inc/template-tags.php:244
+msgid "Featured"
+msgstr "Uitgelicht"
+
+#: inc/template-tags.php:309 inc/template-tags.php:330
+#: inc/template-tags.php:337 inc/template-tags.php:344
+msgid "Share"
+msgstr "Deel"
+
+#: inc/template-tags.php:311
+msgid "Share on Facebook"
+msgstr "Deel op Facebook"
+
+#: inc/template-tags.php:316 inc/template-tags.php:318
+msgid "Tweet It"
+msgstr "Tweeten"
+
+#: inc/template-tags.php:323 inc/template-tags.php:325
+msgid "Pin It"
+msgstr "Pin het"
+
+#: inc/template-tags.php:332
+msgid "Post on Tumblr"
+msgstr "Deel op Tumblr"
+
+#: inc/template-tags.php:339
+msgid "Share on Google Plus"
+msgstr "Deel op Google Plus"
+
+#: inc/template-tags.php:346
+msgid "Share on LinkedIn"
+msgstr "Deel op LinkedIn"
+
+#: inc/widgets.php:21
+msgid "Iceberg &mdash; Instagram"
+msgstr "Iceberg &mdash; Instagram"
+
+#: inc/widgets.php:23
+msgid "Displays your latest Instagram photos."
+msgstr "Toont je nieuwste Instagram foto's."
+
+#: inc/widgets.php:77 inc/widgets.php:391
+msgid "Title:"
+msgstr "Titel:"
+
+#: inc/widgets.php:83
+msgid "Username:"
+msgstr "Gebruikersnaam:"
+
+#: inc/widgets.php:89
+msgid "Number of photos:"
+msgstr "Aantal foto’s:"
+
+#: inc/widgets.php:95
+msgid "Columns:"
+msgstr "Kolommen:"
+
+#: inc/widgets.php:137
+msgid "Unable to communicate with Instagram."
+msgstr "Kan niet communiceren met Instagram."
+
+#: inc/widgets.php:141
+msgid "Instagram did not return a 200."
+msgstr "Instagram geeft geen 200 terug."
+
+#: inc/widgets.php:149 inc/widgets.php:157 inc/widgets.php:161
+msgid "Instagram has returned invalid data."
+msgstr "Instagram heeft ongeldige gegevens geretourneerd."
+
+#: inc/widgets.php:173
+msgid "Instagram Image"
+msgstr ""
+
+#: inc/widgets.php:202
+msgid "Instagram did not return any images."
+msgstr "Instagram geeft geen beelden terug."
+
+#: inc/widgets.php:221
+msgid "Iceberg &mdash; Recent Posts"
+msgstr "Iceberg &mdash; Meest recente berichten"
+
+#: inc/widgets.php:223
+msgid "Use this widget to list your recent posts."
+msgstr "Gebruik deze widget om uw recente artikelen met thumbnails te tonen."
+
+#: inc/widgets.php:227
+msgid "date"
+msgstr "datum"
+
+#: inc/widgets.php:228
+msgid "number of comments"
+msgstr "aantal reactie's"
+
+#: inc/widgets.php:229
+msgid "random"
+msgstr "toeval"
+
+#: inc/widgets.php:258
+msgid "Recent Posts"
+msgstr "Meest recente berichten"
+
+#: inc/widgets.php:330
+msgid "Untitled Post"
+msgstr "Geen titel"
+
+#: inc/widgets.php:394
+msgid "Number of posts to show:"
+msgstr "Aantal berichten om te tonen:"
+
+#: inc/widgets.php:398
+msgid "Order by:"
+msgstr "Sorteer op:"
+
+#: inc/widgets.php:407
+msgid "Category:"
+msgstr "Categorie:"
+
+#: inc/widgets.php:410
+msgid "All Categories"
+msgstr "Alle categorieën"
+
+#: inc/widgets.php:419
+msgid "Tags (separated by commas):"
+msgstr "Tags (komma gescheiden):"
+
+#: inc/widgets.php:423
+msgid "Display post date?"
+msgstr "Berichtdatum tonen?"
+
+#: search.php:17
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Zoekresultaten voor: %s"
+
+#: single.php:35
+msgid "Next post"
+msgstr "Volgend bericht"
+
+#: single.php:37
+msgid "Previous post"
+msgstr "Vorig bericht"
+
+#~ msgctxt "Roboto font: on or off"
+#~ msgid "on"
+#~ msgstr "on"
+
+#~ msgid ""
+#~ "You may use these HTML tags and attributes: a[href,title], strong, b, em, "
+#~ "i, p, span, br"
+#~ msgstr ""
+#~ "De volgende HTML-tags en -attributen zijn toegestaan: a[href,title], "
+#~ "strong, b, em, i, p, span, br"
+
+#~ msgid "Background Size"
+#~ msgstr "Achtergrond afmeting"
+
+#~ msgid "Auto"
+#~ msgstr "Automatisch"
+
+#~ msgid "Cover"
+#~ msgstr "Omslag"
+
+#~ msgid "Contain"
+#~ msgstr "Bevat"
+
+#~ msgid "Sidebar Widgets"
+#~ msgstr "Sidebar Widgets"
+
+#~ msgid ", "
+#~ msgstr ", "
+
+#~ msgid "General"
+#~ msgstr "Algemeen CSS"
+
+#~ msgid "Tweet"
+#~ msgstr "Tweet"

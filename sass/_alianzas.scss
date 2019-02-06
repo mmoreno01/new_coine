@@ -1,0 +1,157 @@
+#titulo-alianzas
+{
+    position: relative;
+    margin-top: 50px;
+    .titulo-alianzas    
+    {
+        color: #005c9b;
+    }
+    .texto-alianzas
+    {
+        color: #005c9b;
+        font-size: 22px;
+    
+    }
+    .vertical-alianzas
+    {
+        width: 2px;
+        background-color: #747477;
+        height:77px;
+        margin-left: 270px;
+        margin-top:-50px;
+        position:absolute;
+    }
+    .horizontal-alianzas
+    {
+        width: 710px;
+        background-color: #747477;
+        height:1px;
+        margin-left: 230px;
+        margin-top:82px;
+        position:absolute;
+    }
+}
+
+#alianza-video
+{
+    position: relative;
+    margin-top: 50px;
+}
+.video-inversiones
+{
+    max-width: 100%;
+    margin-top: 0px;
+    height: auto;
+}
+
+
+ /*--------------------------
+        Responsive
+-----------------------------*/
+@media (max-width:1200px)
+{
+    #titulo-alianzas
+    {
+        .vertical-alianzas
+        {
+            width: 2px;
+            background-color: #747477;
+            height:107px;
+            margin-left: 210px;
+            margin-top:-50px;
+            position:absolute;
+        }
+        .horizontal-alianzas
+        {
+            width: 600px;
+            background-color: #747477;
+            height:1px;
+            margin-left: 190px;
+            margin-top:112px;
+            position:absolute;
+        }
+    }
+}
+
+@media (max-width:992px)
+{
+    #titulo-alianzas
+    {
+        .titulo-alianzas
+        {
+            font-size: 30px;
+        }
+        .texto-alianzas
+        {
+            font-size: 20px
+        }
+        .vertical-alianzas
+        {
+            width: 2px;
+            background-color: #747477;
+            height:130px;
+            margin-left: 170px;
+            margin-top:-50px;
+            position:absolute;
+        }
+        .horizontal-alianzas
+        {
+            width: 440px;
+            background-color: #747477;
+            height:1px;
+            margin-left: 150px;
+            margin-top:123px;
+            position:absolute;
+        }
+    }
+}
+@media (max-width:768px)
+{
+    #titulo-alianzas
+    {
+        .titulo-alianzas
+        {
+            font-size: 30px;
+        }
+        .texto-alianzas
+        {
+            font-size: 20px
+        }
+        .vertical-alianzas
+        {
+            display: none;
+        }
+        .horizontal-alianzas
+        {
+            display: none;
+        }
+    }
+}   
+
+@media (max-width:576px)
+{
+    #titulo-alianzas
+    {
+        .titulo-alianzas
+        {
+            font-size: 30px;
+        }
+        .texto-alianzas
+        {
+            font-size: 18px;
+        }
+        .vertical-alianzas
+        {
+            display: none;
+        }
+        .horizontal-alianzas
+        {
+            display: none;
+        }
+    }
+}
+
+ /*--------------------------
+        Fin Responsive
+-----------------------------*/
+

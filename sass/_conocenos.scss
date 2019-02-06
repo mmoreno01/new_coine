@@ -1,0 +1,378 @@
+#conoc
+{
+    .imagen-principal 
+    { 
+        width: 100%;
+    }
+}
+
+#titulo
+{
+    position: relative;
+    margin-top: 50px;
+    .titulo-conocenos
+    {
+        color: #005c9b;
+    }
+    .texto-conocenos
+    {
+        color: #005c9b;
+        font-size: 26px
+    }
+    .vertical-conocenos
+    {
+        width: 2px;
+        background-color: #747477;
+        height:57px;
+        margin-left: 270px;
+        margin-top:-50px;
+        position:absolute;
+    }
+    .horizontal-conocenos
+    {
+        width: 710px;
+        background-color: #747477;
+        height:1px;
+        margin-left: 230px;
+        margin-top:65px;
+        position:absolute;
+    }
+}
+
+/*----------------------------------
+    estilos textos y lineas conocenos ingles
+------------------------------------*/
+#titulo
+{
+    position: relative;
+    margin-top: 50px;
+}
+
+.titulo-conocenos-ingles
+{
+    color: #005c9b;
+    font-size: 35px;
+}
+
+.texto-conocenos-ingles
+{
+    color: #005c9b;
+    font-size: 24px
+}
+
+.vertical-conocenos-ingles
+{
+     width: 2px;
+    background-color: #747477;
+    height:65px;
+    margin-left: 270px;
+    margin-top:-50px;
+    position:absolute;
+}
+
+.horizontal-conocenos-ingles
+{
+    width: 710px;
+    background-color: #747477;
+    height:1px;
+    margin-left: 230px;
+    margin-top:65px;
+    position:absolute;
+}
+/*----------------------------------
+fin estilos textos y lineas conocenos ingles
+------------------------------------*/
+
+#seccion-quienes
+{
+    .titulo-quienes
+    {
+        color: #005c9b;   
+        margin-bottom: 30px;
+    }
+    .fondo-quines
+    {
+        background-color: #f4f4f4;
+    }
+    .contenido-quienes
+    {
+        font-size: 16px;
+        padding: 20px;
+        text-align: justify;
+        padding: 20px;
+    }
+}
+
+#especializamos
+{
+    position: relative;
+    margin-top: 50px;
+    h1
+    {
+        color:#005c9b;
+        font-size: 34px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }  
+}
+
+ /*--------------------------
+        Responsive
+-----------------------------*/
+@media (max-width:1200px)
+{
+    #titulo
+    {
+        .vertical-conocenos
+    {
+        width: 2px;
+        background-color: #747477;
+        height:90px;
+        margin-left: 230px;
+        margin-top:-50px;
+        position:absolute;
+    }
+
+    .horizontal-conocenos
+    {
+        width: 670px;
+        background-color: #747477;
+        height:1px;
+        margin-left: 130px;
+        margin-top:95px;
+        position:absolute;
+    }
+    }
+    .vertical-conocenos-ingles
+    {
+        width: 2px;
+        background-color: #747477;
+        height:84px;
+        margin-left: 230px;
+        margin-top:-80px;
+        position:absolute;
+    }
+
+    .horizontal-conocenos-ingles
+    {
+        width: 670px;
+        background-color: #747477;
+        height:1px;
+        margin-left: 130px;
+        margin-top:95px;
+        position:absolute;
+    }
+}
+
+@media (max-width:992px)
+{
+    #titulo
+    {
+        .titulo-conocenos
+        {
+            font-size: 30px;
+        }
+        .texto-conocenos
+        {
+            font-size: 20px;
+        }
+        .vertical-conocenos
+        {
+            width: 2px;
+            background-color: #747477;
+            height:80px;
+            margin-left: 170px;
+            margin-top:-50px;
+            position:absolute;
+        }
+        .horizontal-conocenos
+        {
+            width: 470px;
+            background-color: #747477;
+            height:1px;
+            margin-left: 130px;
+            margin-top:75px;
+            position:absolute;
+        }
+    }
+    #especializamos
+    {
+        h1
+        {
+            color:#005c9b;
+            font-size: 30px;
+            margin-bottom: 50px;
+            margin-top: 10px;
+            text-align: center;
+        } 
+        .accordion
+        {
+            padding: 0px;
+        } 
+    }
+    .titulo-conocenos-ingles
+    {
+        font-size: 28px;
+    }
+    .texto-conocenos-ingles
+    {
+        font-size: 20px;
+    }
+       .vertical-conocenos-ingles
+    {
+        width: 2px;
+        background-color: #747477;
+        height:80px;
+        margin-left: 170px;
+        margin-top:-80px;
+        position:absolute;
+    }
+
+    .horizontal-conocenos-ingles
+    {
+        width: 470px;
+        background-color: #747477;
+        height:1px;
+        margin-left: 130px;
+        margin-top:75px;
+        position:absolute;
+    }
+}
+@media (max-width:768px)
+{
+    #titulo
+    {
+        .titulo-conocenos
+        {
+            font-size: 30px;
+        }
+        .texto-conocenos
+        {
+            font-size: 22px;
+            padding: 0px 20px;
+        }
+        .vertical-conocenos
+        {
+            display: none;
+        }
+        .horizontal-conocenos
+        {
+            display: none;
+        }
+    }
+    #especializamos
+    {
+        h1
+        {
+            color:#005c9b;
+            font-size: 30px;
+            margin-bottom: 50px;
+            margin-top: 10px;
+            text-align: center;
+        } 
+        .accordion
+        {
+            padding: 0px;
+        } 
+    }
+    .titulo-conocenos-ingles
+    {
+        font-size: 30px;
+    }
+    .texto-conocenos-ingles
+    {
+        font-size: 20px;
+    }
+    .vertical-conocenos-ingles
+    {
+        display: none;
+    }
+    .horizontal-conocenos-ingles
+    {
+        display: none;
+    }
+
+}
+
+@media (max-width:576px)
+{
+    #titulo
+    {
+        .titulo-conocenos
+        {
+            font-size: 30px;
+        }
+        .texto-conocenos
+        {
+            font-size: 22px;
+            padding: 0px 20px;
+        }
+        .vertical-conocenos
+        {
+            display: none;
+        }
+        .horizontal-conocenos
+        {
+            display: none;
+        }
+    }
+
+    #seccion-quienes
+    {
+        padding: 20px;
+        .titulo-quienes
+        {
+            color: #005c9b;   
+            margin-bottom: 30px;
+        }
+        .fondo-quines
+        {
+            background-color: #f4f4f4;
+        }
+        .contenido-quienes
+        {
+            font-size: 16px;
+            padding: 20px;
+            text-align: justify;
+            padding: 20px;
+        }
+    }
+    #especializamos
+    {
+        h1
+        {
+            color:#005c9b;
+            font-size: 30px;
+            margin-bottom: 50px;
+            margin-top: 10px;
+            text-align: center;
+        } 
+        .accordion
+        {
+            padding: 0px;
+        } 
+    }
+    .titulo-conocenos-ingles
+    {
+        font-size: 30px;
+    }
+    .texto-conocenos-ingles
+    {
+        font-size: 20px;
+    }
+    .vertical-conocenos-ingles
+    {
+        display: none;
+    }
+    .horizontal-conocenos-ingles
+    {
+        display: none;
+    }
+}
+
+ /*--------------------------
+        Fin Responsive
+-----------------------------*/
+
+
+

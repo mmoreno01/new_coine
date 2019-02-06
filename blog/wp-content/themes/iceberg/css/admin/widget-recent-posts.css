@@ -1,0 +1,10 @@
+.formats-checklist,
+.category-checklist {
+  max-height: 142px;
+  overflow-y: scroll;
+}
+
+.category-checklist .children {
+  margin-top: 10px;
+  margin-left: 20px;
+}

@@ -169,6 +169,112 @@
 {
     padding: 0px 10px;
 }
+
+/*--------------------------
+        post blog
+-----------------------------*/
+#noticias {
+    padding: 100px 0px;
+    h1{
+        color: #005c9b;
+        padding-bottom: 40px;
+    }
+    .content-noticias {
+      margin: auto;
+      width: 92%;
+      .content-img-noticia {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: auto;
+        overflow: hidden;
+        .img-responsive{
+            width: 100%;
+        }
+      }
+      hr {
+        border: 1px solid #005c9b;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        width: 40px;
+      }
+      .titutlo-noticia {
+        color: #005c9b;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        min-height: 55px;
+        @media(max-width: 1052px) {
+          min-height: 85px;
+        }
+        @media(max-width: 991px) {
+          min-height: 35px;
+        }
+        @media(max-width: 942px) {
+          min-height: 55px;
+        }
+        @media(max-width: 767px) {
+          min-height: auto;
+        }
+      }
+
+      
+      .texto-noticia {
+        color: grey;
+        font-weight: 200;
+        font-size: 15px;
+        line-height: 16px;
+        p {
+          font-size: 15px;
+          line-height: 1.5;
+          margin: 0!important;
+          letter-spacing: 0.3px;
+          min-height: 136px;
+          height: 136px;
+          text-align: justify;
+          overflow: hidden;
+          @media(max-width: 991px) {
+            height: 90px;
+            min-height: 90px;
+          }
+          @media(max-width: 767px) {
+            height: auto;
+            min-height: auto;
+          }
+        }
+      }
+    }
+    .seeMore{
+      background-color: #033c72;
+      color: #fff;
+      padding: 6px 12px;
+      text-align: center;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      position: relative;
+      @media(max-width: 991px) {
+        top: -20px;
+      }
+      @media(max-width: 767px) {
+        margin-bottom: 25px;
+        top: 0;
+      }
+    }
+    .seeMore:hover{
+      background-color: #356294;
+      cursor: pointer;
+    }
+  }
+  /*--------------------------
+  post blog
+-----------------------------*/
+
+
+
  /*--------------------------
         Responsive
 -----------------------------*/

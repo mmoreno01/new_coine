@@ -1636,13 +1636,7 @@ fin responsive hoja de alianzas
 /*---------------------------------
     estilos hoja de eventos 
 -----------------------------------*/
-.titulo-eventos
-{
-    text-align: center;
-    color: #005c9b;
-    margin: 10px;
-    margin-bottom: 50px;
-}
+
 /*---------------------------------
   estilos mapa y formulario
 -----------------------------------*/
@@ -1864,9 +1858,6 @@ fin responsive hoja de alianzas
     padding: 0px 10px;
 }
 
-#noticias {
-    padding: 100px 0px;
-}
 
 #noticias .content-noticias .content-img-noticia {
     background-size: cover;

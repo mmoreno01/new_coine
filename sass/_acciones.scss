@@ -1,0 +1,260 @@
+#slider-continentes{
+    padding: 100px 0px;
+    .slider-for{
+        background-color: #f4f4f4;
+       
+        padding: 50px;
+        article{
+            padding: 0px 20px;
+            h1{
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 10px;
+                color: #007bff;
+                margin-bottom: 20px;
+            }  
+            p{
+                text-align: justify;
+            } 
+        }
+    }
+
+    .responsive{
+        .slick-slide{
+            padding: 20px;
+            h1{
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+    }
+   
+    .slider{
+        .slick-prev:before, .slick-next:before {
+            font-family: 'slick';
+            font-size: 20px;
+            line-height: 1;
+            color: #007bff;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }   
+    }
+   
+}
+
+#section-continentes{
+    padding-top: 40px;
+    .content-text{
+        h1{
+            text-align:center;
+            letter-spacing: 10px;
+        }
+    }
+    .content-text{
+        border-right: 2px solid #d1d1d1;
+        height: 100%;
+    }
+    .content-items{
+        background-color:#f4f4f4;
+        h1{
+            text-transform: uppercase;
+            font-size: 30px;
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+            color: #8c8c8c;
+        }
+    }
+}
+#nav-tab{
+    margin-bottom: 100px;
+}
+
+ul.tabs
+{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    li 
+    { 
+        width: 18%;
+        a 
+        {
+            color:#007bff;
+            text-decoration: none;
+            font-size: 28px;
+            text-align: center;
+            display: block;
+            padding: 0px 0px;
+        }
+    }
+}
+
+.texto_principal
+{
+    padding: 30px 100px;
+    text-align: center;
+    margin-top: 30px;
+    color: #4f6a90;
+    font-size: 20px;
+}
+
+
+ul.tabs li a:hover
+{
+    color:#0000FF;
+  
+}
+.active1
+{
+    text-decoration: underline #747477 !important;
+}
+
+.bord_lateral
+{
+    width: 1;
+    height: 20px;
+    color:#d1d1d1;
+}
+
+
+#asia-carrusel
+{
+    padding: 20px 30px;
+    
+}
+
+#asia-carrusel button 
+{
+    background-color: white !important;
+    width: 40px !important;
+    color: #007bff !important;
+}
+
+#asia-carrusel button:hover
+{
+    background-color: #007bff!important;
+    color: white !important;
+}
+
+#asia-carrusel  .owl-next
+    {
+        font-size: 40px;
+        position: absolute;
+        top: 35%;
+        right: 0px;
+        height: auto;
+                       
+    }
+    #asia-carrusel .owl-prev
+    {
+        
+        font-size: 40px;
+        position: absolute;
+        top: 35%;
+        left: 0px;
+        height: auto;
+    }
+    #asia-carrusel .owl-dot
+    {
+        display: none;
+    }
+
+
+
+/*--------------------------
+    media querys
+---------------------------*/
+
+
+@media (max-width:1200px)
+{
+   
+}
+
+@media (max-width:992px)
+{
+    .texto_principal
+    {
+        padding: 30px 10px;
+        text-align: center;
+        margin-top: 30px;
+        color: #4f6a90;
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width:768px)
+{
+    
+    .texto_principal
+    {
+        padding: 30px 0px;
+        text-align: center;
+        margin-top: 30px;
+        color: #4f6a90;
+        font-size: 18px;
+    }
+    ul.tabs li
+    {
+        width: 28%;
+    }
+
+    ul.tabs li a
+    {
+        color:#007bff;
+        text-decoration: none;
+        font-size: 24px;
+        text-align: center;
+        display: block;
+        padding: 0px 0px;
+    }
+  
+}
+
+@media (max-width:576px)
+{
+    #slider-continentes{
+        .slider-for{
+            article{
+                padding: 0px;
+                h1{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    iframe {
+        width: 100%;
+       
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-bottom-width: 0px;
+        border-left-width: 0px;
+    }
+    .texto_principal
+    {
+        padding: 30px 30px;
+        text-align: center;
+        margin-top: 30px;
+        color: #4f6a90;
+        font-size: 16px;
+    }
+    
+    ul.tabs li
+    {
+        width: 28%;
+    }
+
+    ul.tabs li a
+    {
+        color:#007bff;
+        text-decoration: none;
+        font-size: 20px;
+        text-align: center;
+        display: block;
+        padding: 0px 0px;
+    }
+}

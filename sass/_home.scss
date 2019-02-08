@@ -42,6 +42,30 @@
     }
 }
 
+#banner-acciones
+{
+    position: relative;
+   
+    img 
+    {
+        width: 100%;
+        padding: 50px;
+        top: 30px;
+        position: relative;
+    }
+    h1 
+    {
+        color: white;
+        position: absolute;
+        text-transform: uppercase;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
 #parallax-inicio
 {
     background: url(../img/parallax/INICIO.jpg);
@@ -91,41 +115,6 @@
     margin-bottom: 50px;
 }
 
-.foter
-{
-    background-color: #005c9b;
-}
-
-#foter-redes
-{
-    height: 100%;
-    ul 
-    {
-        list-style: none;
-        margin: 5px;
-        margin-top: 0px;
-        float: right;
-    }
-    a 
-    {
-        list-style: none;
-        margin: 5px;
-        margin-top: 0px;
-    }
-    img
-    {
-        margin-left:1px;
-        padding: 20px 0px 10px;
-    }
-    li 
-    {
-        margin-left: -40px;
-        margin-top: 0px;
-        color: white;
-        font-size: 12px;
-    }
-}
-
 .flotante {
     position:relative;
     color: white;
@@ -169,112 +158,6 @@
 {
     padding: 0px 10px;
 }
-
-/*--------------------------
-        post blog
------------------------------*/
-#noticias {
-    padding: 100px 0px;
-    h1{
-        color: #005c9b;
-        padding-bottom: 40px;
-    }
-    .content-noticias {
-      margin: auto;
-      width: 92%;
-      .content-img-noticia {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin: auto;
-        overflow: hidden;
-        .img-responsive{
-            width: 100%;
-        }
-      }
-      hr {
-        border: 1px solid #005c9b;
-        margin: auto;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        width: 40px;
-      }
-      .titutlo-noticia {
-        color: #005c9b;
-        font-weight: bold;
-        margin-top: 15px;
-        margin-bottom: 0;
-        text-transform: uppercase;
-        min-height: 55px;
-        @media(max-width: 1052px) {
-          min-height: 85px;
-        }
-        @media(max-width: 991px) {
-          min-height: 35px;
-        }
-        @media(max-width: 942px) {
-          min-height: 55px;
-        }
-        @media(max-width: 767px) {
-          min-height: auto;
-        }
-      }
-
-      
-      .texto-noticia {
-        color: grey;
-        font-weight: 200;
-        font-size: 15px;
-        line-height: 16px;
-        p {
-          font-size: 15px;
-          line-height: 1.5;
-          margin: 0!important;
-          letter-spacing: 0.3px;
-          min-height: 136px;
-          height: 136px;
-          text-align: justify;
-          overflow: hidden;
-          @media(max-width: 991px) {
-            height: 90px;
-            min-height: 90px;
-          }
-          @media(max-width: 767px) {
-            height: auto;
-            min-height: auto;
-          }
-        }
-      }
-    }
-    .seeMore{
-      background-color: #033c72;
-      color: #fff;
-      padding: 6px 12px;
-      text-align: center;
-      -webkit-transition: all 0.4s ease-in-out;
-      -moz-transition: all 0.4s ease-in-out;
-      -o-transition: all 0.4s ease-in-out;
-      transition: all 0.4s ease-in-out;
-      position: relative;
-      @media(max-width: 991px) {
-        top: -20px;
-      }
-      @media(max-width: 767px) {
-        margin-bottom: 25px;
-        top: 0;
-      }
-    }
-    .seeMore:hover{
-      background-color: #356294;
-      cursor: pointer;
-    }
-  }
-  /*--------------------------
-  post blog
------------------------------*/
-
-
-
  /*--------------------------
         Responsive
 -----------------------------*/
@@ -288,6 +171,11 @@
     .flotante {
         display:none;
     }
+    .video-principa
+    {
+        margin-top: 5px;
+    }
+
 }
 
 @media (max-width:992px)
@@ -357,6 +245,35 @@
             padding: 10px 0px 0px;
         }
     }
+    #seccion-testimonios
+    {
+        h1 
+        {
+            font-size: 28px;
+            padding: 60px 0px;
+        }
+        .imagen-testimonios
+        {
+            width: 85%;
+            padding: 10px 30px 0px;
+        }
+    }
+    #banner-acciones
+    {
+        img 
+        {
+            width: 100%;
+            padding: 10px;
+            top: 30px;
+        }
+        h1 
+        {
+            padding: 20px;
+            font-size: 28px;  
+            top: 60%;
+    }
+        
+}
 }
 @media (max-width:768px)
 {
@@ -428,6 +345,21 @@
             padding: 10px 30px 0px;
         }
     }
+    #banner-acciones
+    {
+        img 
+        {
+            width: 100%;
+            padding: 10px;
+            top: 30px;
+        }
+        h1 
+        {
+            padding: 20px;
+            font-size: 28px;  
+            top: 60%;
+        }
+    }
 }
 
 @media (max-width:576px)
@@ -495,6 +427,24 @@
         {
             width: 100%;
             padding: 10px 40px 0px;
+        }
+    }
+
+    #banner-acciones
+    {
+        position: relative;
+        img 
+        {
+            width: 100%;
+            padding: 10px;
+            top: 30px;
+            position: relative;
+        }
+        h1 
+        {
+            padding: 20px;
+            font-size: 24px;  
+            top: 60%;
         }
     }
 }

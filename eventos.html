@@ -17,10 +17,11 @@
 <link type="image/x-icon" href="img/favicon.ico" rel="icon"/>
 <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" type="text/css">
 <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <!--fin links-->
     <title>Eventos | Consejo Internacional de Empresarios</title>
 </head>
-<body ng-app="app">
+<body>
 
 <!-- menu-->
 <header class="navbar navbar-expand-lg  navbar-dark  sticky-top">
@@ -92,82 +93,60 @@
 <!--fin de menu-->
 
 <!-- seccion eventos -->
-<section class="container">
-    <h1 class="titulo-eventos"> Eventos</h1>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card">
-                <img class="card-img-top" src="img/eventos/lideres.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">300 Líderes</h5>
+<section class="container-fluid" id="noticias">
+  <h1 class="titulo-eventos"> Eventos</h1>
+   <div class="row">
+       <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="img/eventos/lideres.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">300 Líderes</h5>
                     <p class="card-text">Martín Rodriguez Sánchez presidente del Consejo Internacional de Empresarios COINE, agradece la distinción realizada por  la revista Líderes Mexicanos  al reconocerlo por destacada su labor desde la presidencia del Consejo Internacional de Empresarios COINE, en la edición anual de Los 300 Líderes más Influyentes de México...</p>
-                    <a href="http://www.coine.lat/300/" target="new" class="btn btn-primary">ver más...</a>
+                        <a href="http://www.coine.lat/300/" target="new" class="btn btn-primary">ver más...</a>
               </div>
-            </div>
+         </div>
+       </div>
+         <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="img/eventos/emprendedor.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Semana del Emprendedor</h5>
+                    <p class="card-text">Del 10 al 14 de septiembre tendrá lugar el mayor foro para emprendedores en México: la Semana del Emprendedor, y el Consejo Internacional de Empresarios (COINE) estará presente, para vincular y acercar su plataforma de emprendimiento con destacados negocios y proyectos...</p>
+                        <a href="http://www.coine.lat/semana-emprendedor" target="new" class="btn btn-primary">ver más...</a>
+              </div>
+         </div>
        </div>
         <div class="col-md-4">
-            <div class="card">
-            <img class="card-img-top" src="img/eventos/emprendedor.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Semana del Emprendedor</h5>
-                    <p class="card-text">Del 10 al 14 de septiembre tendrá lugar el mayor foro para emprendedores en México: la Semana del Emprendedor, y el Consejo Internacional de Empresarios (COINE) estará presente, para vincular y acercar su plataforma de emprendimiento con destacados negocios y proyectos...</p>
-                    <a href="http://www.coine.lat/semana-emprendedor" target="new" class="btn btn-primary">ver más...</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img class="card-img-top" src="img/eventos/magistral.jpeg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Congreso Multidisciplinario</h5>
+        <div class="card">
+          <img class="card-img-top" src="img/eventos/magistral.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Congreso Multidisciplinario</h5>
                     <p class="card-text">Continuando con la labor de generar un acercamiento con emprendedores y en pro de la educación, El C.P. Martín Rodríguez compartió los ejes trazados por el COINE para emprendedores en el Primer Congreso Multidisciplinario: "Digitalización de la Industria"...</p>
-                    <a href="http://www.coine.lat/emprendedor" target="new" class="btn btn-primary">ver más...</a>
+                        <a href="http://www.coine.lat/emprendedor" target="new" class="btn btn-primary">ver más...</a>
               </div>
-            </div>
-        </div>
+         </div>
+       </div>
     </div>
 </section>
 <!-- fin seccion eventos -->
 
- <!-- Section post blog  -->
- <section id="noticias" class="content-section text-center" ng-controller="entradas">
-    <h1 class="title title-noticias text-center">Noticias</h1>
-        <div class="containe-fluid">
-          <div class="row content-noticias">
-            <div class="col-md-6 col-lg-3 noticia" ng-repeat="x in postConsulta  | limitTo: 4">
-              <div class="content-img-noticia" style="background-image: url({{x._embedded['wp: featuredmedia']['0'].source_url}});">
-                   <img class="img-responsive" ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}">
-                   <!-- <img ng-if="post.better_featured_image" ng-src="{{post.better_featured_image.media_details.sizes.thumbnail.source_url}}" class="alignleft" /> -->
-                </div>
-                  <a href="{{x.link}}"><p class="titutlo-noticia">{{x.title.rendered}}</p></a>
-                  <hr>
-                  <p class="texto-noticia" ng-bind-html="x.excerpt.rendered | limitTo: 200"></p>
-                  <a href="{{x.link}}" target="_blank"><label class="seeMore">VER MÁS</label></a>
-            </div>
-          </div>
-        </div>
-    </section>
- <!-- End section post blog  -->
-
-
 <!--footer-->
 <footer>
-<section class="container-fluid foter">
-    <div class="row">
-        <div class="col-md-12" id="foter-redes">
-              <ul>
-                  <a href="https://www.facebook.com/COINELat/" target="new"><img src="img/fb.png"></a>
-                  <a href="https://twitter.com/COINE_Lat" target="new"><img src="img/tw.png"></a>
-                  <a href="https://www.youtube.com/channel/UC7RsRR4LlwT2ewbGBnPd60Q" target="new"><img src="img/yt.png"></a>
-                  <a href="https://www.linkedin.com/company/22295225/" target="new"><img src="img/in.png"></a>
-                  <li>2018   l  Consejo Internacional de Empresarios ®</li>
-              </ul>
+    <section class="container-fluid foter">
+        <div class="row">
+            <div class="col-md-12" id="foter-redes">
+                  <ul>
+                      <a href="https://www.facebook.com/COINELat/" target="new" class="fuente-icono"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://www.linkedin.com/company/22295225/" target="new" class="fuente-icono"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="https://twitter.com/COINE_Lat" target="new" class="fuente-icono"><i class="fab fa-twitter"></i></a>
+                      <a href="https://www.youtube.com/channel/UC7RsRR4LlwT2ewbGBnPd60Q" target="new" class="fuente-icono-y"><i class="fab fa-youtube"></i></a>
+                      <li>2018   l  Consejo Internacional de Empresarios ®</li>
+                  </ul>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 </footer>
 <!--fin footer-->
-
 <!-- sript-->
 <script src="//code.tidio.co/ukrqaqjv3f9hzg80knarfaeztnfcxo2p.js"></script>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -193,14 +172,10 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
-</script>    
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.6/angular-sanitize.js"></script> 
+</script>     
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-<script src="js/angular/appPost.js"></script>
-<script src="js/angular/ngMask.min.js"></script>
 <!--fin sricpts-->
 </body>
 </html>

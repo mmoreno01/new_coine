@@ -315,6 +315,9 @@
 #conoc .imagen-principal {
   width: 100%; }
 
+#barras {
+  padding: 50px 10px; }
+
 #titulo {
   position: relative;
   margin-top: 50px; }
@@ -757,12 +760,18 @@ fin estilos textos y lineas conocenos ingles
 
 #sectores {
   position: relative;
-  margin-top: 50px; }
+  margin-top: 50px;
+  padding: 50px 0px; }
+  #sectores p {
+    color: #005c9b;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px; }
 
 #img-circulos {
   width: 150px;
-  padding: 10px;
-  margin-left: 10px; }
+  margin: 0 auto;
+  display: block; }
 
 #beneficios {
   position: relative;
@@ -777,6 +786,41 @@ fin estilos textos y lineas conocenos ingles
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px; }
+
+#sectores .owl-dot {
+  display: none; }
+
+#sectores .owl-next {
+  color: white;
+  position: absolute;
+  top: 30%;
+  right: 0px;
+  font-weight: inherit !important;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 10px;
+  background-color: #1d73b2 !important;
+  margin: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 24px; }
+
+#sectores .owl-prev {
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 0px;
+  font-weight: inherit !important;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 10px;
+  background-color: #1d73b2 !important;
+  margin: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 24px; }
 
 /*--------------------------
         Responsive
@@ -866,11 +910,7 @@ fin estilos textos y lineas conocenos ingles
     display: none; }
   #beneficios .titulo-beneficios {
     font-size: 30px;
-    padding: 20px; }
-  #img-circulos {
-    width: 150px;
-    padding: 10px;
-    margin-left: 50px; } }
+    padding: 20px; } }
 
 @media (max-width: 576px) {
   #titulo-sectores .titulo-sectores {
@@ -892,11 +932,7 @@ fin estilos textos y lineas conocenos ingles
     display: none; }
   #beneficios .titulo-beneficios {
     font-size: 28px;
-    padding: 20px; }
-  #img-circulos {
-    width: 150px;
-    padding: 10px;
-    margin-left: 70px; } }
+    padding: 20px; } }
 
 /*--------------------------
         Fin Responsive

@@ -13,7 +13,7 @@
     }
     .vertical-sectores
     {
-        width: 2px;
+        width: 2px; 
         background-color: #747477;
         height:96px;
         margin-left: 270px;
@@ -62,15 +62,23 @@
 {
     position: relative;
     margin-top: 50px;
+    padding: 50px 0px;
+    p 
+    {
+        color: #005c9b;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+ 
 }
 
 #img-circulos
 {
     width: 150px;
-    padding: 10px;
-    margin-left: 10px
+    margin: 0 auto;
+    display: block;
 }
-
 
 #beneficios
 {
@@ -91,6 +99,51 @@
         margin-bottom: 10px;
     }
 }
+
+
+
+#sectores .owl-dot
+{
+    display: none;
+}
+
+#sectores .owl-next
+{ 
+    color: white;
+    position: absolute;
+    top: 30%;
+    right: 0px;  
+    font-weight: inherit !important;
+
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 10px;
+    background-color: #1d73b2 !important;
+    margin: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 24px;
+}
+#sectores .owl-prev
+{
+    color:white;
+    position: absolute;
+    top: 30%;
+    left: 0px;
+    font-weight: inherit !important;
+
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 10px;
+    background-color: #1d73b2 !important;
+    margin: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 24px;
+}
+      
 
 
  /*--------------------------
@@ -241,12 +294,7 @@
             padding: 20px
         }
     }
-    #img-circulos
-    {
-        width: 150px;
-        padding: 10px;
-        margin-left: 50px
-    }  
+ 
 }
 
 @media (max-width:576px)
@@ -296,13 +344,6 @@
             padding: 20px
         }
     }
-    
-    #img-circulos
-    {
-    width: 150px;
-    padding: 10px;
-    margin-left: 70px
-    }  
 }
 
  /*--------------------------

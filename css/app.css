@@ -27,7 +27,8 @@
   #seccion-texto-imagen p {
     color: white;
     padding: 10px;
-    font-size: 16px; }
+    font-size: 16px;
+    text-align: justify; }
 
 #banner-acciones {
   position: relative; }
@@ -819,7 +820,9 @@ fin estilos textos y lineas conocenos ingles
     font-weight: bold;
     letter-spacing: 2px; }
   #sectores .item {
-    background-color: white; }
+    background-color: white;
+    padding: 10px;
+    margin-top: 50px; }
 
 #img-circulos {
   width: 150px;
@@ -848,7 +851,7 @@ fin estilos textos y lineas conocenos ingles
 #sectores .owl-next {
   color: white;
   position: absolute;
-  top: -29%;
+  top: -10%;
   right: 0px;
   font-weight: inherit !important;
   width: 40px;
@@ -863,7 +866,7 @@ fin estilos textos y lineas conocenos ingles
 #sectores .owl-prev {
   color: white;
   position: absolute;
-  top: -29%;
+  top: -10%;
   right: 50px;
   font-weight: inherit !important;
   width: 40px;

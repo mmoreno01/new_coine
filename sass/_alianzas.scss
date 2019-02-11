@@ -36,11 +36,26 @@
 {
     position: relative;
     margin-top: 50px;
-    button 
+    .card
     {
-        color: #005c9b;
-        font-size: 20px;
-
+        border: none;
+        border-bottom: 1px solid #005c9b;
+        button
+        {
+            color: #005c9b;
+            font-size: 18px;
+        }
+    }
+    .card-header
+    {
+        background-color: transparent;
+        border: none;
+    }
+    .card-body
+    {
+        text-align: justify;
+        color: #4f6a90;
+        font-size: 16px;
     }
 }
 .video-inversiones

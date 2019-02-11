@@ -484,8 +484,19 @@ fin estilos textos y lineas conocenos ingles
     font-size: 34px;
     margin-bottom: 50px;
     margin-top: 50px; }
-  #especializamos button {
-    color: #005c9b; }
+  #especializamos .card {
+    border: none;
+    border-bottom: 1px solid #005c9b; }
+    #especializamos .card button {
+      color: #005c9b;
+      font-size: 18px; }
+  #especializamos .card-header {
+    background-color: transparent;
+    border: none; }
+  #especializamos .card-body {
+    text-align: justify;
+    color: #4f6a90;
+    font-size: 16px; }
 
 /*--------------------------
         Responsive
@@ -545,8 +556,6 @@ fin estilos textos y lineas conocenos ingles
     margin-bottom: 50px;
     margin-top: 10px;
     text-align: center; }
-  #especializamos .accordion {
-    padding: 0px; }
   .titulo-conocenos-ingles {
     font-size: 28px; }
   .texto-conocenos-ingles {
@@ -851,22 +860,26 @@ fin estilos textos y lineas conocenos ingles
 #sectores {
   position: relative;
   margin-top: 50px;
-  padding: 50px 0px; }
+  padding: 50px 0px;
+  background-color: #f4f4f4; }
   #sectores p {
     color: #005c9b;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 2px; }
+  #sectores .item {
+    background-color: white;
+    padding: 10px;
+    margin-top: 50px; }
 
 #img-circulos {
   width: 150px;
   margin: 0 auto;
-  display: block;
-  border-radius: 20%; }
+  display: block; }
 
 #beneficios {
   position: relative;
-  background-color: #f4f4f4;
+  background-color: white;
   padding: 50px 0px; }
   #beneficios .titulo-beneficios {
     text-align: center;
@@ -886,7 +899,7 @@ fin estilos textos y lineas conocenos ingles
 #sectores .owl-next {
   color: white;
   position: absolute;
-  top: 30%;
+  top: -10%;
   right: 0px;
   font-weight: inherit !important;
   width: 40px;
@@ -895,15 +908,14 @@ fin estilos textos y lineas conocenos ingles
   line-height: 10px;
   background-color: #1d73b2 !important;
   margin: 10px;
-  border-radius: 50%;
   display: inline-block;
   font-size: 24px; }
 
 #sectores .owl-prev {
   color: white;
   position: absolute;
-  top: 30%;
-  left: 0px;
+  top: -10%;
+  right: 50px;
   font-weight: inherit !important;
   width: 40px;
   height: 40px;
@@ -911,7 +923,6 @@ fin estilos textos y lineas conocenos ingles
   line-height: 10px;
   background-color: #1d73b2 !important;
   margin: 10px;
-  border-radius: 50%;
   display: inline-block;
   font-size: 24px; }
 
@@ -1030,6 +1041,17 @@ fin estilos textos y lineas conocenos ingles
 /*--------------------------
         Fin Responsive
 -----------------------------*/
+#noticias {
+  top: 10px;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 20px; }
+  #noticias .card {
+    border: 1px solid #005c9b; }
+  #noticias .card-body {
+    text-align: justify;
+    color: #4f6a90; }
+
 .titulo-eventos {
   text-align: center;
   color: #005c9b;
@@ -1062,9 +1084,19 @@ fin estilos textos y lineas conocenos ingles
 #alianza-video {
   position: relative;
   margin-top: 50px; }
-  #alianza-video button {
-    color: #005c9b;
-    font-size: 20px; }
+  #alianza-video .card {
+    border: none;
+    border-bottom: 1px solid #005c9b; }
+    #alianza-video .card button {
+      color: #005c9b;
+      font-size: 18px; }
+  #alianza-video .card-header {
+    background-color: transparent;
+    border: none; }
+  #alianza-video .card-body {
+    text-align: justify;
+    color: #4f6a90;
+    font-size: 16px; }
 
 .video-inversiones {
   max-width: 100%;
@@ -1211,6 +1243,14 @@ fin estilos textos y lineas conocenos ingles
   margin-bottom: 50px;
   padding: 10px;
   color: #747477; }
+
+.navbar {
+  background-color: white;
+  -webkit-box-shadow: 0px 1px 14px #424242;
+  box-shadow: 0px 1px 14px #424242; }
+
+.dropdown-item {
+  color: #005c9b !important; }
 
 /*--------------------------
         Responsive
@@ -1771,7 +1811,7 @@ ul.tabs li a:hover {
 
 #asia-carrusel button:hover {
   background-color: #007bff !important;
-  color: #007bff !important; }
+  color: white !important; }
 
 #asia-carrusel .owl-next {
   font-size: 40px;

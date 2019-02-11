@@ -63,6 +63,7 @@
     position: relative;
     margin-top: 50px;
     padding: 50px 0px;
+    background-color: #f4f4f4;
     p 
     {
         color: #005c9b;
@@ -70,7 +71,13 @@
         font-weight: bold;
         letter-spacing: 2px;
     }
- 
+    .item
+    {
+        
+    background-color: white;
+    padding: 10px;
+    margin-top: 50px;
+   }
 }
 
 #img-circulos
@@ -78,13 +85,12 @@
     width: 150px;
     margin: 0 auto;
     display: block;
-    border-radius: 20%;
 }
 
 #beneficios
 {
     position: relative;
-    background-color: #f4f4f4;
+    background-color: white;
     padding: 50px 0px;
     .titulo-beneficios
     {
@@ -110,11 +116,13 @@
     display: none;
 }
 
+
+
 #sectores .owl-next
 { 
     color: white;
     position: absolute;
-    top: 30%;
+    top: -10%;
     right: 0px;  
     font-weight: inherit !important;
 
@@ -124,31 +132,26 @@
     line-height: 10px;
     background-color: #1d73b2 !important;
     margin: 10px;
-    border-radius: 50%;
     display: inline-block;
     font-size: 24px;
 }
 #sectores .owl-prev
 {
-    color:white;
+    color: white;
     position: absolute;
-    top: 30%;
-    left: 0px;
+    top: -10%;
+    right: 50px;
     font-weight: inherit !important;
-
+    
     width: 40px;
     height: 40px;
     text-align: center;
     line-height: 10px;
     background-color: #1d73b2 !important;
     margin: 10px;
-    border-radius: 50%;
     display: inline-block;
     font-size: 24px;
 }
-      
-
-
  /*--------------------------
         Responsive
 -----------------------------*/

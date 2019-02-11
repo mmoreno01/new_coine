@@ -1,3 +1,20 @@
+#noticias
+{
+    top: 10px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    .card
+    {
+        border: 1px solid #005c9b;
+    }
+    .card-body
+    {
+        text-align: justify;
+        color: #4f6a90;
+    }
+}
+
 .titulo-eventos
 {
     text-align: center;

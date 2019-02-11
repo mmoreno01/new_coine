@@ -36,6 +36,12 @@
 {
     position: relative;
     margin-top: 50px;
+    button 
+    {
+        color: #005c9b;
+        font-size: 20px;
+
+    }
 }
 .video-inversiones
 {
@@ -147,6 +153,14 @@
         .horizontal-alianzas
         {
             display: none;
+        }
+    }
+    #alianza-video
+    {
+    button 
+        {
+            color: #005c9b;
+            font-size: 20px;
         }
     }
 }

@@ -27,7 +27,8 @@
   #seccion-texto-imagen p {
     color: white;
     padding: 10px;
-    font-size: 16px; }
+    font-size: 16px;
+    text-align: justify; }
 
 #banner-acciones {
   position: relative; }
@@ -396,6 +397,8 @@ fin estilos textos y lineas conocenos ingles
     font-size: 34px;
     margin-bottom: 50px;
     margin-top: 50px; }
+  #especializamos button {
+    color: #005c9b; }
 
 /*--------------------------
         Responsive
@@ -771,11 +774,13 @@ fin estilos textos y lineas conocenos ingles
 #img-circulos {
   width: 150px;
   margin: 0 auto;
-  display: block; }
+  display: block;
+  border-radius: 20%; }
 
 #beneficios {
   position: relative;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  padding: 50px 0px; }
   #beneficios .titulo-beneficios {
     text-align: center;
     font-weight: bold;
@@ -783,9 +788,10 @@ fin estilos textos y lineas conocenos ingles
     padding: 20px; }
   #beneficios .contenido-beneficios {
     color: #4f6a90;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px; }
+    font-weight: normal;
+    text-align: justify;
+    margin-bottom: 20px;
+    padding: 10px 0px; }
 
 #sectores .owl-dot {
   display: none; }
@@ -969,6 +975,9 @@ fin estilos textos y lineas conocenos ingles
 #alianza-video {
   position: relative;
   margin-top: 50px; }
+  #alianza-video button {
+    color: #005c9b;
+    font-size: 20px; }
 
 .video-inversiones {
   max-width: 100%;
@@ -1032,7 +1041,10 @@ fin estilos textos y lineas conocenos ingles
   #titulo-alianzas .vertical-alianzas {
     display: none; }
   #titulo-alianzas .horizontal-alianzas {
-    display: none; } }
+    display: none; }
+  #alianza-video button {
+    color: #005c9b;
+    font-size: 20px; } }
 
 /*--------------------------
         Fin Responsive
@@ -1145,17 +1157,14 @@ fin estilos textos y lineas conocenos ingles
 
 #videos-texto2-videos {
   position: relative; }
-
-#videos-texto2-videos p {
-  color: #007bff;
-  text-align: left;
-  position: relative;
-  padding: 0px 5px;
-  font-size: 16px;
-  cursor: pointer; }
-
-#videos-texto2-videos li {
-  list-style: none; }
+  #videos-texto2-videos p {
+    color: #007bff;
+    text-align: left;
+    position: relative;
+    padding: 0px 5px;
+    font-size: 16px; }
+  #videos-texto2-videos li {
+    list-style: none; }
 
 #videos-texto2-videos img {
   cursor: pointer; }
@@ -1216,7 +1225,9 @@ fin estilos textos y lineas conocenos ingles
 
 #videos-texto2 li {
   list-style: none;
-  display: block; }
+  display: block;
+  color: #007bff;
+  font-size: 16px; }
 
 #videos-texto2 {
   margin-top: 50px;
@@ -1673,7 +1684,7 @@ ul.tabs li a:hover {
 
 #asia-carrusel button:hover {
   background-color: #007bff !important;
-  color: white !important; }
+  color: #007bff !important; }
 
 #asia-carrusel .owl-next {
   font-size: 40px;

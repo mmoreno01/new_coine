@@ -21,22 +21,20 @@
 #videos-texto2-videos
 {
     position: relative;
+    p 
+    {
+        color:#007bff;
+        text-align: left;
+        position: relative;
+        padding: 0px 5px;
+        font-size: 16px;
+    }
+    li
+    {
+        list-style: none;
+    }
 }
 
-#videos-texto2-videos p 
-{
-    color:#007bff;
-    text-align: left;
-    position: relative;
-    padding: 0px 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-#videos-texto2-videos li
-{
-   list-style: none;
-}
 #videos-texto2-videos img
 {
    cursor: pointer;
@@ -114,6 +112,8 @@
 {
     list-style: none;
     display: block;
+    color:#007bff;
+    font-size: 16px;
 }
 
 #videos-texto2

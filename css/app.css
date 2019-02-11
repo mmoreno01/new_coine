@@ -764,22 +764,24 @@ fin estilos textos y lineas conocenos ingles
 #sectores {
   position: relative;
   margin-top: 50px;
-  padding: 50px 0px; }
+  padding: 50px 0px;
+  background-color: #f4f4f4; }
   #sectores p {
     color: #005c9b;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 2px; }
+  #sectores .item {
+    background-color: white; }
 
 #img-circulos {
   width: 150px;
   margin: 0 auto;
-  display: block;
-  border-radius: 20%; }
+  display: block; }
 
 #beneficios {
   position: relative;
-  background-color: #f4f4f4;
+  background-color: white;
   padding: 50px 0px; }
   #beneficios .titulo-beneficios {
     text-align: center;
@@ -799,7 +801,7 @@ fin estilos textos y lineas conocenos ingles
 #sectores .owl-next {
   color: white;
   position: absolute;
-  top: 30%;
+  top: -29%;
   right: 0px;
   font-weight: inherit !important;
   width: 40px;
@@ -808,15 +810,14 @@ fin estilos textos y lineas conocenos ingles
   line-height: 10px;
   background-color: #1d73b2 !important;
   margin: 10px;
-  border-radius: 50%;
   display: inline-block;
   font-size: 24px; }
 
 #sectores .owl-prev {
   color: white;
   position: absolute;
-  top: 30%;
-  left: 0px;
+  top: -29%;
+  right: 50px;
   font-weight: inherit !important;
   width: 40px;
   height: 40px;
@@ -824,7 +825,6 @@ fin estilos textos y lineas conocenos ingles
   line-height: 10px;
   background-color: #1d73b2 !important;
   margin: 10px;
-  border-radius: 50%;
   display: inline-block;
   font-size: 24px; }
 

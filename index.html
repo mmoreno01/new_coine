@@ -152,23 +152,27 @@
                             <h2>Noticias</h2>
                         </div>
                     <div class="card">
-                            <img ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                            </div>
-                          </div>
+                       <a href="noticias_Coine.html"> <img src="img/inicio/dinero.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="noticias_Coine.html">Esta semana se llevó a cabo la 30ª Reunión de Embajadores y Cónsules</a></h5>
+                            <p class="" >Nuestra labor ha contemplado acercar y transmitir nuestra plataforma a embajadores y cónsu-les en el extranjero</p> 
+                        </div>
+                    </div>
             </div>
             <div class="col-md-9">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"  ng-controller="entradas" >
+                           <ul class="content-idicators  d-flex justify-content-center">
+                               <li data-target="#carouselExampleIndicators" data-slide-to="0"ng-repeat="x in postConsulta  | limitTo: 3" class="">
+                                   <a href="{{x.link}}"><p class="titutlo-noticia">{{x.title.rendered}}</p></a>
+                                </li>
+                           </ul>
                             <div class="carousel-inner parallax">
                                 <div class="carousel-item" ng-class="{active:!$index}" ng-repeat="x in postConsulta">
-                                    <div class="bg-overlay"></div>
+                                    <!-- <div class="bg-overlay"></div> -->
                                     <img  ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}"  class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
+                                    <!-- <div class="carousel-caption d-none d-md-block">
                                             <a href="{{x.link}}"><p class="titutlo-noticia">{{x.title.rendered}}</p></a>
-                                    </div>
+                                    </div> -->
                               </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -189,9 +193,11 @@
 
 <section id="banner-precenciaInt">
     <div class="container">
+        <div class="row">
             <div class="container-banner d-flex align-items-center">
-                    <h2><a href="acciones.html"> Presencia Internacional</a></h2>
-                </div>
+                <h2><a href="acciones.html"> Presencia Internacional</a></h2>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -228,16 +234,7 @@
 </section>-->
 <!-- fin seccion alianza-->
 
-<!--banner alianzas-->
-<section class="container" id="banner-acciones">
-    <div class=" row">
-        <div class="col-md-12">
-           <a href="acciones.html"> <img src="img/parallax/Banner Presencia Internacional.jpg" alt="">
-            <div><h1>Presencia Internacional</h1></div> </a>
-        </div>
-    </div>
-</section>
-<!--fin de banner alianzas-->
+
 
 <!-- carrusel -->
 <!-- <div id="acciones-carrusel"> 

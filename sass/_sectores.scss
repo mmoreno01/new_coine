@@ -78,12 +78,14 @@
     width: 150px;
     margin: 0 auto;
     display: block;
+    border-radius: 20%;
 }
 
 #beneficios
 {
     position: relative;
     background-color: #f4f4f4;
+    padding: 50px 0px;
     .titulo-beneficios
     {
         text-align: center;
@@ -94,9 +96,10 @@
     .contenido-beneficios
     {
         color: #4f6a90; 
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 10px;
+        font-weight: normal;
+        text-align: justify;
+        margin-bottom: 20px;
+        padding: 10px 0px;
     }
 }
 

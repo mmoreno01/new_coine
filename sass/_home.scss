@@ -184,8 +184,9 @@ background-color: #f4f4f4;
 .content-title-notices{
     margin-bottom: 20px;
     h2{
-        width: 50%;
-        border-bottom: 3px solid #005c9b;
+        width: 40%;
+        border-bottom: 2px solid #005c9b;
+        font-weight: 100;
     }
   
 }
@@ -195,10 +196,14 @@ background-color: #f4f4f4;
     h5{
         a{
             color: black;
+            text-align: justify;
         }
         a:hover{
             color: #007bff;
             text-decoration: none;        }
+    }
+    p{
+        text-align: justify;
     }
 }
 .carousel-caption {
@@ -241,6 +246,7 @@ background-color: #f4f4f4;
         font-size: 17px;
         a{
             color: #fff;
+            font-weight: 100;
         }
     }
     li:hover{

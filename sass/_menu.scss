@@ -10,6 +10,15 @@
     color: #005c9b!important;
 }
 
+.dropdown-menu{
+    border: 1px solid transparent!important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #005c9b;
+    text-decoration: none;
+    background-color: #c4c4c4!important;
+}
 
  /*--------------------------
         Responsive

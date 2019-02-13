@@ -176,7 +176,7 @@
     #slider-events .content-idicators li {
       background-color: rgba(51, 51, 51, 0.7);
       display: inline-block;
-      padding: 40px;
+      padding: 20px;
       font-weight: 700;
       font-size: 17px; }
       #slider-events .content-idicators li a {
@@ -1289,6 +1289,14 @@ fin estilos textos y lineas conocenos ingles
 
 .dropdown-item {
   color: #005c9b !important; }
+
+.dropdown-menu {
+  border: 1px solid transparent !important; }
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #005c9b;
+  text-decoration: none;
+  background-color: #c4c4c4 !important; }
 
 /*--------------------------
         Responsive

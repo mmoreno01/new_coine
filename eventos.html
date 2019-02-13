@@ -93,7 +93,7 @@
 <!--fin de menu-->
 
 <!-- seccion eventos -->
-<section class="container" id="noticias">
+<!-- <section class="container" id="noticias">
     <h1 class="titulo-eventos"> Eventos</h1>
     <div class="row">
        <div class="col-md-4">
@@ -127,8 +127,27 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- fin seccion eventos -->
+
+<section id="post-events" ng-app="app">
+    <div class="container" ng-controller="entradas">
+        <div class="row">
+            <div class="col-12 card-item" ng-repeat="x in postConsulta  | limitTo: 3">
+                <div class="thumbnail-attachment">
+                        <img  ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}"  class="d-block w-100" alt="...">
+                </div>
+                <div class="entry-body">
+                    <h4 class="entry-title">
+                            <a href="{{x.link}}"><p class="titutlo-noticia">{{x.title.rendered}}</p></a>
+                    </h4>
+                    <p class="texto-noticia" ng-bind-html="x.excerpt.rendered | limitTo: 200"></p>
+                    <a href="{{x.link}}"  class="btn btn-primary"><label>Ver más</label></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!--footer-->
 <footer>
@@ -175,7 +194,11 @@ $('.owl-carousel').owlCarousel({
 </script>     
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.6/angular-sanitize.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="js/angular/appPost.js"></script>
+<script src="js/angular/ngMask.min.js"></script>
 <!--fin sricpts-->
 </body>
 </html>

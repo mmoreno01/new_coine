@@ -87,8 +87,8 @@
     color: #000; }
 
 #redes-conocenos {
-  margin-top: 50px;
-  margin-bottom: 50px; }
+  background-color: #f4f4f4;
+  padding: 50px 0px; }
 
 .flotante {
   position: relative;
@@ -440,6 +440,17 @@
 
 #conoc .imagen-principal {
   width: 100%; }
+
+#titulo-section {
+  padding: 100px 0px; }
+  #titulo-section h1 {
+    font-size: 30px;
+    font-weight: 600; }
+  #titulo-section h2 {
+    font-size: 25px;
+    font-weight: 100; }
+  #titulo-section .col-title {
+    border-right: 2px solid #1d73b2; }
 
 #barras {
   padding: 50px 10px; }
@@ -1095,6 +1106,36 @@ fin estilos textos y lineas conocenos ingles
   color: #005c9b;
   margin: 10px;
   margin-bottom: 50px; }
+
+#post-events {
+  padding: 50px 0px; }
+  #post-events .card-item {
+    border: 1px solid #c1c1c1;
+    padding: 30px;
+    margin-bottom: 20px; }
+  #post-events .thumbnail-attachment {
+    float: left;
+    max-width: 55%; }
+    #post-events .thumbnail-attachment img {
+      display: block; }
+  #post-events .entry-body {
+    overflow: hidden;
+    padding-top: 11px;
+    padding-left: 30px; }
+    #post-events .entry-body .entry-title {
+      font-weight: bold;
+      color: #333; }
+    #post-events .entry-body h4 {
+      text-align: justify; }
+    #post-events .entry-body p {
+      text-align: justify;
+      margin-bottom: 20px; }
+
+@media (max-width: 992px) {
+  #post-events .thumbnail-attachment {
+    max-width: 100%; }
+    #post-events .thumbnail-attachment img {
+      display: block; } }
 
 #titulo-alianzas {
   position: relative;

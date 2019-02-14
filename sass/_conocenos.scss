@@ -6,6 +6,40 @@
     }
 }
 
+#banner-principal{
+    
+    .overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba(11, 45, 70, .5);
+    }
+    .parallax {
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    .content-title{
+        color: #fff;
+        text-align: center;
+        justify-content: center;
+        display: block;
+        margin: 0 auto;
+        z-index: 1;
+        h2{
+           font-size: 35px; 
+           font-weight: 400;
+        }
+        p{
+            font-weight: 100;
+            letter-spacing: 3px;
+            font-size: 18px;
+        }
+
+    }
+}
+
 // titulo  inicio                      
 #titulo-section{
     padding: 100px 0px;
@@ -20,8 +54,14 @@
     .col-title{
         border-right: 2px solid #1d73b2;
     }
+    .row-line{
+        border-bottom: 2px solid #1d73b2;
+    }
 }
 
+#slider-conocenos{
+    
+}
 #barras
 {
     padding: 50px 10px;

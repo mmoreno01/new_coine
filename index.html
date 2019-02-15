@@ -116,7 +116,6 @@
     <div>
         <video autoplay loop muted  src="video/intro.mp4" type="video/mp4" class="video-principa"></video>
     </div>
-
 <!--fin video-->
 
 <!-- texto inicio-->
@@ -149,28 +148,19 @@
 <section id="slider-events">
     <div class="container" class="ng-cloak"  ng-controller="entradas">
         <div class="row">
-            <div class=" col-lg-3 col-md-12"  ng-repeat="x in postConsulta  | limitTo: 1">
-                    <div class="content-title-notices">
-                            <h2>Noticias</h2>
-                        </div>
-                    <div class="card">
-                       <a href="noticias_Coine.html"> <img src="img/inicio/dinero.jpg" class="card-img-top" alt="..."></a>
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="noticias_Coine.html">Esta semana se llevó a cabo la 30ª Reunión de Embajadores y Cónsules</a></h5>
-                            <p class="" >Nuestra labor ha contemplado acercar y transmitir nuestra plataforma a embajadores y cónsu-les en el extranjero</p> 
-                        </div>
-                    </div>
-            </div>
-            <div class=" col-lg-9 col-md-12">
+            <div class=" col-lg-12 col-md-12">
+                <div class="content-title">
+                    <h2>Eventos</h2>
+                </div>
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"  ng-controller="entradas" >
-                        <div class="post-events">Eventos</div>
+                        <div class="post-events"><a href="eventos.html"> Ver todos los eventos</a></div>
                            <ul class="content-idicators  d-flex justify-content-center">
-                               <li data-target="#carouselExampleIndicators" data-slide-to="0"ng-repeat="x in postConsulta  | limitTo: 3" class="">
+                               <li data-target="#carouselExampleIndicators" data-slide-to="0" ng-repeat="x in postConsulta  | limitTo: 4">
                                    <a href="{{x.link}}"><p class="titutlo-noticia">{{x.title.rendered}}</p></a>
                                 </li>
                            </ul>
                             <div class="carousel-inner parallax">
-                                <div class="carousel-item" ng-class="{active:!$index}" ng-repeat="x in postConsulta">
+                                <div class="carousel-item" ng-class="{active:!$index}" ng-repeat="x in postConsulta | limitTo: 4">
                                     <!-- <div class="bg-overlay"></div> -->
                                     <img  ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}"  class="d-block w-100" alt="...">
                                     <!-- <div class="carousel-caption d-none d-md-block">
@@ -193,7 +183,19 @@
 </section>
 <!--  end section events-->
 
+<!-- section notices-->
+<section id="section-notices-home">
+    <div class="content-title">
+        <h2>Noticias</h2>
+    </div>
+    <div class="content-notices">
 
+    </div>
+</section>
+<!--  end section notices-->
+
+
+<!--section banner  presencia internacional-->
 <section id="banner-precenciaInt"  class="parallax d-flex align-items-center">
     <div class="overlay-int"></div>
     <div class="container-fluid">
@@ -206,12 +208,11 @@
                     <a class="btn btn-primary" href="acciones.html">Ver más</a>
                 </div>
             </div>
-            <!-- <div class="container-banner d-flex align-items-center">
-                <h2><a href="acciones.html"> Presencia Internacional</a></h2>
-            </div> -->
         </div>
     </div>
 </section>
+<!--section banner  presencia internacional-->
+
 
 <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" ng-controller="entradas">
         <div class="carousel-inner">
@@ -317,9 +318,10 @@
     </div>
 </section>
 <!-- fin testimoniales-->
-<p></p>
-<!-- Modal -->
-<div class="modal fade" id="testimonio1" tabindex="-1" role="dialog" aria-labelledby="testimonio1Label" aria-hidden="true">
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="testimonio1" tabindex="-1" role="dialog" aria-labelledby="testimonio1Label" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -330,13 +332,12 @@
             <div class="modal-body">
                     <iframe width="100%" height="400" src="https://www.youtube.com/embed/qQDMtWl_RJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-          
           </div>
         </div>
       </div>
 
       <!-- Modal -->
-<div class="modal fade" id="testimonio2" tabindex="-1" role="dialog" aria-labelledby="testimonio2Label" aria-hidden="true">
+    <div class="modal fade" id="testimonio2" tabindex="-1" role="dialog" aria-labelledby="testimonio2Label" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -350,8 +351,8 @@
           </div>
         </div>
       </div>
-          <!-- Modal -->
-<div class="modal fade" id="testimonio3" tabindex="-1" role="dialog" aria-labelledby="testimonio3Label" aria-hidden="true">
+    <!-- Modal -->
+    <div class="modal fade" id="testimonio3" tabindex="-1" role="dialog" aria-labelledby="testimonio3Label" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -360,11 +361,12 @@
               </button>
             </div>
             <div class="modal-body">
-                    <a class="twitter-timeline" data-width="900" data-height="300" href="https://twitter.com/COINE_Lat?ref_src=twsrc%5Etfw">Tweets by COINE_Lat</a> 
-                </div>
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/GmLYaCsirLA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
           </div>
         </div>
       </div>
+    <!-- fin  Modal -->
+
 
 <!--redes sociales-->
 <section id="redes-conocenos">

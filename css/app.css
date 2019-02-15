@@ -139,12 +139,26 @@
 #slider-events {
   padding: 50px 0px;
   background-color: #f4f4f4; }
-  #slider-events .content-title-notices {
-    margin-bottom: 20px; }
-    #slider-events .content-title-notices h2 {
-      width: 40%;
-      border-bottom: 2px solid #005c9b;
-      font-weight: 100; }
+  #slider-events .content-title {
+    padding: 0;
+    text-align: center; }
+    #slider-events .content-title h2 {
+      color: #000;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-size: 30px;
+      font-weight: 100;
+      padding-bottom: 10px;
+      position: relative; }
+    #slider-events .content-title h2::before {
+      content: '';
+      position: absolute;
+      background-color: #1d73b2;
+      bottom: 0;
+      width: 40px;
+      left: 530px;
+      height: 2px;
+      border-radius: 10px; }
   #slider-events .card {
     border: 1px solid transparent;
     border-bottom: 1px solid #005c9b; }
@@ -199,13 +213,43 @@
       background-color: rgba(46, 46, 46, 0.9); }
   #slider-events .post-events {
     position: absolute;
-    width: 100px;
+    width: 200px;
     background: #1d73b2;
     top: 0px;
     z-index: 9;
     padding: 10px;
-    text-align: center;
-    color: #fff; }
+    text-align: center; }
+    #slider-events .post-events a {
+      color: #fff; }
+  #slider-events .carousel-item {
+    height: 400px; }
+
+#section-notices-home {
+  padding: 40px 0px; }
+  #section-notices-home .content-title {
+    margin-top: 30px;
+    padding: 0;
+    margin: 0px 10px; }
+    #section-notices-home .content-title h2 {
+      color: #000;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-size: 30px;
+      font-weight: 100;
+      padding-bottom: 10px;
+      position: relative; }
+    #section-notices-home .content-title h2::before {
+      content: '';
+      position: absolute;
+      background-color: #1d73b2;
+      bottom: 0;
+      width: 120px;
+      height: 2px;
+      border-radius: 10px; }
+  #section-notices-home .content-notices {
+    width: 100%;
+    height: 100px;
+    background-color: #005c9b; }
 
 #banner-precenciaInt {
   background: url(../img/imagen2.jpg);

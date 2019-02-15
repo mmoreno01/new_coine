@@ -224,32 +224,89 @@
   #slider-events .carousel-item {
     height: 400px; }
 
-#section-notices-home {
-  padding: 40px 0px; }
-  #section-notices-home .content-title {
-    margin-top: 30px;
-    padding: 0;
-    margin: 0px 10px; }
-    #section-notices-home .content-title h2 {
+#noticias-coine {
+  padding: 100px 0px; }
+  #noticias-coine h1 {
+    color: #356294;
+    padding-bottom: 40px; }
+  #noticias-coine .content-noticias {
+    margin: auto;
+    width: 92%; }
+    #noticias-coine .content-noticias .content-img-noticia {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: auto;
+      overflow: hidden; }
+      #noticias-coine .content-noticias .content-img-noticia .img-responsive {
+        width: 100%; }
+    #noticias-coine .content-noticias hr {
+      border: 1px solid #c1c1c1;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      width: 40px; }
+    #noticias-coine .content-noticias .titutlo-noticia {
       color: #000;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-      font-size: 30px;
       font-weight: 100;
-      padding-bottom: 10px;
-      position: relative; }
-    #section-notices-home .content-title h2::before {
-      content: '';
-      position: absolute;
-      background-color: #1d73b2;
-      bottom: 0;
-      width: 120px;
-      height: 2px;
-      border-radius: 10px; }
-  #section-notices-home .content-notices {
-    width: 100%;
-    height: 100px;
-    background-color: #005c9b; }
+      margin-top: 15px;
+      margin-bottom: 0;
+      text-align: left;
+      min-height: 55px; }
+      @media (max-width: 1052px) {
+        #noticias-coine .content-noticias .titutlo-noticia {
+          min-height: 85px; } }
+      @media (max-width: 991px) {
+        #noticias-coine .content-noticias .titutlo-noticia {
+          min-height: 35px; } }
+      @media (max-width: 942px) {
+        #noticias-coine .content-noticias .titutlo-noticia {
+          min-height: 55px; } }
+      @media (max-width: 767px) {
+        #noticias-coine .content-noticias .titutlo-noticia {
+          min-height: auto; } }
+    #noticias-coine .content-noticias .texto-noticia {
+      color: grey;
+      font-weight: 200;
+      font-size: 15px;
+      line-height: 16px; }
+      #noticias-coine .content-noticias .texto-noticia p {
+        font-size: 15px;
+        line-height: 1.5;
+        margin: 0 !important;
+        letter-spacing: 0.3px;
+        min-height: 136px;
+        height: 136px;
+        text-align: justify;
+        overflow: hidden; }
+        @media (max-width: 991px) {
+          #noticias-coine .content-noticias .texto-noticia p {
+            height: 90px;
+            min-height: 90px; } }
+        @media (max-width: 767px) {
+          #noticias-coine .content-noticias .texto-noticia p {
+            height: auto;
+            min-height: auto; } }
+  #noticias-coine .seeMore {
+    background-color: #033c72;
+    color: #fff;
+    padding: 6px 12px;
+    text-align: center;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    position: relative; }
+    @media (max-width: 991px) {
+      #noticias-coine .seeMore {
+        top: -20px; } }
+    @media (max-width: 767px) {
+      #noticias-coine .seeMore {
+        margin-bottom: 25px;
+        top: 0; } }
+  #noticias-coine .seeMore:hover {
+    background-color: #356294;
+    cursor: pointer; }
 
 #banner-precenciaInt {
   background: url(../img/imagen2.jpg);

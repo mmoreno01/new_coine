@@ -189,12 +189,13 @@
             <div class="container-fluid">
               <div class="row content-noticias">
                 <div class="col-md-6 col-lg-3 noticia" ng-repeat="x in postNotices  | limitTo: 4">
-                  <div class="content-img-noticia" style="background-image: url({{x._embedded['wp: featuredmedia']['0'].source_url}});">
-                       <img class="img-responsive" ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}">
-                       <!-- <img ng-if="post.better_featured_image" ng-src="{{post.better_featured_image.media_details.sizes.thumbnail.source_url}}" class="alignleft" /> -->
+                     <div class="content-img-noticia" style="background-image: url({{x._embedded['wp: featuredmedia']['0'].source_url}});">
+                            <img class="img-responsive" ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}">
+                            <!-- <img ng-if="post.better_featured_image" ng-src="{{post.better_featured_image.media_details.sizes.thumbnail.source_url}}" class="alignleft" /> -->
                     </div>
+                    <hr>
                       <a href="{{x.link}}"><p class="titutlo-noticia">{{x.title.rendered}}</p></a>
-                      <hr>
+                     
                       <!-- <p class="texto-noticia" ng-bind-html="x.excerpt.rendered | limitTo: 200"></p> -->
                       <!-- <a href="{{x.link}}" target="_blank"><label class="seeMore">VER MÁS</label></a> -->
                 </div>
@@ -383,8 +384,8 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-md-6">
-                    <a class="twitter-timeline" data-width="380" data-height="300" href="https://twitter.com/COINE_Lat?ref_src=twsrc%5Etfw">Tweets by COINE_Lat</a> 
-                </div>
+                <a class="twitter-timeline" data-width="380" data-height="300" href="https://twitter.com/COINE_Lat?ref_src=twsrc%5Etfw">Tweets by COINE_Lat</a> 
+            </div>
             <div class="col-md-6">
                 <div id="fb-root"></div>
                 <div class="fb-page" 

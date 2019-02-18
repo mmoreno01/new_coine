@@ -1073,7 +1073,8 @@ fin estilos textos y lineas conocenos ingles
 #img-circulos {
   width: 150px;
   margin: 0 auto;
-  display: block; }
+  display: block;
+  cursor: pointer; }
 
 #beneficios {
   position: relative;

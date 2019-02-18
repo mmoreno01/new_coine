@@ -154,32 +154,94 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
 
 <!-- seccion de imagenes sectores-->
 <div  id="sectores"> 
-<section class="container">
-    <div class="row text-center">
-        <div class="col-md-12">
-        <div class="owl-carousel owl-theme text-center">
-    <div class="item">
-        <a href="https://youtu.be/WiZxcuda7Xg" target="new"><img src="img/sectores/01.-educacion.png" alt="Coine" id="img-circulos"></a>
-        <p>Educación</p>
-    </div>
-    <div class="item">
-        <a href=" https://youtu.be/nN3Qrx7TYEI" target="new"><img src="img/sectores/02-financiero.png" alt="Coine" id="img-circulos"></a>
-        <p>Financiero</p>
-    </div>
-    <div class="item">
-        <a href="https://www.youtube.com/watch?v=Etzirvg-GfM" target="new"><img src="img/sectores/04-turismo.png" alt="Coine" id="img-circulos"></a>
-        <p>Turismo</p>
-    </div>
-    <div class="item">
-        <a href="https://youtu.be/QBq3KpyiBDs" target="new"><img src="img/sectores/05-automotriz.png" alt="Coine" id="img-circulos"></a>
-        <p>Automotriz </p>
-    </div>
-    </div>
-   </div>
-    </div>
-</section>
+    <section class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <div class="owl-carousel owl-theme text-center">
+                    <div class="item">
+                        <img data-toggle="modal" data-target="#educacion" src="img/sectores/01.-educacion.png" alt="Coine" id="img-circulos">
+                        <p>Educación</p>
+                    </div>
+                    <div class="item">
+                        <img data-toggle="modal" data-target="#financiero" src="img/sectores/02-financiero.png" alt="Coine" id="img-circulos">
+                        <p>Financiero</p>
+                    </div>
+                    <div class="item">
+                        <img data-toggle="modal" data-target="#turismo" src="img/sectores/04-turismo.png" alt="Coine" id="img-circulos">
+                        <p>Turismo</p>
+                    </div>
+                    <div class="item">
+                        <img data-toggle="modal" data-target="#automotriz" src="img/sectores/05-automotriz.png" alt="Coine" id="img-circulos">
+                        <p>Automotriz </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 <!-- seccion de imagenes  sectores-->
+
+ <!-- Modal -->
+<div class="modal fade" id="educacion" tabindex="-1" role="dialog" aria-labelledby="testimonio2Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/WiZxcuda7Xg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="financiero" tabindex="-1" role="dialog" aria-labelledby="testimonio3Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/nN3Qrx7TYEI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="turismo" tabindex="-1" role="dialog" aria-labelledby="testimonio3Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+            </div>
+            <div class="modal-body"> 
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/Etzirvg-GfM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="automotriz" tabindex="-1" role="dialog" aria-labelledby="testimonio3Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+            </div>
+            <div class="modal-body">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/QBq3KpyiBDs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>           
+            </div>
+        </div>
+    </div>
+</div>
+<!-- fin  Modal -->
 
 <!--seccion beneficios-->
 <section class="container-fluid" id="beneficios">
@@ -213,8 +275,8 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-6">
-                        <a class="twitter-timeline" data-width="380" data-height="300" href="https://twitter.com/COINE_Lat?ref_src=twsrc%5Etfw">Tweets by COINE_Lat</a> 
-                    </div>
+                    <a class="twitter-timeline" data-width="380" data-height="300" href="https://twitter.com/COINE_Lat?ref_src=twsrc%5Etfw">Tweets by COINE_Lat</a> 
+                </div>
                 <div class="col-md-6">
                     <div id="fb-root"></div>
                     <div class="fb-page" 

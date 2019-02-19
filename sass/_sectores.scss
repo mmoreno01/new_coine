@@ -61,23 +61,14 @@
 #sectores
 {
     position: relative;
-    margin-top: 50px;
-    padding: 50px 0px;
+    padding: 30px;
     background-color: #f4f4f4;
-    p 
-    {
-        color: #005c9b;
-        font-size: 20px;
-        font-weight: bold;
-        letter-spacing: 2px;
+    padding: 50px 0px;
+
+    .owl-carousel.owl-loaded {
+        display: block;
+        margin-top: 54px;
     }
-    .item
-    {
-        
-    background-color: white;
-    padding: 10px;
-    margin-top: 50px;
-   }
 }
 
 #img-circulos
@@ -117,13 +108,11 @@
     display: none;
 }
 
-
-
 #sectores .owl-next
 { 
     color: white;
     position: absolute;
-    top: -10%;
+    top: -30%;
     right: 0px;  
     font-weight: inherit !important;
 
@@ -131,16 +120,25 @@
     height: 40px;
     text-align: center;
     line-height: 10px;
-    background-color: #1d73b2 !important;
+    background-color: #969697!important;
     margin: 10px;
     display: inline-block;
     font-size: 24px;
+    border: 1px solid white;
 }
+
+#sectores .owl-next:hover
+{
+    background-color: transparent !important;
+    border: 1px solid #1d73b2;
+    color: #1d73b2;
+}
+
 #sectores .owl-prev
 {
     color: white;
     position: absolute;
-    top: -10%;
+    top: -30%;
     right: 50px;
     font-weight: inherit !important;
     
@@ -148,11 +146,214 @@
     height: 40px;
     text-align: center;
     line-height: 10px;
-    background-color: #1d73b2 !important;
+    background-color: #969697 !important;
     margin: 10px;
     display: inline-block;
     font-size: 24px;
 }
+
+#sectores .owl-prev:hover
+{
+    background-color: transparent !important;
+    border: 1px solid #1d73b2;
+    color: #1d73b2;
+}
+
+#seccion-4imagenes
+{
+    position: relative;
+    padding: 30px;
+}
+
+.view{
+	width: 100%;
+	height: 100%;
+	float: left;
+	border:0px solid #fff;
+	overflow: hidden;  /*Oculta el contenido y solo resalta la imagen */
+	text-align: center;
+    cursor: default; /* cambia el tipo de estilo del cursor*/
+}
+
+.view .mask, .view .content{
+	width: 100%;
+	height: 100%;
+	position: absolute; /* posiciona el texto por encima de la imagen*/
+    overflow: hidden;
+}
+
+.view img{
+	display: block;
+    position: relative;
+    width: 100%;
+}
+
+.view h2 {
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	font-size: 17px;
+    padding: 20px 0px 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 0;
+    top:0;
+}
+
+
+.view p {
+   font-size: 12px;
+   color: #fff;
+   padding: 10px 20px;
+   text-align: center;
+}
+
+.view p.info {
+   display: inline-block;
+   text-decoration: none;
+   padding: 7px 14px;
+   background: #000;
+   color: #fff;
+   text-transform: uppercase;
+   -webkit-box-shadow: 0 0 1px #000;
+   -moz-box-shadow: 0 0 1px #000;
+   box-shadow: 0 0 1px #000;
+   cursor: pointer;
+}
+.eve
+{
+    margin-top: -60px;
+    position: absolute;
+    width: 100%;
+}
+.icon-s
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 60px;
+    height: 60px;
+    color: #ffffff;
+    background: #005c9b;
+    line-height: 50px;
+    padding: 0px 0px;
+    text-align: center;
+    width: 40px;
+    padding: 17px 6px 0px;
+}
+
+.icon-caja
+{
+    opacity: 0;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;  
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+
+}
+
+.title p 
+{
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 50px;
+    background: rgba(0, 0, 0, 0.8);
+}
+.view-first:hover .eve
+{
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;  
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.view p.info:hover {
+   -webkit-box-shadow: 0 0 5px #000;
+   -moz-box-shadow: 0 0 5px #000;
+   box-shadow: 0 0 5px #000;
+}
+
+/* la propiedas transition realizara en su tiempo el ocultar y mostrar la animacion*/
+.view-first img
+{
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+   
+}
+
+ /* la propiedad que se declara aqui opacara el contenido de texto  cuando la oposidad este en el  valor 0*/
+    .view-first .mask{
+        background: rgba(0, 0, 0, 0.8);
+       -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+       filter: alpha(opacity=0);
+       opacity: 0;
+       -webkit-transition: all 0.100s ease-in-out;
+      -moz-transition: all 0.100s ease-in-out;  
+      -o-transition: all 0.100s ease-in-out;
+      -ms-transition: all 0.100s ease-in-out;
+      transition: all 0.100s ease-in-out;
+    }
+
+.view-first h2{
+   opacity: 1;
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+
+.view-first p{
+   opacity: 1;
+   -webkit-transition: all 0.2s linear;
+   -moz-transition: all 0.2s linear;
+   -o-transition: all 0.2s linear;
+   -ms-transition: all 0.2s linear;
+   transition: all 0.2s linear;
+}
+
+.view-first p.info {
+   opacity: 1;
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+
+.view-first .icon-caja {
+    opacity: 1;
+ }
+
+/* en esta instruccion muestra el color de fonde que colocamos al pasar el mouse*/
+.view-first:hover .mask {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1; 
+    top:0;
+    transition: opacity 0.3s linear 0.3s;
+}
+
+.view-first:hover .icon-caja {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 60px;
+    height: 100%;
+    color: #ffffff;
+    background: #005c9b;
+    line-height: 40px;
+    text-align: center;
+    font-size: 32px;
+    width: 40px;
+    padding: 70px 5px 0px;
+
+ }
+
  /*--------------------------
         Responsive
 -----------------------------*/

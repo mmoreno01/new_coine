@@ -353,6 +353,17 @@ background-color: #f4f4f4;
         margin-bottom: 0;
         text-align: left;
         min-height: 55px;
+        font-size: 20px;
+        }
+        .titutlo-noticia:hover{
+            color: #1d73b2;
+        }
+        .noticia {
+            a{
+                text-decoration: none;
+                font-weight: 400!important;
+            }
+        }
         @media(max-width: 1052px) {
           min-height: 85px;
         }
@@ -392,9 +403,8 @@ background-color: #f4f4f4;
       }
     }
     .seeMore{
-      background-color: #033c72;
-      color: #fff;
-      padding: 6px 12px;
+      color:#1d73b2;
+      font-weight: 700;
       text-align: center;
       -webkit-transition: all 0.4s ease-in-out;
       -moz-transition: all 0.4s ease-in-out;
@@ -410,10 +420,10 @@ background-color: #f4f4f4;
       }
     }
     .seeMore:hover{
-      background-color: #356294;
+     
       cursor: pointer;
     }
-  }
+  
 
 
 #banner-precenciaInt{

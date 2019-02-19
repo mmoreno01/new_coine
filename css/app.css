@@ -71,28 +71,28 @@
   margin-top: 50px; }
 
 #seccion-testimonios {
-  position: relative;
   padding: 50px 0px; }
   #seccion-testimonios .cont-title-testimonials {
-    margin-top: 30px;
-    padding: 0; }
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 50px; }
     #seccion-testimonios .cont-title-testimonials h1 {
       color: #000;
       text-transform: uppercase;
-      margin-bottom: 50px;
       font-size: 30px;
       font-weight: 100;
+      text-align: left;
       padding-bottom: 10px;
       position: relative; }
-    #seccion-testimonios .cont-title-testimonials h1::before {
-      content: '';
-      position: absolute;
-      background-color: #1d73b2;
-      bottom: 0;
-      width: 40px;
-      left: 520px;
-      height: 2px;
-      border-radius: 10px; }
+  #seccion-testimonios .cont-title-testimonials::before {
+    content: '';
+    position: absolute;
+    background-color: #1d73b2;
+    height: 2px;
+    border-radius: 10px;
+    top: 48px;
+    left: 0;
+    width: 50px; }
   #seccion-testimonios img {
     cursor: pointer; }
   #seccion-testimonios .card {
@@ -141,25 +141,28 @@
   padding: 50px 0px;
   background-color: #f4f4f4; }
   #slider-events .content-title {
-    padding: 0;
-    text-align: center; }
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 10px; }
     #slider-events .content-title h2 {
       color: #000;
       text-transform: uppercase;
-      margin-bottom: 20px;
       font-size: 30px;
       font-weight: 100;
       padding-bottom: 10px;
-      position: relative; }
-    #slider-events .content-title h2::before {
-      content: '';
-      position: absolute;
-      background-color: #1d73b2;
-      bottom: 0;
-      width: 40px;
-      left: 530px;
-      height: 2px;
-      border-radius: 10px; }
+      position: relative;
+      text-align: left; }
+  #slider-events .content-title::before {
+    content: '';
+    position: absolute;
+    background-color: #1d73b2;
+    bottom: 0;
+    width: 40px;
+    left: 0;
+    height: 2px;
+    border-radius: 10px;
+    top: 48px;
+    left: 0; }
   #slider-events .card {
     border: 1px solid transparent;
     border-bottom: 1px solid #005c9b; }
@@ -200,7 +203,13 @@
     width: 100%;
     bottom: 0;
     list-style: none;
-    margin: 0 auto; }
+    margin: 0 auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
     #slider-events .content-idicators li {
       background-color: rgba(51, 51, 51, 0.7);
       display: inline-block;
@@ -223,7 +232,7 @@
     #slider-events .post-events a {
       color: #fff; }
   #slider-events .carousel-item {
-    height: 400px; }
+    height: 500px; }
 
 #noticias-coine {
   padding: 100px 0px; }
@@ -235,7 +244,7 @@
     font-weight: 100;
     padding-bottom: 10px;
     position: relative;
-    margin: 0px 30px; }
+    margin: 30px; }
   #noticias-coine h1::before {
     content: '';
     position: absolute;
@@ -269,7 +278,8 @@
       margin-bottom: 0;
       text-align: left;
       min-height: 55px;
-      font-size: 20px; }
+      font-size: 20px;
+      padding: 10px; }
     #noticias-coine .content-noticias .titutlo-noticia:hover {
       color: #1d73b2; }
     #noticias-coine .content-noticias .noticia a {
@@ -318,7 +328,8 @@
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  position: relative; }
+  position: relative;
+  padding: 10px; }
   @media (max-width: 991px) {
     .seeMore {
       top: -20px; } }
@@ -403,15 +414,9 @@
     color: white;
     font-size: 24px;
     text-align: center; }
-  #seccion-testimonios h1 {
-    font-size: 28px;
-    padding: 60px 0px; }
   #seccion-testimonios .imagen-testimonios {
     width: 100%;
     padding: 10px 0px 0px; }
-  #seccion-testimonios h1 {
-    font-size: 28px;
-    padding: 60px 0px; }
   #seccion-testimonios .imagen-testimonios {
     width: 85%;
     padding: 10px 30px 0px; }
@@ -422,7 +427,15 @@
   #banner-acciones h1 {
     padding: 20px;
     font-size: 28px;
-    top: 60%; } }
+    top: 60%; }
+  #slider-events .content-title {
+    text-align: left; }
+    #slider-events .content-title h2::before {
+      left: 0; }
+  #noticias-coine h1::before {
+    left: 0px; }
+  #seccion-testimonios .cont-title-testimonials h1::before {
+    left: 0; } }
 
 @media (max-width: 768px) {
   .video-principa {
@@ -453,12 +466,11 @@
     color: white;
     font-size: 24px;
     text-align: center; }
-  #seccion-testimonios h1 {
-    font-size: 28px;
-    padding: 60px 0px; }
   #seccion-testimonios .imagen-testimonios {
     width: 85%;
     padding: 10px 30px 0px; }
+  #seccion-testimonios .card {
+    margin-bottom: 20px; }
   #banner-acciones img {
     width: 100%;
     padding: 10px;
@@ -466,7 +478,21 @@
   #banner-acciones h1 {
     padding: 20px;
     font-size: 28px;
-    top: 60%; } }
+    top: 60%; }
+  #slider-events .content-idicators {
+    background-color: #000;
+    display: block; }
+    #slider-events .content-idicators li {
+      background-color: transparent;
+      padding: 10px; }
+  #slider-events .content-title {
+    text-align: left; }
+    #slider-events .content-title h2::before {
+      left: 0; }
+  #noticias-coine h1::before {
+    left: 0px; }
+  #seccion-testimonios .cont-title-testimonials h1::before {
+    left: 0; } }
 
 @media (max-width: 576px) {
   .video-principa {
@@ -478,7 +504,7 @@
     margin-top: 0px;
     color: #4f6a90;
     text-align: center;
-    padding: 50px 0px; }
+    padding: 20px; }
   #seccion-texto-imagen {
     position: relative;
     background-color: #005c9b; }
@@ -496,12 +522,11 @@
     color: white;
     font-size: 24px;
     text-align: center; }
-  #seccion-testimonios h1 {
-    font-size: 28px;
-    padding: 60px 0px; }
   #seccion-testimonios .imagen-testimonios {
     width: 100%;
     padding: 10px 40px 0px; }
+  #seccion-testimonios .card {
+    margin-bottom: 20px; }
   #banner-acciones {
     position: relative; }
     #banner-acciones img {
@@ -512,7 +537,23 @@
     #banner-acciones h1 {
       padding: 20px;
       font-size: 24px;
-      top: 60%; } }
+      top: 60%; }
+  #slider-events .post-events {
+    display: none; }
+  #slider-events .content-idicators {
+    background-color: #000;
+    display: block; }
+    #slider-events .content-idicators li {
+      background-color: transparent;
+      padding: 10px; }
+  #slider-events .content-title {
+    text-align: left; }
+    #slider-events .content-title h2::before {
+      left: 0; }
+  #noticias-coine h1::before {
+    left: 0px; }
+  #seccion-testimonios .cont-title-testimonials h1::before {
+    left: 0; } }
 
 /*--------------------------
         Fin Responsive
@@ -787,13 +828,24 @@ fin estilos textos y lineas conocenos ingles
     font-weight: 400; }
 
 #especializamos {
-  position: relative;
-  margin-top: 50px; }
+  padding: 150px 0px; }
   #especializamos h1 {
-    color: #005c9b;
-    font-size: 34px;
-    margin-bottom: 50px;
-    margin-top: 50px; }
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 100;
+    padding-bottom: 10px;
+    position: relative; }
+  #especializamos h1::before {
+    content: '';
+    position: absolute;
+    background-color: #1d73b2;
+    bottom: 0;
+    width: 40px;
+    left: 0px;
+    height: 2px;
+    border-radius: 10px; }
   #especializamos .card {
     border: none;
     border-bottom: 1px solid #005c9b; }

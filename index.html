@@ -119,11 +119,13 @@
 <!--fin video-->
 
 <!-- texto inicio-->
-<section class="container" id="texto-principal">
-    <div class="row">
-        <div class="col-md-12">
-            <p>Somos el <span>Consejo Internacional de Empresarios</span> de América Latina y el Caribe cuyo objetivo radica en<br> crear, fomentar y consolidar relaciones comerciales y económicas para<br> el desarrollo político y empresarial a nivel global</p>
-      </div>
+<section  id="texto-principal">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>Somos el <span>Consejo Internacional de Empresarios</span> de América Latina y el Caribe cuyo objetivo radica en<br> crear, fomentar y consolidar relaciones comerciales y económicas para<br> el desarrollo político y empresarial a nivel global</p>
+            </div>
+        </div>
     </div>
 </section>
 <!-- fin texto inicio-->
@@ -154,7 +156,7 @@
                 </div>
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"  ng-controller="entradas" >
                         <div class="post-events"><a href="eventos.html"> Ver todos los eventos</a></div>
-                           <ul class="content-idicators  d-flex justify-content-center">
+                           <ul class="content-idicators">
                                <li data-target="#carouselExampleIndicators" data-slide-to="0" ng-repeat="x in postConsulta  | limitTo: 4">
                                    <a href="{{x.link}}"><p class="titutlo-noticia">{{x.title.rendered}}</p></a>
                                 </li>
@@ -185,8 +187,8 @@
 
  <!-- Section post blog  -->
  <section id="noticias-coine" class="content-section"  ng-controller="entradasNotices">
-        <h1 class="title title-noticias ">Noticias</h1>
             <div class="container-fluid">
+                    <h1 class="title title-noticias ">Noticias</h1>
               <div class="row content-noticias">
                 <div class="col-md-6 col-lg-3 noticia" ng-repeat="x in postNotices  | limitTo: 4">
                      <div class="content-img-noticia" style="background-image: url({{x._embedded['wp: featuredmedia']['0'].source_url}});">
@@ -294,7 +296,7 @@
 <!-- fin paralax-->
 
 <!-- testimonales-->
-<section class="text-center" id="seccion-testimonios">
+<section  id="seccion-testimonios">
     <div class="container">
         <div class="cont-title-testimonials">
                 <h1>Testimoniales</h1>
@@ -391,7 +393,7 @@
                 <div class="fb-page" 
                 data-href="https://www.facebook.com/COINElat/" 
                 data-tabs="timeline" 
-                data-width="380" 
+                data-width="350" 
                 data-height="300">
                 <blockquote cite="https://www.facebook.com/COINELAT/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/COINELAT/">COINE | Consejo Internacion de Empresarios</a></blockquote></div>
             </div>

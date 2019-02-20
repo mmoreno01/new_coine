@@ -1415,7 +1415,10 @@ div .title-sectores {
   -o-transition: opacity 1s;
   transition: opacity 1s;
   opacity: 0;
-  background: rgba(0, 0, 0, 0.8); }
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out; }
 
 .view-first h2 {
   opacity: 1; }
@@ -1432,7 +1435,10 @@ div .title-sectores {
 /* en esta instruccion muestra el color de fonde que colocamos al pasar el mouse*/
 .view-first:hover .mask {
   opacity: 1;
-  top: 0; }
+  top: 0;
+  -webkit-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out; }
 
 .view-first:hover .icon-caja {
   position: absolute;
@@ -1797,6 +1803,26 @@ div .title-sectores {
     border: none; }
   #contacto #btn:hover {
     background: rgba(0, 100, 151, 0.8); }
+
+#contact-us {
+  padding: 100px 0px; }
+  #contact-us input {
+    margin-bottom: 20px;
+    border: transparent; }
+  #contact-us .form-control {
+    border: 1px solid #005DA1;
+    border-radius: 2px; }
+  #contact-us .form-control:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem transparent;
+    box-shadow: 0 0 0 0.2rem transparent; }
+  #contact-us textarea {
+    width: 100%;
+    height: 150px;
+    border: transparent; }
+  #contact-us .btn-primary {
+    background: #00A4E0;
+    color: #FFF;
+    border: #00A4E0; }
 
 .titulo_correo {
   color: #005c9b;

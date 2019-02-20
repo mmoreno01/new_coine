@@ -60,13 +60,19 @@
 }
 
 #slider-conocenos{
+    background: #Fff;
+    padding: 10px 5px;
+    top: 80px;
+    position: relative;
+    box-shadow: 10px 17px 38px 0 rgba(0,0,0,0.1);
+    
     .item-nav{
-        margin: 5px;
         position: relative;
         overflow: hidden;
         display: flex;
         align-items: center;
         img {
+            width: 100%;
             display: block;
             position: relative;
             transition: all 0.2s linear;
@@ -79,7 +85,12 @@
         }
     }
    
-    
+    .owl-nav{
+        display: none;
+    }
+    .owl-dots{
+        display: none;
+    }
     .overlay{
         width: 100%;
         height: 100%;

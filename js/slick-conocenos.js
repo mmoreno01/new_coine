@@ -1,50 +1,30 @@
 $(document).ready(function(){
 
-  $('.slider-nav').slick({
-    centerMode: true,
-    centerPadding: '60px',
-    arrows: false,
-    slidesToShow: 4,
-    autoplaySpeed: 2000,
-    autoplay:true,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 4
-        }
+  $('.owl-carousel').owlCarousel({
+    items:3,
+    loop:true,
+    margin:10,
+    autoplay: true,
+    responsiveClass:true,
+    autoplayHoverPause:false,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        576:{
+            items:1,
+            nav:false
+        },
+        768:{
+          items:2,
+          nav:false
       },
-      {
-        breakpoint: 992,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
+        1000:{
+            items:3,
+            nav:true,
         }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 540,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      }
-    ]
-  });
+    }
+})
 });
 	

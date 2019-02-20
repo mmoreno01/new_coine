@@ -20,12 +20,6 @@
     background-color: #c4c4c4!important;
 }
 
-.navbar-dark .navbar-toggler 
-{
-    color: red;
-    border-color: black;
-    
-}
 
  /*--------------------------
         Responsive
@@ -41,18 +35,20 @@
 }
 @media (max-width:768px)
 {
-   
+    #titulo-section .col-title 
+    {
+        border-right: none;
+    }
 }
 
 @media (max-width:576px)
 {
-    .navbar .nav-item.arriba::before
+    #titulo-section .row-line 
     {
-        background: rgba(255, 255, 255, 0) linear-gradient(to right, transparent,  #fff, transparent) repeat scroll 0 ;
-        content:"";
-        height: 1px;
-        left: 0;
-        position: absolute;
-        width: 100%;
+        border-bottom: none;
+    }
+    #titulo-section .col-title 
+    {
+        border-right: none;
     }
 }

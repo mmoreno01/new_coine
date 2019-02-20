@@ -103,6 +103,24 @@
 #redes-conocenos {
   background-color: #f4f4f4;
   padding: 50px 0px; }
+  #redes-conocenos .titulo-redes {
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 100;
+    padding-bottom: 10px;
+    position: relative; }
+
+#redes-conocenos .titulo-redes::before {
+  content: "";
+  position: absolute;
+  background-color: #1d73b2;
+  bottom: 0;
+  width: 40px;
+  left: 0px;
+  height: 2px;
+  border-radius: 10px; }
 
 .flotante {
   position: relative;
@@ -834,7 +852,7 @@ fin estilos textos y lineas conocenos ingles
     font-weight: 400; }
 
 #especializamos {
-  padding: 150px 0px  0px; }
+  padding: 150px 0px 100px; }
   #especializamos h1 {
     color: #000;
     text-transform: uppercase;
@@ -862,9 +880,10 @@ fin estilos textos y lineas conocenos ingles
     background-color: transparent;
     border: none; }
   #especializamos .card-body {
+    font-size: 15px;
     text-align: justify;
-    color: #4f6a90;
-    font-size: 16px; }
+    line-height: 1.8;
+    font-weight: 400; }
 
 /*--------------------------
         Responsive

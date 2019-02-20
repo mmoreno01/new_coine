@@ -265,7 +265,7 @@ fin estilos textos y lineas conocenos ingles
 
 #especializamos
 {
-    padding: 150px 0px  0px;
+    padding: 150px 0px 100px;
     h1
     {
         color: #000;
@@ -305,9 +305,10 @@ fin estilos textos y lineas conocenos ingles
     }
     .card-body
     {
+        font-size: 15px;
         text-align: justify;
-        color: #4f6a90;
-        font-size: 16px;
+        line-height: 1.8;
+        font-weight: 400;
     }
 }
 

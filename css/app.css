@@ -937,12 +937,6 @@ fin estilos textos y lineas conocenos ingles
     margin-left: 130px;
     margin-top: 75px;
     position: absolute; }
-  #especializamos h1 {
-    color: #005c9b;
-    font-size: 30px;
-    margin-bottom: 50px;
-    margin-top: 10px;
-    text-align: center; }
   .titulo-conocenos-ingles {
     font-size: 28px; }
   .texto-conocenos-ingles {
@@ -972,12 +966,6 @@ fin estilos textos y lineas conocenos ingles
     display: none; }
   #titulo .horizontal-conocenos {
     display: none; }
-  #especializamos h1 {
-    color: #005c9b;
-    font-size: 30px;
-    margin-bottom: 50px;
-    margin-top: 10px;
-    text-align: center; }
   #especializamos .accordion {
     padding: 0px; }
   .titulo-conocenos-ingles {
@@ -1012,11 +1000,7 @@ fin estilos textos y lineas conocenos ingles
       text-align: justify;
       padding: 20px; }
   #especializamos h1 {
-    color: #005c9b;
-    font-size: 30px;
-    margin-bottom: 50px;
-    margin-top: 10px;
-    text-align: center; }
+    font-size: 25px; }
   #especializamos .accordion {
     padding: 0px; }
   .titulo-conocenos-ingles {

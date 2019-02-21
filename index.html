@@ -190,7 +190,7 @@
             <div class="container-fluid">
                     <h1 class="title title-noticias ">Noticias</h1>
               <div class="row content-noticias">
-                <div class="col-md-6 col-lg-3 noticia" ng-repeat="x in postNotices  | limitTo: 4">
+                <div class="col-md-6 col-lg-4 noticia" ng-repeat="x in postNotices  | limitTo: 3">
                      <div class="content-img-noticia" style="background-image: url({{x._embedded['wp: featuredmedia']['0'].source_url}});">
                             <img class="img-responsive" ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}">
                             <!-- <img ng-if="post.better_featured_image" ng-src="{{post.better_featured_image.media_details.sizes.thumbnail.source_url}}" class="alignleft" /> -->

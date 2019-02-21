@@ -12,8 +12,6 @@ myApp.controller('entradas', ['$scope','$window','$http', function($scope,$windo
   });
 }]);
 
-
-
 myApp.controller('entradasNotices', ['$scope','$window','$http', function($scope,$window,$http) {
 
   $http.get('http://www.coine.lat/coine_noticias/?rest_route=/wp/v2/posts&_embed', {
@@ -24,4 +22,6 @@ myApp.controller('entradasNotices', ['$scope','$window','$http', function($scope
     console.log($scope.postNotices);
   });
 }]);
+
+
 

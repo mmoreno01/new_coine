@@ -111,36 +111,25 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
 </div>
     <!-- fin banner-->
 
-<!-- seccion eventos -->
-<section class="container-fluid" id="noticias">
-  <h1 class="titulo-eventos">Events</h1>
-   <div class="row">
-      <div class="col-md-2"></div>
-       <div class="col-md-4">
-        <div class="card">
-          <img class="card-img-top" src="../img/eventos/lideres.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">300 Líderes</h5>
-                    <p class="card-text">Martín Rodriguez Sánchez presidente del Consejo Internacional de Empresarios COINE, agradece la distinción realizada por  la revista Líderes Mexicanos  al reconocerlo por destacada su labor desde la presidencia del Consejo Internacional de Empresarios COINE, en la edición anual de Los 300 Líderes más Influyentes de México.</p>
-                        <a href="http://www.coine.lat/300/" target="new" class="btn btn-primary">Read more...</a>
-              </div>
-         </div>
-       </div>
-         <div class="col-md-4">
-        <div class="card">
-          <img class="card-img-top" src="../img/eventos/emprendedor.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Semana del Emprendedor</h5>
-                    <p class="card-text">Del 10 al 14 de septiembre tendrá lugar el mayor foro para emprendedores en México: la Semana del Emprendedor, y el Consejo Internacional de Empresarios (COINE) estará presente, para vincular y acercar su plataforma de emprendimiento con destacados negocios y proyectos.</p>
-                        <a href="http://www.coine.lat/emprendedor" target="new" class="btn btn-primary">Read more...</a>
-              </div>
-         </div>
-       </div>
-    </div>
-</section>
-<!-- fin seccion eventos -->
-
-
+    <section id="post-events" ng-app="app">
+        <div class="container" ng-controller="entradas">
+            <div class="row">
+                <div class="col-12 card-item" ng-repeat="x in postConsulta">
+                    <div class="thumbnail-attachment">
+                            <img  ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}"  class="d-block w-100" alt="...">
+                    </div>
+                    <div class="entry-body">
+                        <h4 class="entry-title">
+                                <a href="{{x.link}}"><p class="titutlo-noticia">{{x.title.rendered}}</p></a>
+                        </h4>
+                        <p class="texto-noticia" ng-bind-html="x.excerpt.rendered | limitTo: 200"></p>
+                        <a href="{{x.link}}"  class="btn btn-primary"><label>Ver más</label></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
 <!--footer-->
 <footer>
     <section class="container-fluid foter">
@@ -187,7 +176,11 @@ $('.owl-carousel').owlCarousel({
 </script>     
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.6/angular-sanitize.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="../js/angular/appPost.js"></script>
+<script src="../js/angular/ngMask.min.js"></script>
 <!--fin sricpts-->
 </body>
 </html>

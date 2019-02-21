@@ -14,7 +14,7 @@
     text-align: center;
     padding: 50px 0px; }
     #texto-principal p span {
-      color: #1d73b2;
+      color: #005DA1;
       font-weight: 600; }
 
 #seccion-texto-imagen {
@@ -87,7 +87,7 @@
   #seccion-testimonios .cont-title-testimonials::before {
     content: '';
     position: absolute;
-    background-color: #1d73b2;
+    background-color: #005DA1;
     height: 2px;
     border-radius: 10px;
     top: 48px;
@@ -115,7 +115,7 @@
 #redes-conocenos .titulo-redes::before {
   content: "";
   position: absolute;
-  background-color: #1d73b2;
+  background-color: #005DA1;
   bottom: 0;
   width: 40px;
   left: 0px;
@@ -173,7 +173,7 @@
   #slider-events .content-title::before {
     content: '';
     position: absolute;
-    background-color: #1d73b2;
+    background-color: #005DA1;
     bottom: 0;
     width: 40px;
     left: 0;
@@ -242,7 +242,7 @@
   #slider-events .post-events {
     position: absolute;
     width: 200px;
-    background: #1d73b2;
+    background: #005DA1;
     top: 0px;
     z-index: 9;
     padding: 10px;
@@ -266,7 +266,7 @@
   #noticias-coine h1::before {
     content: '';
     position: absolute;
-    background-color: #1d73b2;
+    background-color: #005DA1;
     bottom: 0;
     width: 40px;
     left: 0px;
@@ -299,7 +299,7 @@
       font-size: 20px;
       padding: 10px; }
     #noticias-coine .content-noticias .titutlo-noticia:hover {
-      color: #1d73b2; }
+      color: #005DA1; }
     #noticias-coine .content-noticias .noticia a {
       text-decoration: none;
       font-weight: 400 !important; }
@@ -339,7 +339,7 @@
           min-height: auto; } }
 
 .seeMore {
-  color: #1d73b2;
+  color: #005DA1;
   font-weight: 700;
   text-align: center;
   -webkit-transition: all 0.4s ease-in-out;
@@ -578,7 +578,7 @@
 -----------------------------*/
 #foter-redes {
   height: 100%;
-  background-color: #005c9b; }
+  background-color: #005DA1; }
   #foter-redes ul {
     list-style: none;
     margin: 5px;
@@ -610,7 +610,7 @@
     color: white;
     padding: 3px 0px; }
   #foter-redes .fuente-icono:hover {
-    color: #1d73b2;
+    color: #005DA1;
     background-color: white; }
   #foter-redes .fuente-icono-y {
     width: 40px;
@@ -624,8 +624,13 @@
     color: white;
     padding: 3px 0px; }
   #foter-redes .fuente-icono-y:hover {
-    color: #1d73b2;
+    color: #005DA1;
     background-color: white; }
+
+footer .content-line {
+  width: 100%;
+  height: 8px;
+  background-color: #00A4E0; }
 
 #conoc .imagen-principal {
   width: 100%; }
@@ -672,9 +677,9 @@
     font-size: 25px;
     font-weight: 100; }
   #titulo-section .col-title {
-    border-right: 2px solid #1d73b2; }
+    border-right: 2px solid #005DA1; }
   #titulo-section .row-line {
-    border-bottom: 2px solid #1d73b2; }
+    border-bottom: 2px solid #005DA1; }
 
 #slider-conocenos {
   background: #Fff;
@@ -840,10 +845,10 @@ fin estilos textos y lineas conocenos ingles
   #seccion-quienes .content-about h3 {
     font-size: 35px;
     font-weight: 600;
-    color: #1d73b2; }
+    color: #005DA1; }
   #seccion-quienes .content-about span {
     font-size: 20px;
-    color: #1d73b2;
+    color: #005DA1;
     font-weight: 400; }
   #seccion-quienes .content-about p {
     font-size: 15px;
@@ -864,7 +869,7 @@ fin estilos textos y lineas conocenos ingles
   #especializamos h1::before {
     content: '';
     position: absolute;
-    background-color: #1d73b2;
+    background-color: #005DA1;
     bottom: 0;
     width: 40px;
     left: 0px;
@@ -1264,7 +1269,7 @@ fin estilos textos y lineas conocenos ingles
 #beneficios .titulo-beneficios::before {
   content: '';
   position: absolute;
-  background-color: #1d73b2;
+  background-color: #005DA1;
   bottom: 0;
   width: 40px;
   left: 0px;
@@ -1275,8 +1280,8 @@ fin estilos textos y lineas conocenos ingles
   display: none; }
 
 #sectores .owl-next {
-  border: 1px solid #1d73b2;
-  color: #1d73b2;
+  border: 1px solid #005DA1;
+  color: #005DA1;
   position: absolute;
   top: -30%;
   right: 0px;
@@ -1291,12 +1296,12 @@ fin estilos textos y lineas conocenos ingles
   font-size: 24px; }
 
 #sectores .owl-next:hover {
-  background-color: #1d73b2 !important;
+  background-color: #005DA1 !important;
   color: white; }
 
 #sectores .owl-prev {
-  border: 1px solid #1d73b2;
-  color: #1d73b2;
+  border: 1px solid #005DA1;
+  color: #005DA1;
   position: absolute;
   top: -30%;
   right: 50px;
@@ -1311,7 +1316,7 @@ fin estilos textos y lineas conocenos ingles
   font-size: 24px; }
 
 #sectores .owl-prev:hover {
-  background-color: #1d73b2 !important;
+  background-color: #005DA1 !important;
   color: white; }
 
 #seccion-4imagenes {
@@ -1815,7 +1820,7 @@ div .title-sectores {
     #contact-us .content-text h1:before {
       content: '';
       position: absolute;
-      background-color: #1d73b2;
+      background-color: #005DA1;
       bottom: 0;
       width: 40px;
       height: 2px;
@@ -1827,7 +1832,6 @@ div .title-sectores {
       font-size: 20px; }
       #contact-us .content-text p span {
         font-weight: 400;
-        font-style: italic;
         letter-spacing: 5px;
         color: #00A4E0; }
   #contact-us input {

@@ -52,10 +52,10 @@
         font-weight: 100;
     }
     .col-title{
-        border-right: 2px solid #1d73b2;
+        border-right: 2px solid $azulObscuro;
     }
     .row-line{
-        border-bottom: 2px solid #1d73b2;
+        border-bottom: 2px solid $azulObscuro;
     }
 }
 
@@ -246,11 +246,11 @@ fin estilos textos y lineas conocenos ingles
         h3{
             font-size: 35px;
             font-weight: 600;
-            color: #1d73b2;
+            color: $azulObscuro;
         }
         span{
             font-size: 20px;
-            color: #1d73b2;
+            color: $azulObscuro;
             font-weight: 400;
         }
         p{
@@ -280,7 +280,7 @@ fin estilos textos y lineas conocenos ingles
        
             content: '';
             position: absolute;
-            background-color: #1d73b2;
+            background-color: $azulObscuro;
             bottom: 0;
             width: 40px;
             left: 0px;

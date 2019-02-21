@@ -1,3 +1,5 @@
+@import "variables";
+
 #titulo-sectores
 {
     position: relative;
@@ -109,7 +111,7 @@
     {
         content: '';
         position: absolute;
-        background-color: #1d73b2;
+        background-color: $azulObscuro;
         bottom: 0;
         width: 40px;
         left: 0px;
@@ -125,8 +127,8 @@
 
 #sectores .owl-next
 { 
-    border: 1px solid #1d73b2;
-    color: #1d73b2;
+    border: 1px solid $azulObscuro;
+    color: $azulObscuro;
     position: absolute;
     top: -30%;
     right: 0px;  
@@ -144,14 +146,14 @@
 
 #sectores .owl-next:hover
 {
-    background-color: #1d73b2 !important;
+    background-color: $azulObscuro !important;
     color: white;
 }
 
 #sectores .owl-prev
 {
-    border: 1px solid #1d73b2;
-    color: #1d73b2;
+    border: 1px solid $azulObscuro;
+    color: $azulObscuro;
     position: absolute;
     top: -30%;
     right: 50px;
@@ -169,7 +171,7 @@
 
 #sectores .owl-prev:hover
 {
-    background-color: #1d73b2 !important;
+    background-color: $azulObscuro !important;
     color: white;
 }
 

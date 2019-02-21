@@ -90,7 +90,7 @@
         h1:before{
             content: '';
             position: absolute;
-            background-color: #1d73b2;
+            background-color: $azulObscuro;
             bottom: 0;
             width: 40px;
             height: 2px;
@@ -104,7 +104,6 @@
 
             span{
                 font-weight:400;
-                font-style: italic;
                 letter-spacing: 5px;
                 color: $azulCielo;
             }

@@ -110,41 +110,16 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
 </div>
     <!-- fin banner-->
 
-<!--banner
-<div id="conoc">
-<img src="img/banner/contacto.png" alt="coine" class="imagen-principal">
-<section class="container-fluid">
-    <div class="row">
-        
-    </div>
-</section>
-</div>
- fin banner-->
-
-<!-- mapa y formulario-->
-<!-- <section class="container-fluid" id="contacto">
-    <div class="row">
-         <div class="col-md-1"></div>
-         <div class="col-md-5">
-             <div id="mapa"></div>
-         </div>
-              
-         <div class="col-md-4"  style="margin-top: 10px;">
-             <form action="correo/enviar.php" method="POST">
-               <b id="titulos">Contacto</b>
-                <input type="text" name="Nombre" placeholder="Nombre" required><br>
-                <input type="text" name="Correo" placeholder="Correo" required>
-                <input type="text" name="Telefono" placeholder="Teléfono" required> <br><br>
-                <textarea name="mensaje" placeholder="Escriba aquí su mensaje"required></textarea>
-                <input type="submit"   value="Enviar" id="btn">
-             </form>            
-         </div> 
-    </div>
-</section> -->
-<!--fin mapa y formulario-->
+<!--seccion formulario-->
 <section id="contact-us">
-        <form action="correo/enviar.php" method="get">
+
+        <form action="correo/enviar.php" method="POST">
             <div class="container">
+                    <div class="content-text">
+                            <h1>Contacto</h1>
+                            <p> DEJA UN MENSAJE<br>
+                            <span>Siéntete libre de contactarnos </span></p>
+                        </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="form-group">
@@ -154,27 +129,37 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
                             <input type="mail" name="Correo" class="form-control" placeholder="Correo" required>
                         </div>
                         <div class="form-group">
-                            <input type="text"  name="Telefono" class="form-control" placeholder="Telefono" required>
+                            <input type="text"  name="Telefono" class="form-control" placeholder="Teléfono" required>
                         </div>
                     </div>
                     <div class=" col-lg-6">
                         <div class="form-group">
-                                <textarea class="form-control" name="" id=""  rows="" placeholder="Escribe aquí un mensaje" required></textarea>
+                                <textarea class="form-control" name="mensaje" placeholder="Escribe aquí un mensaje" required></textarea>
                         </div>
                     </div>
                     <div class="col-12">
                         <div class="form-group">
-                            <button class="btn btn-primary">Enviar</button>
+                            <button  type="submit"   value="Enviar" id="btn" class="btn btn-primary">Enviar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </form>
 </section>
+<!--seccion formulario-->
+
+
+<!--seccion mapa-->
+<section id="contacto">
+             <div id="mapa"></div>
+</section>
+<!--seccion mapa-->
+
 
 <!--footer-->
 <footer>
-    <section class="container-fluid foter">
+        <div class="content-line"></div>
+    <div class="container-fluid foter">
         <div class="row">
             <div class="col-md-12" id="foter-redes">
                   <ul>
@@ -186,9 +171,10 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
                   </ul>
             </div>
         </div>
-    </section>
+    </div>
 </footer>
 <!--fin footer-->
+
 
 <!-- sript-->
 <script src="//code.tidio.co/ukrqaqjv3f9hzg80knarfaeztnfcxo2p.js"></script>

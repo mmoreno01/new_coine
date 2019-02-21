@@ -1,7 +1,9 @@
+@import"variables";
+
 #foter-redes
 {
     height: 100%;
-    background-color: #005c9b;
+    background-color:$azulObscuro;
     ul 
     {
         list-style: none;
@@ -34,7 +36,7 @@
         width: 40px;
         height: 40px;
         text-align: center;
-        background-color: #1d73b2;
+        background-color: $azulRedes;
         margin: 10px;
         border-radius: 50%;
         display: inline-block;
@@ -45,7 +47,7 @@
 
     .fuente-icono:hover
     {
-        color:#1d73b2;
+        color:$azulObscuro;
         background-color:white;
     }
 
@@ -54,7 +56,7 @@
         width: 40px;
         height: 40px;
         text-align: center;
-        background-color: #1d73b2;
+        background-color: $azulRedes;
         margin: 10px;
         border-radius: 50%;
         display: inline-block;
@@ -64,7 +66,17 @@
     }
     .fuente-icono-y:hover
     {
-        color:#1d73b2;
+        color:$azulObscuro;
         background-color:white;
+    }
+   
+}
+
+footer{
+    .content-line
+    {
+        width: 100%;
+        height: 8px;
+        background-color: $azulCielo;
     }
 }

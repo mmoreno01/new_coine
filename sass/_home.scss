@@ -1,3 +1,5 @@
+@import "variables";
+
 .video-principa
 {
     width: 100%;
@@ -17,7 +19,7 @@
         text-align: center;
         padding: 50px 0px;
         span{
-            color: #1d73b2;
+            color: $azulObscuro;
             font-weight: 600;
         }
     }
@@ -122,7 +124,7 @@
     .cont-title-testimonials::before{
         content: '';
         position: absolute;
-        background-color: #1d73b2;
+        background-color: $azulObscuro;
         height: 2px;
         border-radius: 10px;
         top: 48px;
@@ -167,7 +169,7 @@
     {
         content: "";
         position: absolute;
-        background-color: #1d73b2;
+        background-color: $azulObscuro;
         bottom: 0;
         width: 40px;
         left: 0px;
@@ -245,7 +247,7 @@ background-color: #f4f4f4;
 .content-title::before{
   content: '';
     position: absolute;
-    background-color: #1d73b2;
+    background-color: $azulObscuro;
     bottom: 0;
     width: 40px;
     left: 0;
@@ -323,7 +325,7 @@ background-color: #f4f4f4;
 .post-events{
     position: absolute;
     width: 200px;
-    background: #1d73b2;
+    background: $azulObscuro;
     top: 0px;
     z-index: 9;
     padding: 10px;
@@ -353,7 +355,7 @@ background-color: #f4f4f4;
     h1::before{
         content: '';
         position: absolute;
-        background-color: #1d73b2;
+        background-color: $azulObscuro;
         bottom: 0;
         width: 40px;
         left: 0px;
@@ -391,7 +393,7 @@ background-color: #f4f4f4;
         padding: 10px;
         }
         .titutlo-noticia:hover{
-            color: #1d73b2;
+            color: $azulObscuro;
         }
         .noticia {
             a{
@@ -438,7 +440,7 @@ background-color: #f4f4f4;
       }
     }
     .seeMore{
-      color:#1d73b2;
+      color:$azulObscuro;
       font-weight: 700;
       text-align: center;
       -webkit-transition: all 0.4s ease-in-out;

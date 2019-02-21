@@ -26,17 +26,17 @@ date_default_timezone_set("America/Mexico_City");
 		$mail->Host = 'smtp.gmail.com';
 		$mail->SMTPAuth = true;
 	    $mail->Mailer = 'smtp';
-		$mail->Username = '***************************************'; // Correo completo a utilizar
-		$mail->Password = '*********'; // Contraseña
+		$mail->Username = '************************'; // Correo completo a utilizar
+		$mail->Password = '**************'; // Contraseña
         $mail->SMTPSecure = 'tls';
 		$mail->Port = 587; // Puerto a utilizar
-		$mail->From = '***********************************+';
+		$mail->From = '*************************';
 		$mail->FromName = 'coine | Nuevo correo';
-		$mail->AddAddress('********************'); // Esta es la dirección a donde enviamos
+		$mail->AddAddress('*********************'); // Esta es la dirección a donde enviamos
 		$mail->isHTML(true);
 	    $mail->CharSet = 'UTF-8';
         $mail->MsgHTML($message);
-        $mail->SetFrom('*******************************+', 'Coine');
+        $mail->SetFrom('***********************', 'Coine');
 		$mail->Subject = 'Nuevo Correo'; 
         //$mail->AltBody =($contenido); 
          //var_dump($mail);

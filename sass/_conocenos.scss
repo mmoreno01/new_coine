@@ -271,13 +271,13 @@ fin estilos textos y lineas conocenos ingles
             border-radius: 10px;
         
     }
-    .card
+    .card 
     {
         border: none;
         border-bottom: 1px solid #005c9b;
         button
         {
-            color: #005c9b;
+            color: $azulcoine;
             font-size: 18px;
         }
     }
@@ -294,6 +294,16 @@ fin estilos textos y lineas conocenos ingles
     }
 }
 
+#especializamos
+{
+    .card 
+    {
+        button:hover
+        {
+            color:$azulCielo;
+        }
+    }
+}
  /*--------------------------
         Responsive
 -----------------------------*/

@@ -86,10 +86,16 @@
     }
     #btn
     {
-        background: #005c9b;
+        background: red;
         color: #fff;
         padding: 20px;
         border: none;
+    .btn_1:hover
+    {
+        background-color: $azulcoine;
+        border: 1px solid $white;
+        color: $white;
+    }
     }
     #btn:hover
     {
@@ -153,9 +159,18 @@
        height: 150px;
        border: transparent;
    }
-   .btn-primary{
+   .btn-primary
+   {
        background:$azulObscuro;
        color: $white;
        border: $azulObscuro;
+       -webkit-transition:1s; /* For Safari 3.1 to 6.0 */
+       transition:1s; 
    }
+   .btn-primary:hover
+   {
+    background:transparent;
+    color: $azulcoine;
+    border: 1px solid $azulcoine;
+    }
 }

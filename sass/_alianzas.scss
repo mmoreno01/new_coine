@@ -41,10 +41,10 @@
     .card
     {
         border: none;
-        border-bottom: 1px solid #005c9b;
+        border-bottom: 1px solid $azulcoine;
         button
         {
-            color: #005c9b;
+            color: $azulcoine;
             font-size: 18px;
         }
     }
@@ -55,12 +55,23 @@
     }
     .card-body
     {
-        font-size: 15px;
+        font-size: 18px;
         text-align: justify;
-        line-height: 1.8;
-        font-weight: 400;
+        font-weight: 100;
     }
 }
+
+#alianza-video
+{
+    .card
+    {
+        button:hover
+        {
+            color: $azulCielo;
+        }
+    }
+}
+
 .video-inversiones
 {
     max-width: 100%;

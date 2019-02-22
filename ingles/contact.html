@@ -81,7 +81,7 @@
             <a class="nav-link disabled" href="platform.html">Coine Platform</a>
           </li>-->
           <li class="nav-item active">
-            <a class="nav-link disabled" href="https://www.youtube.com/channel/UC7RsRR4LlwT2ewbGBnPd60Q" target="new">Coine Tv</a>
+            <a class="nav-link disabled" href="https://www.youtube.com/channel/UC7RsRR4LlwT2ewbGBnPd60Q" target="new">COINE TV</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="contact.html">Contact Us</a>
@@ -113,45 +113,55 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
 </div>
     <!-- fin banner-->
 
-<!-- mapa y formulario-->
+<!--seccion formulario-->
 <section id="contact-us">
-    <form action="correo/enviar.php" method="get">
-        <div class="container">
-            <div class="content-tilteEsp">
-                <h1 class="titulo-especialidad">Contact us:</h1>
-        </div> 
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="form-group">
-                        <input type="text" name="Nombre" class="form-control" placeholder="Name" required>
+
+        <form action="correo/enviar.php" method="POST">
+            <div class="container">
+                    <div class="content-text">
+                            <h1>Contact us</h1>
+                            <p> Leave a message<br>
+                            <span>Feel free to contact us</span></p>
+                        </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <input type="text" name="Nombre" class="form-control" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="mail" name="Correo" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text"  name="Telefono" class="form-control" placeholder="Phone" required>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="mail" name="Correo" class="form-control" placeholder="Email" required>
+                    <div class=" col-lg-6">
+                        <div class="form-group">
+                                <textarea class="form-control" name="mensaje" placeholder="Write a message here" required></textarea>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="text"  name="Telefono" class="form-control" placeholder="Phone" required>
-                    </div>
-                </div>
-                <div class=" col-lg-6">
-                    <div class="form-group">
-                            <textarea class="form-control" name="" id=""  rows="" placeholder="Write a message here" required></textarea>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="form-group">
-                        <button class="btn btn-primary">Send</button>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <button  type="submit"   value="Enviar" id="btn" class="btn btn-primary">Send</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </form>
+        </form>
 </section>
-<!--fin mapa y formulario-->
+<!--seccion formulario-->
 
+
+<!--seccion mapa-->
+<section id="contacto">
+             <div id="mapa"></div>
+</section>
+<!--seccion mapa-->
 
 <!--footer-->
 <footer>
-    <section class="container-fluid foter"> 
+    <div class="content-line"></div>
+    <div class="container-fluid foter">
         <div class="row">
             <div class="col-md-12" id="foter-redes">
                   <ul>
@@ -163,9 +173,10 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
                   </ul>
             </div>
         </div>
-    </section>
+    </div>
 </footer>
 <!--fin footer-->
+
 
 <!-- sript-->
 <script src="//code.tidio.co/ukrqaqjv3f9hzg80knarfaeztnfcxo2p.js"></script>

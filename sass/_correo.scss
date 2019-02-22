@@ -1,23 +1,112 @@
 @import"variables";
 
-.titulo_correo
+#correo-envio
 {
-    color: #005c9b;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.contenido_correcto
-{
-    color: #005c9b;
-    font-size: 20px;
+    padding: 100px 0px 0px;
+    h1
+    {
+        color: #000;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: 100;
+        padding-bottom: 10px;
+        position: relative;
+    }
+    h1::before
+    {   
+        content: '';
+        position: absolute;
+        background-color: $azulObscuro;
+        bottom: 0;
+        width: 40px;
+        left: 40%;
+        height: 2px;
+        border-radius: 10px;
+    }
+    .contenido_correcto
+    {
+        font-weight: bold;
+        font-size: 20px; 
+        padding: 50px 0px;
+        text-align: center;
+    }
+    span{
+        font-weight:400;
+        letter-spacing: 5px;
+        color: $azulCielo;
+    }
 }
 
 .btn_1
-{
+    {
     background-color: transparent;
-    border: 1px solid #005c9b;
+    border: 1px solid $azulcoine;
     margin-bottom: 50px;
     padding: 10px;
     color: #747477;
+    -webkit-transition:1s; /* For Safari 3.1 to 6.0 */
+    transition:1s; 
+    }
+
+    .btn_1:hover
+    {
+        background-color: $azulcoine;
+        border: 1px solid $white;
+        color: $white;
+    }
+
+/*--------------------------
+        Responsive
+-----------------------------*/
+@media (max-width:1200px)
+{   
+
 }
+
+@media (max-width:992px)
+{       
+    
+}
+@media (max-width:768px)
+{
+    #correo-envio
+    {
+        padding: 100px 20px 0px;
+        h1
+        {
+            color: #000;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-size: 28px;
+            font-weight: 100;
+            text-align: center;
+            padding-bottom: 10px;
+            position: relative;
+        }
+    }
+}
+
+@media (max-width:576px)
+{
+    #correo-envio
+    {
+        padding: 100px 20px 0px;
+        h1
+        {
+            color: #000;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-size: 26px;
+            font-weight: 100;
+            text-align: center;
+            padding-bottom: 10px;
+            position: relative;
+        }
+    }
+ 
+}
+ /*--------------------------
+        Fin Responsive
+-----------------------------*/
+

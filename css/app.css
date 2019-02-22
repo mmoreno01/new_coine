@@ -858,6 +858,9 @@ fin estilos textos y lineas conocenos ingles
     text-align: justify;
     font-weight: 100; }
 
+#especializamos .card button:hover {
+  color: #00A4E0; }
+
 /*--------------------------
         Responsive
 -----------------------------*/
@@ -1229,10 +1232,9 @@ fin estilos textos y lineas conocenos ingles
     padding-bottom: 10px;
     position: relative; }
   #beneficios .contenido-beneficios {
-    font-size: 15px;
+    font-size: 20px;
     text-align: justify;
-    line-height: 1.8;
-    font-weight: 400; }
+    font-weight: 100; }
 
 #beneficios .titulo-beneficios::before {
   content: '';
@@ -1250,7 +1252,6 @@ fin estilos textos y lineas conocenos ingles
 #sectores .owl-next {
   border: 1px solid #005DA1;
   color: #005DA1;
-  position: absolute;
   top: -30%;
   right: 0px;
   font-weight: inherit !important;
@@ -1270,7 +1271,6 @@ fin estilos textos y lineas conocenos ingles
 #sectores .owl-prev {
   border: 1px solid #005DA1;
   color: #005DA1;
-  position: absolute;
   top: -30%;
   right: 50px;
   font-weight: inherit !important;
@@ -1310,7 +1310,11 @@ fin estilos textos y lineas conocenos ingles
   height: 100%;
   position: absolute;
   /* posiciona el texto por encima de la imagen*/
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-transition: 1s;
+  /* For Safari 3.1 to 6.0 */
+  -o-transition: 1s;
+  transition: 1s; }
 
 .view h2 {
   text-transform: uppercase;
@@ -1318,7 +1322,7 @@ fin estilos textos y lineas conocenos ingles
   text-align: center;
   font-size: 17px;
   padding: 20px 0px 10px;
-  background: rgba(0, 0, 0, 0.8);
+  background: #005da1;
   margin: 0;
   top: 0; }
 
@@ -1332,12 +1336,13 @@ fin estilos textos y lineas conocenos ingles
   display: inline-block;
   text-decoration: none;
   padding: 7px 14px;
-  background: #000;
+  background: #00A4E0;
   color: #fff;
   text-transform: uppercase;
-  -webkit-box-shadow: 0 0 1px #000;
-  -moz-box-shadow: 0 0 1px #000;
-  box-shadow: 0 0 1px #000;
+  margin-top: 15%;
+  -webkit-box-shadow: 0 0 1px #fff;
+  -moz-box-shadow: 0 0 1px #fff;
+  box-shadow: 0 0 1px #fff;
   cursor: pointer; }
 
 .eve {
@@ -1356,7 +1361,7 @@ fin estilos textos y lineas conocenos ingles
   width: 60px;
   height: 60px;
   color: #ffffff;
-  background: #005c9b;
+  background: #00A4E0;
   line-height: 50px;
   padding: 0px 0px;
   text-align: center;
@@ -1371,27 +1376,25 @@ div .title-sectores {
   color: #ffffff;
   line-height: 42px;
   margin-left: 17px;
-  background: rgba(0, 0, 0, 0.8); }
+  background: rgba(0, 93, 161, 0.7); }
 
 .view-first:hover .eve {
   opacity: 0; }
 
 .view p.info:hover {
-  -webkit-box-shadow: 0 0 5px #000;
-  -moz-box-shadow: 0 0 5px #000;
-  box-shadow: 0 0 5px #000; }
+  -webkit-box-shadow: 0 0 5px #fff;
+  -moz-box-shadow: 0 0 5px #fff;
+  box-shadow: 0 0 5px #fff; }
 
+/* la propiedas transition realizara en su tiempo el ocultar y mostrar la animacion*/
 /* la propiedad que se declara aqui opacara el contenido de texto  cuando la oposidad este en el  valor 0*/
 .view-first .mask {
-  -webkit-transition: opacity 1s;
-  /* For Safari 3.1 to 6.0 */
-  -o-transition: opacity 1s;
-  transition: opacity 1s;
   opacity: 0;
-  background: rgba(0, 0, 0, 0.8);
-  -webkit-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-  transition: all 1s ease-out; }
+  background: rgba(0, 93, 161, 0.7);
+  -webkit-transition: 1s;
+  /* For Safari 3.1 to 6.0 */
+  -o-transition: 1s;
+  transition: 1s; }
 
 .view-first h2 {
   opacity: 1; }
@@ -1409,9 +1412,10 @@ div .title-sectores {
 .view-first:hover .mask {
   opacity: 1;
   top: 0;
-  -webkit-transition: all 0.6s ease-out;
-  -o-transition: all 0.6s ease-out;
-  transition: all 0.6s ease-out; }
+  -webkit-transition: 1s;
+  /* For Safari 3.1 to 6.0 */
+  -o-transition: 1s;
+  transition: 1s; }
 
 .view-first:hover .icon-caja {
   position: absolute;
@@ -1420,7 +1424,7 @@ div .title-sectores {
   width: 60px;
   height: 100%;
   color: #ffffff;
-  background: #005c9b;
+  background: #00A4E0;
   line-height: 40px;
   text-align: center;
   font-size: 32px;
@@ -1642,10 +1646,12 @@ div .title-sectores {
     background-color: transparent;
     border: none; }
   #alianza-video .card-body {
-    font-size: 15px;
+    font-size: 18px;
     text-align: justify;
-    line-height: 1.8;
-    font-weight: 400; }
+    font-weight: 100; }
+
+#alianza-video .card button:hover {
+  color: #00A4E0; }
 
 .video-inversiones {
   max-width: 100%;
@@ -1782,10 +1788,14 @@ div .title-sectores {
     max-width: 100%;
     border-bottom: 10px; }
   #contacto #btn {
-    background: #005c9b;
+    background: red;
     color: #fff;
     padding: 20px;
     border: none; }
+    #contacto #btn .btn_1:hover {
+      background-color: #005c9b;
+      border: 1px solid #FFF;
+      color: #FFF; }
   #contacto #btn:hover {
     background: rgba(0, 100, 151, 0.8); }
 
@@ -1837,24 +1847,93 @@ div .title-sectores {
   #contact-us .btn-primary {
     background: #005DA1;
     color: #FFF;
-    border: #005DA1; }
+    border: #005DA1;
+    -webkit-transition: 1s;
+    /* For Safari 3.1 to 6.0 */
+    -o-transition: 1s;
+    transition: 1s; }
+  #contact-us .btn-primary:hover {
+    background: transparent;
+    color: #005c9b;
+    border: 1px solid #005c9b; }
 
-.titulo_correo {
-  color: #005c9b;
-  margin-top: 50px;
-  margin-bottom: 50px; }
-
-.contenido_correcto {
-  color: #005c9b;
-  font-size: 20px; }
+#correo-envio {
+  padding: 100px 0px 0px; }
+  #correo-envio h1 {
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 100;
+    padding-bottom: 10px;
+    position: relative; }
+  #correo-envio h1::before {
+    content: '';
+    position: absolute;
+    background-color: #005DA1;
+    bottom: 0;
+    width: 40px;
+    left: 40%;
+    height: 2px;
+    border-radius: 10px; }
+  #correo-envio .contenido_correcto {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 50px 0px;
+    text-align: center; }
+  #correo-envio span {
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: #00A4E0; }
 
 .btn_1 {
   background-color: transparent;
   border: 1px solid #005c9b;
   margin-bottom: 50px;
   padding: 10px;
-  color: #747477; }
+  color: #747477;
+  -webkit-transition: 1s;
+  /* For Safari 3.1 to 6.0 */
+  -o-transition: 1s;
+  transition: 1s; }
 
+.btn_1:hover {
+  background-color: #005c9b;
+  border: 1px solid #FFF;
+  color: #FFF; }
+
+/*--------------------------
+        Responsive
+-----------------------------*/
+@media (max-width: 768px) {
+  #correo-envio {
+    padding: 100px 20px 0px; }
+    #correo-envio h1 {
+      color: #000;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: 100;
+      text-align: center;
+      padding-bottom: 10px;
+      position: relative; } }
+
+@media (max-width: 576px) {
+  #correo-envio {
+    padding: 100px 20px 0px; }
+    #correo-envio h1 {
+      color: #000;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-size: 26px;
+      font-weight: 100;
+      text-align: center;
+      padding-bottom: 10px;
+      position: relative; } }
+
+/*--------------------------
+        Fin Responsive
+-----------------------------*/
 .navbar {
   background-color: white;
   -webkit-box-shadow: 0px 1px 14px #424242;
@@ -2342,7 +2421,7 @@ button:focus {
         text-transform: uppercase;
         font-weight: 600;
         letter-spacing: 10px;
-        color: #007bff;
+        color: #007redbff;
         margin-bottom: 20px; }
       #slider-continentes .slider-for article p {
         text-align: justify; }
@@ -2375,6 +2454,10 @@ button:focus {
       letter-spacing: 5px;
       margin-bottom: 20px;
       color: #8c8c8c; }
+    #section-continentes .content-items p {
+      font-size: 18px;
+      text-align: justify;
+      font-weight: 100; }
 
 #nav-tab {
   margin-bottom: 100px; }
@@ -2392,7 +2475,7 @@ ul.tabs {
   ul.tabs li {
     width: 18%; }
     ul.tabs li a {
-      color: #007bff;
+      color: #005DA1;
       text-decoration: none;
       font-size: 28px;
       text-align: center;
@@ -2403,11 +2486,11 @@ ul.tabs {
   padding: 30px 100px;
   text-align: center;
   margin-top: 30px;
-  color: #4f6a90;
-  font-size: 20px; }
+  font-size: 20px;
+  font-weight: 100; }
 
 ul.tabs li a:hover {
-  color: #0000FF; }
+  color: #00A4E0; }
 
 .active1 {
   -webkit-text-decoration: underline #747477 !important;

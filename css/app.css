@@ -849,7 +849,11 @@ fin estilos textos y lineas conocenos ingles
     border-bottom: 1px solid #005c9b; }
     #especializamos .card button {
       color: #005c9b;
-      font-size: 18px; }
+      font-size: 18px;
+      -webkit-transition: 1s;
+      /* For Safari 3.1 to 6.0 */
+      -o-transition: 1s;
+      transition: 1s; }
   #especializamos .card-header {
     background-color: transparent;
     border: none; }
@@ -1262,7 +1266,11 @@ fin estilos textos y lineas conocenos ingles
   background-color: transparent !important;
   margin: 10px;
   display: inline-block;
-  font-size: 24px; }
+  font-size: 24px;
+  -webkit-transition: 1s;
+  /* For Safari 3.1 to 6.0 */
+  -o-transition: 1s;
+  transition: 1s; }
 
 #sectores .owl-next:hover {
   background-color: #005DA1 !important;
@@ -1281,7 +1289,11 @@ fin estilos textos y lineas conocenos ingles
   background-color: transparent !important;
   margin: 10px;
   display: inline-block;
-  font-size: 24px; }
+  font-size: 24px;
+  -webkit-transition: 1s;
+  /* For Safari 3.1 to 6.0 */
+  -o-transition: 1s;
+  transition: 1s; }
 
 #sectores .owl-prev:hover {
   background-color: #005DA1 !important;
@@ -1641,7 +1653,11 @@ div .title-sectores {
     border-bottom: 1px solid #005c9b; }
     #alianza-video .card button {
       color: #005c9b;
-      font-size: 18px; }
+      font-size: 18px;
+      -webkit-transition: 1s;
+      /* For Safari 3.1 to 6.0 */
+      -o-transition: 1s;
+      transition: 1s; }
   #alianza-video .card-header {
     background-color: transparent;
     border: none; }
@@ -2475,12 +2491,16 @@ ul.tabs {
   ul.tabs li {
     width: 18%; }
     ul.tabs li a {
-      color: #005DA1;
+      color: #00A4E0;
       text-decoration: none;
       font-size: 28px;
       text-align: center;
       display: block;
-      padding: 0px 0px; }
+      padding: 0px 0px;
+      -webkit-transition: 1s;
+      /* For Safari 3.1 to 6.0 */
+      -o-transition: 1s;
+      transition: 1s; }
 
 .texto_principal {
   padding: 30px 100px;
@@ -2490,7 +2510,7 @@ ul.tabs {
   font-weight: 100; }
 
 ul.tabs li a:hover {
-  color: #00A4E0; }
+  color: #005c9b; }
 
 .active1 {
   -webkit-text-decoration: underline #747477 !important;
@@ -2507,7 +2527,12 @@ ul.tabs li a:hover {
 #asia-carrusel button {
   background-color: white !important;
   width: 40px !important;
-  color: #007bff !important; }
+  color: #007bff !important;
+  border: 1px solid #005c9b;
+  -webkit-transition: 1s;
+  /* For Safari 3.1 to 6.0 */
+  -o-transition: 1s;
+  transition: 1s; }
 
 #asia-carrusel button:hover {
   background-color: #007bff !important;

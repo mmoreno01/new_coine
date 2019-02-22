@@ -88,12 +88,14 @@ ul.tabs
         width: 18%;
         a 
         {
-            color:$azulObscuro;
+            color:$azulCielo;
             text-decoration: none;
             font-size: 28px;
             text-align: center;
             display: block;
-            padding: 0px 0px;
+            padding: 0px 0px;  
+            -webkit-transition:1s; /* For Safari 3.1 to 6.0 */
+            transition:1s;
         }
     }
 }
@@ -110,7 +112,7 @@ ul.tabs
 
 ul.tabs li a:hover
 {
-    color:$azulCielo;
+    color:$azulcoine;
   
 }
 .active1
@@ -137,6 +139,9 @@ ul.tabs li a:hover
     background-color: white !important;
     width: 40px !important;
     color: #007bff !important;
+    border: 1px solid $azulcoine;
+    -webkit-transition:1s; /* For Safari 3.1 to 6.0 */
+    transition:1s;
 }
 
 #asia-carrusel button:hover

@@ -279,6 +279,8 @@ fin estilos textos y lineas conocenos ingles
         {
             color: $azulcoine;
             font-size: 18px;
+            -webkit-transition:1s; /* For Safari 3.1 to 6.0 */
+            transition:1s;
         }
     }
     .card-header

@@ -14,7 +14,6 @@ date_default_timezone_set("America/Mexico_City");
 	$phone=$_POST['Telefono'];
 	$message=$_POST['mensaje'];
     $contenido = "Nombre:". $name. "\nCorreo:". $email. "\nTélefono:". $phone. "\nmensaje:".$message;
-	// print_r($_POST);
 
 	$template = str_replace('%Nombre%', $name, $template);
 	$template = str_replace('%Correo%', $email, $template);
@@ -95,7 +94,7 @@ date_default_timezone_set("America/Mexico_City");
 </html>";
 
 	 if(!$mail->Send()) {
-		 header('Location: ../index.html');
+		 header('Location: ../error.html');
 		/*echo 'Mailer Error: ' . $mail->ErrorInfo;*/ 
 	} else{
 		 header('Location: ../correo.html');

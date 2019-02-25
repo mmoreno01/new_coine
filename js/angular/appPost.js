@@ -9,7 +9,7 @@ myApp.controller('entradas', ['$scope','$window','$http', function($scope,$windo
   }).then(function (res){
     $scope.postConsulta = res.data;
     console.log($scope.postConsulta);
-  });  
+  });   
 }]);  
  
 myApp.controller('entradasNotices', ['$scope','$window','$http', function($scope,$window,$http) {

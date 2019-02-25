@@ -1208,15 +1208,6 @@ fin estilos textos y lineas conocenos ingles
     margin-top: 75px;
     position: absolute; }
 
-#sectores {
-  position: relative;
-  padding: 30px;
-  background-color: #f4f4f4;
-  padding: 50px 0px; }
-  #sectores .owl-carousel.owl-loaded {
-    display: block;
-    margin-top: 54px; }
-
 #img-circulos {
   width: 150px;
   margin: 0 auto;
@@ -1303,14 +1294,14 @@ fin estilos textos y lineas conocenos ingles
   position: relative;
   padding: 30px; }
 
-.view {
-  width: 100%;
-  height: 100%;
-  float: left;
-  border: 0px solid #fff;
-  overflow: hidden;
-  /*Oculta el contenido y solo resalta la imagen */
-  text-align: center; }
+#sectores {
+  position: relative;
+  padding: 30px;
+  background-color: #f4f4f4;
+  padding: 50px 0px; }
+  #sectores .owl-carousel.owl-loaded {
+    display: block;
+    margin-top: 54px; }
 
 .view img {
   display: block;
@@ -1336,7 +1327,11 @@ fin estilos textos y lineas conocenos ingles
   padding: 20px 0px 10px;
   background: #005da1;
   margin: 0;
-  top: 0; }
+  top: 0;
+  -webkit-transition: 1s;
+  /* For Safari 3.1 to 6.0 */
+  -o-transition: 1s;
+  transition: 1s; }
 
 .view p {
   font-size: 12px;
@@ -1355,16 +1350,20 @@ fin estilos textos y lineas conocenos ingles
   -webkit-box-shadow: 0 0 1px #fff;
   -moz-box-shadow: 0 0 1px #fff;
   box-shadow: 0 0 1px #fff;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: 1s;
+  /* For Safari 3.1 to 6.0 */
+  -o-transition: 1s;
+  transition: 1s; }
 
 .eve {
   margin-top: -60px;
   position: absolute;
   width: 100%;
-  -webkit-transition: opacity  1s;
+  -webkit-transition: 1s;
   /* For Safari 3.1 to 6.0 */
-  -o-transition: opacity  1s;
-  transition: opacity  1s; }
+  -o-transition: 1s;
+  transition: 1s; }
 
 .icon-s {
   position: absolute;
@@ -1398,15 +1397,10 @@ div .title-sectores {
   -moz-box-shadow: 0 0 5px #fff;
   box-shadow: 0 0 5px #fff; }
 
-/* la propiedas transition realizara en su tiempo el ocultar y mostrar la animacion*/
 /* la propiedad que se declara aqui opacara el contenido de texto  cuando la oposidad este en el  valor 0*/
 .view-first .mask {
   opacity: 0;
-  background: rgba(0, 93, 161, 0.7);
-  -webkit-transition: 1s;
-  /* For Safari 3.1 to 6.0 */
-  -o-transition: 1s;
-  transition: 1s; }
+  background: rgba(0, 93, 161, 0.7); }
 
 .view-first h2 {
   opacity: 1; }
@@ -1423,11 +1417,7 @@ div .title-sectores {
 /* en esta instruccion muestra el color de fonde que colocamos al pasar el mouse*/
 .view-first:hover .mask {
   opacity: 1;
-  top: 0;
-  -webkit-transition: 1s;
-  /* For Safari 3.1 to 6.0 */
-  -o-transition: 1s;
-  transition: 1s; }
+  top: 0; }
 
 .view-first:hover .icon-caja {
   position: absolute;
@@ -1441,7 +1431,11 @@ div .title-sectores {
   text-align: center;
   font-size: 32px;
   width: 40px;
-  padding: 70px 5px 0px; }
+  padding: 70px 5px 0px;
+  -webkit-transition: 1s;
+  /* For Safari 3.1 to 6.0 */
+  -o-transition: 1s;
+  transition: 1s; }
 
 /*--------------------------
         Responsive
@@ -1586,18 +1580,36 @@ div .title-sectores {
     text-align: justify;
     color: #4f6a90; }
 
-.titulo-eventos {
-  text-align: center;
-  color: #005c9b;
-  margin: 10px;
-  margin-bottom: 50px; }
-
 #post-events {
   padding: 50px 0px; }
   #post-events .card-item {
     border: 1px solid #c1c1c1;
     padding: 30px;
     margin-bottom: 20px; }
+  #post-events h1 {
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 100;
+    padding-bottom: 10px;
+    position: relative; }
+  #post-events h1::before {
+    content: '';
+    position: absolute;
+    background-color: #005DA1;
+    bottom: 0;
+    width: 40px;
+    left: 0px;
+    height: 2px;
+    border-radius: 10px; }
+  #post-events a {
+    color: #005DA1;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
+  #post-events a:hover {
+    color: #00A4E0; }
   #post-events .thumbnail-attachment {
     float: left;
     max-width: 55%; }
@@ -1615,6 +1627,14 @@ div .title-sectores {
     #post-events .entry-body p {
       text-align: justify;
       margin-bottom: 20px; }
+    #post-events .entry-body .btn-primary {
+      color: white;
+      background-color: #005c9b;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s; }
+    #post-events .entry-body .btn-primary:hover {
+      background-color: #00A4E0; }
 
 @media (max-width: 992px) {
   #post-events .thumbnail-attachment {
@@ -1969,6 +1989,26 @@ div .title-sectores {
 /*--------------------------
         Responsive
 -----------------------------*/
+@media (max-width: 992px) {
+  .navbar-collapse {
+    text-align: center; }
+    .navbar-collapse ul {
+      text-align: center; }
+      .navbar-collapse ul .nav-item {
+        text-align: center; }
+  .dropdown-item {
+    text-align: center !important; }
+  .navbar-collapse .nav-item.arriba::before {
+    background: rgba(250, 250, 250, 0) -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#00A4E0), to(transparent)) repeat scroll 0 !important;
+    background: rgba(250, 250, 250, 0) -webkit-linear-gradient(left, transparent, #00A4E0, transparent) repeat scroll 0 !important;
+    background: rgba(250, 250, 250, 0) -o-linear-gradient(left, transparent, #00A4E0, transparent) repeat scroll 0 !important;
+    background: rgba(250, 250, 250, 0) linear-gradient(to right, transparent, #00A4E0, transparent) repeat scroll 0 !important;
+    content: "";
+    height: 1px;
+    left: 25%;
+    position: absolute;
+    width: 50%; } }
+
 @media (max-width: 768px) {
   #titulo-section .col-title {
     border-right: none; } }

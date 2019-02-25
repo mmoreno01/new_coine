@@ -60,19 +60,6 @@
     }
 }
 
-#sectores
-{
-    position: relative;
-    padding: 30px;
-    background-color: #f4f4f4;
-    padding: 50px 0px;
-
-    .owl-carousel.owl-loaded {
-        display: block;
-        margin-top: 54px;
-    }
-}
-
 #img-circulos
 {
     width: 150px;
@@ -118,6 +105,8 @@
         border-radius: 10px;
     } 
 }
+
+
 
 #sectores .owl-dot
 {
@@ -182,14 +171,21 @@
     padding: 30px;
 }
 
-.view{
-	width: 100%;
-	height: 100%;
-	float: left;
-	border:0px solid #fff;
-	overflow: hidden;  /*Oculta el contenido y solo resalta la imagen */
-	text-align: center;
+#sectores
+{
+    position: relative;
+    padding: 30px;
+    background-color: #f4f4f4;
+    padding: 50px 0px;
+
+    .owl-carousel.owl-loaded {
+        display: block;
+        margin-top: 54px;
+    }
+    
 }
+
+
 
 .view img
 {
@@ -216,6 +212,8 @@
     background: rgba(0, 93, 161, 1);
     margin: 0;
     top:0;
+    -webkit-transition:1s; /* For Safari 3.1 to 6.0 */
+    transition:1s; 
 }
 
 .view p {
@@ -237,14 +235,16 @@
    -moz-box-shadow: 0 0 1px #fff;
    box-shadow: 0 0 1px #fff;
    cursor: pointer;
+   -webkit-transition:1s; /* For Safari 3.1 to 6.0 */
+   transition:1s; 
 }
 .eve
 {
     margin-top: -60px;
     position: absolute;
     width: 100%;
-    -webkit-transition: opacity  1s; /* For Safari 3.1 to 6.0 */
-    transition: opacity  1s; 
+    -webkit-transition: 1s; /* For Safari 3.1 to 6.0 */
+    transition:  1s; 
 }
 .icon-s
 {
@@ -286,17 +286,11 @@ div .title-sectores
    box-shadow: 0 0 5px #fff;
 }
 
-/* la propiedas transition realizara en su tiempo el ocultar y mostrar la animacion*/
-
-
-
  /* la propiedad que se declara aqui opacara el contenido de texto  cuando la oposidad este en el  valor 0*/
  .view-first .mask
 {   
     opacity: 0; 
-    background: rgba(0, 93, 161, 0.7);   
-    -webkit-transition:1s; /* For Safari 3.1 to 6.0 */
-    transition:1s; 
+    background: rgba(0, 93, 161, 0.7); 
 }
 
 .view-first h2
@@ -321,8 +315,6 @@ div .title-sectores
 {
     opacity: 1; 
     top: 0;
-    -webkit-transition:1s; /* For Safari 3.1 to 6.0 */
-    transition:1s; 
 }
 
 .view-first:hover .icon-caja {
@@ -338,6 +330,9 @@ div .title-sectores
     font-size: 32px;
     width: 40px;
     padding: 70px 5px 0px;
+    -webkit-transition:1s; /* For Safari 3.1 to 6.0 */
+    transition:1s; 
+
 
  }
 

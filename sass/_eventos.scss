@@ -32,6 +32,15 @@
         padding: 30px;
         margin-bottom: 20px;
     }
+    a 
+    {
+        color:$azulObscuro;
+        transition: 1s;
+    }
+    a:hover
+    {
+        color:$azulCielo;
+    }
     .thumbnail-attachment{
         float: left;
         max-width: 55%;
@@ -53,6 +62,16 @@
         p{
             text-align: justify;
             margin-bottom: 20px;
+        }
+        .btn-primary 
+        {
+            color:white;
+            background-color: $azulcoine;
+            transition: 1s;
+        }
+        .btn-primary:hover
+        {
+            background-color: $azulCielo;
         }
     }
 }

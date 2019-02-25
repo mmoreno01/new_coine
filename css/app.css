@@ -1580,18 +1580,29 @@ div .title-sectores {
     text-align: justify;
     color: #4f6a90; }
 
-.titulo-eventos {
-  text-align: center;
-  color: #005c9b;
-  margin: 10px;
-  margin-bottom: 50px; }
-
 #post-events {
   padding: 50px 0px; }
   #post-events .card-item {
     border: 1px solid #c1c1c1;
     padding: 30px;
     margin-bottom: 20px; }
+  #post-events h1 {
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 100;
+    padding-bottom: 10px;
+    position: relative; }
+  #post-events h1::before {
+    content: '';
+    position: absolute;
+    background-color: #005DA1;
+    bottom: 0;
+    width: 40px;
+    left: 0px;
+    height: 2px;
+    border-radius: 10px; }
   #post-events a {
     color: #005DA1;
     -webkit-transition: 1s;

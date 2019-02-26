@@ -1,5 +1,5 @@
 
-var myApp = angular.module('app', ['ngSanitize', 'ngMask']);
+var myApp = angular.module('app', ['angularUtils.directives.dirPagination','ngSanitize', 'ngMask']);
 
 myApp.controller('entradas', ['$scope','$window','$http', function($scope,$window,$http) {
 

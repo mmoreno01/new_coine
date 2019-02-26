@@ -22,7 +22,7 @@
 <!--fin links-->
     <title>Eventos | Consejo Internacional de Empresarios</title>
 </head>
-<body>
+<body  ng-app="app" ng-cloak>
 
 <!-- menu-->
 <header class="navbar navbar-expand-lg  navbar-dark  sticky-top">
@@ -108,27 +108,36 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
 <!-- <p class=" animated  fadeInUp delay-3s">Por una Inversión con Compromiso Social</p> -->
 </div>
 </div>
-    <!-- fin banner-->
+<!-- fin banner-->
 
-<section id="post-events" ng-app="app" ng-cloak>
+<section id="post-events">
     <div class="container" ng-controller="entradas">
             <div>
                 <h1>Eventos</h1>
             </div>
         <div class="row">
-            <div class="col-12 card-item" ng-repeat="x in postConsulta">
+            <div class="col-12 card-item" dir-paginate="x in postConsulta | itemsPerPage: 3">
                 <div class="thumbnail-attachment">
-                        <img  ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}"  class="d-block w-100" alt="...">
+                    <img  ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}"  class="d-block w-100" alt="...">
                 </div>
                 <div class="entry-body">
                     <h4 class="entry-title">
-                            <a href="{{x.link}}"><p class="titutlo-noticia">{{x.title.rendered}}</p></a>
+                        <a href="{{x.link}}"><p class="titutlo-noticia">{{x.title.rendered}}</p></a>
                     </h4>
                     <p class="texto-noticia" ng-bind-html="x.excerpt.rendered | limitTo: 200"></p>
                     <a href="{{x.link}}"  class="btn btn-primary"><label>Ver más</label></a>
                 </div>
             </div>
         </div>
+        <dir-pagination-controls
+        [max-size=""]
+        [direction-links=""]
+        [boundary-links=""]
+        [on-page-change=""]
+        [pagination-id=""]
+        [template-url="directives/pagination/dirPagination.tpl.html"]
+        [auto-hide=""]>
+        </dir-pagination-controls>
     </div>
 </section>
 
@@ -184,6 +193,7 @@ $('.owl-carousel').owlCarousel({
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 <script src="js/angular/appPost.js"></script>
 <script src="js/angular/ngMask.min.js"></script>
+<script src="node_modules/angular-utils-pagination/dirPagination.js"></script>
 <!--fin sricpts-->
 </body>
 </html>

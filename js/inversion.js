@@ -1,11 +1,11 @@
 $(document).ready(function(){
-    $('ul.tabs li a:first').addClass('active');
+    $('.tabs a:first').addClass('active-inversion');
     $('.inversion-secciones article').hide();
     $('.inversion-secciones article:first').show();
     
-    $('ul.tabs li a').click(function(){
-        $('ul.tabs li a').removeClass('active');
-        $(this).addClass('active');
+    $('.tabs a').click(function(){
+        $('.tabs a').removeClass('active-inversion');
+        $(this).addClass('active-inversion');
         $('.inversion-secciones article').hide();
         
         var activeTab =$(this).attr('href');

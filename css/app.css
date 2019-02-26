@@ -1018,40 +1018,83 @@ fin estilos textos y lineas conocenos ingles
     margin-top: 82px;
     position: absolute; }
 
-#secciones-inversiones {
-  position: relative;
-  width: 1200px;
-  margin-top: 50px;
-  max-width: 100%; }
-  #secciones-inversiones ul.tabs {
-    width: 100%;
-    background: #4F6A90;
-    list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-  #secciones-inversiones li {
-    width: 18%; }
-  #secciones-inversiones a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    text-align: center;
-    display: block;
-    padding: 20px 0px; }
-
-#img-inversiones .inversion-secciones {
-  width: 100%; }
-
-#img-inversiones .iversion-secciones article {
-  padding: 30px; }
-
 #imagen-inversiones {
-  width: 100%;
-  height: 10%; }
+  width: 50%;
+  height: 50px;
+  height: auto;
+  display: block;
+  margin: 0 auto; }
+  #imagen-inversiones .inversion-secciones {
+    width: 100%; }
+  #imagen-inversiones .iversion-secciones article {
+    padding: 30px; }
 
 .video-inversiones {
   width: 100%; }
+
+.active-inversion {
+  color: #00A4E0; }
+
+#secciones-inversiones {
+  position: relative; }
+  #secciones-inversiones .owl-carousel .item {
+    border: 1px solid black;
+    background: white;
+    text-align: center;
+    height: 50px;
+    background-color: #005DA1; }
+  #secciones-inversiones .owl-carousel a {
+    font-size: 24px;
+    color: white;
+    line-height: 42px;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    right: 0px; }
+  #secciones-inversiones .owl-dot {
+    display: none; }
+  #secciones-inversiones .owl-next {
+    border: 1px solid #005DA1;
+    color: #005DA1;
+    top: -30%;
+    right: 0px;
+    font-weight: inherit !important;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 10px;
+    background-color: transparent !important;
+    margin: 10px;
+    display: inline-block;
+    font-size: 24px;
+    -webkit-transition: 1s;
+    /* For Safari 3.1 to 6.0 */
+    -o-transition: 1s;
+    transition: 1s; }
+  #secciones-inversiones .owl-next:hover {
+    background-color: #005DA1 !important;
+    color: white; }
+  #secciones-inversiones .owl-prev {
+    border: 1px solid #005DA1;
+    color: #005DA1;
+    top: -30%;
+    right: 50px;
+    font-weight: inherit !important;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 10px;
+    background-color: transparent !important;
+    margin: 10px;
+    display: inline-block;
+    font-size: 24px;
+    -webkit-transition: 1s;
+    /* For Safari 3.1 to 6.0 */
+    -o-transition: 1s;
+    transition: 1s; }
+  #secciones-inversiones .owl-prev:hover {
+    background-color: #005DA1 !important;
+    color: white; }
 
 /*--------------------------
         Responsive
@@ -1161,7 +1204,17 @@ fin estilos textos y lineas conocenos ingles
   .video-inversiones {
     width: 100%;
     padding: 20px;
-    margin-top: 10px; } }
+    margin-top: 10px; }
+  #imagen-inversiones {
+    width: 100%;
+    height: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto; }
+    #imagen-inversiones .inversion-secciones {
+      width: 100%; }
+    #imagen-inversiones .iversion-secciones article {
+      padding: 30px; } }
 
 /*--------------------------
         Fin Responsive

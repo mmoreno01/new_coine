@@ -20,7 +20,7 @@
 <!--fin links-->
     <title>Coine</title>
 </head>
-<body ng-app="app" ng-cloak>
+<body ng-app="app">
 
 <!-- menu-->
 <header class="navbar navbar-expand-lg  navbar-dark  sticky-top">
@@ -124,12 +124,12 @@
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"  ng-controller="entradas" >
                             <div class="post-events"><a href="events.html">see all events</a></div>
                                <ul class="content-idicators">
-                                   <li data-target="#carouselExampleIndicators" data-slide-to="0" ng-repeat="x in postConsulta  | limitTo: 4">
+                                   <li data-target="#carouselExampleIndicators" data-slide-to="0" dir-paginate="x in postConsulta | itemsPerPage: 4">
                                        <a href="{{x.link}}"><p class="titutlo-noticia">{{x.title.rendered}}</p></a>
                                     </li>
                                </ul>
                                 <div class="carousel-inner parallax">
-                                    <div class="carousel-item" ng-class="{active:!$index}" ng-repeat="x in postConsulta | limitTo: 4">
+                                    <div class="carousel-item" ng-class="{active:!$index}"  dir-paginate="x in postConsulta | itemsPerPage: 4">
                                         <!-- <div class="bg-overlay"></div> -->
                                         <img  ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}"  class="d-block w-100" alt="...">
                                         <!-- <div class="carousel-caption d-none d-md-block">
@@ -156,7 +156,7 @@
         <div class="container-fluid">
                 <h1 class="title title-noticias ">News</h1>
           <div class="row content-noticias">
-            <div class="col-md-6 col-lg-3 noticia" ng-repeat="x in postNotices  | limitTo: 4">
+            <div class="col-md-6 col-lg-4 noticia" dir-paginate="x in postNotices  | limitTo: 4">
                  <div class="content-img-noticia" style="background-image: url({{x._embedded['wp: featuredmedia']['0'].source_url}});">
                         <img class="img-responsive" ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}">
                         <!-- <img ng-if="post.better_featured_image" ng-src="{{post.better_featured_image.media_details.sizes.thumbnail.source_url}}" class="alignleft" /> -->
@@ -381,6 +381,8 @@ $('.owl-carousel').owlCarousel({
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 <script src="../js/angular/appPost.js"></script>
 <script src="../js/angular/ngMask.min.js"></script>
+<script src="node_modules/angular-utils-pagination/dirPagination.js"></script>
+
 <!--fin sricpts-->
 </body>
 </html>

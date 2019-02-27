@@ -1037,6 +1037,23 @@ fin estilos textos y lineas conocenos ingles
 
 #secciones-inversiones {
   position: relative; }
+  #secciones-inversiones h1 {
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 100;
+    padding-bottom: 10px;
+    position: relative; }
+  #secciones-inversiones h1::before {
+    content: '';
+    position: absolute;
+    background-color: #005DA1;
+    bottom: 0;
+    width: 40px;
+    left: 0px;
+    height: 2px;
+    border-radius: 10px; }
   #secciones-inversiones .owl-carousel .item {
     border: 1px solid black;
     background: white;
@@ -1711,6 +1728,8 @@ div .title-sectores {
       transition: 1s; }
     #post-events .entry-body .btn-primary:hover {
       background-color: #00A4E0; }
+    #post-events .entry-body .pagination {
+      font-size: 30px; }
 
 @media (max-width: 992px) {
   #post-events .thumbnail-attachment {

@@ -86,13 +86,45 @@
         {
             background-color: $azulCielo;
         }
-        .pagination
-        {
-            font-size: 30px;
-        }
+        
     }
 }
 
+.pagination 
+{
+    display: block !important;
+    border-radius: 4px;
+    text-align: center;
+    
+    li 
+    {
+        display: inline;
+        text-decoration: none;
+    }
+    a
+    {
+        border-radius: 20px !important;
+        margin: 3px;
+        padding: 5px 14px;
+        font-size: 20px;
+        border: 1px solid #ddd;
+        text-decoration: none !important;
+        position: relative;
+    }
+    .active a
+    {
+        background-color: $azulcoine !important;
+        border-color: $azulcoine !important;
+        color: white !important;
+    }
+    .disabled a
+    {
+        background-color: #8c8c8c ;
+        border-color: #747477 !important;
+        color: $white !important;
+    }
+}
+    
 
 @media(max-width: 992px){
     #post-events{
@@ -103,5 +135,18 @@
                 display: block;
             }
         }
+    }
+}
+
+@media (max-width:768px)
+{
+  
+}
+
+@media (max-width:576px)
+{
+    .pagination 
+    {
+        left: 45%;
     }
 }

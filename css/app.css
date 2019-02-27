@@ -1705,14 +1705,40 @@ div .title-sectores {
       transition: 1s; }
     #post-events .entry-body .btn-primary:hover {
       background-color: #00A4E0; }
-    #post-events .entry-body .pagination {
-      font-size: 30px; }
+
+.pagination {
+  display: block !important;
+  border-radius: 4px;
+  text-align: center; }
+  .pagination li {
+    display: inline;
+    text-decoration: none; }
+  .pagination a {
+    border-radius: 20px !important;
+    margin: 3px;
+    padding: 5px 14px;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    text-decoration: none !important;
+    position: relative; }
+  .pagination .active a {
+    background-color: #005c9b !important;
+    border-color: #005c9b !important;
+    color: white !important; }
+  .pagination .disabled a {
+    background-color: #8c8c8c;
+    border-color: #747477 !important;
+    color: #FFF !important; }
 
 @media (max-width: 992px) {
   #post-events .thumbnail-attachment {
     max-width: 100%; }
     #post-events .thumbnail-attachment img {
       display: block; } }
+
+@media (max-width: 576px) {
+  .pagination {
+    left: 45%; } }
 
 #titulo-alianzas {
   position: relative;

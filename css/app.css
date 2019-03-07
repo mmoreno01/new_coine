@@ -1045,7 +1045,8 @@ fin estilos textos y lineas conocenos ingles
     font-size: 30px;
     font-weight: 100;
     padding-bottom: 10px;
-    position: relative; }
+    position: relative;
+    padding-top: 30px; }
   #secciones-inversiones h1::before {
     content: '';
     position: absolute;
@@ -1079,8 +1080,6 @@ fin estilos textos y lineas conocenos ingles
     width: 100%;
     right: 0px;
     text-decoration: none; }
-  #secciones-inversiones .owl-carousel .owl-nav {
-    margin-bottom: 20px; }
   #secciones-inversiones .slider-for {
     position: relative; }
     #secciones-inversiones .slider-for img {
@@ -1110,14 +1109,7 @@ fin estilos textos y lineas conocenos ingles
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale; }
     #secciones-inversiones .slider-nav .slick-dots {
-      position: relative;
-      bottom: -25px;
-      display: block;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      text-align: center; }
+      display: none; }
 
 .investment-img {
   width: 150px;

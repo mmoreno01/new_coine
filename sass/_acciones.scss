@@ -86,6 +86,7 @@ ul.tabs
     li 
     { 
         width: 18%;
+        border-right: solid 1px #d1d1d1;
         a 
         {
             color:$azulCielo;
@@ -255,9 +256,17 @@ ul.tabs li a:hover
         font-size: 16px;
     }
     
+    ul.tabs
+    {
+        display: block;
+    }
+
     ul.tabs li
     {
         width: 28%;
+        border-right: none;
+        border-bottom: 1px solid #d1d1d1;
+        margin-left: 35%;
     }
 
     ul.tabs li a

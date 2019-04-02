@@ -40,58 +40,79 @@ date_default_timezone_set("America/Mexico_City");
         //$mail->AltBody =($contenido); 
          //var_dump($mail);
 		$mail->Body ="
-        <!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
-<html xmlns='http://www.w3.org/1999/xhtml'>
-<head>
-<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
-<link href='https://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Poppins:200' rel='stylesheet'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'/> 
-</head>
-<body style='margin: 0; padding: 0;'>
-
-<table width='100%' bgcolor='#ffffff' style='border:1px solid #CCCCCC; color: #696969; border-collapse: collapse; padding:15px 10px 20px 10px; margin: 5px 0;'>
-<tr>
-</tr>
-
-<table align='left' border='0' cellpadding='0' cellspacing='0' width='50%' bgcolor='FFFFFF'>
-							<tbody>
-                                <tr>
-								  <td width='240' align='rigth' valign='top' ><img  src= https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/18527573_1896846423888665_421359503779796543_n.jpg?_nc_cat=105&_nc_ht=scontent-dfw5-1.xx&oh=736938eb3d0be89fe7e594fb32e58eba&oe=5CA86683
-                                  style='display: block; width: 100px; height: 100px; margin:10px;'/></td>
-                                  <td width='400' align='left' valign='top' style='font-family:Arial, Helvetica, sans-serif;padding-right:10px;'>
-                                    <p style='font-size:20px;font-weight:bold;border-bottom:1px solid #CCC;padding-bottom:10px;'>Consejo Internacional de Empresarios</p>
-                                    <p style='font-size:12px;'>Mensaje:<strong>$message</strong></p>
-                                 
-							  </tr>
-							</tbody>
-</table>
-
-<table align='left' border='0' cellpadding='0' cellspacing='0' width='50%'>
-							<tbody>
-								<tr>
-									<td align='left' valign='top' bgcolor='#005c9b' style='padding:18px 20px 10px 20px;color:#FFFFFF; font-family:Arial, Helvetica, sans-serif;font-weight:normal; font-size:14px;'>Nombre:<strong> $name</strong>
-                                    </td>
-                                    <td align='left' valign='top' bgcolor='#005c9b' style='padding:18px 20px 10px 20px;color:#FFFFFF;font-family:Arial, Helvetica, sans-serif;font-weight:normal;font-size:14px;'>Télefono:<strong> $phone</strong>
-                                    </td>
-							  </tr>
-							  </tr>
-							</tbody>
+		<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+		<html>
+		<head>
+		<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+		 
+		<title>Mensaje de Envío</title>
+		 
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+		 
+		</head>
+		<body style='margin: 0; padding: 0;'>
+		
+		<table align='center' border='0' cellpadding='0' cellspacing='0' width='600'>
+				<table align='center' border='0' cellpadding='0' cellspacing='0' width='600'>
+					<tr>
+						<td bgcolor='#005c9b' style='padding: 0px 0 0px 0;'>
+							<center><img  src= https://pbs.twimg.com/profile_banners/846455046317465600/1535751116/1500x500
+								style='display: block; width: 100%; height: 100%; margin:0px;'/> </center>    
+						</td>
+					</tr>
+					<tr>    
+						<td style='padding: 40px 30px 40px 30px;'>
+								<table border='0' cellpadding='0' cellspacing='0' width='100%'>
+									<tr>
+										<td style='color:#005c9b; padding: 10px 10px 10px 10px; text-align: center; font-weight: bold;'>
+											<h1>Consejo Internacional de Empresarios</h1>
+											<h2>(COINE)</h2>
+										</td>
+									</tr>
+									<tr>
+										<td style='color:#005c9b; padding: 10px 10px 10px 10px; text-align: center;'>
+											<p style='font-size:18px;'>Mensaje:<strong>$message</strong></p>
+										</td>
+									</tr>
+									 <tr>
+										<td style='color:#005c9b; padding: 10px 10px 10px 10px; text-align: center;'>
+											<p style='font-size:18px;'>E-mail:<strong>$email</strong></p>
+										</td>
+									 </tr>
+								   
+								</table>
+						</td>
+					</tr>
+					<tr>
+					<td bgcolor='#005c9b' style='border:none;'>
+						<table border='0' cellpadding='0' cellspacing='0' width='100%' >
+							<tr>
+								<td width='260' valign='top' style='color:white; padding: 10px 10px 10px 10px; text-align: center;'>
+									Nombre:<strong> $name</strong>
+								</td>
+								<td style='font-size: 0; line-height: 0;' width='20'>
+									&nbsp;
+								</td>
+								<td width='260' valign='top' style='color:white; padding: 10px 10px 10px 10px; text-align: center;'>
+									Télefono:<strong> $phone</strong>
+								</td>
+							</tr>
+						</table>    
+					</td>
+					</tr>
+					   <td bgcolor='#005c9b' style='border:none;'>
+						<table  border='0' cellpadding='0' cellspacing='0' width='100%'>
+							<tr>
+								
+								<td width='260' valign='top' style='color:white; padding: 20px 0px 20px 10px; text-align: center; font-weight: bold'>
+										2018   l  Consejo Internacional de Empresarios ®
+								</td>
+							</tr>
 						</table>
-                        
-<table align='left' border='0' cellpadding='0' cellspacing='0' width='50%'>
-							<tbody>
-								<tr>
-                             
-							  </tr>
-							  </tr>
-							</tbody>
-						</table>
-
-</tr>
-</table>
-</body>
-</html>";
+					</td>  
+		</table>
+		</body>
+		</html>";
 
 	 if(!$mail->Send()) {
 		 header('Location: ../error.html');

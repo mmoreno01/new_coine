@@ -24,7 +24,7 @@
 <body ng-app="app">
 
 <!--modal automatico-->
-<!--<div class="modal fade" id="mostrarmodal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+<!-- <div class="modal fade" id="mostrarmodal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
     <div class="modal-dialog">
        <div class="modal-content">
           <div class="modal-header">
@@ -34,15 +34,15 @@
          
        </div>
     </div>
- </div>-->
+ </div> -->
    
-<!--<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="mostrarmodal">
+<!-- <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="mostrarmodal">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
         |<iframe width="100%" height="500" src="https://www.youtube.com/embed/xmCEyextg1s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
-</div>-->
+</div> -->
     <!--modal automatico-->
 
 <!-- menu-->
@@ -164,7 +164,7 @@
                             <div class="carousel-inner parallax">
                                 <div class="carousel-item" ng-class="{active:!$index}" dir-paginate="x in postConsulta | itemsPerPage: 4">
                                     <!-- <div class="bg-overlay"></div> -->
-                                    <img  ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}"  class="d-block w-100" alt="...">
+                                   <a href="{{x.link}}"><img  ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}"  class="d-block w-100" alt="COINE"></a>
                                     <!-- <div class="carousel-caption d-none d-md-block">
                                             <a href="{{x.link}}"><p class="titutlo-noticia">{{x.title.rendered}}</p></a>
                                     </div> -->
@@ -190,20 +190,20 @@
             <div class="container-fluid">
                     <h1 class="title title-noticias ">Noticias</h1>
               <div class="row content-noticias">
-                <div class="col-md-6 col-lg-4 noticia" ng-repeat="x in postNotices  | limitTo: 3">
+                <div class="col-md-6 col-lg-3 noticia" ng-repeat="x in postNotices  | limitTo: 4">
                      <div class="content-img-noticia" style="background-image: url({{x._embedded['wp: featuredmedia']['0'].source_url}});">
-                            <img class="img-responsive" ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}">
+                           <a href="{{x.link}}"><img class="img-responsive" ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}"></a>
                             <!-- <img ng-if="post.better_featured_image" ng-src="{{post.better_featured_image.media_details.sizes.thumbnail.source_url}}" class="alignleft" /> -->
+                            <p class="date-notice">{{ x.date | date:'MM-yyyy' }}</p>
                     </div>
                     <hr>
-                      <a href="{{x.link}}"><p class="titutlo-noticia">{{x.title.rendered}}</p></a>
-                     
-                      <!-- <p class="texto-noticia" ng-bind-html="x.excerpt.rendered | limitTo: 200"></p> -->
-                      <a href="{{x.link}}" target="_blank"><label class="seeMore">Ver más</label></a>
+                        <a href="{{x.link}}"><p class="titutlo-noticia">{{x.title.rendered}}</p></a>                 
+                        <!-- <p class="texto-noticia" ng-bind-html="x.excerpt.rendered | limitTo: 200"></p> -->
+                        <a href="{{x.link}}" target="_blank"><label class="seeMore">Ver más</label></a>
                 </div>
               </div>
             </div>
-        </section>
+</section>
      <!-- End section post blog  -->
 
 
@@ -416,14 +416,8 @@ $('.owl-carousel').owlCarousel({
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-<<<<<<< HEAD
-<script src="js/angular/appPost.js"></script>
 <script src="js/angular/ngMask.min.js"></script>
 <script src="node_modules/angular-utils-pagination/dirPagination.js"></script>
 
 
-=======
->>>>>>> d75132e2e0dc439299f31c0ad1bddd0b88b9910f
 <!--fin sricpts-->
-</body>
-</html>

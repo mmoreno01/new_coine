@@ -116,7 +116,7 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
     <section id="post-events">
             <div class="container" ng-controller="entradas">
                     <div>
-                        <h1>Events</h1>
+                        <!-- <h1>Events</h1> -->
                     </div>
                 <div class="row">
                     <div class="col-12 card-item" dir-paginate="x in postConsulta | itemsPerPage: 3">
@@ -127,6 +127,7 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
                             <h4 class="entry-title">
                                 <a href="{{x.link}}"><p class="titutlo-noticia">{{x.title.rendered}}</p></a>
                             </h4>
+                            <p class="">{{ x.date | date:'MM-yyyy' }}</p>
                             <p class="texto-noticia" ng-bind-html="x.excerpt.rendered | limitTo: 200"></p>
                             <a href="{{x.link}}"  class="btn btn-primary"><label>See more</label></a>
                         </div>

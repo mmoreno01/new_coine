@@ -122,7 +122,6 @@
                         <h2>Events</h2>
                     </div>
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"  ng-controller="entradas" >
-<<<<<<< HEAD
                             <div class="post-events"><a href="events.html">see all events</a></div>
                                <ul class="content-idicators">
                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" dir-paginate="x in postConsulta | itemsPerPage: 4">
@@ -146,57 +145,35 @@
                                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                   <span class="sr-only">Next</span>
                                 </a>
-=======
-                            <div class="post-events"><a href="eventos.html"> Ver todos los eventos</a></div>
-                           <ul class="content-idicators">
-                               <li data-target="#carouselExampleIndicators" data-slide-to="0" dir-paginate="x in postConsulta | itemsPerPage: 4">
-                                   <a href="{{x.link}}"><p class="titutlo-noticia">{{x.title.rendered}}</p></a>
-                                </li>
-                           </ul>
-                            <div class="carousel-inner parallax">
-                                <div class="carousel-item" ng-class="{active:!$index}" dir-paginate="x in postConsulta | itemsPerPage: 4">
-                                    <!-- <div class="bg-overlay"></div> -->
-                                    <img  ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}"  class="d-block w-100" alt="...">
-                                    <!-- <div class="carousel-caption d-none d-md-block">
-                                            <a href="{{x.link}}"><p class="titutlo-noticia">{{x.title.rendered}}</p></a>
-                                    </div> -->
-                              </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Next</span>
-                            </a>
->>>>>>> d75132e2e0dc439299f31c0ad1bddd0b88b9910f
                         </div>
                 </div>
             </div>
         </div>
     </section>
     <!--  end section events-->
-     <!-- Section post blog  -->
- <section id="noticias-coine" class="content-section"  ng-controller="entradasNotices">
-        <div class="container-fluid">
-                <h1 class="title title-noticias ">News</h1>
-          <div class="row content-noticias">
-            <div class="col-md-6 col-lg-4 noticia" dir-paginate="x in postNotices  | limitTo: 4">
-                 <div class="content-img-noticia" style="background-image: url({{x._embedded['wp: featuredmedia']['0'].source_url}});">
-                        <img class="img-responsive" ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}">
-                        <!-- <img ng-if="post.better_featured_image" ng-src="{{post.better_featured_image.media_details.sizes.thumbnail.source_url}}" class="alignleft" /> -->
-                </div>
-                <hr>
-                  <a href="{{x.link}}"><p class="titutlo-noticia">{{x.title.rendered}}</p></a>
-                 
-                  <!-- <p class="texto-noticia" ng-bind-html="x.excerpt.rendered | limitTo: 200"></p> -->
-                  <a href="{{x.link}}" target="_blank"><label class="seeMore">Ver más</label></a>
-            </div>
+
+<!-- Section post blog  -->
+  <section id="noticias-coine" class="content-section"  ng-controller="entradasNotices">
+      <div class="container-fluid">
+              <h1 class="title title-noticias ">Notices</h1>
+        <div class="row content-noticias">
+          <div class="col-md-6 col-lg-3 noticia"  ng-repeat="x in postNotices | limitTo: 4">
+              <div class="content-img-noticia" style="background-image: url({{x._embedded['wp: featuredmedia']['0'].source_url}});">
+                  <a href="{{x.link}}"><img class="img-responsive" ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}"></a>
+                  <!-- <img ng-if="post.better_featured_image" ng-src="{{post.better_featured_image.media_details.sizes.thumbnail.source_url}}" class="alignleft" /> -->
+                  <p class="date-notice">{{ x.date | date:'MM-yyyy' }}</p>
+              </div>
+              <hr>
+                <a href="{{x.link}}"><p class="titutlo-noticia">{{ x.title.rendered }}</p></a>                 
+                <!-- <p class="texto-noticia" ng-bind-html="x.excerpt.rendered | limitTo: 200"></p> -->
+                <a href="{{x.link}}" target="_blank"><label class="seeMore">See more </label></a>
           </div>
         </div>
-    </section>
- <!-- End section post blog  -->
+      </div>
+  </section>
+<!-- End section post blog  -->
+
+
 
 
  <!--section banner  presencia internacional-->
@@ -405,14 +382,10 @@ $('.owl-carousel').owlCarousel({
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.6/angular-sanitize.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-<script src="../js/angular/appPost.js"></script>
-<script src="../js/angular/ngMask.min.js"></script>
-<<<<<<< HEAD
-<script src="node_modules/angular-utils-pagination/dirPagination.js"></script>
-
-=======
 <script src="../node_modules/angular-utils-pagination/dirPagination.js"></script>
->>>>>>> d75132e2e0dc439299f31c0ad1bddd0b88b9910f
+<script src="../js/angular/ngMask.min.js"></script>
+<script src="../js/angular/appPost.js"></script>
+
 <!--fin sricpts-->
 </body>
 </html>

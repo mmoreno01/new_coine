@@ -231,7 +231,7 @@
     #slider-events .content-idicators li {
       background-color: rgba(51, 51, 51, 0.7);
       display: inline-block;
-      padding: 20px;
+      padding: 10px;
       font-weight: 700;
       font-size: 17px; }
       #slider-events .content-idicators li a {
@@ -274,69 +274,101 @@
     border-radius: 10px; }
   #noticias-coine .content-noticias {
     margin: auto;
-    width: 92%; }
+    width: 92%;
+    position: relative; }
     #noticias-coine .content-noticias .content-img-noticia {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
+      position: relative;
       margin: auto;
-      overflow: hidden; }
-      #noticias-coine .content-noticias .content-img-noticia .img-responsive {
-        width: 100%; }
-    #noticias-coine .content-noticias hr {
-      border: 1px solid #c1c1c1;
-      margin: auto;
-      margin-top: 10px;
-      margin-bottom: 15px;
-      width: 40px; }
-    #noticias-coine .content-noticias .titutlo-noticia {
-      color: #000;
-      font-weight: 100;
-      margin-top: 15px;
-      margin-bottom: 0;
-      text-align: left;
-      min-height: 55px;
-      font-size: 20px;
-      padding: 10px; }
-    #noticias-coine .content-noticias .titutlo-noticia:hover {
-      color: #005DA1; }
-    #noticias-coine .content-noticias .noticia a {
-      text-decoration: none;
-      font-weight: 400 !important; }
-    @media (max-width: 1052px) {
-      #noticias-coine .content-noticias {
-        min-height: 85px; } }
-    @media (max-width: 991px) {
-      #noticias-coine .content-noticias {
-        min-height: 35px; } }
-    @media (max-width: 942px) {
-      #noticias-coine .content-noticias {
-        min-height: 55px; } }
-    @media (max-width: 767px) {
-      #noticias-coine .content-noticias {
-        min-height: auto; } }
-  #noticias-coine .texto-noticia {
-    color: grey;
-    font-weight: 200;
+      overflow: hidden;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    #noticias-coine .content-noticias .img-responsive {
+      width: 100%; }
+  #noticias-coine img {
+    width: 100%;
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+  #noticias-coine img:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  #noticias-coine hr {
+    border: 1px solid #c1c1c1;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 40px; }
+  #noticias-coine .titutlo-noticia {
+    color: #000;
+    font-weight: 100;
+    margin-top: 15px;
+    margin-bottom: 0;
+    text-align: left;
+    min-height: 55px;
+    font-size: 20px;
+    padding: 10px; }
+  #noticias-coine .titutlo-noticia:hover {
+    color: #005DA1; }
+  #noticias-coine .noticia a {
+    text-decoration: none;
+    font-weight: 400 !important; }
+  @media (max-width: 1052px) {
+    #noticias-coine {
+      min-height: 85px; } }
+  @media (max-width: 991px) {
+    #noticias-coine {
+      min-height: 35px; } }
+  @media (max-width: 942px) {
+    #noticias-coine {
+      min-height: 55px; } }
+  @media (max-width: 767px) {
+    #noticias-coine {
+      min-height: auto; } }
+
+.texto-noticia {
+  color: grey;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 16px; }
+  .texto-noticia p {
     font-size: 15px;
-    line-height: 16px; }
-    #noticias-coine .texto-noticia p {
-      font-size: 15px;
-      line-height: 1.5;
-      margin: 0 !important;
-      letter-spacing: 0.3px;
-      min-height: 136px;
-      height: 136px;
-      text-align: justify;
-      overflow: hidden; }
-      @media (max-width: 991px) {
-        #noticias-coine .texto-noticia p {
-          height: 90px;
-          min-height: 90px; } }
-      @media (max-width: 767px) {
-        #noticias-coine .texto-noticia p {
-          height: auto;
-          min-height: auto; } }
+    line-height: 1.5;
+    margin: 0 !important;
+    letter-spacing: 0.3px;
+    min-height: 136px;
+    height: 136px;
+    text-align: justify;
+    overflow: hidden; }
+    @media (max-width: 991px) {
+      .texto-noticia p {
+        height: 90px;
+        min-height: 90px; } }
+    @media (max-width: 767px) {
+      .texto-noticia p {
+        height: auto;
+        min-height: auto; } }
+
+.date-notice {
+  position: absolute;
+  background: #005DA1;
+  color: #fff;
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+  bottom: -20px; }
 
 .seeMore {
   color: #005DA1;

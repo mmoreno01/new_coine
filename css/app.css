@@ -608,6 +608,36 @@
 /*--------------------------
         Fin Responsive
 -----------------------------*/
+#mostrarmodal .modal-body {
+  padding: 0; }
+
+#mostrarmodal img {
+  width: 100%; }
+
+#mostrarmodal .modal-dialog {
+  max-width: 1000px; }
+
+#mostrarmodal .modal-content {
+  position: relative;
+  border: 1px solid transparent; }
+
+#mostrarmodal button.close {
+  z-index: 9;
+  padding: 0;
+  width: 30px;
+  background-color: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: white; }
+
+#mostrarmodal .content-btm article {
+  text-align: center;
+  padding: 20px;
+  background-color: #005DA1; }
+
 #foter-redes {
   height: 100%;
   background-color: #005DA1; }
@@ -2609,7 +2639,7 @@ button:focus {
         text-transform: uppercase;
         font-weight: 600;
         letter-spacing: 10px;
-        color: #007redbff;
+        color: #007bff;
         margin-bottom: 20px; }
       #slider-continentes .slider-for article p {
         text-align: justify; }

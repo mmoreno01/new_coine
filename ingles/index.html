@@ -161,7 +161,7 @@
               <div class="content-img-noticia" style="background-image: url({{x._embedded['wp: featuredmedia']['0'].source_url}});">
                   <a href="{{x.link}}"><img class="img-responsive" ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}"></a>
                   <!-- <img ng-if="post.better_featured_image" ng-src="{{post.better_featured_image.media_details.sizes.thumbnail.source_url}}" class="alignleft" /> -->
-                  <p class="date-notice">{{ x.date | date:'MM-yyyy' }}</p>
+                  <p class="date-notice">{{ x.date | date:'MMM-yyyy' }}</p>
               </div>
               <hr>
                 <a href="{{x.link}}"><p class="titutlo-noticia">{{ x.title.rendered }}</p></a>                 

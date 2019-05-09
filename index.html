@@ -32,18 +32,57 @@
 </head>
 <body ng-app="app">
 
-<!--modal automatico-->
-<!-- <div class="modal fade" id="mostrarmodal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-    <div class="modal-dialog">
+  
+<!-- Modal execute init 
+ <div class="modal fade" id="mostrarmodal" tabindex="-1" role="dialog" aria-labelledby="mobiramaModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        <div class="modal-body">
+            <img src="img/BANNER-01.jpg" width="200" height="" alt="Mobirama">
+            <article>
+                  <p>Conforme la Ley de Ingresos aprobada por el Poder Legislativo, el derecho de los contribuyentes<br>
+                  a la <span>"Compensación Universal"</span> ha sido derogado.</p>
+                  <p>La compesacion universal es el derecho que tienen los contribuyentes de restar las cantidades que
+                  tengan a su favor en un determinado impuesto federal de las cantidades que deben pagar por adeudos propios
+                  o por retención a terceros.</p>
+                  <p>La división fiscal <span>MOBIRAMA</span> cuenta con las bases para concluir que esta derogación es material
+                  de amparo. <br>Estámos a sus órdenes para poder asesorarlo acerca de como enfrentar este tema.</p>
+            <article>
+        </div>
+        <div class="content-btm">
+              <article>
+                  <h2><span>Conoce</span> cómo obtener tu amparo ante la eliminación de<br> la <span>Compensación Universal</span></h2>
+                  <a id="btn-popInit" href="https://www.talent-land.mx/speakers/#business" target="_blank" class="btn btn-primary">Ver más</a>
+              </article>
+          </div>
+      </div>
+    </div>
+  </div> 
+   End Modal -->
+  
+
+<!--modal automatico
+<div class="modal fade" id="mostrarmodal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+   <a href="http://www.coine.lat/blog/index.php/2019/04/09/el-tianguis-turistico-es-un-evento-que-busca-impulsar-la-economia-de-nuestro-pais/"><div class="modal-dialog">
        <div class="modal-content">
+
           <div class="modal-header">
-          <img src="img/modal.jpg" alt="" style="width: 100%">
+
+          <img src="img/BANNER-01.jpg" alt="" style="width: 100%">
          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
       </div>
-         
        </div>
-    </div>
- </div> -->
+       <a  style="    position: absolute;
+       bottom: 70px;
+       right: 40%;" href="http://www.coine.lat/blog/index.php/2019/04/09/el-tianguis-turistico-es-un-evento-que-busca-impulsar-la-economia-de-nuestro-pais/" class="btn btn-primary">Ver más</a>
+
+    </div></a> 
+ </div>
+ modal automatico-->
+
    
 <!-- <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="mostrarmodal">
   <div class="modal-dialog modal-lg">
@@ -52,7 +91,7 @@
     </div>
   </div>
 </div> -->
-    <!--modal automatico-->
+<!--modal automatico-->
 
 <!-- menu-->
 <header class="navbar navbar-expand-lg  navbar-dark  sticky-top">
@@ -110,6 +149,9 @@
           </li>
           <li class="nav-item arriba active">
             <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item arriba active jbi-btn">
+            <a class="nav-link " href="http://www.coine.lat/emprendimiento-coine/" target="_blank">Emprendimiento</a>
           </li>
         </ul>
             <div  id="headSocial" class="arriba">
@@ -203,7 +245,7 @@
                      <div class="content-img-noticia" style="background-image: url({{x._embedded['wp: featuredmedia']['0'].source_url}});">
                            <a href="{{x.link}}"><img class="img-responsive" ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}"></a>
                             <!-- <img ng-if="post.better_featured_image" ng-src="{{post.better_featured_image.media_details.sizes.thumbnail.source_url}}" class="alignleft" /> -->
-                            <p class="date-notice">{{ x.date | date:'MM-yyyy' }}</p>
+                            <p class="date-notice">{{ x.date | date:'MMM-yyyy' }}</p>
                     </div>
                     <hr>
                         <a href="{{x.link}}"><p class="titutlo-noticia">{{x.title.rendered}}</p></a>                 

@@ -909,3 +909,36 @@ img:hover{
  /*--------------------------
         Fin Responsive
 -----------------------------*/
+
+
+#mostrarmodal{
+    .modal-body {
+        padding: 0;
+    }img {
+        width: 100%;
+    }
+    .modal-dialog {
+        max-width: 1000px;
+    }
+    .modal-content {
+        position: relative;
+        border: 1px solid transparent;
+    }
+    button.close {
+        z-index: 9;
+        padding: 0;
+        width: 30px;
+        background-color: transparent;
+        border: 0;
+        -webkit-appearance: none;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: white;
+    }
+    .content-btm article {
+        text-align: center;
+        padding: 20px;
+        background-color:$azulObscuro;
+    }
+}

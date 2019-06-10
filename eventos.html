@@ -113,8 +113,10 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
 </div>
 <!-- fin banner-->
 
-<section id="post-events">
-    <div class="container" ng-controller="entradas">
+<section id="post-events" ng-controller="entradas">
+        <div ng-show="loading" class="lds-ring"><div></div><div></div><div></div><div></div></div>
+
+    <div class="container" >
             <div>
                 <!-- <h1>Eventos</h1> -->
             </div>

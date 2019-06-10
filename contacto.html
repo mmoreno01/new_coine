@@ -19,10 +19,14 @@
 <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" type="text/css">
 <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" type="text/css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="./node_modules/sweetalert2/dist/sweetalert2.min.css">
+<script src=“https://www.google.com/recaptcha/api.js?onload=vcRecaptchaApiLoaded&render=explicit“ async defer></script>
+
+
 <!--fin links-->
     <title>Contacto | Consejo Internacional de Empresarios</title>
 </head>
-<body>
+<body ng-app="app">
 
 <!-- menu-->
 <header class="navbar navbar-expand-lg  navbar-dark  sticky-top">
@@ -114,35 +118,43 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
     <!-- fin banner-->
 
 <!--seccion formulario-->
-<section id="contact-us">
-
-        <form action="correo/enviar.php" method="POST">
+<section id="contact-us"  ng-controller="myController as recap">
+        <form name="myForm" id="formu" name="myForm" ng-model="formulario" action="correo/enviar.php" method="POST" role="form" ng-submit="recap.signup()">
             <div class="container">
                     <div class="content-text">
-                            <h1>Contacto</h1>
-                            <p> DEJA UN MENSAJE<br>
-                            <span>Siéntete libre de contactarnos </span></p>
-                        </div>
+                        <h1>Contacto</h1>
+                        <p> DEJA UN MENSAJE<br>
+                        <span>Siéntete libre de contactarnos </span></p>
+                    </div>
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="form-group">
-                            <input type="text" name="Nombre" class="form-control" placeholder="Nombre" required>
+                        <div class="form-group" ng-class="{ 'has-error': myForm.Nombre.$invalid, 'has-succes':myForm.Nombre.$valid }">
+                            <input type="text" ng-model="recap.Nombre" name="Nombre"  class="form-control" placeholder="Nombre" ng-minlength="3"  ng-pattern="/^[a-zA-Z- ]*$/" autofocus required>
+                                    <span ng-show="myForm.Nombre.$dirty && myForm.Nombre.$invalid" class="alert alert alert-danger" role="alert" >El campo nombre es obligatorio</span>
                         </div>
-                        <div class="form-group">
-                            <input type="mail" name="Correo" class="form-control" placeholder="Correo" required>
+                        <div class="form-group" ng-class="{ 'has-error': myForm.Correo.$invalid, 'has-succes':myForm.Correo.$valid }">
+                            <input type="email" name="Correo" ng-model="recap.Correo" class="form-control" placeholder="Correo" required>
+                                    <span ng-show="myForm.Correo.$dirty && myForm.Correo.$invalid" class="alert alert alert-danger help-block" role="alert">El campo Correo es obligatorio "@"</span>
                         </div>
-                        <div class="form-group">
-                            <input type="text"  name="Telefono" class="form-control" placeholder="Teléfono" required>
+                        <div class="form-group" ng-class="{ 'has-error': myForm.Telefono.$invalid, 'has-succes':myForm.Telefono.$valid }">
+                            <input type="number"  name="Telefono" ng-model="recap.Telefono" class="form-control" placeholder="Teléfono" required>
+                                    <span ng-show="myForm.Telefono.$dirty && myForm.Telefono.$invalid" class="alert alert alert-danger help-block" role="alert">El campo Teléfono es obligatorio</span>
                         </div>
                     </div>
                     <div class=" col-lg-6">
                         <div class="form-group">
-                                <textarea class="form-control" name="mensaje" placeholder="Escribe aquí un mensaje" required></textarea>
+                            <textarea class="form-control" name="mensaje" ng-model="recap.mensaje" placeholder="Escribe aquí un mensaje" required></textarea>
                         </div>
                     </div>
                     <div class="col-12">
+                            <div id="captcha" class="form-group">
+                              
+                                <!--Recaptcha Widget--->
+                                <div vc-recaptcha key="recap.publicKey"></div>
+                                
+                            </div>
                         <div class="form-group">
-                            <button  type="submit"   value="Enviar" id="btn" class="btn btn-primary">Enviar</button>
+                            <button ng-disabled="myForm.$invalid" type="submit" value="Enviar" id="btn" class="btn btn-primary">Enviar</button>
                         </div>
                     </div>
                 </div>
@@ -180,11 +192,21 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
 
 
 <!-- sript-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.6/angular-sanitize.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 <script src="//code.tidio.co/ukrqaqjv3f9hzg80knarfaeztnfcxo2p.js"></script>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="./node_modules/angular-recaptcha/release/angular-recaptcha.js"></script>
+<script src="./node_modules/angular-utils-pagination/dirPagination.js"></script>
+<script src="./node_modules/sweetalert2/dist/sweetalert2.all.js"></script>
+<script src="./node_modules/angular-utils-pagination/dirPagination.js"></script>
+<script src="js/angular/appPost.js"></script>
+<script src="js/angular/ngMask.min.js"></script>
 <script src="js/parallax.js"></script> 
 <script src="js/inversion.js"></script>
-<script src="jquery.min.js"></script>
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDpJ9ULcjSY5ACEvT6Ski33n5GtntCTVLY"></script>
 <script>google.maps.event.addDomListener(window,"load",function(){
 var myLatLng = {lat: 19.39643331,lng: -99.17170959999999};
@@ -197,9 +219,7 @@ var myLatLng = {lat: 19.39643331,lng: -99.17170959999999};
       var marker = new google.maps.Marker({ position:myLatLng, map:map }); 
   });
     </script>     
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-<!--fin sricpts-->
+
+
 </body>
 </html>

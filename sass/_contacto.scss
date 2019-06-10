@@ -173,4 +173,11 @@
     color: $azulcoine;
     border: 1px solid $azulcoine;
     }
+    input.ng-valid{
+        border:  thin solid #090;
+        }
+        input.ng-invalid{
+        border: thin solid #990000; 
+        }
 }
+

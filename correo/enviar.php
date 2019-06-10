@@ -118,7 +118,7 @@ date_default_timezone_set("America/Mexico_City");
 		 header('Location: ../error.html');
 		/*echo 'Mailer Error: ' . $mail->ErrorInfo;*/ 
 	} else{
-		 header('Location: ../correo.html');
+		//  header('Location: ../correo.html');
 		
 	 }
 ?>

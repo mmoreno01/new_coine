@@ -96,7 +96,9 @@
   #seccion-testimonios img {
     cursor: pointer; }
   #seccion-testimonios .card {
-    padding: 20px; }
+    padding: 20px;
+    -webkit-box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2); }
   #seccion-testimonios .card-body a {
     color: #000; }
 

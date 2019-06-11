@@ -119,6 +119,8 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
 
 <!--seccion formulario-->
 <section id="contact-us"  ng-controller="myController as recap">
+        <div ng-show="loading" class="lds-ring"><div></div><div></div><div></div><div></div></div>
+
         <form name="myForm" id="formu" name="myForm" ng-model="formulario" action="correo/enviar.php" method="POST" role="form" ng-submit="recap.signup()">
             <div class="container">
                     <div class="content-text">
@@ -166,7 +168,7 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
 
 <!--seccion mapa-->
 <section id="contacto">
-             <div id="mapa"></div>
+     <div id="mapa"></div>
 </section>
 <!--seccion mapa-->
 

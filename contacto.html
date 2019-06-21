@@ -21,9 +21,10 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="./node_modules/sweetalert2/dist/sweetalert2.min.css">
 <script src=“https://www.google.com/recaptcha/api.js?onload=vcRecaptchaApiLoaded&render=explicit“ async defer></script>
-
-
 <!--fin links-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
     <title>Contacto | Consejo Internacional de Empresarios</title>
 </head>
 <body ng-app="app">
@@ -119,6 +120,8 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
 
 <!--seccion formulario-->
 <section id="contact-us"  ng-controller="myController as recap">
+        <div ng-show="loading" class="lds-ring"><div></div><div></div><div></div><div></div></div>
+
         <form name="myForm" id="formu" name="myForm" ng-model="formulario" action="correo/enviar.php" method="POST" role="form" ng-submit="recap.signup()">
             <div class="container">
                     <div class="content-text">
@@ -166,7 +169,7 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
 
 <!--seccion mapa-->
 <section id="contacto">
-             <div id="mapa"></div>
+     <div id="mapa"></div>
 </section>
 <!--seccion mapa-->
 

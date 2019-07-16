@@ -9,14 +9,14 @@ $(document).ready(function(){
         },
     
         data: {
-            csvURL: 'http://bdrex1.test/gra/data/com-guatemala.csv',
+            csvURL: 'http://www.coine.lat/data/com-guatemala.csv',
             beforeParse: function (csv) {
                 return csv.replace(/\n\n/g, '\n');
             }
         },
     
         title: {
-            text: 'Comercio de Gatemala'
+            text: 'Comercio con Gatemala'
         },
     
         subtitle: {
@@ -158,14 +158,14 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://bdrex1.test/gra/data/com-peru.csv',
+        csvURL: 'http://www.coine.lat/data/com-peru.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
     },
     
     title: {
-        text: 'Comercio de Perú'
+        text: 'Comercio con Perú'
     },
     
     subtitle: {
@@ -307,14 +307,14 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://bdrex1.test/gra/data/com-salvador.csv',
+        csvURL: 'http://www.coine.lat/data/com-salvador.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
     },
     
     title: {
-        text: 'Comercio del Salvador'
+        text: 'Comercio con el Salvador'
     },
     
     subtitle: {
@@ -455,14 +455,14 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://bdrex1.test/gra/data/com-panama.csv',
+        csvURL: 'http://www.coine.lat/data/com-panama.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
     },
     
     title: {
-        text: 'Comercio de Panamá'
+        text: 'Comercio con Panamá'
     },
     
     subtitle: {
@@ -603,14 +603,14 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://bdrex1.test/gra/data/com-nicaragua.csv',
+        csvURL: 'http://www.coine.lat/data/com-nicaragua.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
     },
     
     title: {
-        text: 'Comercio de Nicaragua'
+        text: 'Comercio con Nicaragua'
     },
     
     subtitle: {
@@ -751,14 +751,14 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://bdrex1.test/gra/data/com-honduras.csv',
+        csvURL: 'http://www.coine.lat/data/com-honduras.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
     },
     
     title: {
-        text: 'Comercio de Honduras'
+        text: 'Comercio con Honduras'
     },
     
     subtitle: {
@@ -899,14 +899,14 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://bdrex1.test/gra/data/com-ecuador.csv',
+        csvURL: 'http://www.coine.lat/data/com-ecuador.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
     },
     
     title: {
-        text: 'Comercio de Ecuador'
+        text: 'Comercio con Ecuador'
     },
     
     subtitle: {
@@ -1047,14 +1047,14 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://bdrex1.test/gra/data/com-dominicana.csv',
+        csvURL: 'http://www.coine.lat/data/com-dominicana.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
     },
     
     title: {
-        text: 'Comercio de República Dominicana'
+        text: 'Comercio con República Dominicana'
     },
     
     subtitle: {
@@ -1196,14 +1196,14 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://bdrex1.test/gra/data/com-costarica.csv',
+        csvURL: 'http://www.coine.lat/data/com-costarica.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
     },
     
     title: {
-        text: 'Comercio de Costa Rica'
+        text: 'Comercio con Costa Rica'
     },
     
     subtitle: {
@@ -1345,14 +1345,14 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://bdrex1.test/gra/data/com-colombia.csv',
+        csvURL: 'http://www.coine.lat/data/com-colombia.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
     },
     
     title: {
-        text: 'Comercio de Colombia'
+        text: 'Comercio con Colombia'
     },
     
     subtitle: {
@@ -1493,14 +1493,14 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://bdrex1.test/gra/data/com-chile.csv',
+        csvURL: 'http://www.coine.lat/data/com-chile.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
     },
     
     title: {
-        text: 'Comercio de Chile'
+        text: 'Comercio con Chile'
     },
     
     subtitle: {
@@ -1641,14 +1641,14 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://bdrex1.test/gra/data/com-brasil.csv',
+        csvURL: 'http://www.coine.lat/data/com-brasil.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
     },
     
     title: {
-        text: 'Comercio de Brasil'
+        text: 'Comercio con Brasil'
     },
     
     subtitle: {

@@ -9,7 +9,7 @@ $(document).ready(function(){
         },
     
         data: {
-            csvURL: 'http://www.coine.lat/data/com-guatemala.csv',
+            csvURL: 'http://bdrex1.test/new_coine/data/com-guatemala.csv',
             beforeParse: function (csv) {
                 return csv.replace(/\n\n/g, '\n');
             }
@@ -28,44 +28,9 @@ $(document).ready(function(){
                 verticalAlign: 'top',
                 y: 15
             },
-            labels: [{
-                point: {
-                    xAxis: 0,
-                    yAxis: 0,
-                    x: 2013,
-                    y: 1734
-                },
-                text: 'Exportaciones; Creciemineto:32% Tasa media anual:3%'
-            }, {
-                point: {
-                    xAxis: 0,
-                    yAxis: 0,
-                    x: 2013,
-                    y: 528.8
-                },
-                text: 'Importaciones; Creciemineto:7% Tasa media anual:1%'
-            },{
-                point: {
-                    xAxis: 0,
-                    yAxis: 0,
-                    x: 2013,
-                    y: 1205
-                },
-                text: 'Balance comercial; Creciemineto:61% Tasa media anual:5%'
-            },{
-                point: {
-                    xAxis: 0,
-                    yAxis: 0,
-                    x: 2013,
-                    y: 2263
-                },
-                text: 'Comercio total; Creciemineto:32% Tasa media anual:3%'
-            }]
+            
         }],
      
-        
-           
-    
         xAxis: {
             //tickInterval: 7 * 24 * 3600 * 1000, // one week
             tickInterval: 1,
@@ -158,7 +123,7 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://www.coine.lat/data/com-peru.csv',
+        csvURL: 'http://bdrex1.test/new_coine/data/com-peru.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
@@ -177,39 +142,7 @@ $(document).ready(function(){
             verticalAlign: 'top',
             y: 15
         },
-        labels: [{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2010,
-                y: 974
-            },
-            text: 'Exportaciones; Creciemineto:40% Tasa media anual:3%'
-        }, {
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2012,
-                y: 440
-            },
-            text: 'Importaciones; Creciemineto:12% Tasa media anual:1%'
-        },{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2016,
-                y: 848
-            },
-            text: 'Balance comercial; Creciemineto:33% Tasa media anual:3%'
-        },{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2016,
-                y: 1960
-            },
-            text: 'Comercio total; Creciemineto:55% Tasa media anual:5%'
-        }]
+        
     }],
     
     
@@ -307,7 +240,7 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://www.coine.lat/data/com-salvador.csv',
+        csvURL: 'http://bdrex1.test/new_coine/data/com-salvador.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
@@ -326,39 +259,7 @@ $(document).ready(function(){
             verticalAlign: 'top',
             y: 15
         },
-        labels: [{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2010,
-                y: 658
-            },
-            text: 'Exportaciones; Creciemineto:-1% Tasa media anual:0%'
-        }, {
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2011,
-                y: 110
-            },
-            text: 'Importaciones; Creciemineto:250% Tasa media anual:13%'
-        },{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2015,
-                y: 773
-            },
-            text: 'Comercio total; Creciemineto:19% Tasa media anual:2%'
-        },{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2013,
-                y: 513
-            },
-            text: 'Balance comercial; Creciemineto:-25% Tasa media anual:-3%'
-        }]
+        
     }],
     
     
@@ -455,7 +356,7 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://www.coine.lat/data/com-panama.csv',
+        csvURL: 'http://bdrex1.test/new_coine/data/com-panama.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
@@ -474,39 +375,7 @@ $(document).ready(function(){
             verticalAlign: 'top',
             y: 15
         },
-        labels: [{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2010,
-                y: 882
-            },
-            text: 'Exportaciones; Creciemineto:34% Tasa media anual:3%'
-        }, {
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2011,
-                y: 121
-            },
-            text: 'Importaciones; Creciemineto:-9% Tasa media anual:-1%'
-        },{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2012,
-                y: 1219
-            },
-            text: 'Comercio total; Creciemineto:29% Tasa media anual:3%'
-        },{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2013,
-                y: 1029
-            },
-            text: 'Balance comercial; Creciemineto:41% Tasa media anual:4%'
-        }]
+       
     }],
     
     
@@ -603,7 +472,7 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://www.coine.lat/data/com-nicaragua.csv',
+        csvURL: 'http://bdrex1.test/new_coine/data/com-nicaragua.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
@@ -622,40 +491,7 @@ $(document).ready(function(){
             verticalAlign: 'top',
             y: 15
         },
-        labels: [{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2015,
-                y: 942
-            },
-            text: 'Exportaciones; Creciemineto:98% Tasa media anual:7%'
-        }, {
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2013,
-                y: 628
-            },
-            text: 'Importaciones; Creciemineto:179% Tasa media anual:11%'
-        },{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2013,
-                y: 1408
-            },
-            text: 'Comercio total; Creciemineto:117% Tasa media anual:8%'
-        },{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2015,
-                y: 392
-            },
-            text: 'Balance comercial; Creciemineto:59% Tasa media anual:5%'
-        }]
-    }],
+            }],
     
     
        
@@ -751,7 +587,7 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://www.coine.lat/data/com-honduras.csv',
+        csvURL: 'http://bdrex1.test/new_coine/data/com-honduras.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
@@ -770,39 +606,7 @@ $(document).ready(function(){
             verticalAlign: 'top',
             y: 15
         },
-        labels: [{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2010,
-                y: 424
-            },
-            text: 'Exportaciones; Creciemineto:62% Tasa media anual:5%'
-        }, {
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2013,
-                y: 418
-            },
-            text: 'Importaciones; Creciemineto:71% Tasa media anual:6%'
-        },{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2012,
-                y: 927
-            },
-            text: 'Comercio total; Creciemineto:65% Tasa media anual:5%'
-        },{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2013,
-                y: 132
-            },
-            text: 'Balance comercial; Creciemineto:50% Tasa media anual:4%'
-        }]
+        
     }],
     
     
@@ -899,7 +703,7 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://www.coine.lat/data/com-ecuador.csv',
+        csvURL: 'http://bdrex1.test/new_coine/data/com-ecuador.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
@@ -918,39 +722,7 @@ $(document).ready(function(){
             verticalAlign: 'top',
             y: 15
         },
-        labels: [{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2010,
-                y: 698
-            },
-            text: 'Exportaciones; Creciemineto:11% Tasa media anual:1%'
-        }, {
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2011,
-                y: 129
-            },
-            text: 'Importaciones; Creciemineto:2% Tasa media anual:0%'
-        },{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2012,
-                y: 986
-            },
-            text: 'Comercio total; Creciemineto:9% Tasa media anual:1%'
-        },{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2013,
-                y: 802
-            },
-            text: 'Balance comercial; Creciemineto:14% Tasa media anual:1%'
-        }]
+        
     }],
     
     
@@ -1047,7 +819,7 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://www.coine.lat/data/com-dominicana.csv',
+        csvURL: 'http://bdrex1.test/new_coine/data/com-dominicana.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
@@ -1066,39 +838,7 @@ $(document).ready(function(){
             verticalAlign: 'top',
             y: 15
         },
-        labels: [{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2010,
-                y: 782
-            },
-            text: 'Exportaciones; Creciemineto:-31% Tasa media anual:-4%'
-        }, {
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2011,
-                y: 145
-            },
-            text: 'Importaciones; Creciemineto:19% Tasa media anual:2%'
-        },{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2012,
-                y: 1013
-            },
-            text: 'Comercio total; Creciemineto:-24% Tasa media anual:-3%'
-        },{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2013,
-                y: 880
-            },
-            text: 'Balance comercial; Creciemineto:-40% Tasa media anual:-5%'
-        }]
+        
     }],
     
     
@@ -1196,7 +936,7 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://www.coine.lat/data/com-costarica.csv',
+        csvURL: 'http://bdrex1.test/new_coine/data/com-costarica.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
@@ -1215,39 +955,7 @@ $(document).ready(function(){
             verticalAlign: 'top',
             y: 15
         },
-        labels: [{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2010,
-                y: 806
-            },
-            text: 'Exportaciones; Creciemineto:5% Tasa media anual:0%'
-        }, {
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2011,
-                y: 2650
-            },
-            text: 'Importaciones; Creciemineto:-44% Tasa media anual:-6%'
-        },{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2012,
-                y: 4253
-            },
-            text: 'Comercio total; Creciemineto:-17% Tasa media anual:-2%'
-        },{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2015,
-                y: 414
-            },
-            text: 'Balance comercial; Creciemineto:-270% Tasa media anual:-14%'
-        }]
+        
     }],
     
     
@@ -1345,7 +1053,7 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://www.coine.lat/data/com-colombia.csv',
+        csvURL: 'http://bdrex1.test/new_coine/data/com-colombia.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
@@ -1364,39 +1072,7 @@ $(document).ready(function(){
             verticalAlign: 'top',
             y: 15
         },
-        labels: [{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2010,
-                y: 3757
-            },
-            text: 'Exportaciones; Creciemineto:17% Tasa media anual:2%'
-        }, {
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2011,
-                y: 825
-            },
-            text: 'Importaciones; Creciemineto:65% Tasa media anual:5%'
-        },{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2012,
-                y: 6469
-            },
-            text: 'Comercio total; Creciemineto:30% Tasa media anual:3%'
-        },{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2013,
-                y: 3823
-            },
-            text: 'Balance comercial; Creciemineto:-10% Tasa media anual:-1%'
-        }]
+        
     }],
     
     
@@ -1493,7 +1169,7 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://www.coine.lat/data/com-chile.csv',
+        csvURL: 'http://bdrex1.test/new_coine/data/com-chile.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
@@ -1512,40 +1188,7 @@ $(document).ready(function(){
             verticalAlign: 'top',
             y: 15
         },
-        labels: [{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2010,
-                y: 1863
-            },
-            text: 'Exportaciones; Creciemineto:31% Tasa media anual:3'
-        }, {
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2015,
-                y: 1480
-            },
-            text: 'Importaciones; Creciemineto:-36% Tasa media anual:4%'
-        },{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2012,
-                y: 3754
-            },
-            text: 'Comercio total; Creciemineto:-10% Tasa media anual:-1%'
-        },{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2013,
-                y: 646
-            },
-            text: 'Balance comercial; Creciemineto:-140% Tasa media anual: No aplica'
-        }]
-    }],
+            }],
     
     
        
@@ -1641,7 +1284,7 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://www.coine.lat/data/com-brasil.csv',
+        csvURL: 'http://bdrex1.test/new_coine/data/com-brasil.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
@@ -1660,39 +1303,7 @@ $(document).ready(function(){
             verticalAlign: 'top',
             y: 15
         },
-        labels: [{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2010,
-                y: 3781
-            },
-            text: 'Exportaciones; Creciemineto:31% Tasa media anual:3'
-        }, {
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2011,
-                y: 4562
-            },
-            text: 'Importaciones; Creciemineto:26% Tasa media anual:2%'
-        },{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2012,
-                y: 10152
-            },
-            text: 'Comercio total; Creciemineto:28% Tasa media anual:2%'
-        },{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 2013,
-                y: 966
-            },
-            text: 'Balance comercial; Creciemineto:16% Tasa media anual:1'
-        }]
+        
     }],
     
     

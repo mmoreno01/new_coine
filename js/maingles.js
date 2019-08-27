@@ -1,37 +1,26 @@
-<<<<<<< HEAD
-$( document ).ready(function() {
-   
-
-    
-
-    Highcharts.chart('guatemala', {
-    
-        chart: {
-=======
 $(document).ready(function(){ 
 
     /*************************************************Guatemala******************************************************/    
        Highcharts.chart('container-guatemala', {
             chart: {
->>>>>>> 5a4fd55741e32511061ae6d80464db77feb7b98a
             scrollablePlotArea: {
                 minWidth: 1000
             }
         },
     
         data: {
-            csvURL: 'http://www.coine.lat/data/com-guatemala.csv',
+            csvURL: 'http://www.coine.lat/data/ingles/com-guatemala.csv',
             beforeParse: function (csv) {
                 return csv.replace(/\n\n/g, '\n');
             }
         },
     
         title: {
-            text: 'Comercio con Gatemala'
+            text: 'México is trade with Gatemala'
         },
     
         subtitle: {
-            text: 'Datos en millones de dólares'
+            text: 'Amount in million USD'
         },
         annotations: [{
             labelOptions: {
@@ -134,18 +123,18 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://www.coine.lat/data/com-peru.csv',
+        csvURL: 'http://www.coine.lat/data/ingles/com-peru.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
     },
     
     title: {
-        text: 'Comercio con Perú'
+        text: 'México is trade with Perú'
     },
     
     subtitle: {
-        text: 'Datos en millones de dólares'
+        text: 'Amount in million USD'
     },
     annotations: [{
         labelOptions: {
@@ -251,18 +240,18 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://www.coine.lat/data/com-salvador.csv',
+        csvURL: 'http://www.coine.lat/data/ingles/com-salvador.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
     },
     
     title: {
-        text: 'Comercio con el Salvador'
+        text: 'México is trade with el Salvador'
     },
     
     subtitle: {
-        text: 'Datos en millones de dólares'
+        text: 'Amount in million USD'
     },
     annotations: [{
         labelOptions: {
@@ -367,18 +356,18 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://www.coine.lat/data/com-panama.csv',
+        csvURL: 'http://www.coine.lat/data/ingles/com-panama.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
     },
     
     title: {
-        text: 'Comercio con Panamá'
+        text: 'México is trade with Panamá'
     },
     
     subtitle: {
-        text: 'Datos en millones de dólares'
+        text: 'Amount in million USD'
     },
     annotations: [{
         labelOptions: {
@@ -483,18 +472,18 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://www.coine.lat/data/com-nicaragua.csv',
+        csvURL: 'http://www.coine.lat/data/ingles/com-nicaragua.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
     },
     
     title: {
-        text: 'Comercio con Nicaragua'
+        text: 'México is trade with Nicaragua'
     },
     
     subtitle: {
-        text: 'Datos en millones de dólares'
+        text: 'Amount in million USD'
     },
     annotations: [{
         labelOptions: {
@@ -598,18 +587,18 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://www.coine.lat/data/com-honduras.csv',
+        csvURL: 'http://www.coine.lat/data/ingles/com-honduras.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
     },
     
     title: {
-        text: 'Comercio con Honduras'
+        text: 'México is trade with Honduras'
     },
     
     subtitle: {
-        text: 'Datos en millones de dólares'
+        text: 'Amount in million USD'
     },
     annotations: [{
         labelOptions: {
@@ -714,18 +703,18 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://www.coine.lat/data/com-ecuador.csv',
+        csvURL: 'http://www.coine.lat/data/ingles/com-ecuador.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
     },
     
     title: {
-        text: 'Comercio con Ecuador'
+        text: 'México is trade with Ecuador'
     },
     
     subtitle: {
-        text: 'Datos en millones de dólares'
+        text: 'Amount in million USD'
     },
     annotations: [{
         labelOptions: {
@@ -830,18 +819,18 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://www.coine.lat/data/com-dominicana.csv',
+        csvURL: 'http://www.coine.lat/data/ingles/com-dominicana.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
     },
     
     title: {
-        text: 'Comercio con República Dominicana'
+        text: 'México is trade with República Dominicana'
     },
     
     subtitle: {
-        text: 'Datos en millones de dólares'
+        text: 'Amount in million USD'
     },
     annotations: [{
         labelOptions: {
@@ -947,18 +936,18 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://www.coine.lat/data/com-costarica.csv',
+        csvURL: 'http://www.coine.lat/data/ingles/com-costarica.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
     },
     
     title: {
-        text: 'Comercio con Costa Rica'
+        text: 'México is trade with Costa Rica'
     },
     
     subtitle: {
-        text: 'Datos en millones de dólares'
+        text: 'Amount in million USD'
     },
     annotations: [{
         labelOptions: {
@@ -1064,18 +1053,18 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://www.coine.lat/data/com-colombia.csv',
+        csvURL: 'http://www.coine.lat/data/ingles/com-colombia.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
     },
     
     title: {
-        text: 'Comercio con Colombia'
+        text: 'México is trade with Colombia'
     },
     
     subtitle: {
-        text: 'Datos en millones de dólares'
+        text: 'Amount in million USD'
     },
     annotations: [{
         labelOptions: {
@@ -1180,18 +1169,18 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://www.coine.lat/data/com-chile.csv',
+        csvURL: 'http://www.coine.lat/data/ingles/com-chile.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
     },
     
     title: {
-        text: 'Comercio con Chile'
+        text: 'México is trade with Chile'
     },
     
     subtitle: {
-        text: 'Datos en millones de dólares'
+        text: 'Amount in million USD'
     },
     annotations: [{
         labelOptions: {
@@ -1295,18 +1284,18 @@ $(document).ready(function(){
     },
     
     data: {
-        csvURL: 'http://www.coine.lat/data/com-brasil.csv',
+        csvURL: 'http://www.coine.lat/data/ingles/com-brasil.csv',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
     },
     
     title: {
-        text: 'Comercio con Brasil'
+        text: 'México is trade with Brasil'
     },
     
     subtitle: {
-        text: 'Datos en millones de dólares'
+        text: 'Amount in million USD'
     },
     annotations: [{
         labelOptions: {

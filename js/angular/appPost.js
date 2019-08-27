@@ -34,12 +34,13 @@ myApp.controller('entradasNotices', ['$scope','$window','$http', function($scope
 
 
 // validacion del recaptcha
-myApp.controller('myController', ['vcRecaptchaService', '$http', function ( vcRecaptchaService, $http) {
+myApp.controller('myController', ['vcRecaptchaService', '$http', function ( vcRecaptchaService, $http) { 
       var vm = this;
         vm.publicKey="6Ldw86YUAAAAAHkwuXr3JtFtzcvSVJPf-lpj1vF3";
       
 
         vm.signup = function () {
+
           
             if(vcRecaptchaService.getResponse() === ""){
               Swal.fire({

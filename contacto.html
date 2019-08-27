@@ -20,7 +20,8 @@
 <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" type="text/css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="./node_modules/sweetalert2/dist/sweetalert2.min.css">
-<script src=“https://www.google.com/recaptcha/api.js?onload=vcRecaptchaApiLoaded&render=explicit“ async defer></script>
+ <!--recaptcha-->
+<script type="text/javascript" src="angular-recaptcha.js"></script>
 <!--fin links-->
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134272024-1"></script>
@@ -129,7 +130,7 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
 <section id="contact-us"  ng-controller="myController as recap">
         <div ng-show="loading" class="lds-ring"><div></div><div></div><div></div><div></div></div>
 
-        <form name="myForm" id="formu" name="myForm" ng-model="formulario" action="correo/enviar.php" method="POST" role="form" ng-submit="recap.signup()">
+        <form name="myForm" id="recap.signupForm" ng-model="formulario" action="correo/enviar.php" method="POST" role="form" ng-submit="recap.signup()">
             <div class="container">
                     <div class="content-text">
                         <h1>Contacto</h1>
@@ -150,6 +151,8 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
                             <input type="number"  name="Telefono" ng-model="recap.Telefono" class="form-control" placeholder="Teléfono" required>
                                     <span ng-show="myForm.Telefono.$dirty && myForm.Telefono.$invalid" class="alert alert alert-danger help-block" role="alert">El campo Teléfono es obligatorio</span>
                         </div>
+                          <!-- within your existing form add this field -->
+                          <input type="text" id="website" name="website" style="display: none;"/>
                     </div>
                     <div class=" col-lg-6">
                         <div class="form-group">

@@ -9,10 +9,15 @@ date_default_timezone_set("America/Mexico_City");
 	require 'phpmailer/class.phpmailer.php';
 	require 'phpmailer/class.smtp.php';
 
+
 	$name=$_POST['Nombre'];
 	$email=$_POST['Correo'];
 	$phone=$_POST['Telefono'];
 	$message=$_POST['mensaje'];
+	
+	//in your php ignore any submissions that inlcude this field
+	if(!empty($_POST['website'])) die();
+	
     $contenido = "Nombre:". $name. "\nCorreo:". $email. "\nTélefono:". $phone. "\nmensaje:".$message;
 
 	$template = str_replace('%Nombre%', $name, $template);
@@ -115,10 +120,10 @@ date_default_timezone_set("America/Mexico_City");
 		</html>";
 
 	 if(!$mail->Send()) {
-		 header('Location: ../error.html');
+		 header('Location: ../index.html');
 		/*echo 'Mailer Error: ' . $mail->ErrorInfo;*/ 
 	} else{
-		//  header('Location: ../correo.html');
+		 header('Location: ../contacto.html');
 		
 	 }
 ?>

@@ -1,5 +1,8 @@
 $( document ).ready(function() {
    
+
+    
+
     Highcharts.chart('guatemala', {
     
         chart: {

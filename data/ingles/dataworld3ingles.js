@@ -6,7 +6,7 @@ Highcharts.chart('container-guatemala', {
       zoomType: 'xy'
   },
   credits: {
-    text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy. ',
+    text: 'IED = Foreign Direct Investment. Data provided by the  . The years that do not have values ​​for FDI correspond to confidential information according to the Ministry of Economy. ',
   },
   title: {
       text: 'México is trade with Guatemala',
@@ -32,7 +32,7 @@ Highcharts.chart('container-guatemala', {
   },  { // Second yAxis
       gridLineWidth: 0,
       title: {
-          text: 'IED Million USD',
+          text: 'IED in million USD',
           style: {
             color: '#e013f5 ',
           }
@@ -49,20 +49,24 @@ Highcharts.chart('container-guatemala', {
   },
   legend: {
     title: {
-        text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
+        text: 'Type<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
         style: {
             fontStyle: 'italic'
         }
     },
-      layout: 'vertical',
-      align: 'left',
-      x: 80,
-      verticalAlign: 'top',
-      y: 55,
-      floating: true,
+    borderWidth: 2,
+    layout: 'vertical',
+    align: 'left',
+    x: 20,
+    verticalAlign: 'top',
+    y: 100,
+    //floating: true,
+    padding: 12,
+    itemMarginTop: 5,
+    itemMarginBottom: 5,
       backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
   },
-  data: {    csvURL: 'http://www.coine.lat/data/com-guatemala.csv',
+  data: {    csvURL: 'http://www.coine.lat/data/ingles/com-guatemala.csv',
              beforeParse: function (csv) {
                  return csv.replace(/\n\n/g, '\n');
              }           
@@ -136,7 +140,7 @@ Highcharts.chart('container-chile', {
         zoomType: 'xy'
     },
     credits: {
-        text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy.',
+        text: 'IED = Foreign Direct Investment. Data provided by the  . The years that do not have values ​​for FDI correspond to confidential information according to the Ministry of Economy.',
     },
     
     title: {
@@ -163,7 +167,7 @@ Highcharts.chart('container-chile', {
     },  { // Second yAxis
         gridLineWidth: 0,
         title: {
-            text: 'IED Million USD',
+            text: 'IED in million USD',
             style: {
               color: '#e013f5 ',
             }
@@ -180,20 +184,24 @@ Highcharts.chart('container-chile', {
     },
     legend: {
       title: {
-          text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
+          text: 'Type<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
           style: {
               fontStyle: 'italic'
           }
       },
-        layout: 'vertical',
-        align: 'left',
-        x: 80,
-        verticalAlign: 'top',
-        y: 55,
-        floating: true,
+      borderWidth: 2,
+      layout: 'vertical',
+      align: 'left',
+      x: 20,
+      verticalAlign: 'top',
+      y: 100,
+      //floating: true,
+      padding: 12,
+      itemMarginTop: 5,
+      itemMarginBottom: 5,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
     },
-    data: {    csvURL: 'http://www.coine.lat/data/com-chile.csv',
+    data: {    csvURL: 'http://www.coine.lat/data/ingles/com-chile.csv',
                beforeParse: function (csv) {
                    return csv.replace(/\n\n/g, '\n');
                }           
@@ -268,7 +276,7 @@ Highcharts.chart('container-colombia', {
         zoomType: 'xy'
     },
     credits: {
-        text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy.',
+        text: 'IED = Foreign Direct Investment. Data provided by the  . The years that do not have values ​​for FDI correspond to confidential information according to the Ministry of Economy.',
     },
     title: {
         text: 'México is trade with Colombia',
@@ -294,7 +302,7 @@ Highcharts.chart('container-colombia', {
     },  { // Second yAxis
         gridLineWidth: 0,
         title: {
-            text: 'IED Million USD',
+            text: 'IED in million USD',
             style: {
               color: '#e013f5 ',
             }
@@ -311,20 +319,24 @@ Highcharts.chart('container-colombia', {
     },
     legend: {
       title: {
-          text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
+          text: 'Type<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
           style: {
               fontStyle: 'italic'
           }
       },
-        layout: 'vertical',
-        align: 'left',
-        x: 80,
-        verticalAlign: 'top',
-        y: 55,
-        floating: true,
+      borderWidth: 2,
+      layout: 'vertical',
+      align: 'left',
+      x: 20,
+      verticalAlign: 'top',
+      y: 100,
+      //floating: true,
+      padding: 12,
+      itemMarginTop: 5,
+      itemMarginBottom: 5,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
     },
-    data: {    csvURL: 'http://www.coine.lat/data/com-colombia.csv',
+    data: {    csvURL: 'http://www.coine.lat/data/ingles/com-colombia.csv',
                beforeParse: function (csv) {
                    return csv.replace(/\n\n/g, '\n');
                }           
@@ -398,7 +410,7 @@ Highcharts.chart('container-costarica', {
         zoomType: 'xy'
     },
     credits: {
-        text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy.',
+        text: 'IED = Foreign Direct Investment. Data provided by the  . The years that do not have values ​​for FDI correspond to confidential information according to the Ministry of Economy.',
     },
     title: {
         text: 'México is trade with Costa Rica',
@@ -424,7 +436,7 @@ Highcharts.chart('container-costarica', {
     },  { // Second yAxis
         gridLineWidth: 0,
         title: {
-            text: 'IED Million USD',
+            text: 'IED in million USD',
             style: {
               color: '#e013f5 ',
             }
@@ -441,20 +453,24 @@ Highcharts.chart('container-costarica', {
     },
     legend: {
       title: {
-          text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
+          text: 'Type<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
           style: {
               fontStyle: 'italic'
           }
       },
-        layout: 'vertical',
-        align: 'left',
-        x: 80,
-        verticalAlign: 'top',
-        y: 55,
-        floating: true,
+      borderWidth: 2,
+      layout: 'vertical',
+      align: 'left',
+      x: 20,
+      verticalAlign: 'top',
+      y: 100,
+      //floating: true,
+      padding: 12,
+      itemMarginTop: 5,
+      itemMarginBottom: 5,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
     },
-    data: {    csvURL: 'http://www.coine.lat/data/com-costarica.csv',
+    data: {    csvURL: 'http://www.coine.lat/data/ingles/com-costarica.csv',
                beforeParse: function (csv) {
                    return csv.replace(/\n\n/g, '\n');
                }           
@@ -528,7 +544,7 @@ Highcharts.chart('container-dominicana', {
         zoomType: 'xy'
     },
     credits: {
-        text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy.',
+        text: 'IED = Foreign Direct Investment. Data provided by the  . The years that do not have values ​​for FDI correspond to confidential information according to the Ministry of Economy.',
     },
     title: {
         text: 'México is trade with República Dominicana',
@@ -554,7 +570,7 @@ Highcharts.chart('container-dominicana', {
     },  { // Second yAxis
         gridLineWidth: 0,
         title: {
-            text: 'IED Million USD',
+            text: 'IED in million USD',
             style: {
               color: '#e013f5 ',
             }
@@ -571,20 +587,24 @@ Highcharts.chart('container-dominicana', {
     },
     legend: {
       title: {
-          text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
+          text: 'Type<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
           style: {
               fontStyle: 'italic'
           }
       },
-        layout: 'vertical',
-        align: 'left',
-        x: 80,
-        verticalAlign: 'top',
-        y: 55,
-        floating: true,
+      borderWidth: 2,
+      layout: 'vertical',
+      align: 'left',
+      x: 20,
+      verticalAlign: 'top',
+      y: 100,
+      //floating: true,
+      padding: 12,
+      itemMarginTop: 5,
+      itemMarginBottom: 5,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
     },
-    data: {    csvURL: 'http://www.coine.lat/data/com-dominicana.csv',
+    data: {    csvURL: 'http://www.coine.lat/data/ingles/com-dominicana.csv',
                beforeParse: function (csv) {
                    return csv.replace(/\n\n/g, '\n');
                }           
@@ -658,7 +678,7 @@ Highcharts.chart('container-ecuador', {
         zoomType: 'xy'
     },
     credits: {
-        text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy.',
+        text: 'IED = Foreign Direct Investment. Data provided by the  . The years that do not have values ​​for FDI correspond to confidential information according to the Ministry of Economy.',
     },
     title: {
         text: 'México is trade with Ecuador',
@@ -684,7 +704,7 @@ Highcharts.chart('container-ecuador', {
     },  { // Second yAxis
         gridLineWidth: 0,
         title: {
-            text: 'IED Million USD',
+            text: 'IED in million USD',
             style: {
               color: '#e013f5 ',
             }
@@ -701,20 +721,24 @@ Highcharts.chart('container-ecuador', {
     },
     legend: {
       title: {
-          text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
+          text: 'Type<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
           style: {
               fontStyle: 'italic'
           }
       },
-        layout: 'vertical',
-        align: 'left',
-        x: 80,
-        verticalAlign: 'top',
-        y: 55,
-        floating: true,
+      borderWidth: 2,
+      layout: 'vertical',
+      align: 'left',
+      x: 20,
+      verticalAlign: 'top',
+      y: 100,
+      //floating: true,
+      padding: 12,
+      itemMarginTop: 5,
+      itemMarginBottom: 5,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
     },
-    data: {    csvURL: 'http://www.coine.lat/data/com-ecuador.csv',
+    data: {    csvURL: 'http://www.coine.lat/data/ingles/com-ecuador.csv',
                beforeParse: function (csv) {
                    return csv.replace(/\n\n/g, '\n');
                }           
@@ -788,7 +812,7 @@ Highcharts.chart('container-honduras', {
         zoomType: 'xy'
     },
     credits: {
-        text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy.',
+        text: 'IED = Foreign Direct Investment. Data provided by the  . The years that do not have values ​​for FDI correspond to confidential information according to the Ministry of Economy.',
     },
     title: {
         text: 'México is trade with Honduras',
@@ -814,7 +838,7 @@ Highcharts.chart('container-honduras', {
     },  { // Second yAxis
         gridLineWidth: 0,
         title: {
-            text: 'IED Million USD',
+            text: 'IED in million USD',
             style: {
               color: '#e013f5 ',
             }
@@ -831,20 +855,24 @@ Highcharts.chart('container-honduras', {
     },
     legend: {
       title: {
-          text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
+          text: 'Type<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
           style: {
               fontStyle: 'italic'
           }
       },
-        layout: 'vertical',
-        align: 'left',
-        x: 80,
-        verticalAlign: 'top',
-        y: 55,
-        floating: true,
+      borderWidth: 2,
+      layout: 'vertical',
+      align: 'left',
+      x: 20,
+      verticalAlign: 'top',
+      y: 100,
+      //floating: true,
+      padding: 12,
+      itemMarginTop: 5,
+      itemMarginBottom: 5,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
     },
-    data: {    csvURL: 'http://www.coine.lat/data/com-honduras.csv',
+    data: {    csvURL: 'http://www.coine.lat/data/ingles/com-honduras.csv',
                beforeParse: function (csv) {
                    return csv.replace(/\n\n/g, '\n');
                }           
@@ -919,7 +947,7 @@ Highcharts.chart('container-nicaragua', {
         zoomType: 'xy'
     },
     credits: {
-        text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy.',
+        text: 'IED = Foreign Direct Investment. Data provided by the  . The years that do not have values ​​for FDI correspond to confidential information according to the Ministry of Economy.',
     },
     title: {
         text: 'México is trade with Nicaragua',
@@ -945,7 +973,7 @@ Highcharts.chart('container-nicaragua', {
     },  { // Second yAxis
         gridLineWidth: 0,
         title: {
-            text: 'IED Million USD',
+            text: 'IED in million USD',
             style: {
               color: '#e013f5 ',
             }
@@ -962,20 +990,24 @@ Highcharts.chart('container-nicaragua', {
     },
     legend: {
       title: {
-          text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
+          text: 'Type<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
           style: {
               fontStyle: 'italic'
           }
       },
-        layout: 'vertical',
-        align: 'left',
-        x: 80,
-        verticalAlign: 'top',
-        y: 55,
-        floating: true,
+      borderWidth: 2,
+      layout: 'vertical',
+      align: 'left',
+      x: 20,
+      verticalAlign: 'top',
+      y: 100,
+      //floating: true,
+      padding: 12,
+      itemMarginTop: 5,
+      itemMarginBottom: 5,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
     },
-    data: {    csvURL: 'http://www.coine.lat/data/com-nicaragua.csv',
+    data: {    csvURL: 'http://www.coine.lat/data/ingles/com-nicaragua.csv',
                beforeParse: function (csv) {
                    return csv.replace(/\n\n/g, '\n');
                }           
@@ -1049,7 +1081,7 @@ Highcharts.chart('container-panama', {
         zoomType: 'xy'
     },
     credits: {
-        text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy.',
+        text: 'IED = Foreign Direct Investment. Data provided by the  . The years that do not have values ​​for FDI correspond to confidential information according to the Ministry of Economy.',
     },
     title: {
         text: 'México is trade with Panama',
@@ -1075,7 +1107,7 @@ Highcharts.chart('container-panama', {
     },  { // Second yAxis
         gridLineWidth: 0,
         title: {
-            text: 'IED Million USD',
+            text: 'IED in million USD',
             style: {
               color: '#e013f5 ',
             }
@@ -1092,20 +1124,24 @@ Highcharts.chart('container-panama', {
     },
     legend: {
       title: {
-          text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
+          text: 'Type<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
           style: {
               fontStyle: 'italic'
           }
       },
-        layout: 'vertical',
-        align: 'left',
-        x: 80,
-        verticalAlign: 'top',
-        y: 55,
-        floating: true,
+      borderWidth: 2,
+      layout: 'vertical',
+      align: 'left',
+      x: 20,
+      verticalAlign: 'top',
+      y: 100,
+      //floating: true,
+      padding: 12,
+      itemMarginTop: 5,
+      itemMarginBottom: 5,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
     },
-    data: {    csvURL: 'http://www.coine.lat/data/com-panama.csv',
+    data: {    csvURL: 'http://www.coine.lat/data/ingles/com-panama.csv',
                beforeParse: function (csv) {
                    return csv.replace(/\n\n/g, '\n');
                }           
@@ -1179,7 +1215,7 @@ Highcharts.chart('container-peru', {
         zoomType: 'xy'
     },
     credits: {
-        text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy.',
+        text: 'IED = Foreign Direct Investment. Data provided by the  . The years that do not have values ​​for FDI correspond to confidential information according to the Ministry of Economy.',
     },
     title: {
         text: 'México is trade with Perú',
@@ -1205,7 +1241,7 @@ Highcharts.chart('container-peru', {
     },  { // Second yAxis
         gridLineWidth: 0,
         title: {
-            text: 'IED Million USD',
+            text: 'IED in million USD',
             style: {
               color: '#e013f5 ',
             }
@@ -1222,20 +1258,24 @@ Highcharts.chart('container-peru', {
     },
     legend: {
       title: {
-          text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
+          text: 'Type<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
           style: {
               fontStyle: 'italic'
           }
       },
-        layout: 'vertical',
-        align: 'left',
-        x: 80,
-        verticalAlign: 'top',
-        y: 55,
-        floating: true,
+      borderWidth: 2,
+      layout: 'vertical',
+      align: 'left',
+      x: 20,
+      verticalAlign: 'top',
+      y: 100,
+      //floating: true,
+      padding: 12,
+      itemMarginTop: 5,
+      itemMarginBottom: 5,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
     },
-    data: {    csvURL: 'http://www.coine.lat/data/com-peru.csv',
+    data: {    csvURL: 'http://www.coine.lat/data/ingles/com-peru.csv',
                beforeParse: function (csv) {
                    return csv.replace(/\n\n/g, '\n');
                }           
@@ -1310,7 +1350,7 @@ Highcharts.chart('container-salvador', {
         zoomType: 'xy'
     },
     credits: {
-        text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy.',
+        text: 'IED = Foreign Direct Investment. Data provided by the  . The years that do not have values ​​for FDI correspond to confidential information according to the Ministry of Economy.',
     },
     title: {
         text: 'México is trade with El Salvador',
@@ -1336,7 +1376,7 @@ Highcharts.chart('container-salvador', {
     },  { // Second yAxis
         gridLineWidth: 0,
         title: {
-            text: 'IED Million USD',
+            text: 'IED in million USD',
             style: {
               color: '#e013f5 ',
             }
@@ -1353,20 +1393,24 @@ Highcharts.chart('container-salvador', {
     },
     legend: {
       title: {
-          text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
+          text: 'Type<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
           style: {
               fontStyle: 'italic'
           }
       },
-        layout: 'vertical',
-        align: 'left',
-        x: 80,
-        verticalAlign: 'top',
-        y: 55,
-        floating: true,
+      borderWidth: 2,
+      layout: 'vertical',
+      align: 'left',
+      x: 20,
+      verticalAlign: 'top',
+      y: 100,
+      //floating: true,
+      padding: 12,
+      itemMarginTop: 5,
+      itemMarginBottom: 5,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
     },
-    data: {    csvURL: 'http://www.coine.lat/data/com-salvador.csv',
+    data: {    csvURL: 'http://www.coine.lat/data/ingles/com-salvador.csv',
                beforeParse: function (csv) {
                    return csv.replace(/\n\n/g, '\n');
                }           
@@ -1441,7 +1485,7 @@ Highcharts.chart('container-brasil', {
         zoomType: 'xy'
     },
     credits: {
-        text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy.',
+        text: 'IED = Foreign Direct Investment. Data provided by the  . The years that do not have values ​​for FDI correspond to confidential information according to the Ministry of Economy.',
     },
     title: {
         text: 'México is trade with Brasil',
@@ -1467,7 +1511,7 @@ Highcharts.chart('container-brasil', {
     },  { // Second yAxis
         gridLineWidth: 0,
         title: {
-            text: 'IED Million USD',
+            text: 'IED in million USD',
             style: {
               color: '#e013f5 ',
             }
@@ -1484,20 +1528,24 @@ Highcharts.chart('container-brasil', {
     },
     legend: {
       title: {
-          text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
+          text: 'Type<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
           style: {
               fontStyle: 'italic'
           }
       },
-        layout: 'vertical',
-        align: 'left',
-        x: 80,
-        verticalAlign: 'top',
-        y: 55,
-        floating: true,
+      borderWidth: 2,
+      layout: 'vertical',
+      align: 'left',
+      x: 20,
+      verticalAlign: 'top',
+      y: 100,
+      //floating: true,
+      padding: 12,
+      itemMarginTop: 5,
+      itemMarginBottom: 5,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
     },
-    data: {    csvURL: 'http://www.coine.lat/data/com-brasil.csv',
+    data: {    csvURL: 'http://www.coine.lat/data/ingles/com-brasil.csv',
                beforeParse: function (csv) {
                    return csv.replace(/\n\n/g, '\n');
                }           

@@ -6,14 +6,14 @@ Highcharts.chart('container-guatemala', {
       zoomType: 'xy'
   },
   credits: {
-    text: 'IED = Inversión Extranjera Directa. Datos proporcionados por la Secretaría de Economía. Los años que no cuentan con valores para la IED, corresponden a información confidencial de acuerdo con la Secretaría de Economía.  ',
+    text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy. ',
   },
   title: {
-      text: 'Comercio de México con Guatemala',
+      text: 'México is trade with Guatemala',
       align: 'center'
   },
   subtitle: {
-      text: 'Datos en millones de dólares',
+      text: 'Amount in million USD',
       align: 'center'
   },
   yAxis: [{ // Primary yAxis
@@ -23,7 +23,7 @@ Highcharts.chart('container-guatemala', {
           }
       },
       title: {
-          text: 'Millones de dolares',
+          text: 'Million USD',
           style: {
               color: Highcharts.getOptions().colors[1]
           }
@@ -32,7 +32,7 @@ Highcharts.chart('container-guatemala', {
   },  { // Second yAxis
       gridLineWidth: 0,
       title: {
-          text: 'IED Millones de dolares',
+          text: 'IED Million USD',
           style: {
             color: '#e013f5 ',
           }
@@ -49,21 +49,17 @@ Highcharts.chart('container-guatemala', {
   },
   legend: {
     title: {
-        text: 'Datos<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click para ocultar)</span>',
+        text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
         style: {
             fontStyle: 'italic'
         }
     },
-    borderWidth: 2,
-    layout: 'vertical',
-    align: 'left',
-    x: 20,
-    verticalAlign: 'top',
-    y: 100,
-    //floating: true,
-    padding: 12,
-    itemMarginTop: 5,
-    itemMarginBottom: 5,
+      layout: 'vertical',
+      align: 'left',
+      x: 80,
+      verticalAlign: 'top',
+      y: 55,
+      floating: true,
       backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
   },
   data: {    csvURL: 'http://www.coine.lat/data/com-guatemala.csv',
@@ -72,14 +68,14 @@ Highcharts.chart('container-guatemala', {
              }           
          },
   series: [{
-      name: 'Exportaciones',
+      name: 'Exports',
       type: 'column',
      // yAxis: 1,
       tooltip: {
           valueSuffix: ' mdd'
       }
   }, {
-      name: 'Importaciones',
+      name: 'Imports',
       type: 'column',
      // yAxis: 2,
       marker: {
@@ -91,14 +87,14 @@ Highcharts.chart('container-guatemala', {
       }
 
   }, {
-      name: 'Comercio total',
+      name: 'Total trade',
       type: 'column',
       tooltip: {
           valueSuffix: ' mdd'
       }
   },
   {
-    name: 'Balanza comercial',
+    name: 'Trade balance',
     type: 'column',
     tooltip: {
         valueSuffix: ' mdd'
@@ -140,15 +136,15 @@ Highcharts.chart('container-chile', {
         zoomType: 'xy'
     },
     credits: {
-        text: 'IED = Inversión Extranjera Directa. Datos proporcionados por la Secretaría de Economía. Los años que no cuentan con valores para la IED, corresponden a información confidencial de acuerdo con la Secretaría de Economía',
+        text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy.',
     },
     
     title: {
-        text: 'Comercio de México con Chile',
+        text: 'México is trade with Chile',
         align: 'center'
     },
     subtitle: {
-        text: 'Datos en millones de dólares',
+        text: 'Amount in million USD',
         align: 'center'
     },
     yAxis: [{ // Primary yAxis
@@ -158,7 +154,7 @@ Highcharts.chart('container-chile', {
             }
         },
         title: {
-            text: 'Millones de dolares',
+            text: 'Million USD',
             style: {
                 color: Highcharts.getOptions().colors[1]
             }
@@ -167,7 +163,7 @@ Highcharts.chart('container-chile', {
     },  { // Second yAxis
         gridLineWidth: 0,
         title: {
-            text: 'IED Millones de dolares',
+            text: 'IED Million USD',
             style: {
               color: '#e013f5 ',
             }
@@ -184,21 +180,17 @@ Highcharts.chart('container-chile', {
     },
     legend: {
       title: {
-          text: 'Datos<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click para ocultar)</span>',
+          text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
           style: {
               fontStyle: 'italic'
           }
       },
-      borderWidth: 2,
-      layout: 'vertical',
-      align: 'left',
-      x: 20,
-      verticalAlign: 'top',
-      y: 100,
-      //floating: true,
-      padding: 12,
-      itemMarginTop: 5,
-      itemMarginBottom: 5,
+        layout: 'vertical',
+        align: 'left',
+        x: 80,
+        verticalAlign: 'top',
+        y: 55,
+        floating: true,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
     },
     data: {    csvURL: 'http://www.coine.lat/data/com-chile.csv',
@@ -207,14 +199,14 @@ Highcharts.chart('container-chile', {
                }           
            },
     series: [{
-        name: 'Exportaciones',
+        name: 'Exports',
         type: 'column',
        // yAxis: 1,
         tooltip: {
             valueSuffix: ' mdd'
         }
     }, {
-        name: 'Importaciones',
+        name: 'Imports',
         type: 'column',
        // yAxis: 2,
         marker: {
@@ -226,14 +218,14 @@ Highcharts.chart('container-chile', {
         }
   
     }, {
-        name: 'Comercio total',
+        name: 'Total trade',
         type: 'column',
         tooltip: {
             valueSuffix: ' mdd'
         }
     },
     {
-      name: 'Balanza comercial',
+      name: 'Trade balance',
       type: 'column',
       tooltip: {
           valueSuffix: ' mdd'
@@ -276,14 +268,14 @@ Highcharts.chart('container-colombia', {
         zoomType: 'xy'
     },
     credits: {
-        text: 'IED = Inversión Extranjera Directa. Datos proporcionados por la Secretaría de Economía. Los años que no cuentan con valores para la IED, corresponden a información confidencial de acuerdo con la Secretaría de Economía',
+        text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy.',
     },
     title: {
-        text: 'Comercio de México con Colombia',
+        text: 'México is trade with Colombia',
         align: 'center'
     },
     subtitle: {
-        text: 'Datos en millones de dólares',
+        text: 'Amount in million USD',
         align: 'center'
     },
     yAxis: [{ // Primary yAxis
@@ -293,7 +285,7 @@ Highcharts.chart('container-colombia', {
             }
         },
         title: {
-            text: 'Millones de dolares',
+            text: 'Million USD',
             style: {
                 color: Highcharts.getOptions().colors[1]
             }
@@ -302,7 +294,7 @@ Highcharts.chart('container-colombia', {
     },  { // Second yAxis
         gridLineWidth: 0,
         title: {
-            text: 'IED Millones de dolares',
+            text: 'IED Million USD',
             style: {
               color: '#e013f5 ',
             }
@@ -319,21 +311,17 @@ Highcharts.chart('container-colombia', {
     },
     legend: {
       title: {
-          text: 'Datos<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click para ocultar)</span>',
+          text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
           style: {
               fontStyle: 'italic'
           }
       },
-      borderWidth: 2,
-      layout: 'vertical',
-      align: 'left',
-      x: 20,
-      verticalAlign: 'top',
-      y: 100,
-      //floating: true,
-      padding: 12,
-      itemMarginTop: 5,
-      itemMarginBottom: 5,
+        layout: 'vertical',
+        align: 'left',
+        x: 80,
+        verticalAlign: 'top',
+        y: 55,
+        floating: true,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
     },
     data: {    csvURL: 'http://www.coine.lat/data/com-colombia.csv',
@@ -342,14 +330,14 @@ Highcharts.chart('container-colombia', {
                }           
            },
     series: [{
-        name: 'Exportaciones',
+        name: 'Exports',
         type: 'column',
        // yAxis: 1,
         tooltip: {
             valueSuffix: ' mdd'
         }
     }, {
-        name: 'Importaciones',
+        name: 'Imports',
         type: 'column',
        // yAxis: 2,
         marker: {
@@ -361,14 +349,14 @@ Highcharts.chart('container-colombia', {
         }
   
     }, {
-        name: 'Comercio total',
+        name: 'Total trade',
         type: 'column',
         tooltip: {
             valueSuffix: ' mdd'
         }
     },
     {
-      name: 'Balanza comercial',
+      name: 'Trade balance',
       type: 'column',
       tooltip: {
           valueSuffix: ' mdd'
@@ -410,14 +398,14 @@ Highcharts.chart('container-costarica', {
         zoomType: 'xy'
     },
     credits: {
-        text: 'IED = Inversión Extranjera Directa. Datos proporcionados por la Secretaría de Economía. Los años que no cuentan con valores para la IED, corresponden a información confidencial de acuerdo con la Secretaría de Economía',
+        text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy.',
     },
     title: {
-        text: 'Comercio de México con Costa Rica',
+        text: 'México is trade with Costa Rica',
         align: 'center'
     },
     subtitle: {
-        text: 'Datos en millones de dólares',
+        text: 'Amount in million USD',
         align: 'center'
     },
     yAxis: [{ // Primary yAxis
@@ -427,7 +415,7 @@ Highcharts.chart('container-costarica', {
             }
         },
         title: {
-            text: 'Millones de dolares',
+            text: 'Million USD',
             style: {
                 color: Highcharts.getOptions().colors[1]
             }
@@ -436,7 +424,7 @@ Highcharts.chart('container-costarica', {
     },  { // Second yAxis
         gridLineWidth: 0,
         title: {
-            text: 'IED Millones de dolares',
+            text: 'IED Million USD',
             style: {
               color: '#e013f5 ',
             }
@@ -453,21 +441,17 @@ Highcharts.chart('container-costarica', {
     },
     legend: {
       title: {
-          text: 'Datos<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click para ocultar)</span>',
+          text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
           style: {
               fontStyle: 'italic'
           }
       },
-      borderWidth: 2,
-      layout: 'vertical',
-      align: 'left',
-      x: 20,
-      verticalAlign: 'top',
-      y: 100,
-      //floating: true,
-      padding: 12,
-      itemMarginTop: 5,
-      itemMarginBottom: 5,
+        layout: 'vertical',
+        align: 'left',
+        x: 80,
+        verticalAlign: 'top',
+        y: 55,
+        floating: true,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
     },
     data: {    csvURL: 'http://www.coine.lat/data/com-costarica.csv',
@@ -476,14 +460,14 @@ Highcharts.chart('container-costarica', {
                }           
            },
     series: [{
-        name: 'Exportaciones',
+        name: 'Exports',
         type: 'column',
        // yAxis: 1,
         tooltip: {
             valueSuffix: ' mdd'
         }
     }, {
-        name: 'Importaciones',
+        name: 'Imports',
         type: 'column',
        // yAxis: 2,
         marker: {
@@ -495,14 +479,14 @@ Highcharts.chart('container-costarica', {
         }
   
     }, {
-        name: 'Comercio total',
+        name: 'Total trade',
         type: 'column',
         tooltip: {
             valueSuffix: ' mdd'
         }
     },
     {
-      name: 'Balanza comercial',
+      name: 'Trade balance',
       type: 'column',
       tooltip: {
           valueSuffix: ' mdd'
@@ -544,14 +528,14 @@ Highcharts.chart('container-dominicana', {
         zoomType: 'xy'
     },
     credits: {
-        text: 'IED = Inversión Extranjera Directa. Datos proporcionados por la Secretaría de Economía. Los años que no cuentan con valores para la IED, corresponden a información confidencial de acuerdo con la Secretaría de Economía',
+        text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy.',
     },
     title: {
-        text: 'Comercio de México con República Dominicana',
+        text: 'México is trade with República Dominicana',
         align: 'center'
     },
     subtitle: {
-        text: 'Datos en millones de dólares',
+        text: 'Amount in million USD',
         align: 'center'
     },
     yAxis: [{ // Primary yAxis
@@ -561,7 +545,7 @@ Highcharts.chart('container-dominicana', {
             }
         },
         title: {
-            text: 'Millones de dolares',
+            text: 'Million USD',
             style: {
                 color: Highcharts.getOptions().colors[1]
             }
@@ -570,7 +554,7 @@ Highcharts.chart('container-dominicana', {
     },  { // Second yAxis
         gridLineWidth: 0,
         title: {
-            text: 'IED Millones de dolares',
+            text: 'IED Million USD',
             style: {
               color: '#e013f5 ',
             }
@@ -587,21 +571,17 @@ Highcharts.chart('container-dominicana', {
     },
     legend: {
       title: {
-          text: 'Datos<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click para ocultar)</span>',
+          text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
           style: {
               fontStyle: 'italic'
           }
       },
-      borderWidth: 2,
-      layout: 'vertical',
-      align: 'left',
-      x: 20,
-      verticalAlign: 'top',
-      y: 100,
-      //floating: true,
-      padding: 12,
-      itemMarginTop: 5,
-      itemMarginBottom: 5,
+        layout: 'vertical',
+        align: 'left',
+        x: 80,
+        verticalAlign: 'top',
+        y: 55,
+        floating: true,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
     },
     data: {    csvURL: 'http://www.coine.lat/data/com-dominicana.csv',
@@ -610,14 +590,14 @@ Highcharts.chart('container-dominicana', {
                }           
            },
     series: [{
-        name: 'Exportaciones',
+        name: 'Exports',
         type: 'column',
        // yAxis: 1,
         tooltip: {
             valueSuffix: ' mdd'
         }
     }, {
-        name: 'Importaciones',
+        name: 'Imports',
         type: 'column',
        // yAxis: 2,
         marker: {
@@ -629,14 +609,14 @@ Highcharts.chart('container-dominicana', {
         }
   
     }, {
-        name: 'Comercio total',
+        name: 'Total trade',
         type: 'column',
         tooltip: {
             valueSuffix: ' mdd'
         }
     },
     {
-      name: 'Balanza comercial',
+      name: 'Trade balance',
       type: 'column',
       tooltip: {
           valueSuffix: ' mdd'
@@ -678,14 +658,14 @@ Highcharts.chart('container-ecuador', {
         zoomType: 'xy'
     },
     credits: {
-        text: 'IED = Inversión Extranjera Directa. Datos proporcionados por la Secretaría de Economía. Los años que no cuentan con valores para la IED, corresponden a información confidencial de acuerdo con la Secretaría de Economía',
+        text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy.',
     },
     title: {
-        text: 'Comercio de México con Ecuador',
+        text: 'México is trade with Ecuador',
         align: 'center'
     },
     subtitle: {
-        text: 'Datos en millones de dólares',
+        text: 'Amount in million USD',
         align: 'center'
     },
     yAxis: [{ // Primary yAxis
@@ -695,7 +675,7 @@ Highcharts.chart('container-ecuador', {
             }
         },
         title: {
-            text: 'Millones de dolares',
+            text: 'Million USD',
             style: {
                 color: Highcharts.getOptions().colors[1]
             }
@@ -704,7 +684,7 @@ Highcharts.chart('container-ecuador', {
     },  { // Second yAxis
         gridLineWidth: 0,
         title: {
-            text: 'IED Millones de dolares',
+            text: 'IED Million USD',
             style: {
               color: '#e013f5 ',
             }
@@ -721,21 +701,17 @@ Highcharts.chart('container-ecuador', {
     },
     legend: {
       title: {
-          text: 'Datos<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click para ocultar)</span>',
+          text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
           style: {
               fontStyle: 'italic'
           }
       },
-      borderWidth: 2,
-      layout: 'vertical',
-      align: 'left',
-      x: 20,
-      verticalAlign: 'top',
-      y: 100,
-      //floating: true,
-      padding: 12,
-      itemMarginTop: 5,
-      itemMarginBottom: 5,
+        layout: 'vertical',
+        align: 'left',
+        x: 80,
+        verticalAlign: 'top',
+        y: 55,
+        floating: true,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
     },
     data: {    csvURL: 'http://www.coine.lat/data/com-ecuador.csv',
@@ -744,14 +720,14 @@ Highcharts.chart('container-ecuador', {
                }           
            },
     series: [{
-        name: 'Exportaciones',
+        name: 'Exports',
         type: 'column',
        // yAxis: 1,
         tooltip: {
             valueSuffix: ' mdd'
         }
     }, {
-        name: 'Importaciones',
+        name: 'Imports',
         type: 'column',
        // yAxis: 2,
         marker: {
@@ -763,14 +739,14 @@ Highcharts.chart('container-ecuador', {
         }
   
     }, {
-        name: 'Comercio total',
+        name: 'Total trade',
         type: 'column',
         tooltip: {
             valueSuffix: ' mdd'
         }
     },
     {
-      name: 'Balanza comercial',
+      name: 'Trade balance',
       type: 'column',
       tooltip: {
           valueSuffix: ' mdd'
@@ -812,14 +788,14 @@ Highcharts.chart('container-honduras', {
         zoomType: 'xy'
     },
     credits: {
-        text: 'IED = Inversión Extranjera Directa. Datos proporcionados por la Secretaría de Economía. Los años que no cuentan con valores para la IED, corresponden a información confidencial de acuerdo con la Secretaría de Economía',
+        text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy.',
     },
     title: {
-        text: 'Comercio de México con Honduras',
+        text: 'México is trade with Honduras',
         align: 'center'
     },
     subtitle: {
-        text: 'Datos en millones de dólares',
+        text: 'Amount in million USD',
         align: 'center'
     },
     yAxis: [{ // Primary yAxis
@@ -829,7 +805,7 @@ Highcharts.chart('container-honduras', {
             }
         },
         title: {
-            text: 'Millones de dolares',
+            text: 'Million USD',
             style: {
                 color: Highcharts.getOptions().colors[1]
             }
@@ -838,7 +814,7 @@ Highcharts.chart('container-honduras', {
     },  { // Second yAxis
         gridLineWidth: 0,
         title: {
-            text: 'IED Millones de dolares',
+            text: 'IED Million USD',
             style: {
               color: '#e013f5 ',
             }
@@ -855,21 +831,17 @@ Highcharts.chart('container-honduras', {
     },
     legend: {
       title: {
-          text: 'Datos<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click para ocultar)</span>',
+          text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
           style: {
               fontStyle: 'italic'
           }
       },
-      borderWidth: 2,
-      layout: 'vertical',
-      align: 'left',
-      x: 20,
-      verticalAlign: 'top',
-      y: 100,
-      //floating: true,
-      padding: 12,
-      itemMarginTop: 5,
-      itemMarginBottom: 5,
+        layout: 'vertical',
+        align: 'left',
+        x: 80,
+        verticalAlign: 'top',
+        y: 55,
+        floating: true,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
     },
     data: {    csvURL: 'http://www.coine.lat/data/com-honduras.csv',
@@ -878,14 +850,14 @@ Highcharts.chart('container-honduras', {
                }           
            },
     series: [{
-        name: 'Exportaciones',
+        name: 'Exports',
         type: 'column',
        // yAxis: 1,
         tooltip: {
             valueSuffix: ' mdd'
         }
     }, {
-        name: 'Importaciones',
+        name: 'Imports',
         type: 'column',
        // yAxis: 2,
         marker: {
@@ -897,14 +869,14 @@ Highcharts.chart('container-honduras', {
         }
   
     }, {
-        name: 'Comercio total',
+        name: 'Total trade',
         type: 'column',
         tooltip: {
             valueSuffix: ' mdd'
         }
     },
     {
-      name: 'Balanza comercial',
+      name: 'Trade balance',
       type: 'column',
       tooltip: {
           valueSuffix: ' mdd'
@@ -947,14 +919,14 @@ Highcharts.chart('container-nicaragua', {
         zoomType: 'xy'
     },
     credits: {
-        text: 'IED = Inversión Extranjera Directa. Datos proporcionados por la Secretaría de Economía. Los años que no cuentan con valores para la IED, corresponden a información confidencial de acuerdo con la Secretaría de Economía',
+        text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy.',
     },
     title: {
-        text: 'Comercio de México con Nicaragua',
+        text: 'México is trade with Nicaragua',
         align: 'center'
     },
     subtitle: {
-        text: 'Datos en millones de dólares',
+        text: 'Amount in million USD',
         align: 'center'
     },
     yAxis: [{ // Primary yAxis
@@ -964,7 +936,7 @@ Highcharts.chart('container-nicaragua', {
             }
         },
         title: {
-            text: 'Millones de dolares',
+            text: 'Million USD',
             style: {
                 color: Highcharts.getOptions().colors[1]
             }
@@ -973,7 +945,7 @@ Highcharts.chart('container-nicaragua', {
     },  { // Second yAxis
         gridLineWidth: 0,
         title: {
-            text: 'IED Millones de dolares',
+            text: 'IED Million USD',
             style: {
               color: '#e013f5 ',
             }
@@ -990,21 +962,17 @@ Highcharts.chart('container-nicaragua', {
     },
     legend: {
       title: {
-          text: 'Datos<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click para ocultar)</span>',
+          text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
           style: {
               fontStyle: 'italic'
           }
       },
-      borderWidth: 2,
-      layout: 'vertical',
-      align: 'left',
-      x: 20,
-      verticalAlign: 'top',
-      y: 100,
-      //floating: true,
-      padding: 12,
-      itemMarginTop: 5,
-      itemMarginBottom: 5,
+        layout: 'vertical',
+        align: 'left',
+        x: 80,
+        verticalAlign: 'top',
+        y: 55,
+        floating: true,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
     },
     data: {    csvURL: 'http://www.coine.lat/data/com-nicaragua.csv',
@@ -1013,14 +981,14 @@ Highcharts.chart('container-nicaragua', {
                }           
            },
     series: [{
-        name: 'Exportaciones',
+        name: 'Exports',
         type: 'column',
        // yAxis: 1,
         tooltip: {
             valueSuffix: ' mdd'
         }
     }, {
-        name: 'Importaciones',
+        name: 'Imports',
         type: 'column',
        // yAxis: 2,
         marker: {
@@ -1032,14 +1000,14 @@ Highcharts.chart('container-nicaragua', {
         }
   
     }, {
-        name: 'Comercio total',
+        name: 'Total trade',
         type: 'column',
         tooltip: {
             valueSuffix: ' mdd'
         }
     },
     {
-      name: 'Balanza comercial',
+      name: 'Trade balance',
       type: 'column',
       tooltip: {
           valueSuffix: ' mdd'
@@ -1081,14 +1049,14 @@ Highcharts.chart('container-panama', {
         zoomType: 'xy'
     },
     credits: {
-        text: 'IED = Inversión Extranjera Directa. Datos proporcionados por la Secretaría de Economía. Los años que no cuentan con valores para la IED, corresponden a información confidencial de acuerdo con la Secretaría de Economía',
+        text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy.',
     },
     title: {
-        text: 'Comercio de México con Panama',
+        text: 'México is trade with Panama',
         align: 'center'
     },
     subtitle: {
-        text: 'Datos en millones de dólares',
+        text: 'Amount in million USD',
         align: 'center'
     },
     yAxis: [{ // Primary yAxis
@@ -1098,7 +1066,7 @@ Highcharts.chart('container-panama', {
             }
         },
         title: {
-            text: 'Millones de dolares',
+            text: 'Million USD',
             style: {
                 color: Highcharts.getOptions().colors[1]
             }
@@ -1107,7 +1075,7 @@ Highcharts.chart('container-panama', {
     },  { // Second yAxis
         gridLineWidth: 0,
         title: {
-            text: 'IED Millones de dolares',
+            text: 'IED Million USD',
             style: {
               color: '#e013f5 ',
             }
@@ -1124,21 +1092,17 @@ Highcharts.chart('container-panama', {
     },
     legend: {
       title: {
-          text: 'Datos<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click para ocultar)</span>',
+          text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
           style: {
               fontStyle: 'italic'
           }
       },
-      borderWidth: 2,
-      layout: 'vertical',
-      align: 'left',
-      x: 20,
-      verticalAlign: 'top',
-      y: 100,
-      //floating: true,
-      padding: 12,
-      itemMarginTop: 5,
-      itemMarginBottom: 5,
+        layout: 'vertical',
+        align: 'left',
+        x: 80,
+        verticalAlign: 'top',
+        y: 55,
+        floating: true,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
     },
     data: {    csvURL: 'http://www.coine.lat/data/com-panama.csv',
@@ -1147,14 +1111,14 @@ Highcharts.chart('container-panama', {
                }           
            },
     series: [{
-        name: 'Exportaciones',
+        name: 'Exports',
         type: 'column',
        // yAxis: 1,
         tooltip: {
             valueSuffix: ' mdd'
         }
     }, {
-        name: 'Importaciones',
+        name: 'Imports',
         type: 'column',
        // yAxis: 2,
         marker: {
@@ -1166,14 +1130,14 @@ Highcharts.chart('container-panama', {
         }
   
     }, {
-        name: 'Comercio total',
+        name: 'Total trade',
         type: 'column',
         tooltip: {
             valueSuffix: ' mdd'
         }
     },
     {
-      name: 'Balanza comercial',
+      name: 'Trade balance',
       type: 'column',
       tooltip: {
           valueSuffix: ' mdd'
@@ -1215,14 +1179,14 @@ Highcharts.chart('container-peru', {
         zoomType: 'xy'
     },
     credits: {
-        text: 'IED = Inversión Extranjera Directa. Datos proporcionados por la Secretaría de Economía. Los años que no cuentan con valores para la IED, corresponden a información confidencial de acuerdo con la Secretaría de Economía',
+        text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy.',
     },
     title: {
-        text: 'Comercio de México con Perú',
+        text: 'México is trade with Perú',
         align: 'center'
     },
     subtitle: {
-        text: 'Datos en millones de dólares',
+        text: 'Amount in million USD',
         align: 'center'
     },
     yAxis: [{ // Primary yAxis
@@ -1232,7 +1196,7 @@ Highcharts.chart('container-peru', {
             }
         },
         title: {
-            text: 'Millones de dolares',
+            text: 'Million USD',
             style: {
                 color: Highcharts.getOptions().colors[1]
             }
@@ -1241,7 +1205,7 @@ Highcharts.chart('container-peru', {
     },  { // Second yAxis
         gridLineWidth: 0,
         title: {
-            text: 'IED Millones de dolares',
+            text: 'IED Million USD',
             style: {
               color: '#e013f5 ',
             }
@@ -1258,21 +1222,17 @@ Highcharts.chart('container-peru', {
     },
     legend: {
       title: {
-          text: 'Datos<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click para ocultar)</span>',
+          text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
           style: {
               fontStyle: 'italic'
           }
       },
-      borderWidth: 2,
-      layout: 'vertical',
-      align: 'left',
-      x: 20,
-      verticalAlign: 'top',
-      y: 100,
-      //floating: true,
-      padding: 12,
-      itemMarginTop: 5,
-      itemMarginBottom: 5,
+        layout: 'vertical',
+        align: 'left',
+        x: 80,
+        verticalAlign: 'top',
+        y: 55,
+        floating: true,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
     },
     data: {    csvURL: 'http://www.coine.lat/data/com-peru.csv',
@@ -1281,14 +1241,14 @@ Highcharts.chart('container-peru', {
                }           
            },
     series: [{
-        name: 'Exportaciones',
+        name: 'Exports',
         type: 'column',
        // yAxis: 1,
         tooltip: {
             valueSuffix: ' mdd'
         }
     }, {
-        name: 'Importaciones',
+        name: 'Imports',
         type: 'column',
        // yAxis: 2,
         marker: {
@@ -1300,14 +1260,14 @@ Highcharts.chart('container-peru', {
         }
   
     }, {
-        name: 'Comercio total',
+        name: 'Total trade',
         type: 'column',
         tooltip: {
             valueSuffix: ' mdd'
         }
     },
     {
-      name: 'Balanza comercial',
+      name: 'Trade balance',
       type: 'column',
       tooltip: {
           valueSuffix: ' mdd'
@@ -1350,14 +1310,14 @@ Highcharts.chart('container-salvador', {
         zoomType: 'xy'
     },
     credits: {
-        text: 'IED = Inversión Extranjera Directa. Datos proporcionados por la Secretaría de Economía. Los años que no cuentan con valores para la IED, corresponden a información confidencial de acuerdo con la Secretaría de Economía',
+        text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy.',
     },
     title: {
-        text: 'Comercio de México con El Salvador',
+        text: 'México is trade with El Salvador',
         align: 'center'
     },
     subtitle: {
-        text: 'Datos en millones de dólares',
+        text: 'Amount in million USD',
         align: 'center'
     },
     yAxis: [{ // Primary yAxis
@@ -1367,7 +1327,7 @@ Highcharts.chart('container-salvador', {
             }
         },
         title: {
-            text: 'Millones de dolares',
+            text: 'Million USD',
             style: {
                 color: Highcharts.getOptions().colors[1]
             }
@@ -1376,7 +1336,7 @@ Highcharts.chart('container-salvador', {
     },  { // Second yAxis
         gridLineWidth: 0,
         title: {
-            text: 'IED Millones de dolares',
+            text: 'IED Million USD',
             style: {
               color: '#e013f5 ',
             }
@@ -1393,21 +1353,17 @@ Highcharts.chart('container-salvador', {
     },
     legend: {
       title: {
-          text: 'Datos<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click para ocultar)</span>',
+          text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
           style: {
               fontStyle: 'italic'
           }
       },
-      borderWidth: 2,
-      layout: 'vertical',
-      align: 'left',
-      x: 20,
-      verticalAlign: 'top',
-      y: 100,
-      //floating: true,
-      padding: 12,
-      itemMarginTop: 5,
-      itemMarginBottom: 5,
+        layout: 'vertical',
+        align: 'left',
+        x: 80,
+        verticalAlign: 'top',
+        y: 55,
+        floating: true,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
     },
     data: {    csvURL: 'http://www.coine.lat/data/com-salvador.csv',
@@ -1416,14 +1372,14 @@ Highcharts.chart('container-salvador', {
                }           
            },
     series: [{
-        name: 'Exportaciones',
+        name: 'Exports',
         type: 'column',
        // yAxis: 1,
         tooltip: {
             valueSuffix: ' mdd'
         }
     }, {
-        name: 'Importaciones',
+        name: 'Imports',
         type: 'column',
        // yAxis: 2,
         marker: {
@@ -1435,14 +1391,14 @@ Highcharts.chart('container-salvador', {
         }
   
     }, {
-        name: 'Comercio total',
+        name: 'Total trade',
         type: 'column',
         tooltip: {
             valueSuffix: ' mdd'
         }
     },
     {
-      name: 'Balanza comercial',
+      name: 'Trade balance',
       type: 'column',
       tooltip: {
           valueSuffix: ' mdd'
@@ -1485,14 +1441,14 @@ Highcharts.chart('container-brasil', {
         zoomType: 'xy'
     },
     credits: {
-        text: 'IED = Inversión Extranjera Directa. Datos proporcionados por la Secretaría de Economía. Los años que no cuentan con valores para la IED, corresponden a información confidencial de acuerdo con la Secretaría de Economía',
+        text: 'IED = Foreign direct investment. Data provided by the Ministry of Economy.',
     },
     title: {
-        text: 'Comercio de México con Brasil',
+        text: 'México is trade with Brasil',
         align: 'center'
     },
     subtitle: {
-        text: 'Datos en millones de dólares',
+        text: 'Amount in million USD',
         align: 'center'
     },
     yAxis: [{ // Primary yAxis
@@ -1502,7 +1458,7 @@ Highcharts.chart('container-brasil', {
             }
         },
         title: {
-            text: 'Millones de dolares',
+            text: 'Million USD',
             style: {
                 color: Highcharts.getOptions().colors[1]
             }
@@ -1511,7 +1467,7 @@ Highcharts.chart('container-brasil', {
     },  { // Second yAxis
         gridLineWidth: 0,
         title: {
-            text: 'IED Millones de dolares',
+            text: 'IED Million USD',
             style: {
               color: '#e013f5 ',
             }
@@ -1528,21 +1484,17 @@ Highcharts.chart('container-brasil', {
     },
     legend: {
       title: {
-          text: 'Datos<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click para ocultar)</span>',
+          text: 'Data<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
           style: {
               fontStyle: 'italic'
           }
       },
-      borderWidth: 2,
-      layout: 'vertical',
-      align: 'left',
-      x: 20,
-      verticalAlign: 'top',
-      y: 100,
-      //floating: true,
-      padding: 12,
-      itemMarginTop: 5,
-      itemMarginBottom: 5,
+        layout: 'vertical',
+        align: 'left',
+        x: 80,
+        verticalAlign: 'top',
+        y: 55,
+        floating: true,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
     },
     data: {    csvURL: 'http://www.coine.lat/data/com-brasil.csv',
@@ -1551,14 +1503,14 @@ Highcharts.chart('container-brasil', {
                }           
            },
     series: [{
-        name: 'Exportaciones',
+        name: 'Exports',
         type: 'column',
        // yAxis: 1,
         tooltip: {
             valueSuffix: ' mdd'
         }
     }, {
-        name: 'Importaciones',
+        name: 'Imports',
         type: 'column',
        // yAxis: 2,
         marker: {
@@ -1570,14 +1522,14 @@ Highcharts.chart('container-brasil', {
         }
   
     }, {
-        name: 'Comercio total',
+        name: 'Total trade',
         type: 'column',
         tooltip: {
             valueSuffix: ' mdd'
         }
     },
     {
-      name: 'Balanza comercial',
+      name: 'Trade balance',
       type: 'column',
       tooltip: {
           valueSuffix: ' mdd'

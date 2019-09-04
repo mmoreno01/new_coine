@@ -1613,7 +1613,139 @@ Highcharts.chart('container-brasil', {
   });
 
 
+//Mexico
 
+Highcharts.chart('container-mexico', {
+    chart: {
+        zoomType: 'xy'
+    },
+    credits: {
+        text: 'IED = Inversión Extranjera Directa. Datos proporcionados por la Secretaría de Economía. Los años que no cuentan con valores para la IED, corresponden a información confidencial de acuerdo con la Secretaría de Economía',
+    },
+    title: {
+        text: 'Comercio total de México con el mundo',
+        align: 'center'
+    },
+    subtitle: {
+        text: 'Datos en millones de dólares',
+        align: 'center'
+    },
+    yAxis: [{ // Primary yAxis
+        labels: {
+            style: {
+                color: Highcharts.getOptions().colors[1]
+            }
+        },
+        title: {
+            text: 'Millones de dolares',
+            style: {
+                color: Highcharts.getOptions().colors[1]
+            }
+        },
+  
+    },  { // Second yAxis
+        gridLineWidth: 0,
+        title: {
+            text: 'IED Millones de dolares',
+            style: {
+              color: '#e013f5 ',
+            }
+        },
+        labels: {
+            style: {
+              color: '#e013f5 ',
+            }
+        },
+        opposite: true
+    }],
+    tooltip: {
+        shared: true
+    },
+    legend: {
+      title: {
+          text: 'Datos<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click para ocultar)</span>',
+          style: {
+              fontStyle: 'italic'
+          }
+      },
+      borderWidth: 2,
+      layout: 'vertical',
+      align: 'left',
+      x: 20,
+      verticalAlign: 'top',
+      y: 100,
+      //floating: true,
+      padding: 12,
+      itemMarginTop: 5,
+      itemMarginBottom: 5,
+        backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
+    },
+    data: {    csvURL: 'http://www.coine.lat/data/com-mexico.csv',
+               beforeParse: function (csv) {
+                   return csv.replace(/\n\n/g, '\n');
+               }           
+           },
+    series: [{
+        name: 'Exportaciones',
+        type: 'column',
+       // yAxis: 1,
+        tooltip: {
+            valueSuffix: ' mdd'
+        }
+    }, {
+        name: 'Importaciones',
+        type: 'column',
+       // yAxis: 2,
+        marker: {
+            enabled: false
+        },
+       //dashStyle: 'shortdot',
+        tooltip: {
+            valueSuffix: ' mdd'
+        }
+  
+    }, {
+        name: 'Comercio total',
+        type: 'column',
+        tooltip: {
+            valueSuffix: ' mdd'
+        }
+    },
+    {
+      name: 'Balanza comercial',
+      type: 'column',
+      tooltip: {
+          valueSuffix: ' mdd'
+      }
+  },
+  {
+      name: 'IED',
+      type: 'spline',
+      color: '#e013f5',
+      yAxis: 1,
+      tooltip: {
+          valueSuffix: ' mdd'
+      }
+  },
+  ],
+  responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    floating: false,
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    x: 0,
+                    y: 0
+                }
+            }
+        }]
+    }
+  });
 
 
 })

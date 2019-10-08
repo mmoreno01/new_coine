@@ -137,8 +137,15 @@
         cursor: pointer;
     }
     .card{
+        background-color:rgba(230, 230, 230, 0.8);
         padding: 20px;
         box-shadow: 2px 2px 8px 0 rgba(0,0,0,.2);
+        transition: all ease-in .1s;
+    
+    }
+    .card:hover{
+        opacity: .8;
+        transition: all ease-in .1s;
     }
     .card-body{
         a{
@@ -342,7 +349,8 @@ background-color: #f4f4f4;
 }
 
 #noticias-coine {
-    padding: 100px 0px;
+    padding: 50px 0px;
+    background-color: $bgGrey;
     h1{
         color: #000;
         text-transform: uppercase;
@@ -353,6 +361,7 @@ background-color: #f4f4f4;
         position: relative;
         margin: 30px;
     }
+    
     h1::before{
         content: '';
         position: absolute;
@@ -381,6 +390,7 @@ background-color: #f4f4f4;
 
         .img-responsive{
             width: 100%;
+            height: 150px;
         }
       }
 

@@ -1612,6 +1612,139 @@ Highcharts.chart('container-brasil', {
     }
   });
 
+//Mexico
+
+Highcharts.chart('container-mexico', {
+    chart: {
+        zoomType: 'xy'
+    },
+    credits: {
+        text: 'IED = Foreign Direct Investment. Data provided by the  . The years that do not have values ​​for FDI correspond to confidential information according to the Ministry of Economy.',
+    },
+    title: {
+        text: 'Mexico is total trade with the world',
+        align: 'center'
+    },
+    subtitle: {
+        text: 'Amount in million USD',
+        align: 'center'
+    },
+    yAxis: [{ // Primary yAxis
+        labels: {
+            style: {
+                color: Highcharts.getOptions().colors[1]
+            }
+        },
+        title: {
+            text: 'Million USD',
+            style: {
+                color: Highcharts.getOptions().colors[1]
+            }
+        },
+  
+    },  { // Second yAxis
+        gridLineWidth: 0,
+        title: {
+            text: 'IED in million USD',
+            style: {
+              color: '#e013f5 ',
+            }
+        },
+        labels: {
+            style: {
+              color: '#e013f5 ',
+            }
+        },
+        opposite: true
+    }],
+    tooltip: {
+        shared: true
+    },
+    legend: {
+      title: {
+          text: 'Type<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>',
+          style: {
+              fontStyle: 'italic'
+          }
+      },
+      borderWidth: 2,
+      layout: 'vertical',
+      align: 'left',
+      x: 20,
+      verticalAlign: 'top',
+      y: 100,
+      //floating: true,
+      padding: 12,
+      itemMarginTop: 5,
+      itemMarginBottom: 5,
+        backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
+    },
+    data: {    csvURL: 'http://www.coine.lat/data/ingles/com-mexico.csv',
+               beforeParse: function (csv) {
+                   return csv.replace(/\n\n/g, '\n');
+               }           
+           },
+    series: [{
+        name: 'Exports',
+        type: 'column',
+       // yAxis: 1,
+        tooltip: {
+            valueSuffix: ' mdd'
+        }
+    }, {
+        name: 'Imports',
+        type: 'column',
+       // yAxis: 2,
+        marker: {
+            enabled: false
+        },
+       //dashStyle: 'shortdot',
+        tooltip: {
+            valueSuffix: ' mdd'
+        }
+  
+    }, {
+        name: 'Total trade',
+        type: 'column',
+        tooltip: {
+            valueSuffix: ' mdd'
+        }
+    },
+    {
+      name: 'Trade balance',
+      type: 'column',
+      tooltip: {
+          valueSuffix: ' mdd'
+      }
+  },
+  {
+      name: 'IED',
+      type: 'spline',
+      color: '#e013f5',
+      yAxis: 1,
+      tooltip: {
+          valueSuffix: ' mdd'
+      }
+  },
+  ],
+  responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    floating: false,
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    x: 0,
+                    y: 0
+                }
+            }
+        }]
+    }
+  });
 
 
 

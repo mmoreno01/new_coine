@@ -445,45 +445,49 @@
 <!-- carousel testimonios -->
 <section id="seccion-testimonios">
   <div class="container">
-      <div class="cont-title-testimonials">
-          <h1>Testimoniales</h1>
-      </div>
-    <div class="carousel owl-carousel">
-      <div class="item">
-          <div class="card">
-              <img  src="img/testimoniales/img.jpg" alt="Coine" class="card-img-top" data-toggle="modal" data-target="#testimonioImg">
-              <div class="card-body">
-                <h5 class="card-title text-center">Juan Ascencio Moctezuma</h5>
-                <p class="card-text text-center"> Asuntos Económicos en Russia-SRE GOB</p>
-              </div>
+    <div class="row">
+      <div class="col-12">
+          <div class="cont-title-testimonials">
+              <h1>Testimoniales</h1>
           </div>
-      </div>
-      <div class="item">
-          <div class="card">
-              <img  src="img/testimoniales/Dr _Nafie.jpg" alt="Coine" class="card-img-top" data-toggle="modal" data-target="#testimonio3">
-              <div class="card-body">
-                 <h5 class="card-title text-center" style="padding-top:11px;">Dr. Nafie Ali Nafie</h5>
-                 <p class="card-text text-center">Secretario General del CAPP</p>
-              </div>
-          </div>
-      </div>
-      <div class="item">
-          <div class="card">
-              <img  src="img/testimoniales/T_1.jpg" alt="Coine" class="card-img-top" data-toggle="modal" data-target="#testimonio1">
-              <div class="card-body">
-                   <h5 class="card-title text-center">Muhanad A. Mahmound</h5>
-                    <p class="card-text text-center">Jefe de la unidad de partidos y parlamentos africanos </p>
-              </div>
-          </div>
-      </div>
-      <div class="item">
-          <div class="card">
-              <img  src="img/testimoniales/T_2.jpg" alt="Coine" class="card-img-top" data-toggle="modal" data-target="#testimonio2">
-              <div class="card-body">
-                    <h5 class="card-title text-center">Taib Aisse</h5>
-                    <p class="card-text text-center"> Presidente de AISSE</p>
+        <div class="carousel owl-carousel">
+          <div class="item">
+              <div class="card">
+                  <img  src="img/testimoniales/img.jpg" alt="Coine" class="card-img-top" data-toggle="modal" data-target="#testimonioImg">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Juan Ascencio Moctezuma</h5>
+                    <p class="card-text text-center"> Asuntos Económicos en Russia-SRE GOB</p>
                   </div>
+              </div>
           </div>
+          <div class="item">
+              <div class="card">
+                  <img  src="img/testimoniales/Dr _Nafie.jpg" alt="Coine" class="card-img-top" data-toggle="modal" data-target="#testimonio3">
+                  <div class="card-body">
+                     <h5 class="card-title text-center" style="padding-top:11px;">Dr. Nafie Ali Nafie</h5>
+                     <p class="card-text text-center">Secretario General del CAPP</p>
+                  </div>
+              </div>
+          </div>
+          <div class="item">
+              <div class="card">
+                  <img  src="img/testimoniales/T_1.jpg" alt="Coine" class="card-img-top" data-toggle="modal" data-target="#testimonio1">
+                  <div class="card-body">
+                       <h5 class="card-title text-center">Muhanad A. Mahmound</h5>
+                        <p class="card-text text-center">Jefe de la unidad de partidos y parlamentos africanos </p>
+                  </div>
+              </div>
+          </div>
+          <div class="item">
+              <div class="card">
+                  <img  src="img/testimoniales/T_2.jpg" alt="Coine" class="card-img-top" data-toggle="modal" data-target="#testimonio2">
+                  <div class="card-body">
+                        <h5 class="card-title text-center">Taib Aisse</h5>
+                        <p class="card-text text-center"> Presidente de AISSE</p>
+                  </div>
+              </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -646,6 +650,8 @@
   $('.owl-carousel').owlCarousel({
       loop:true,
       margin:10,
+      autoplay:true,
+      autoplayTimeout:5000,
       nav:true,
       responsive:{
           0:{

@@ -3088,6 +3088,13 @@ ul.tabs li a:hover {
 
 #prox-eventos {
   padding: 50px 0px; }
+  #prox-eventos h2 {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 100;
+    padding-bottom: 10px;
+    text-align: center; }
   #prox-eventos .card {
     border: 1px solid transparent; }
     #prox-eventos .card .card-title {
@@ -3103,24 +3110,6 @@ ul.tabs li a:hover {
     cursor: pointer;
     color: #000;
     text-decoration: none; }
-  #prox-eventos .content-title {
-    position: relative;
-    padding-bottom: 15px;
-    margin-bottom: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-    #prox-eventos .content-title h2 {
-      color: #000;
-      text-transform: uppercase;
-      font-size: 30px;
-      font-weight: 100;
-      padding-bottom: 10px;
-      position: relative;
-      text-align: left; }
 
 #Mision {
   padding: 50px 0px; }

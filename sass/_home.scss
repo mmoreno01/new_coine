@@ -436,10 +436,10 @@ background-color: #f4f4f4;
         position: relative;
         transition: all 0.2s linear;
 } 
-img:hover{
-    transform: scale(1.1);        
-    transition: all 0.2s ease-in-out; 
-}
+// img:hover{
+//     transform: scale(1.1);        
+//     transition: all 0.2s ease-in-out; 
+// }
       hr {
         border: 1px solid #c1c1c1;
         margin: auto;
@@ -461,10 +461,21 @@ img:hover{
             color: $azulObscuro;
         }
         .noticia {
+            padding-top: 20px;
+
             a{
                 text-decoration: none;
                 font-weight: 400!important;
             }
+            .content-img{
+                position:relative;
+                p{
+                    margin-bottom:0px;
+                }
+            }
+        }
+        .noticia:hover{
+            box-shadow: 0px 0px 17px 0px rgba(51, 51, 51, 0.5)
         }
         @media(max-width: 1052px) {
           min-height: 85px;
@@ -511,7 +522,8 @@ img:hover{
         width: 100px;
         text-align: center;
         padding: 10px;
-        bottom: -20px;
+        bottom: 0;
+        z-index:1;
       
     }
     .seeMore{
@@ -967,7 +979,7 @@ img:hover{
         width: 100%;
     }
     .modal-dialog {
-        max-width: 1000px;
+        max-width: 800px;
     }
     .modal-content {
         position: relative;

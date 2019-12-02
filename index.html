@@ -35,7 +35,7 @@
 <body ng-app="app">
 
   
-<!--Modal execute init -->
+<!--Modal execute init 
 <div class="modal fade" id="mostrarmodal" tabindex="-1" role="dialog" aria-labelledby="mobiramaModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -43,12 +43,12 @@
             <span aria-hidden="true">&times;</span>
           </button>
         <div class="modal-body">
-           <a href="#"><img src="img/popUp/popup_escuelabancaria.jpg" width="200" height="" alt="fomenta_coine_interlocucion_politico_empresarial"></a> 
+           <a href="#"><img src="img/popUp/popup_FGU.jpg" width="200" height="" alt="fomenta_coine_interlocucion_politico_empresarial"></a> 
         </div>
       </div>
     </div>
   </div> 
- <!--  End Modal -->
+   End Modal -->
   
 <!--modal automatico-->
 
@@ -157,25 +157,30 @@
 </section>
 
 <!-- fin texto inicio-->
-<hr>
+<!-- <hr> -->
 <!-- ponencia  -->
-<section  id="ponencia">
+<!-- <section  id="ponencia">
   <div class="container" style="margin-bottom: 50px;">
-      <div class="row">
-          <div class="col-md-12" style="text-align: center;">
-            <h1 style="margin-bottom: 40px;"><small>Conferencia:</small>"PIENSA EN GRANDE"</h1>
-            <h2>Transmisión en vivo</h2>
+    <div class="content-title">
+      <h2 class=" d-flex justify-content-center" > Inauguración oficial Florida Global University México </h2>
+          <h3 class=" d-flex justify-content-center"> <small> Plantel Ciudad de México.</small> </h3>
+          <h3 class=" d-flex justify-content-center" style="margin-bottom:40px;">Transmisión en vivo</h3>
 
-            <img width="40%" src="img/n-eventos/capture-20191021-141459.png" alt="">
-            <!-- <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCOINELat%2Fvideos%2F459818881317481%2F&show_text=0&width=560" width="70%" height="480px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe> -->
+    </div>
+     
+      <div class="row">
+          <div class="col-md-6" style="text-align: center;"> -->
+           <!--   <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FMartinRSmx%2Fvideos%2F2143790685929875%2F&show_text=1&width=560"  width="70%" height="480px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCOINELat%2Fvideos%2F459818881317481%2F&show_text=0&width=560" width="70%" height="480px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>-->
             <!-- <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FMartinRSmx%2Fvideos%2F559612494794931%2F&show_text=0&width=560" width="70%" height="480px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe> -->
             <!-- <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FMartinRSmx%2Fvideos%2F699551123872704%2F&show_text=0&width=560" width="70%" height="480px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe> -->
             <!-- <h4 style="margin-top: 20px;">12° Encuentro de emprendedores EBC</h4> -->
               <!-- <h2>14 y 15 de Noviembre</h2> -->
-            </div>
+            <!-- </div>
+            <div class="col-md-6"  style="text-align: center;">
+                <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FMartinRSmx%2Fvideos%2F740047186501363%2F&show_text=1&width=267"  width="70%" height="480px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>            </div>
       </div>
   </div>
-</section>
+</section> -->
  <!-- fin ponencia -->
 
 <!--texto e imagen-->
@@ -419,18 +424,19 @@
               <div class="row content-noticias">
                   <div class="col-md-6 col-lg-3 noticia" ng-repeat="x in postNotices  | limitTo: 4">
                      
-                          <a href="{{x.link}}"><img class="img-responsive" ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}"></a>
-                          <!-- <img ng-if="post.better_featured_image" ng-src="{{post.better_featured_image.media_details.sizes.thumbnail.source_url}}" class="alignleft" /> -->
-                          <p class="date-notice">{{ x.date | date:'MMM-yyyy' }}</p>
-                      
+                          <a href="{{x.link}}">
+                            <div class="content-img">
+                                <p class="date-notice">{{ x.date | date:'MMM-yyyy' }}</p>
+                                <img class="img-responsive" ng-src="{{x._embedded['wp:featuredmedia'][0].source_url}}">
+                            </div>
+                          <hr>
+                          <p class="titutlo-noticia">{{x.title.rendered}}</p>                 
+                          <p class="texto-noticia" ng-bind-html="x.excerpt.rendered | limitTo: 200"></p>
+                          <!-- <a href="{{x.link}}" target="_blank"><label class="seeMore">Ver más</label></a> -->
+                          </a>
                     </div>
-                    <hr>
-                        <a href="{{x.link}}"><p class="titutlo-noticia">{{x.title.rendered}}</p></a>                 
-                        <!-- <p class="texto-noticia" ng-bind-html="x.excerpt.rendered | limitTo: 200"></p> -->
-                        <!-- <a href="{{x.link}}" target="_blank"><label class="seeMore">Ver más</label></a> -->
                 </div>
               </div>
-            </div>
 </section>
      <!-- End section post blog  -->
 

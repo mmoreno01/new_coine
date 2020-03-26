@@ -7,7 +7,7 @@ myApp.controller('entradas', ['$scope','$window','$http', function($scope,$windo
   $scope.loading = true;
   // console.log($scope.loading);
 
-  $http.get('http://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed', {
+  $http.get('http://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed&categories=98', {
     headers: {'Authorization': 'Basic '+btoa('coine_blog:coine_MKT2019') }
    
 
@@ -18,6 +18,61 @@ myApp.controller('entradas', ['$scope','$window','$http', function($scope,$windo
     // console.log($scope.loading);
   });   
 }]);  
+
+
+
+myApp.controller('infocoine', ['$scope','$window','$http', function($scope,$window,$http) {
+
+  //loading
+  $scope.loading = true;
+  // console.log($scope.loading);
+
+  $http.get('http://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed&categories=119', {
+    headers: {'Authorization': 'Basic '+btoa('coine_blog:coine_MKT2019') }
+   
+
+  }).then(function (res){
+    $scope.postConsultainfo = res.data;
+      // fin loading
+    $scope.loading= false;
+    // console.log($scope.loading);
+  });   
+}]);  
+myApp.controller('amlocoine', ['$scope','$window','$http', function($scope,$window,$http) {
+
+  //loading
+  $scope.loading = true;
+  // console.log($scope.loading);
+
+  $http.get('http://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed&categories=135', {
+    headers: {'Authorization': 'Basic '+btoa('coine_blog:coine_MKT2019') }
+   
+
+  }).then(function (res){
+    $scope.postConsultaamlo = res.data;
+      // fin loading
+    $scope.loading= false;
+    // console.log($scope.loading);
+  });   
+}]); 
+myApp.controller('bcoine', ['$scope','$window','$http', function($scope,$window,$http) {
+
+  //loading
+  $scope.loading = true;
+  // console.log($scope.loading);
+
+  $http.get('http://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed&categories=129', {
+    headers: {'Authorization': 'Basic '+btoa('coine_blog:coine_MKT2019') }
+   
+
+  }).then(function (res){
+    $scope.postConsultablog = res.data;
+      // fin loading
+    $scope.loading= false;
+    // console.log($scope.loading);
+  });   
+}]); 
+
  
 myApp.controller('entradasNotices', ['$scope','$window','$http', function($scope,$window,$http) {
 
@@ -31,6 +86,7 @@ myApp.controller('entradasNotices', ['$scope','$window','$http', function($scope
     // console.log($scope.postNotices);
   });
 }]);
+
 
 
 // validacion del recaptcha

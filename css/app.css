@@ -1419,6 +1419,70 @@ fin estilos textos y lineas conocenos ingles
   height: 2px;
   border-radius: 10px; }
 
+  
+#exterior {
+  position: relative;
+  background-color: white;
+  padding: 100px 0px 0px; }
+  #exterior .titulo-exterior {
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 100;
+    padding-bottom: 10px;
+    position: relative; }
+  #exterior .contenido-exterior {
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 100; }
+
+#exterior .titulo-exterior::before {
+  content: '';
+  position: absolute;
+  background-color: #005DA1;
+  bottom: 0;
+  width: 40px;
+  left: 0px;
+  height: 2px;
+  border-radius: 10px; }
+
+  #exterior .btn-primary {
+    color: white;
+    background-color: #005c9b;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
+  #exterior .btn-primary:hover {
+    background-color: #00A4E0; }
+  #contacto #btn {
+    background: red;
+    color: #fff;
+    padding: 20px;
+    border: none; }
+    #contacto #btn .btn_1:hover {
+      background-color: #005c9b;
+      border: 1px solid #FFF;
+      color: #FFF; }
+  #contacto #btn:hover {
+    background: rgba(0, 100, 151, 0.8); }
+
+    #exterior #btn {
+      background: red;
+      color: #fff;
+      padding: 20px;
+      border: none; }
+      #exterior #btn .btn_1:hover {
+        background-color: #005c9b;
+        border: 1px solid #FFF;
+        color: #FFF; }
+    #exterior #btn:hover {
+      background: rgba(0, 100, 151, 0.8); }
+
+
+
 #sectores .owl-dot {
   display: none; }
 

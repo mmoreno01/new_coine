@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!--metas-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Consejo Internacion de Empresarios">
+    <meta name="description" content="Nos constituimos como el Consejo Internacional de Empresarios (COINE), organismo rector del área de impulso y vinculación económica">
+<!-- fin metas-->
+<!-- links-->
+<link rel="stylesheet" href="css/normalize.css">   
+<link rel="stylesheet" href="fonts/style.css"> 
+<link type="image/x-icon" href="img/favicon.ico" rel="icon"/>
+<link rel="stylesheet" href="css/estilos.css">  
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.css">
+<link type="image/x-icon" href="img/favicon.ico" rel="icon"/>
+<link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" type="text/css">
+<link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<!--fin links-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134272024-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-134272024-1');
+</script>
+
+    <title>Juntos Impulsamos México | Consejo Internacional de Empresarios</title>
+</head>
+<body  ng-app="app">
+
+<!-- menu-->
+<header class="navbar navbar-expand-lg  navbar-dark  sticky-top">
+    <a class="navbar-brand nav-item active" href="index.html">     
+        <img  class="img-nav" src="img/s.png">
+    </a> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+                <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>    
+          </li>
+          <li class="nav-item dropdown arriba active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Conócenos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="conocenos.html">Quiénes Somos</a>
+                <a class="dropdown-item" href="conocenos.html#especializamos">Nos especializamos en</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown arriba active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Vinculación Internacional
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="inversion.html">Inversión y Comercio</a>
+                <a class="dropdown-item" href="sectores.html">Sectores</a>
+                <a class="dropdown-item" href="sectores.html#beneficios">Beneficios</a>
+                <a class="dropdown-item" href="guia.html">Comercio Exterior</a>
+            </div>
+          <!--</li><li class="nav-item active">
+                <a class="nav-link disabled" href="eventos.html">Sala de Prensa</a>
+          </li>-->
+          <li class="nav-item dropdown arriba active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Sala de Prensa
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="http://www.coine.lat/coine_noticias/">COINE en los medios</a>
+                    <a class="dropdown-item" href="eventos.html">Eventos</a>
+                    <a class="dropdown-item" href="informe_coine.html">Informe contingencia</a>
+                    <a class="dropdown-item" href="mananera_amlo.html">Mañanera AMLO</a>
+
+
+
+            </div>
+          </li>
+          <li class="nav-item dropdown active arriba">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alianzas</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="alianzas.html">Alianzas</a>
+                    <a class="dropdown-item" href="acciones.html">Presencia Internacional</a>
+                </div>
+            </li>
+          <!--<li class="nav-item active">
+            <a class="nav-link disabled" href="afiliados.html">Plataforma Coine</a>
+          </li>-->
+          <li class="nav-item arriba active">
+            <a class="nav-link disabled" href="https://www.youtube.com/channel/UC7RsRR4LlwT2ewbGBnPd60Q" target="new">COINE TV</a>
+          </li>
+          <li class="nav-item arriba active">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item arriba active">
+            <a class="nav-link" href="coine_blog.html">Blog</a>
+          </li>
+
+          <li class="nav-item arriba active jbi-btn">
+            <a class="nav-link " href="http://www.coine.lat/emprendimiento-coine/" target="_blank">Emprendimiento</a>
+          </li>
+        </ul>
+            <div  id="headSocial">
+                <a href="../ingles/index.html"><img src="img/ingles.png" class="img-menu"></a>
+                <a href="#"><img src="img/mexico.png" class="img-menu"></a>
+                <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            </div>
+  </div>  
+</header>
+<!--fin de menu-->
+
+<!--banner-->
+<div id="banner-principal" style=" background: url(./img/banner/coine_en_los_medios.png);
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size:cover;
+width: 100%;
+height: 400px;
+position: relative;" class="parallax d-flex align-items-center animated fadeIn delay-1s" >
+<div class="overlay"></div>
+<div class="content-title">
+<h2 class="animated fadeIn delay-2s" >#JuntosImpulsamosMéxico</h2>
+<!-- <p class=" animated  fadeInUp delay-3s">Por una Inversión con Compromiso Social</p> -->
+</div>
+</div>
+<!-- fin banner-->
+
+<section id="post-events" >
+        <div class="container" >
+          <div class="row">
+            <div class="col-md-12">
+              <!-- <div style="text-align: center;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LvOXU4YGe3M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div> -->
+              <div style="text-align: justify;">
+                <h6>Ante la contingencia por el Covid-19, el <strong>Consejo Internacional de Empresarios (COINE)</strong> lanzó la iniciativa <span style="color: red;"><i>#JuntosImpulsamoMéxic</i>o</span> cuyo objetivo radica en brindar metodologías, tecnología  y equipos de trabajo de manera gratuita para implementar rutas críticas y planes de contingencia que coadyuven a mantener la rentabilidad de las empresas.</h6>
+                <h6>Además, la iniciativa busca apoyar a las empresas a sumar fortalezas y brindar su experiencia, garantizando así la continuidad en la generación de rentabilidad y crecimiento.</h6>
+                <h6><i><span style="color: red;">#JuntosImpulsamosMéxico</span> busca agrupar a empresas locales, nacionales e internacionales para implementar un Plan de contingencia y recuperación que permita asegurar la dinámica corporativa en cada línea de negocio, teniendo un menor impacto por la emergencia del Covid-19 y anticipando una pronta recuperación y estabilidad tanto de la empresa como de sus empleados.</i></h6>
+                <div style="text-align: center; margin: 50px 0 50px 0;">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/LvOXU4YGe3M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <h6>De igual forma, la iniciativa reúne a profesionistas que están dispuestos a brindar su metodología, tecnología y equipos de trabajo de manera gratuita para apoyar en las estrategias de las Pymes que requieren de asegurar la generación de recursos para mantener su operatividad</h6>
+                <h6>Asimismo, esta iniciativa  fue puesta en marcha en redes sociales del <stron>COINE</stron> para crear una red de micro empresarios que fusionen sus proyectos, productos y/o servicios. En redes sociales se solicita que se utilice el hashtag <span style="color: red;"><i>#JuntosImpulsamosMéxico</i></span> se escriba información referente al negocio, datos de contacto y redes sociales, generando así una red de contactos y networking.</h6>
+                <br>
+                <h6>Como dato a tomar en cuenta: ¡Es clave respetar los comentarios de los demás!<br>
+                  También se puede etiquetar contactos con un negocio y apoyar dando difusión.
+                  </h6>
+                  <br>
+                <h6>¡La unión es primordial ante cualquier crisis, pero trabajando en conjunto se puede lograr más!…  <span style="color: red;"><i>#JuntosImpulsamosMéxico</i></span></h6>
+              </div>
+            </div>
+          </div>
+          
+            <!-- <div style="text-align: justify;"> -->
+              <!-- <h4>Las cápsulas que presentaremos a lo largo de esta semanas, ayudarán a que tu, empresario, inversionista o emprendedor detectes oportunidades para aplicarlos a tu modelo de negocio y apoyar al crecimiento en la economía del país.</h4> -->
+                <!-- <h1>Eventos</h1> -->
+                <!-- <h6>En los últimos días a través de diversos medios ha destacado el impacto que la pandemia del #COVID19 ha traído sobre todo a MiPymes, sin importar los sectores, por ello a través de la iniciativa #JuntosImpulsamosMéxico, el COINE busca crear una red de Micro empresarios dando difusión a sus proyectos, productos y/o servicios.</h6>
+                <h6>Las reglas son clave: utiliza en esta publicación el #JuntosImpulsamosMéxico y escribe información referente a tu negocio, tus datos de contacto y redes sociales, generando así una red de contactos y networking.</h6>
+               <br>
+                <h5 style="text-align: center;">¡Es clave respetar los comentarios de los demás! </h5>
+                <h5 style="text-align: center;">También puedes etiquetar a ese contacto con un negocio y apoyar dando difusión.</h5>
+                <h5 style="text-align: center;">¡Recuerda que la unión es primordial ante cualquier crisis, pero trabajando en conjunto… #JuntosImpulsamosMéxico</h5>
+                <br>
+                <h6>La iniciativa #JuntosImpulsamosMéxico ha reunido más de 600 profesionistas que están dispuestos a brindar su metodología, tecnología y capital humano de manera gratuita para coadyuvar en las estrategias de las pequeñas empresas que requieren un aumento de rentabilidad ante la crisis por la pandemia del #Covid-19. </h6> -->
+              <!-- </div> -->
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-6">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/VBZ20wf-oI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <p style="text-align: justify; font-weight: 600;">
+                Estas cápsulas, que estarán transmitiéndose y compartiéndose durante las siguientes semanas te ayudarán y serán referencia para que si eres empresario, inversionista o emprendedor detectes oportunidades para replicarlas en tus modelos de negocio, lo que apoyará así al crecimiento de la economía del país.
+              </p>
+            </div>
+            <div class="col-md-6 ">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/R8piCVUNgYY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+              <p style="text-align: justify; font-weight: 600;">
+                Nuestras cápsulas buscan activar un cambio mental que te permita obtener nuevas claves para su correcta implementación en tu empresa, lo cual será posible a través de la plataforma de negocios del COINE. ¡Nuestro compromiso es con el sector empresarial, con la sociedad y con México!
+              </p>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 50px;">
+          <div class="col-md-6 ">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Rlf8AqmYH70" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          
+            <p style="text-align: justify; font-weight: 600;">
+              ¿Por qué no ver la palabra crisis, como una nueva oportunidad para resurgir y dar impulso a nuevas soluciones para tu negocio? Analiza tus fortalezas y establece acciones precisas para tu crecimiento. #JuntosImpulsamosMéxico
+            </p>
+          </div>
+          <div class="col-md-6 ">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ggU_vPY1KwM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>         
+            <p style="text-align: justify; font-weight: 600;">
+              El Consejo Internacional de Empresarios impulsa la oferta de suplementos alimenticios de alta calidad, esto como apoyo a la escasez de productos y la necesidad de fortalecer el sistema inmunológico de las personas y reducir así el riesgo de contagio de Covid-19. Conoce más de nuestro proyecto y súmate. #JuntosImpulsamosMéxico
+            </p>
+          </div>
+      </div>
+        <div class="row">
+          <div class="col-12" style="text-align: center; margin-top: 50px;">
+            <a href="contacto.html"> <button class="btn btn-primary"><h5>¿Deseas conocer cómo  involucrarte?</h5></button></a>
+
+          </div>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+<footer>
+<div class="content-line"></div>
+    <div class="container-fluid foter">
+        <div class="row">
+            <div class="col-md-12" id="foter-redes">
+                  <ul>
+                      <a href="https://www.facebook.com/COINELat/" target="new" class="fuente-icono"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://www.linkedin.com/company/22295225/" target="new" class="fuente-icono"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="https://twitter.com/COINE_Lat" target="new" class="fuente-icono"><i class="fab fa-twitter"></i></a>
+                      <a href="https://www.youtube.com/channel/UC7RsRR4LlwT2ewbGBnPd60Q" target="new" class="fuente-icono-y"><i class="fab fa-youtube"></i></a>
+                      <li>2018   l  Consejo Internacional de Empresarios ®</li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--fin footer-->
+
+<!-- sript-->
+<script src="//code.tidio.co/ukrqaqjv3f9hzg80knarfaeztnfcxo2p.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/parallax.js"></script> 
+<script src="js/inversion.js"></script>
+<script src="jquery.min.js"></script>
+<script src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js" type="text/javascript"></script>
+<script src="OwlCarousel2-2.3.4/dist/owl.carousel.js" type="text/javascript"></script>
+<script type="text/javascript">
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+</script>     
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.6/angular-sanitize.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="js/angular/appPost.js"></script>
+<script src="js/angular/ngMask.min.js"></script>
+<script src="./node_modules/angular-utils-pagination/dirPagination.js"></script>
+<script src="./node_modules/angular-recaptcha/release/angular-recaptcha.js"></script>
+
+<!--fin sricpts-->
+</body>
+</html>

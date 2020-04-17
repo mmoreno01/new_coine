@@ -139,11 +139,13 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
         <div ng-show="loading" class="lds-ring"><div></div><div></div><div></div><div></div></div>
 
         <!-- <form name="Formpro"  action="correo/sendtwo.php.php" method="POST"> -->
+          <!-- <form name="formulariox" action="correo/mailatt/send.php" method="POST" enctype="multipart/form-data"> -->
           <form name="formulariox" action="correo/sendfour.php" method="POST" enctype="multipart/form-data">
+
 
             <div class="container">
                     <div class="content-text">
-                        <h1>Proveedores</h1>
+                        <h1>Registro de Empresas</h1>
                         <p> Deja tus datos como empresa<br>
                         <span>Siéntete libre de contactarnos </span></p>
                     </div>
@@ -154,27 +156,29 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
 
                       <div class="col-lg-6 col-sm-6 col-xs-6">
                         <div class="form-group" >
-                          <span style="font-weight: 600;">Nombre del apoderado legal</span>
+                          <span style="font-weight: 600;">Nombre del solicitante del registro</span>
                           <input type="text" name="nlegal"  class="form-control" placeholder="Nombre completo" autofocus required>
                          </div>
                       </div>
                       <div class="col-lg-6 col-sm-6 col-xs-6">
                         <div class="form-group" >
-                          <span style="font-weight: 600;">RFC ó pasaporte</span>
-                          <input type="text" name="rfc"  class="form-control" placeholder="RFC / Pasaporte" autofocus required>
+                          <span style="font-weight: 600;">RFC ó pasaporte (Solo en caso de ser extranjero)</span>
+                          <input type="text" name="rfc"  class="form-control" placeholder="RFC / Pasaporte" autofocus >
                       </div>
                       </div>
 
                       <div class="col-lg-6 col-sm-6 col-xs-6">
                         <div class="form-group">
                           <span style="font-weight: 600;">CURP</span>
-                          <input type="text" name="curp"  class="form-control" placeholder="CURP" required>
+                          <input type="text" name="curp"  class="form-control" placeholder="CURP" >
                       </div>
                       </div>
                       <div class="col-lg-6 col-sm-6 col-xs-6">
                         <div class="form-group" >
                           <span style="font-weight: 600;">INE / Cédula / Pasaporte</span>
-                          <input type="text"  name="ine"  class="form-control" placeholder="INE / Cédula / Pasaporte" required>
+                          <input type="text"  name="ine"  class="form-control" placeholder="INE / Cédula / Pasaporte" >
+                          <!-- <input type="file" id="attine" name="attine" accept=".pdf,.jpg,.png" multiple> -->
+
                       </div>
                       </div>
 
@@ -193,31 +197,31 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
                         <div class="col-lg-6 col-sm-12">
                           <div class="form-group" >
                             <span style="font-weight: 600;">Razón social</span>
-                            <input type="text" name="razon"  class="form-control" placeholder="Razon social" autofocus required>
+                            <input type="text" name="razon"  class="form-control" placeholder="Razon social" autofocus >
                            </div>
                         </div>
                         <div class="col-lg-6 col-sm-6 col-xs-6">
                           <div class="form-group" >
                             <span style="font-weight: 600;">Domicilio fiscal</span>
-                            <input type="text" name="dfiscal"  class="form-control" placeholder="Domicilio" autofocus required>
+                            <input type="text" name="dfiscal"  class="form-control" placeholder="Domicilio" autofocus >
                            </div>
                         </div>
                         <div class="col-lg-4 col-sm-6 col-xs-6">
                           <div class="form-group" >
                             <span style="font-weight: 600;">Teléfono 1</span>
-                            <input type="tel" name="tel1"  class="form-control" placeholder="Teléfono" autofocus required>
+                            <input type="tel" name="tel1"  class="form-control" placeholder="Teléfono" autofocus >
                            </div>
                         </div>
                         <div class="col-lg-4 col-sm-6 col-xs-6">
                           <div class="form-group" >
                             <span style="font-weight: 600;">Teléfono 2</span>
-                            <input type="tel" name="tel2"  class="form-control" placeholder="Teléfono" autofocus required>
+                            <input type="tel" name="tel2"  class="form-control" placeholder="Teléfono" autofocus >
                            </div>
                         </div>
                         <div class="col-lg-4 col-sm-6 col-xs-6">
                           <div class="form-group" >
                             <span style="font-weight: 600;">Email</span>
-                            <input type="email" name="email"  class="form-control" placeholder="email" autofocus required>
+                            <input type="email" name="email"  class="form-control" placeholder="email" autofocus >
                            </div>
                         </div>
 
@@ -225,7 +229,7 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
                         <div class="col-lg-2 col-sm-6 col-xs-6">
                           <div class="form-group" >
                             <span style="font-weight: 600;">e.firma vigente</span><br>
-                            <!-- <input type="text" name="efirma"  class="form-control" placeholder="si / no" autofocus required> -->
+                            <!-- <input type="text" name="efirma"  class="form-control" placeholder="si / no" autofocus > -->
                             <div style="margin-top: 10px;">
                               <input type="radio" name="efirma" value="si"> Si
                               <input type="radio" name="efirma" value="no" checked> No
@@ -234,41 +238,39 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
                         </div>
                         <div class="col-lg-5 col-sm-6 col-xs-6">
                           <div class="form-group" >
-                            <span style="font-weight: 600;">Cédula de Identificación Fiscal</span>
-                            <input type="text" name="cif"  class="form-control" placeholder="# Cédula" autofocus required> 
-                           </div>
+                            <span style="font-weight: 600;">Cédula de Identificación Fiscal <br>(pdf, jpg ó png máx 100kb)</span>
+                            <!-- <input type="text" name="cif"  class="form-control" placeholder="# Cédula" autofocus >  -->
+                            <br>
+                                <input type="file" id="attcif" name="attcif" accept=".pdf,.jpg,.png" multiple>
+                          </div>
                         </div>
                         <div class="col-lg-5 col-sm-6 col-xs-6">
                           <div class="form-group" >
-                            <span style="font-weight: 600;">Primera y última hoja del Acta Constitutiva</span>
-                            <!-- <input type="text" name="acta"  class="form-control" placeholder="Archivo" autofocus required> -->
-                            <input type="file" name="attacta" accept=".pdf,.jpg,.png" multiple>
+                            <span style="font-weight: 600;">Primera y última hoja del Acta Constitutiva <br>(pdf, jpg ó png máx 200kb)</span>
+                            <!-- <input type="text" name="acta"  class="form-control" placeholder="Archivo" autofocus > --><br>
+                            <input type="file" id="attacta" name="attacta" accept=".pdf,.jpg,.png" multiple>
 
                            </div>
                         </div>
-                        <div class="col-lg-6 col-sm-6 col-xs-6">
+                        <div class="col-lg-12 col-sm-6 col-xs-6">
                           <div class="form-group" >
-                            <span style="font-weight: 600;">Lista de productos o servicios que la empresa ofrece Cartera de dos clientes a los que se ha prestado servicios. </span>
-                            <!-- <input type="text" name="lista"  class="form-control" placeholder="Lista" autofocus required style="rows=10; cols=40;"> -->
+                            <span style="font-weight: 600;">Lista de productos o servicios que el registrante ofrece al proyecto.</span>
+                            <!-- <input type="text" name="lista"  class="form-control" placeholder="Lista" autofocus  style="rows=10; cols=40;"> -->
                             <textarea name="lista" rows="10"></textarea>
                           </div>
                         </div>
-                        <div class="col-lg-6 col-sm-6 col-xs-6">
+                        <!-- <div class="col-lg-6 col-sm-6 col-xs-6">
                           <div class="form-group" >
                             <span style="font-weight: 600;">Nombre de los o las accionistas de la empresa<br> (Personas Morales)</span>
-                            <!-- <input type="text" name="accionistas"  class="form-control" placeholder="Accionistas" autofocus required> -->
                             <textarea name="accionistas" rows="10"></textarea>
-
                           </div>
-                        </div>
-                        <div class="col-lg-12 col-sm-6 col-xs-6">
+                        </div> -->
+                        <!-- <div class="col-lg-12 col-sm-6 col-xs-6">
                           <div class="form-group" >
                             <span style="font-weight: 600;">Publicaciones en el Sistema Electrónico de Publicaciones de Sociedades Mercantiles (PSM) <br>(Para los S.A. de R.L. y S.A.S)</span>
-                            <!-- <input type="text" name="publicaciones"  class="form-control" placeholder="Publicaciones" autofocus required> -->
                             <textarea name="publicaciones" rows="10"></textarea>
-
                           </div>
-                        </div>
+                        </div> -->
                        </div>
                        
                    </div>
@@ -284,7 +286,7 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
 
                         <div class="col-lg-12 col-sm-12">
                           <div class="form-group" >
-                            <span style="font-weight: 600;">C.V. de la empresa o persona física.</span>
+                            <span style="font-weight: 600;">C.V. de la empresa o persona física <br>(pdf, jpg ó png máx 200kb).</span>
                             <br>
                             <input type="file" name="attcv" accept=".pdf,.jpg,.png" multiple>
                             <!-- <input type="text" name="cv"  class="form-control" placeholder="CV" autofocus required> -->
@@ -292,7 +294,7 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
                         </div>
                         <div class="col-lg-12 col-sm-6 col-xs-6">
                           <div class="form-group" >
-                            <span style="font-weight: 600;">Documento que acredite la especialización en caso de así considerarla en el C.V. </span>
+                            <span style="font-weight: 600;">Documento que acredite la especialización en caso de así considerarla en el C.V.<br>(pdf, jpg ó png máx 200kb). </span>
                             <br>
                             <input type="file" name="attacreditacion" accept=".pdf,.jpg,.png" multiple>
                             <!-- <input type="text" name="acreditacion"  class="form-control" placeholder="Documento" autofocus required> -->

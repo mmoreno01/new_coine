@@ -3747,46 +3747,6 @@ ul.tabs li a:hover {
   font-weight: 600;
 }
 
-#seccion-texto-imagen {
-  position: relative;
-  background-color: #005c9b;
-}
-#seccion-texto-imagen .imagen-texto {
-  width: 100%;
-  height: 550px;
-  padding: 10px;
-}
-#seccion-texto-imagen h1 {
-  color: white;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-#seccion-texto-imagen p {
-  color: white;
-  padding: 10px;
-  font-size: 16px;
-  text-align: justify;
-}
-
-#banner-acciones {
-  position: relative;
-}
-#banner-acciones img {
-  width: 100%;
-  padding: 50px;
-  top: 30px;
-  position: relative;
-}
-#banner-acciones h1 {
-  color: white;
-  position: absolute;
-  text-transform: uppercase;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-}
-
 #parallax-inicio {
   background: url(../img/parallax/INICIO.jpg);
   background-attachment: fixed;
@@ -3801,129 +3761,6 @@ ul.tabs li a:hover {
   color: white;
   margin-left: 10px;
   text-align: center;
-}
-
-#acciones-carrusel h1 {
-  color: #005c9b;
-  margin-top: 50px;
-}
-
-#seccion-testimonios {
-  padding: 50px 0px;
-  margin-bottom: 0px;
-}
-#seccion-testimonios .cont-title-testimonials {
-  position: relative;
-  padding-bottom: 15px;
-  margin-bottom: 50px;
-}
-#seccion-testimonios .cont-title-testimonials h1 {
-  color: #000;
-  text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 100;
-  text-align: left;
-  padding-bottom: 10px;
-  position: relative;
-}
-#seccion-testimonios .cont-title-testimonials::before {
-  content: "";
-  position: absolute;
-  background-color: #005DA1;
-  height: 2px;
-  border-radius: 10px;
-  top: 48px;
-  left: 0;
-  width: 50px;
-}
-#seccion-testimonios img {
-  cursor: pointer;
-}
-#seccion-testimonios .card {
-  background-color: rgba(230, 230, 230, 0.8);
-  padding: 20px;
-  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: all ease-in 0.1s;
-}
-#seccion-testimonios .card:hover {
-  opacity: 0.8;
-  transition: all ease-in 0.1s;
-}
-#seccion-testimonios .card-body a {
-  color: #000;
-}
-#seccion-testimonios .owl-carousel {
-  position: relative;
-}
-#seccion-testimonios .owl-carousel .owl-nav {
-  text-align: center;
-  position: absolute;
-  top: -50px;
-  right: 0;
-}
-#seccion-testimonios .owl-carousel .owl-nav button {
-  background-color: #005DA1 !important;
-  padding: 0px 5px !important;
-  margin: 0px 3px;
-  height: auto;
-  font-size: 30px !important;
-}
-#seccion-testimonios .owl-carousel .owl-nav span {
-  font-size: 50px;
-  color: white;
-  font-weight: 400;
-}
-#seccion-testimonios .owl-carousel .owl-nav .owl-prev:hover {
-  opacity: 0.8;
-  transition: all ease-in 0.1s;
-}
-#seccion-testimonios .owl-carousel .owl-nav .owl-next:hover {
-  opacity: 0.8;
-  transition: all ease-in 0.1s;
-}
-
-#redes-conocenos {
-  background-color: #f4f4f4;
-  padding: 50px 0px;
-}
-#redes-conocenos .titulo-redes {
-  color: #000;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  font-size: 30px;
-  font-weight: 100;
-  padding-bottom: 10px;
-  position: relative;
-}
-
-#redes-conocenos .titulo-redes::before {
-  content: "";
-  position: absolute;
-  background-color: #005DA1;
-  bottom: 0;
-  width: 40px;
-  left: 0px;
-  height: 2px;
-  border-radius: 10px;
-}
-
-.flotante {
-  position: relative;
-  color: white;
-  left: 30px;
-  z-index: 1;
-  border: none;
-  font-family: "Questrial", sans-serif;
-  -webkit-animation-name: anim1;
-  -webkit-animation-duration: 4s;
-  margin-top: -250px;
-}
-
-.flotante h2 {
-  color: #0f223c;
-  text-transform: uppercase;
-  font-size: 26px;
-  font-weight: bold;
 }
 
 @-webkit-keyframes anim1 {
@@ -3979,6 +3816,9 @@ ul.tabs li a:hover {
 #impulsovid .caps p {
   text-align: justify;
   font-size: 0.9rem;
+}
+#impulsovid .caps a {
+  text-decoration: none;
 }
 #impulsovid .card {
   border: 1px solid transparent;
@@ -4057,6 +3897,33 @@ ul.tabs li a:hover {
 }
 #impulsovid .carousel-item {
   height: 500px;
+}
+
+#impulsopro {
+  background: #020024;
+  background: linear-gradient(45deg, #020024 0%, #0f5b8e 67%, #00abcc 100%);
+}
+#impulsopro .titlepro {
+  margin: 30px 0 30px 0;
+  text-align: center;
+  color: #fff;
+}
+#impulsopro .titlepro a {
+  color: white;
+}
+#impulsopro .botonpro {
+  margin: 42px 0 5px 0;
+  text-align: center;
+  color: #fff;
+}
+#impulsopro .btn-primary {
+  color: white;
+  padding: 12px 10px 10px 10px;
+  background-color: #1d73b2;
+  border-radius: 10px;
+}
+#impulsopro .btn-primary:hover {
+  background-color: #00A4E0;
 }
 
 #noticias-coine {
@@ -4283,10 +4150,10 @@ ul.tabs li a:hover {
 }
 #impuvincula .btn-primary {
   color: white;
-  padding: 20px;
+  padding: 10px;
   background-color: #005c9b;
   transition: 1s;
-  border-radius: 50%;
+  border-radius: 20px;
 }
 #impuvincula .btn-primary:hover {
   background-color: #00A4E0;
@@ -4560,37 +4427,6 @@ ul.tabs li a:hover {
 /*--------------------------
         Fin Responsive
 -----------------------------*/
-#mostrarmodal .modal-body {
-  padding: 0;
-}
-#mostrarmodal img {
-  width: 100%;
-}
-#mostrarmodal .modal-dialog {
-  max-width: 800px;
-}
-#mostrarmodal .modal-content {
-  position: relative;
-  border: 1px solid transparent;
-}
-#mostrarmodal button.close {
-  z-index: 9;
-  padding: 0;
-  width: 30px;
-  background-color: transparent;
-  border: 0;
-  -webkit-appearance: none;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  color: white;
-}
-#mostrarmodal .content-btm article {
-  text-align: center;
-  padding: 20px;
-  background-color: #005DA1;
-}
-
 #exterior {
   position: relative;
   background-color: white;

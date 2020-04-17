@@ -22,20 +22,20 @@ $rfc=$_POST['rfc'];
 $curp=$_POST['curp'];
 $ine=$_POST['ine'];
 
-$razon=$_POST['razon'];16
+$razon=$_POST['razon'];
 $dfiscal=$_POST['dfiscal'];
 $tel1=$_POST['tel1'];
 $tel2=$_POST['tel2'];
 $email=$_POST['email'];
 $efirma=$_POST['efirma'];
-$cif=$_POST['cif'];
-$attacta=$_POST['attacta'];
+//$cif=$_POST['cif'];
+//$attacta=$_POST['attacta'];
 $lista=$_POST['lista'];
-$accionistas=$_POST['accionistas'];
-$publicaciones=$_POST['publicaciones'];
+//$accionistas=$_POST['accionistas'];
+//$publicaciones=$_POST['publicaciones'];
 
-$attcv=$_POST['attcv'];
-$attacreditacion=$_POST['attacreditacion'];
+//$attcv=$_POST['attcv'];
+//$attacreditacion=$_POST['attacreditacion'];
 
 $complementarios=$_POST['complementarios'];
 
@@ -46,7 +46,7 @@ $exitos=$_POST['exitos'];
 
 
 $sql = "INSERT INTO procoine (nlegal, rfc, curp, ine, razon, dfiscal, tel1, tel2, email, efirma, cif, attacta, lista, accionistas, publicaciones, attcv, attacreditacion, complementarios, tclientes, exitos) 
-VALUES ($nlegal', '$rfc', '$curp', '$ine', '$razon', '$dfiscal', '$tel1', '$tel2', '$email', '$efirma', '$cif', '$attacta', '$lista', '$accionistas', '$publicaciones', '$attcv', '$attacreditacion', '$complementarios', '$tclientes', '$exitos')";
+VALUES ('$nlegal', '$rfc', '$curp', '$ine', '$razon', '$dfiscal', '$tel1', '$tel2', '$email', '$efirma', 'Archivo', 'Archivo', '$lista', 'Null', 'Null', 'Archivo', 'Archivo', '$complementarios', '$tclientes', '$exitos')";
 //var_dump($sql);
 if (mysqli_query($conn, $sql)) {
 //   echo "New record created successfully";

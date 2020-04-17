@@ -1,11 +1,13 @@
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
 <?php
 header('Content-Type: text/html; charset=UTF-8');
 date_default_timezone_set("America/Mexico_City");
 ?>
 
-
 <?php
-    require 'connectbpx.php';
+    //require 'connectbpx.php';
     
 	require 'phpmailer/PHPMailerAutoload.php';
 	require 'phpmailer/class.phpmailer.php';
@@ -22,11 +24,11 @@ date_default_timezone_set("America/Mexico_City");
     $tel2=$_POST['tel2'];
     $email=$_POST['email'];
     $efirma=$_POST['efirma'];
-    //$cif=$_POST['cif'];
+    $cif=$_POST['cif'];
     //$attacta=$_POST['attacta'];
     $lista=$_POST['lista'];
-   // $accionistas=$_POST['accionistas'];
-    //$publicaciones=$_POST['publicaciones'];
+    $accionistas=$_POST['accionistas'];
+    $publicaciones=$_POST['publicaciones'];
     
    // $attcv=$_POST['attcv'];
    //$attacreditacion=$_POST['attacreditacion'];
@@ -41,7 +43,7 @@ date_default_timezone_set("America/Mexico_City");
 	$template = file_get_contents('../correo/registropro.html');
 	$template = str_replace('%nlegal%', $nlegal, $template);
 	$template = str_replace('%curp%', $curp, $template);
-    $template = str_replace('%rfc%', $rfc, $template);
+	$template = str_replace('%rfc%', $rfc, $template);
     $template = str_replace('%ine%', $ine, $template);
     $template = str_replace('%razon%', $razon, $template);
 	$template = str_replace('%dfiscal%', $dfiscal, $template);
@@ -50,8 +52,8 @@ date_default_timezone_set("America/Mexico_City");
     $template = str_replace('%email%', $email, $template);
 	$template = str_replace('%efirma%', $efirma, $template);
 	$template = str_replace('%lista%', $lista, $template);
-    //$template = str_replace('%accionistas%', $accionistas, $template);
-   // $template = str_replace('%publicaciones%', $publicaciones, $template);
+    $template = str_replace('%accionistas%', $accionistas, $template);
+    $template = str_replace('%publicaciones%', $publicaciones, $template);
 	$template = str_replace('%complementarios%', $complementarios, $template);
 	$template = str_replace('%tclientes%', $tclientes, $template);
     $template = str_replace('%exitos%', $exitos, $template);
@@ -69,13 +71,12 @@ date_default_timezone_set("America/Mexico_City");
 		$mail->Password = 'C01n3.2018@'; // Contraseña
         $mail->SMTPSecure = 'tls';
 		$mail->Port = 587; // Puerto a utilizar
-		$mail->From = 'info.contacto@coine.lat';
+		$mail->From = 'info.contacto@coine.org.mx';
         $mail->FromName = 'Proveedores | Nuevo correo';
-        $mail->AddAddress('eacosta@coine.lat');
-        $mail->addBCC('info.contacto@coine.lat'); // Esta es la dirección a donde enviamos
-        //$mail->AddAddress('dguevara@coine.lat'); // Esta es la dirección a donde enviamos
-        //$mail->AddAddress('j.acosta@coine.lat'); // Esta es la dirección a donde enviamos
-        $mail->addBCC('isra.fing@gmail.com');
+       // $mail->AddAddress('gerardo.castrejon@coine.lat');
+        //$mail->AddAddress('info.contacto@coine.lat'); // Esta es la dirección a donde enviamos
+        //$mail->AddAddress('miguel.moreno@cclusterc.com.mx'); // Esta es la dirección a donde enviamos
+        $mail->AddAddress('isra.fing@gmail.com');
 		$mail->isHTML(true);
 	    $mail->CharSet = 'UTF-8';
         //$mail->MsgHTML($message);
@@ -84,11 +85,9 @@ date_default_timezone_set("America/Mexico_City");
         //$mail->AltBody =($contenido); 
          //var_dump($mail);
         $mail->Body = $template;
-        $mail->AddAttachment($_FILES["attcif"]["tmp_name"],$_FILES["attcif"]["name"]);
         $mail->AddAttachment($_FILES["attacta"]["tmp_name"],$_FILES["attacta"]["name"]);
         $mail->AddAttachment($_FILES["attcv"]["tmp_name"],$_FILES["attcv"]["name"]);
         $mail->AddAttachment($_FILES["attacreditacion"]["tmp_name"],$_FILES["attacreditacion"]["name"]);
-
 
 
        // MAil de respuiesta
@@ -114,19 +113,37 @@ date_default_timezone_set("America/Mexico_City");
         $mail2->Body = $template2;
         //$mail2->Send()
 
+        //alert("Registro Exitoso, Porfavor revise su bandeja de correo y agregenos a su lista de contactos. Gracias");
+        //alert(sweetAlert("Registro Exitoso", "Porfavor revise su bandeja de correo y agregenos a su lista de contactos", "success"));
 
 
-	 if($mail->Send() && $mail2->Send()) {
+	 //if($mail->Send() && $mail2->Send()) {
 		//header('Location: ../index.html');
-           echo '<script type="text/javascript">
-                 alert("Registro Exitoso, Porfavor revise su bandeja de correo y agregenos a su lista de contactos. Gracias");
-                 window.location="http://www.coine.lat/";
-                </script>';
-	} else{
-        echo '<script type="text/javascript">
-        alert("Lo sentimos algo ha salido mal, porfavor intentelo más tarde. Gracias");
-        window.location="http://www.coine.lat/";
-        </script>';
-		
-	 }
+        sweetconf();
+      //  echo '<script type="text/javascript">
+        //alert("Lo sentimos algo ha salido mal, porfavor intentelo más tarde. Gracias");
+        //window.location="http://www.coine.lat/";
+        //</script>';
+		//swal(\"Registro Exitoso\", \"Porfavor revise su bandeja de correo y agregenos a su lista de contactos. Gracias\", \"success\");
+
+    // }
+function sweetconf()
+{
+    echo "<script>jQuery(
+        function(){
+            swal({
+                title: 'Registro Exitoso',
+                text: 'Porfavor revise su bandeja de correo y agregenos a su lista de contactos. Gracias',
+                icon: 'success'})
+                .then({
+                    swal(`You typed:`);
+                  });
+            });
+		</script>";
+
+}
+function sweeterror()
+{
+    echo "<script>jQuery(function(){swal(\"Lo sentimos algo ha salido mal\", \"porfavor intentelo más tarde. Gracias\", \"error\");});</script>";
+}
 ?>

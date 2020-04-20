@@ -1,19 +1,8 @@
-<<<<<<< HEAD
-$( document ).ready(function() {
-   
-
-    
-
-    Highcharts.chart('guatemala', {
-    
-        chart: {
-=======
 $(document).ready(function(){ 
 
     /*************************************************Guatemala******************************************************/    
        Highcharts.chart('container-guatemala', {
             chart: {
->>>>>>> 5a4fd55741e32511061ae6d80464db77feb7b98a
             scrollablePlotArea: {
                 minWidth: 1000
             }

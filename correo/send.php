@@ -23,21 +23,30 @@ date_default_timezone_set("America/Mexico_City");
 	
 		$mail = new PHPMailer;
 		$mail->isSMTP(); 
-		$mail->Host = 'smtp.gmail.com';
+		// $mail->Host = 'smtp.gmail.com';
+		// $mail->SMTPAuth = true;
+	    // $mail->Mailer = 'smtp';
+		// $mail->Username = 'comunicaciones.coineweb@gmail.com'; // Correo completo a utilizar
+		// $mail->Password = 'C01n3.2018@'; // Contraseña
+        // $mail->SMTPSecure = 'tls';
+		// $mail->Port = 587; // Puerto a utilizar
+        // $mail->From = 'info.contacto@coine.org.mx';
+        $mail->Host = 'mail.coine.lat';
 		$mail->SMTPAuth = true;
 	    $mail->Mailer = 'smtp';
-		$mail->Username = 'comunicaciones.coineweb@gmail.com'; // Correo completo a utilizar
-		$mail->Password = 'C01n3.2018@'; // Contraseña
-        $mail->SMTPSecure = 'tls';
-		$mail->Port = 587; // Puerto a utilizar
-		$mail->From = 'info.contacto@coine.org.mx';
+		$mail->Username = 'web@coine.lat'; // Correo completo a utilizar
+		$mail->Password = 'zA422/*1x'; // Contraseña
+        $mail->SMTPSecure = 'ttl';
+        $mail->Port = 26; // Puerto a utilizar
+        $mail->addReplyTo('info.contacto@coine.lat');
+        $mail->From = 'info.contacto@coine.lat';
 		$mail->FromName = 'coine | Nuevo correo';
         $mail->AddAddress('info.contacto@coine.lat'); // Esta es la dirección a donde enviamos
         $mail->AddAddress('miguel.moreno@cclusterc.com.mx'); // Esta es la dirección a donde enviamos
 		$mail->isHTML(true);
 	    $mail->CharSet = 'UTF-8';
         $mail->MsgHTML($message);
-        $mail->SetFrom('comunicaciones.coineweb@gmail.com', 'Coine');
+        $mail->SetFrom('web@coine.lat', 'Coine');
 		$mail->Subject = 'Nuevo Correo'; 
         //$mail->AltBody =($contenido); 
          //var_dump($mail);

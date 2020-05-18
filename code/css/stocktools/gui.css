@@ -30,7 +30,8 @@
 }
 
 .highcharts-bindings-wrapper * {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .highcharts-bindings-wrapper {
@@ -164,6 +165,7 @@
   margin: 0px;
   padding: 0px;
   float: left;
+  -webkit-transition: margin 250ms;
   transition: margin 250ms;
 }
 
@@ -240,6 +242,7 @@
 .highcharts-bindings-wrapper li.highcharts-active,
 .highcharts-toggle-toolbar:hover {
   background-color: #e6ebf5;
+  -webkit-transition: background-color 100ms;
   transition: background-color 100ms;
 }
 
@@ -266,3 +269,4 @@
   height: 20px;
   float: left;
 }
+/*# sourceMappingURL=gui.css.map */

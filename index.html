@@ -40,6 +40,24 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      <div class="modal-body">
+        <div id="owl-slider" class="owl-carousel owl-theme">
+            <div class="item"><a href="juntos_impulsamos_mexico.html"><img src="img/popUp/carrusel/juntosimp.jpg" width="200" alt="#JuntosImpulsamosMéxico"></a></div>
+            <div class="item"><a href="flip/analisis_covid_080520/index.html" target="_blank"><img src="img/popUp/carrusel/analisismacro.jpg" width="200" alt="Analisis Macroeconómico COINE"></a></div>
+            <div class="item"><a href="manual.html"><img src="img/popUp/carrusel/manualpopup.jpg" width="200" alt="Manual COINE"></a></div>
+        </div>      
+        
+      </div>
+      </div>
+    </div>
+  </div> 
+   <!-- End Modal -->
+   <!-- <div class="modal fade" id="mostrarmodal" tabindex="-1" role="dialog" aria-labelledby="mobiramaModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         <div class="modal-body">
@@ -47,8 +65,7 @@
         </div>
       </div>
     </div>
-  </div> 
-   <!-- End Modal -->
+  </div> -->
   
 <!--modal automatico-->
 
@@ -455,7 +472,7 @@
       </div>
       <div class="col-md-5">
         <iframe style="max-width: 560px;" width="100%" height="315px" src="https://www.youtube.com/embed/kKhlb6z26QI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-        <a href="analisis_macroeconómico_COINE/index.html" target="_blank" class="btn btn-primary btn-block">Análisis macroeconómico COINE</a>
+        <a href="flip/analisis_covid_080520/index.html" target="_blank" class="btn btn-primary btn-block">Análisis macroeconómico COINE</a>
       </div>
     </div>
   </div>
@@ -516,7 +533,7 @@
           <div class="cont-title-testimonials">
               <h1>Testimoniales</h1>
           </div>
-        <div class="carousel owl-carousel">
+        <div id="owl-carousel-test" class="carousel owl-carousel">
             <div class="item">
                 <div class="card card-h">
                     <img  src="img/testimoniales/tes11.png" alt="Coine" class="card-img-top" data-toggle="modal" data-target="#test11">
@@ -1000,7 +1017,7 @@
     }(document, 'script', 'facebook-jssdk'));
 </script>
 <script type="text/javascript">
-  $('.owl-carousel').owlCarousel({
+  $('#owl-carousel-test').owlCarousel({
       loop:true,
       margin:10,
       autoplay:true,
@@ -1018,7 +1035,31 @@
           }
       }
   })
-</script>    
+</script>   
+<script type="text/javascript">
+$("#owl-slider").owlCarousel({
+  loop:true,
+      margin:0,
+      autoplay:true,
+      autoplayTimeout:3000,
+      nav:false,
+      dots:false,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:1
+          },
+          1000:{
+              items:1
+          }
+      }
+  })
+</script>   
+
+
+ 
 
 </body>
 </html>

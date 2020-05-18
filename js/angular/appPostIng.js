@@ -2,8 +2,8 @@ var myApp = angular.module('appIng', ['vcRecaptcha','angularUtils.directives.dir
 
 myApp.controller('entradas', ['$scope','$window','$http', function($scope,$window,$http) {
 
-  $http.get('http://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed', {
-    headers: {'Authorization': 'Basic '+btoa('coine_blog:coine_MKT2019') }
+  $http.get('https://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed', {
+    headers: {'Authorization': 'Basic '+btoa('coine_blog:zA422/*1x') }
    
   }).then(function (res){
     $scope.postConsulta = res.data;
@@ -12,8 +12,8 @@ myApp.controller('entradas', ['$scope','$window','$http', function($scope,$windo
  
 myApp.controller('entradasNotices', ['$scope','$window','$http', function($scope,$window,$http) {
 
-  $http.get('http://www.coine.lat/coine_noticias/?rest_route=/wp/v2/posts&_embed&categories=4,5', {
-    headers: {'Authorization': 'Basic '+btoa('user_noticias:DNHV$Dr0(*jJEg0uMV') }
+  $http.get('https://www.coine.lat/coine_noticias/?rest_route=/wp/v2/posts&_embed&categories=4,5', {
+    headers: {'Authorization': 'Basic '+btoa('user_noticias:zA422/*1x') }
    
   }).then(function (res){
     $scope.postNotices = res.data;

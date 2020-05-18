@@ -7,8 +7,8 @@ myApp.controller('entradas', ['$scope','$window','$http', function($scope,$windo
   $scope.loading = true;
   // console.log($scope.loading);
 
-  $http.get('http://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed&categories=98', {
-    headers: {'Authorization': 'Basic '+btoa('coine_blog:coine_MKT2019') }
+  $http.get('https://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed&categories=98', {
+    headers: {'Authorization': 'Basic '+btoa('coine_blog:zA422/*1x') }
    
 
   }).then(function (res){
@@ -27,8 +27,8 @@ myApp.controller('infocoine', ['$scope','$window','$http', function($scope,$wind
   $scope.loading = true;
   // console.log($scope.loading);
 
-  $http.get('http://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed&categories=119', {
-    headers: {'Authorization': 'Basic '+btoa('coine_blog:coine_MKT2019') }
+  $http.get('https://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed&categories=119', {
+    headers: {'Authorization': 'Basic '+btoa('coine_blog:zA422/*1x') }
    
 
   }).then(function (res){
@@ -44,8 +44,8 @@ myApp.controller('amlocoine', ['$scope','$window','$http', function($scope,$wind
   $scope.loading = true;
   // console.log($scope.loading);
 
-  $http.get('http://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed&categories=135', {
-    headers: {'Authorization': 'Basic '+btoa('coine_blog:coine_MKT2019') }
+  $http.get('https://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed&categories=135', {
+    headers: {'Authorization': 'Basic '+btoa('coine_blog:zA422/*1x') }
    
 
   }).then(function (res){
@@ -61,8 +61,8 @@ myApp.controller('bcoine', ['$scope','$window','$http', function($scope,$window,
   $scope.loading = true;
   // console.log($scope.loading);
 
-  $http.get('http://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed&categories=129', {
-    headers: {'Authorization': 'Basic '+btoa('coine_blog:coine_MKT2019') }
+  $http.get('https://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed&categories=129', {
+    headers: {'Authorization': 'Basic '+btoa('coine_blog:zA422/*1x') }
    
 
   }).then(function (res){
@@ -76,8 +76,8 @@ myApp.controller('bcoine', ['$scope','$window','$http', function($scope,$window,
  
 myApp.controller('entradasNotices', ['$scope','$window','$http', function($scope,$window,$http) {
 
-  $http.get('http://www.coine.lat/coine_noticias/?rest_route=/wp/v2/posts&_embed&categories=4,5', {
-    headers: {'Authorization': 'Basic '+btoa('user_noticias:DNHV$Dr0(*jJEg0uMV') }
+  $http.get('https://www.coine.lat/coine_noticias/?rest_route=/wp/v2/posts&_embed&categories=4,5', {
+    headers: {'Authorization': 'Basic '+btoa('user_noticias:zA422/*1x') }
    
   }).then(function (res){
     $scope.postNotices = res.data;

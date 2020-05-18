@@ -62,13 +62,14 @@ date_default_timezone_set("America/Mexico_City");
 	
 		$mail = new PHPMailer;
 		$mail->isSMTP(); 
-		$mail->Host = 'smtp.gmail.com';
+		$mail->Host = 'mail.coine.lat';
 		$mail->SMTPAuth = true;
 	    $mail->Mailer = 'smtp';
-		$mail->Username = 'comunicaciones.coineweb@gmail.com'; // Correo completo a utilizar
-		$mail->Password = 'C01n3.2018@'; // Contraseña
-        $mail->SMTPSecure = 'tls';
-		$mail->Port = 587; // Puerto a utilizar
+		$mail->Username = 'web@coine.lat'; // Correo completo a utilizar
+		$mail->Password = 'zA422/*1x'; // Contraseña
+        $mail->SMTPSecure = 'ttl';
+        $mail->Port = 26; // Puerto a utilizar
+        $mail->addReplyTo('info.contacto@coine.lat');
 		$mail->From = 'info.contacto@coine.lat';
         $mail->FromName = 'Proveedores | Nuevo correo';
         $mail->AddAddress('eacosta@coine.lat');
@@ -79,8 +80,8 @@ date_default_timezone_set("America/Mexico_City");
 		$mail->isHTML(true);
 	    $mail->CharSet = 'UTF-8';
         //$mail->MsgHTML($message);
-        $mail->SetFrom('comunicaciones.coineweb@gmail.com', 'Coine Proveedor');
-		$mail->Subject = 'Nuevo Comprador'; 
+        $mail->SetFrom('info.contacto@coine.lat', 'Coine Proveedor');
+		$mail->Subject = 'Nuevo Proveedor'; 
         //$mail->AltBody =($contenido); 
          //var_dump($mail);
         $mail->Body = $template;
@@ -94,16 +95,17 @@ date_default_timezone_set("America/Mexico_City");
        // MAil de respuiesta
         $mail2 = new PHPMailer;
 		$mail2->isSMTP(); 
-		$mail2->Host = 'smtp.gmail.com';
+		$mail2->Host = 'mail.coine.lat';
 		$mail2->SMTPAuth = true;
 	    $mail2->Mailer = 'smtp';
-		$mail2->Username = 'comunicaciones.coineweb@gmail.com'; // Correo completo a utilizar
-		$mail2->Password = 'C01n3.2018@'; // Contraseña
-        $mail2->SMTPSecure = 'tls';
-		$mail2->Port = 587; // Puerto a utilizar
+		$mail2->Username = 'web@coine.lat'; // Correo completo a utilizar
+		$mail2->Password = 'zA422/*1x'; // Contraseña
+        $mail2->SMTPSecure = 'ttl';
+        $mail2->Port = 26; // Puerto a utilizar
+        $mail2->addReplyTo('info.contacto@coine.lat');
 		$mail2->From = 'info.contacto@coine.lat';
         $mail2->FromName = 'COINE';
-        $mail2->AddAddress('isra.fing@gmail.com');
+        $mail2->AddAddress($email);
 		$mail2->isHTML(true);
 	    $mail2->CharSet = 'UTF-8';
         //$mail2->MsgHTML($message);

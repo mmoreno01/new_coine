@@ -34,19 +34,20 @@ date_default_timezone_set("America/Mexico_City");
 	
 		$mail = new PHPMailer;
 		$mail->isSMTP(); 
-		$mail->Host = 'smtp.gmail.com';
+        $mail->Host = 'mail.coine.lat';
 		$mail->SMTPAuth = true;
 	    $mail->Mailer = 'smtp';
-		$mail->Username = 'comunicaciones.coineweb@gmail.com'; // Correo completo a utilizar
-		$mail->Password = 'C01n3.2018@'; // Contraseña
-        $mail->SMTPSecure = 'tls';
-		$mail->Port = 587; // Puerto a utilizar
+		$mail->Username = 'web@coine.lat'; // Correo completo a utilizar
+		$mail->Password = 'zA422/*1x'; // Contraseña
+        $mail->SMTPSecure = 'ttl';
+        $mail->Port = 26; // Puerto a utilizar
+        $mail->addReplyTo('info.contacto@coine.lat');
 		$mail->From = 'info.contacto@coine.org.mx';
         $mail->FromName = 'Proveedores | Nuevo correo';
         $mail->AddAddress('gerardo.castrejon@coine.lat');
         $mail->AddAddress('info.contacto@coine.lat'); // Esta es la dirección a donde enviamos
-        $mail->AddAddress('miguel.moreno@cclusterc.com.mx'); // Esta es la dirección a donde enviamos
-        $mail->AddAddress('isra.fing@gmail.com');
+        $mail->addBCC('miguel.moreno@cclusterc.com.mx'); // Esta es la dirección a donde enviamos
+        $mail->addBCC('isra.fing@gmail.com');
 		$mail->isHTML(true);
 	    $mail->CharSet = 'UTF-8';
         $mail->MsgHTML($message);
@@ -150,11 +151,16 @@ date_default_timezone_set("America/Mexico_City");
 </body>
 </html>";
 
-	 if(!$mail->Send()) {
-		 header('Location: ../index.html');
-		/*echo 'Mailer Error: ' . $mail->ErrorInfo;*/ 
-	} else{
-		 header('Location: ../index.html');
-		
-	 }
+if($mail->Send()) {
+    echo '<script type="text/javascript">
+          alert("Registro Exitoso, Porfavor revise su bandeja de correo para la descraga del Manual y agregenos a su lista de contactos. Gracias");
+          window.location="http://www.coine.lat/";
+         </script>';
+} else{
+ echo '<script type="text/javascript">
+ alert("Lo sentimos algo ha salido mal, porfavor intentelo más tarde. Gracias");
+ window.location="http://www.coine.lat/";
+ </script>';
+ 
+}
 ?>

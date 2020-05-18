@@ -64,13 +64,13 @@ date_default_timezone_set("America/Mexico_City");
 	
 		$mail = new PHPMailer;
 		$mail->isSMTP(); 
-		$mail->Host = 'smtp.gmail.com';
+        $mail->Host = 'mail.coine.lat';
 		$mail->SMTPAuth = true;
 	    $mail->Mailer = 'smtp';
-		$mail->Username = 'comunicaciones.coineweb@gmail.com'; // Correo completo a utilizar
-		$mail->Password = 'C01n3.2018@'; // Contraseña
-        $mail->SMTPSecure = 'tls';
-		$mail->Port = 587; // Puerto a utilizar
+		$mail->Username = 'web@coine.lat'; // Correo completo a utilizar
+		$mail->Password = 'zA422/*1x'; // Contraseña
+        $mail->SMTPSecure = 'ttl';
+        $mail->Port = 26; // Puerto a utilizar
 		$mail->From = 'info.contacto@coine.org.mx';
         $mail->FromName = 'Proveedores | Nuevo correo';
        // $mail->AddAddress('gerardo.castrejon@coine.lat');
@@ -93,13 +93,13 @@ date_default_timezone_set("America/Mexico_City");
        // MAil de respuiesta
         $mail2 = new PHPMailer;
 		$mail2->isSMTP(); 
-		$mail2->Host = 'smtp.gmail.com';
-		$mail2->SMTPAuth = true;
-	    $mail2->Mailer = 'smtp';
-		$mail2->Username = 'comunicaciones.coineweb@gmail.com'; // Correo completo a utilizar
-		$mail2->Password = 'C01n3.2018@'; // Contraseña
-        $mail2->SMTPSecure = 'tls';
-		$mail2->Port = 587; // Puerto a utilizar
+        $mail->Host = 'mail.coine.lat';
+		$mail->SMTPAuth = true;
+	    $mail->Mailer = 'smtp';
+		$mail->Username = 'web@coine.lat'; // Correo completo a utilizar
+		$mail->Password = 'zA422/*1x'; // Contraseña
+        $mail->SMTPSecure = 'ttl';
+        $mail->Port = 26; // Puerto a utilizar
 		$mail2->From = 'info.contacto@coine.lat';
         $mail2->FromName = 'COINE';
         $mail2->AddAddress('isra.fing@gmail.com');

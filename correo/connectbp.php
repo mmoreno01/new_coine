@@ -4,9 +4,9 @@
 
 // }
 $servername = "localhost";
-$username = "forms_sites";
+$username = "coine_forms";
 $password = "zA422/*9x";
-$database = "forms_sites";
+$database = "coine_forms_sites";
 
 // Create connection
 

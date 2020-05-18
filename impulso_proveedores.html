@@ -135,7 +135,9 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
     <!-- fin banner-->
 
 <!--seccion formulario-->
-<section id="formproveedor"  ng-controller="myController as recap">
+<!-- <section id="formproveedor"  ng-controller="myController as recap"> -->
+  <section id="contact-us"  ng-controller="myController as recap">
+
         <div ng-show="loading" class="lds-ring"><div></div><div></div><div></div><div></div></div>
 
         <!-- <form name="Formpro"  action="correo/sendtwo.php.php" method="POST"> -->
@@ -254,9 +256,9 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
                         </div>
                         <div class="col-lg-12 col-sm-6 col-xs-6">
                           <div class="form-group" >
-                            <span style="font-weight: 600;">Lista de productos o servicios que el registrante ofrece al proyecto.</span>
+                            <span style="font-weight: 600;">Lista de productos o servicios que el registrante ofrece al proyecto.</span><br>
                             <!-- <input type="text" name="lista"  class="form-control" placeholder="Lista" autofocus  style="rows=10; cols=40;"> -->
-                            <textarea name="lista" rows="10"></textarea>
+                            <textarea class="form-control" name="lista" rows="10"></textarea>
                           </div>
                         </div>
                         <!-- <div class="col-lg-6 col-sm-6 col-xs-6">
@@ -318,7 +320,8 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
                           <div class="form-group" >
                             <span style="font-weight: 600;">Se registran los servicios de los cuales usted encuentra áreas de oportunidad, es decir, los servicios que usted necesita del proyecto y sus participantes.</span>
                             <!-- <input type="text" name="complementarios"  class="form-control" placeholder=Servicios autofocus required> -->
-                            <textarea name="complementarios" rows="10"></textarea>
+                            <br>
+                            <textarea class="form-control" name="complementarios" rows="10"></textarea>
 
                            </div>
                         </div>                        
@@ -339,7 +342,8 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
                           <div class="form-group" >
                             <span style="font-weight: 600;">Se registran los tipos de clientes bajo los cuales sus servicios se pudieran ofrecer.</span>
                             <!-- <input type="text" name="tclientes"  class="form-control" placeholder="Tipos de clientes" autofocus required> -->
-                            <textarea name="tclientes" rows="10"></textarea>
+                            <br>
+                            <textarea class="form-control" name="tclientes" rows="10"></textarea>
                            </div>
                         </div>                      
                        </div>
@@ -359,7 +363,8 @@ position: relative;" class="parallax d-flex align-items-center animated fadeIn d
                           <div class="form-group" >
                             <span style="font-weight: 600;">Se registran aquellos casos de éxitos a lo largo de su actividad.</span>
                             <!-- <input type="text" name="exitos"  class="form-control" placeholder="Casos de éxito" autofocus required> -->
-                            <textarea name="exitos" rows="10"></textarea>
+                            <br>
+                            <textarea class="form-control" name="exitos" rows="10"></textarea>
                            </div>
                         </div>
                         

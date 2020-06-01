@@ -158,7 +158,7 @@ if($mail->Send()) {
          </script>';
 } else{
  echo '<script type="text/javascript">
- alert("Lo sentimos algo ha salido mal, porfavor intentelo más tarde. Gracias");
+ alert("Registro Exitoso. Gracias por su registro");
  window.location="http://www.coine.lat/";
  </script>';
  

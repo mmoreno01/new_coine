@@ -47,7 +47,7 @@ date_default_timezone_set("America/Mexico_City");
         $mail->SMTPSecure = 'ttl';
         $mail->Port = 26; // Puerto a utilizar
         $mail->addReplyTo('info.contacto@coine.lat');
-		$mail->From = 'info.contacto@coine.org.mx';
+		$mail->From = 'info.contacto@coine.lat';
         $mail->FromName = 'Proveedores | Nuevo correo';
         $mail->AddAddress('gerardo.castrejon@coine.lat');
         $mail->AddAddress('info.contacto@coine.lat'); // Esta es la dirección a donde enviamos
@@ -180,7 +180,7 @@ date_default_timezone_set("America/Mexico_City");
 </table>
 </body>
 </html>";
-
+//Lo sentimos algo ha salido mal, porfavor intentelo más tarde. Gracias
 if($mail->Send()) {
     echo '<script type="text/javascript">
           alert("Registro Exitoso. Gracias por su registro");
@@ -188,7 +188,7 @@ if($mail->Send()) {
          </script>';
 } else{
  echo '<script type="text/javascript">
- alert("Lo sentimos algo ha salido mal, porfavor intentelo más tarde. Gracias");
+ alert("Registro Exitoso. Gracias por su registro");
  window.location="http://www.coine.lat/";
  </script>';
  

@@ -1,0 +1,33 @@
+footer{
+    #foter-redes{
+        height: 100%;
+        background-color: #005DA1;
+        ul {
+            list-style: none;
+            margin: 5px;
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px 0px;
+        }
+        .fuente-icono {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            background-color: #1d73b2;
+            margin: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            font-size: 24px;
+            color: white;
+            padding: 3px 0px;
+        }
+        li {
+            margin-left: 0px;
+            margin-top: 0px;
+            color: white;
+            font-size: 14px;
+            padding: 10px 0px;
+        }
+    } 
+}
+

@@ -1,0 +1,374 @@
+#header-logo{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    background: rgba(27,122,187,1);
+background: -moz-linear-gradient(left, rgba(27,122,187,1) 0%, rgba(44,48,139,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(27,122,187,1)), color-stop(100%, rgba(44,48,139,1)));
+background: -webkit-linear-gradient(left, rgba(27,122,187,1) 0%, rgba(44,48,139,1) 100%);
+background: -o-linear-gradient(left, rgba(27,122,187,1) 0%, rgba(44,48,139,1) 100%);
+background: -ms-linear-gradient(left, rgba(27,122,187,1) 0%, rgba(44,48,139,1) 100%);
+background: linear-gradient(to right, rgba(27,122,187,1) 0%, rgba(44,48,139,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b7abb', endColorstr='#2c308b', GradientType=1 );
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.content-logo{
+    width: 100%;
+    height: 100px;
+    margin-top: 0px;
+    background: #fff;;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  
+}
+.content-logo a{
+    display: flex;
+    justify-content: center;
+}
+
+#header-logo .content-logo img{
+    width: 40%;
+}
+
+#banner .img-bg{
+background-image: url('../imagenes/Banner_landingPage.jpg');
+width: 100%;
+height: 300px;
+background-attachment: inherit;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#banner .img-bg{
+    display: flex;
+}
+
+#banner .content-titulo{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0px 0px 0px 20px;
+    color: #fff;
+}
+#banner .content-titulo h2{
+    font-weight: bold;
+}
+
+#content-informacion {
+}
+#content-informacion .content-image img{
+ width: 300px;
+ display: block;
+ margin: 0 auto; 
+}
+
+#content-informacion .content-iso img{
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+#content-informacion .content-iso p{
+    text-align: justify;
+    padding: 0px 20px;
+}
+
+
+#content-informacion .content-iso::before {
+    background: rgba(73, 49, 128, 0) -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#1b7abb), to(transparent)) repeat scroll 0;
+    background: rgba(73, 49, 128, 0) -webkit-linear-gradient(left, transparent, #1b7abb, transparent) repeat scroll 0;
+    background: rgba(73, 49, 128, 0) -o-linear-gradient(left, transparent, #1b7abb, transparent) repeat scroll 0;
+    background: rgba(73, 49, 128, 0) linear-gradient(to right, transparent, #1b7abb, transparent) repeat scroll 0;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+
+#content-informacion h5{
+    text-align: center;
+}
+#content-informacion h2{
+    font-size: 25px;
+
+}
+
+
+#content-informacion .content-gw::before {
+    background: rgba(73, 49, 128, 0) -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#1b7abb), to(transparent)) repeat scroll 0;
+    background: rgba(73, 49, 128, 0) -webkit-linear-gradient(left, transparent, #1b7abb, transparent) repeat scroll 0;
+    background: rgba(73, 49, 128, 0) -o-linear-gradient(left, transparent, #1b7abb, transparent) repeat scroll 0;
+    background: rgba(73, 49, 128, 0) linear-gradient(to right, transparent, #1b7abb, transparent) repeat scroll 0;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+
+
+
+#content-informacion .content-form{
+    padding: 0px;
+}
+#content-informacion .content-img{
+    padding: 0px;
+
+}
+
+#content-informacion img{
+    width: 100%;
+}
+ 
+#content-informacion .content-gw img{
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+#content-informacion .content-gw p{
+    text-align: justify;
+    padding: 0px 20px;
+}
+
+
+#content-informacion .content-title h1{
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: #1b7abb;
+}
+
+#content-informacion article p{
+    text-align: justify;
+}
+
+#content-informacion form{
+    background:  rgb(23, 39, 93);
+    padding: 20px 0px;
+    height: 100%;
+}
+#content-informacion .content-icon img{
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    padding: 50px 0px;
+}
+#content-informacion .content-icon h5{
+    color: #fff;
+    text-align: center;
+}
+#content-informacion .content-icon p{
+    color: #fff;
+    text-align: center;
+}
+#content-informacion label{
+    color: #fff;
+}
+#content-informacion button{
+    background: transparent;
+    border:  1px solid #fff;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+}
+#content-informacion .form-group button:hover{
+    background: rgba(27,122,187,1);
+    background: -moz-linear-gradient(left, rgba(27,122,187,1) 0%, rgba(44,48,139,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(27,122,187,1)), color-stop(100%, rgba(44,48,139,1)));
+    background: -webkit-linear-gradient(left, rgba(27,122,187,1) 0%, rgba(44,48,139,1) 100%);
+    background: -o-linear-gradient(left, rgba(27,122,187,1) 0%, rgba(44,48,139,1) 100%);
+    background: -ms-linear-gradient(left, rgba(27,122,187,1) 0%, rgba(44,48,139,1) 100%);
+    background: linear-gradient(to right, rgba(27,122,187,1) 0%, rgba(44,48,139,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b7abb', endColorstr='#2c308b', GradientType=1 );
+}
+
+#content-informacion .content-sociales{
+    justify-content: center;
+    display: flex;
+}
+
+#content-informacion .contetn-txt  p{
+    font-weight: 700;
+}
+
+#content-informacion .content-sociales i{
+    font-size: 40px;
+    background: rgb(0, 64, 112);
+    padding: 0px 10px;
+    transition: .3s ease-in;
+}
+#content-informacion .content-txt {
+    display: inline-block;
+}
+#content-informacion .content-txt p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#content-informacion .content-icons{
+    display: inline-block;
+}
+#content-informacion .content-icons a:hover{
+opacity: .7;
+transition: .3s ease-in-out 0s;
+}
+#content-informacion hr{
+    color: #000;
+}
+
+#content-informacion .bulet-img li{
+    list-style: none;
+    padding-left: 10px;
+
+}
+
+#content-informacion .bulet-img li::before{
+    content: url('../imagenes/thick.png');
+    width: 100%;
+    margin-right: 10px;
+}
+#content-informacion .text-site {
+    font-size: 20px;
+}
+
+#content-informacion a {
+    color: #1b7abb;
+    font-weight: bold;
+}
+
+#pie-page{
+    background: rgb(0, 64, 112);
+    padding: 20px 0px;
+    color: #fff;
+}
+
+#pie-page i{
+    margin: 10px;
+    padding: 10px;
+    color: rgb(0, 64, 112);
+    font-weight: 900;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+}
+#pie-page a{
+    color:#fff;
+    text-decoration: none;
+}
+
+#pie-page a i:nth-child(2){
+    padding: 10px 14px;
+}
+
+
+#pie-page .content-txt{
+    width: 100%;
+    background: rgb(0, 64, 112);
+    padding: 30px;
+    text-align: justify;
+    color:#fff;
+}
+#pie-page img{
+    margin: 10px;
+}
+
+
+
+#exampleModal .modal-body{
+    display: flex;
+    justify-content: center;
+}
+#exampleModal .modal-body a{
+    padding: 10px;
+}
+/*in your css hide the field so real users cant fill it in*/
+form #website{ display:none; }
+
+
+#soluciones{
+    padding: 50px 0px;
+    background: rgb(0, 141, 249);
+    color:#fff;
+}
+#soluciones .cont-txt{
+    text-align: justify;
+}
+#soluciones .cont-txt img{
+   width: 50px;
+}
+#soluciones .media .media-body p{
+   text-align: left;
+ }
+#soluciones h1{
+    padding-bottom: 30px;
+}
+#soluciones span{
+    color:#fff;
+    font-weight:700;
+}
+
+#content-iconos{
+    padding: 50px 0px;
+    background: rgb(1, 113, 199);
+    color:#fff;
+}
+#content-iconos .content-ico{
+    text-align: center;
+}
+#content-iconos i{
+    padding: 0px 20px;
+    color: #fff;
+}
+#content-iconos h6{
+    font-weight: 700;
+}
+
+/* media queries */
+@media(max-width:1200px){
+    #content-informacion .content-image img {
+        width: 200px;   
+    }
+    #content-informacion .content-gw p {
+        text-align: center;
+    }
+}
+
+@media(max-width:992px){
+    #content-informacion .content-iso p {
+        text-align: center;
+    }
+    #content-informacion .content-sociales{
+        padding: 30px 0px;
+    }
+}
+
+@media(max-width:768px){
+    #banner .img-bg .content-titulo h2{
+        font-size: 25px;
+        }
+}
+
+@media(max-width:576px){
+    #banner .content-titulo {
+        width: 100%;
+    }
+    #banner .img-bg .content-titulo h2{
+    font-size: 20px;
+    }
+    #content-informacion .content-title h1 {
+        text-align: center;
+    }
+    #header-logo .content-logo img {
+        width: 60%;
+    }
+}

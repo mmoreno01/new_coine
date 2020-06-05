@@ -1,0 +1,139 @@
+<!-- <?php require_once 'conexion.php'; ?>
+<?php require_once 'post.php'; ?> -->
+
+
+<!DOCTYPE html>
+<html lang="es_MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sweetalert2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+   <!--recaptcha-->
+   <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PM6VMQQ');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132438488-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'UA-132438488-1');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+    <title>COINE COVID-19</title>
+</head>
+<body>
+    <!-- header principal -->
+    <section id="header-logo">
+        <div class="content-logo">
+            <a href="https://www.coine.lat/"><img src="imagenes/coine/s.png" alt="Mobirama Consultoria"></a>  
+        </div>
+    </section>
+    <!-- header principal -->
+
+    <section id="content-informacion">
+        <div class="content-img">
+            <img src="imagenes/coine/52439ffb-7153-4e98-b13b-f229ee67ad0a.webp" alt="Coine">
+        </div>
+    </section>
+
+    <section id="soluciones">
+        <div class="container">
+            <div class="content-title">
+                <p class="">En <strong>COINE</strong>  
+                    a través de su labor de vinculación y debido al contexto que la emergencia sanitaria ha generado, en el COINE buscamos acercar a proveedores/productores de insumos estratégicos y altamente demandados en esa situación, con potenciales clientes interesados en adquirir diversos tipo de productos, a fin de coadyuvar en los esfuerzos para generar rentabilidad, mantener los empleos, y sobre todo preservar la salud de las personas.
+
+                </p>
+                <p>Te invitamos a conocer más sobre este modelo:</p>
+                <p>Registra tu producto</p>
+                <a href="registro.html" class="btn btn-primary">Registrar</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="w_insumos">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th id="empresa">Empresa</th>
+                                <th>Insumos</th>
+                                <th>Caracteristicas</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody  id="contenido">
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="descript">
+                
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <footer>
+        <div class="container-fluid foter">
+            <div class="row">
+                <div class="col-md-12" id="foter-redes">
+                      <ul>
+                          <a href="https://www.facebook.com/COINELat/" target="new" class="fuente-icono"><i class="fab fa-facebook-f"></i></a>
+                          <a href="https://www.linkedin.com/company/22295225/" target="new" class="fuente-icono"><i class="fab fa-linkedin-in"></i></a>
+                          <a href="https://twitter.com/COINE_Lat" target="new" class="fuente-icono"><i class="fab fa-twitter"></i></a>
+                          <a href="https://www.youtube.com/channel/UC7RsRR4LlwT2ewbGBnPd60Q" target="new" class="fuente-icono"><i class="fab fa-youtube"></i></a>
+                          <li>2019   l  Consejo Internacional de Empresarios ®</li>
+                          <!-- <li>Aviso de privacidad</li> -->
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+ 
+</body>
+
+</html>

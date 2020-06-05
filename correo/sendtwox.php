@@ -60,13 +60,18 @@ $recaptcha = $_POST["g-recaptcha-response"];
 	
 		$mail = new PHPMailer;
 		$mail->isSMTP(); 
-        $mail->Host = 'mail.coine.lat';
-		$mail->SMTPAuth = true;
-	    $mail->Mailer = 'smtp';
-		$mail->Username = 'web@coine.lat'; // Correo completo a utilizar
-		$mail->Password = 'zA422/*1x'; // Contraseña
-        $mail->SMTPSecure = 'ttl';
-        $mail->Port = 26; // Puerto a utilizar
+        //$mail->Host = 'mail.coine.lat';
+	//	$mail->SMTPAuth = true;
+	  //  $mail->Mailer = 'smtp';
+	//	$mail->Username = 'web@coine.lat'; // Correo completo a utilizar
+	//	$mail->Password = 'zA422/*1x'; // Contraseña
+      //  $mail->SMTPSecure = 'ttl';
+      //  $mail->Port = 26; // Puerto a utilizar
+      $mail->Host = 'localhost';
+      $mail->SMTPAuth = false;
+      $mail->SMTPAutoTLS = false; 
+      $mail->Port = 25; 
+      
         $mail->addReplyTo('info.contacto@coine.lat');
 		$mail->From = 'info.contacto@coine.lat';
         $mail->FromName = 'Proveedores | Nuevo correo';

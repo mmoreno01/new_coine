@@ -24,13 +24,17 @@ date_default_timezone_set("America/Mexico_City");
       // MAil de respuiesta
         $mail = new PHPMailer;
         $mail->isSMTP(); 
-        $mail->Host = 'mail.coine.lat';
-        $mail->SMTPAuth = true;
-        $mail->Mailer = 'smtp';
-        $mail->Username = 'web@coine.lat'; // Correo completo a utilizar
-        $mail->Password = 'zA422/*1x'; // Contraseña
-        $mail->SMTPSecure = 'ttl';
-        $mail->Port = 26; // Puerto a utilizar
+       // $mail->Host = 'mail.coine.lat';
+       // $mail->SMTPAuth = true;
+       // $mail->Mailer = 'smtp';
+      //  $mail->Username = 'web@coine.lat'; // Correo completo a utilizar
+       // $mail->Password = 'zA422/*1x'; // Contraseña
+      //  $mail->SMTPSecure = 'ttl';
+     //   $mail->Port = 26; // Puerto a utilizar
+     $mail->Host = 'localhost';
+     $mail->SMTPAuth = false;
+     $mail->SMTPAutoTLS = false; 
+     $mail->Port = 25; 
 
         $mail->addReplyTo('info.contacto@coine.lat');
 		$mail->From = 'web@coine.lat';
@@ -49,13 +53,13 @@ date_default_timezone_set("America/Mexico_City");
 
 	 if($mail->Send()) {
            echo '<script type="text/javascript">
-                 alert("Registro Exitoso, Porfavor revise su bandeja de correo para la descraga del Manual y agregenos a su lista de contactos. Gracias");
-                 window.location="http://www.coine.lat/";
+                 alert("Registro Exitoso, La contraseña para visualizar es 20COINE20. Porfavor revise su bandeja de correo para la descraga del Manual y agregenos a su lista de contactos. Gracias");
+                 window.location="https://www.coine.lat/manual.html";
                 </script>';
 	} else{
         echo '<script type="text/javascript">
-        alert("Registro Exitoso, Porfavor revise su bandeja de correo para la descraga del Manual y agregenos a su lista de contactos. Gracias");
-        window.location="http://www.coine.lat/";
+        alert("Registro Exitoso, La contraseña para visualizar es 20COINE20. Porfavor revise su bandeja de correo para la descraga del Manual y agregenos a su lista de contactos. Gracias");
+        window.location="https://www.coine.lat/manual.html";
         </script>';
 		
 	 }

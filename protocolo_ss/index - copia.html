@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sweetalert2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+   <!--recaptcha-->
+   <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PM6VMQQ');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132438488-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'UA-132438488-1');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+    <title>CSC SPA</title>
+</head>
+<body>
+    <!-- header principal -->
+    <!-- <section id="header-logo">
+        <div class="content-logo">
+            <a href="https://www.cscwellnesscenter.com.mx/index.html"><img src="imagenes/logocsc.png" alt="CSC Wellness Center"></a>  
+        </div>
+    </section> -->
+    <!-- header principal -->
+
+    <section id="content-informacion">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div class="col-md-1 content-lateral-izq">
+                    <div class="row">
+                        <div class="text-lateral">
+                            <p>CONFIANZA</p>
+                            <p>COMPROMISO</p>
+                            <p>CALIDAD</p>
+                            <p>EXCELENCIA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <div class="row">
+                        <div class="content-menu col-md-12 mt-5">
+                            <h3>Sitio web   #JuntosImpulsamosMexico    Contacto</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="content-menu col-md-12 mt-5">
+                            <h1>Protocolo de Seguridad Sanitaria</h1>
+                            <h3>MICRO Y PEQUEÑAS EMPRESAS</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="video-responsive">
+                                <iframe src="https://www.youtube.com/embed/Sb82mv-CFNA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 content-form ">
+                    <div>
+                        <img src="imagenes/land/s.png" style="width: 50%;">
+                    </div>
+                    <form action="./server/send-form.php" method="POST">
+                        <div class="container">
+                            <div class="content-ftext mb-4 text-center">
+                                <h3>Solicita una cotización</h3>
+                                <h2>GRATUITA</h2>
+                                <!-- <p>Favor de completar los campos para que un representante se ponga en contacto contigo</p> -->
+                            </div>
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+                                            <input name="name" type="text" class="form-control" placeholder="Nombre*" required>
+                                    </div>
+                                    <div class="col-md-12 form-group">
+                                        <input name="phone" type="text" class="form-control" placeholder="Teléfono">
+                                    </div>
+                                    <div class="col-md-12 form-group">
+                                        <input name="email" type="email" class="form-control" placeholder="Correo electrónico*"required>
+                                    </div>
+                                    <div class="col-md-12 form-group">
+                                        <textarea class="form-control" name="message" id="" cols="" rows="4" placeholder="Mensaje"></textarea>
+                                    </div>
+                                    <div class="col-md-12 form-group">
+                                        <button type="submit" class="btn" onclick="MuestraAlert()">ENVIAR</button>
+                                     </div>
+                             </div>
+                    </form>
+                    <div class="col-12 mt-4 d-flex justify-content-center redsocial">
+                        <a href="https://www.facebook.com/centrocsc/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/centrocsc/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.facebook.com/centrocsc/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                   
+                    <div class="col-12 mt-4 text-center footer">
+                        <h6>Consejo Internacional de Empresarios</h6>
+                        <h6>Consulta nuestro Aviso de Privacidad</h6>
+                        <h6>www.coine.lat</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="soluciones">
+        <div class="container"> -->
+            <!-- <div class="content-title text-center">
+                <h1>En <strong>CSC</strong> cuidamos tu salud.<br> Promovemos la protección y mitigación de contagios por COVID19</h1>
+                <h3 class="">Tenemos disponibilidad de cubrebocas KN95 a precios competitivos</h3>
+            </div> -->
+            <!-- <div class="row">
+                <div class="col-md-4 cont-txt">
+                    <div class="media">
+                        <img src="imagenes/new-icon/check.png" class="mr-3" alt="Mobirama consultoria" >
+                        <div class="media-body">
+                          <h3 class="mt-0">Responder</h3>
+                          <p> Cómo debe tu empresa enfrentar la Fase 3 de la pandemia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 cont-txt">
+                    <div class="media">
+                        <img src="imagenes/new-icon/check.png" class="mr-3" alt="Mobirama consultoria" >
+                        <div class="media-body">
+                          <h3 class="mt-0">Recuperar</h3>
+                         <p>Acciones precisas para reactivar tu economía en un plazo no mayor a un mes</p> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 cont-txt">
+                    <div class="media">
+                        <img src="imagenes/new-icon/check.png" class="mr-3" alt="Mobirama consultoria" >
+                        <div class="media-body">
+                          <h3 class="mt-0">Resurgir</h3>
+                         <p>Cómo debe tu empresa actuar después del COVID</p> 
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        <!-- </div>
+    </section> -->
+<!-- 
+    <section id="content-iconos">
+        <div class="container">
+            <div class="row justify-content-start">
+              
+                <div class="col-md-4 content-ico">
+                    <img src="imagenes/pago.png" alt="">
+                    <p>Precio competitivo en el mercado, desde $60 para
+                        venta de más de 100 piezas.</p>
+                </div>
+                <div class="col-md-4 content-ico">
+                    <img src="imagenes/Servicio.png" alt="">
+                    <p>Cubrebocas KN95 certificados, 4 capas, en
+                        cumplimiento a los requisitos sanitarios de la
+                        COFEPRIS</p>
+                </div>
+                <div class="col-md-4 content-ico">
+                    <img src="imagenes/pngocean.png" alt="">
+                    <p>Pago en efectivo o mediante factura + IVA.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    -->
+                    
+             
+
+    <!-- <section id="pie-page">
+        <div class="container">
+           <div class="row">
+               <div class="col-12 d-flex justify-content-center">
+                   <a href="https://www.facebook.com/centrocsc/" target="_blank"><img width="30px" src="imagenes/new-icon/facebook.png" alt=""></a>
+                   <a href= "https://www.instagram.com/cscwellnesscenter/?hl=es-la" target="_blank"><img width="30px" src="imagenes/new-icon/instagram.png" alt=""></i>  </a>
+               </div>
+               <div class="col-12 d-flex justify-content-center">
+                   <p>CSC Wellness Center </p>
+               </div>
+           </div>
+        </div>
+    </section> -->
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+ <script src="js/sweetalert2.min.js"></script>
+    <script src="js/sweetalert2.all.js"></script> 
+ 
+</body>
+
+</html>

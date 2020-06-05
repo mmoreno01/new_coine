@@ -31,13 +31,19 @@ date_default_timezone_set("America/Mexico_City");
         // $mail->SMTPSecure = 'tls';
 		// $mail->Port = 587; // Puerto a utilizar
         // $mail->From = 'info.contacto@coine.org.mx';
-        $mail->Host = 'mail.coine.lat';
-		$mail->SMTPAuth = true;
-	    $mail->Mailer = 'smtp';
-		$mail->Username = 'web@coine.lat'; // Correo completo a utilizar
-		$mail->Password = 'zA422/*1x'; // Contraseña
-        $mail->SMTPSecure = 'ttl';
-        $mail->Port = 26; // Puerto a utilizar
+        //$mail->Host = 'mail.coine.lat';
+		//$mail->SMTPAuth = true;
+	    //  $mail->Mailer = 'smtp';
+		//$mail->Username = 'web@coine.lat'; // Correo completo a utilizar
+	    //	$mail->Password = 'zA422/*1x'; // Contraseña
+       // $mail->SMTPSecure = 'ttl';
+      //  $mail->Port = 26; // Puerto a utilizar
+
+        $mail->Host = 'localhost';
+        $mail->SMTPAuth = false;
+        $mail->SMTPAutoTLS = false; 
+        $mail->Port = 25; 
+
         $mail->addReplyTo('info.contacto@coine.lat');
         $mail->From = 'info.contacto@coine.lat';
 		$mail->FromName = 'coine | Nuevo correo';

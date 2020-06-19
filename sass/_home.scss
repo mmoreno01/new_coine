@@ -26,6 +26,38 @@
    
 }
 
+#ponencia{
+    background-image: url('../img/otros/ponenciabg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 20px 0 0px 0;
+
+    .stream{
+        margin-top: 20px;
+        text-align: center;
+        padding-left: 20%;
+    }
+    .video-responsive {
+        position: relative;
+        padding-bottom: 56.25%; /* 16/9 ratio */
+        padding-top: 30px; /* IE6 workaround*/
+        height: 0;
+        overflow: hidden;
+        }       
+        .video-responsive iframe,
+        .video-responsive object,
+        .video-responsive embed,
+        .video-responsive video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 95%;
+        height: 95%;
+        text-align: center;
+        }
+}
+
 #seccion-texto-imagen
 {
     position: relative;
@@ -718,7 +750,42 @@ background-color: #f4f4f4;
         }   
     }
 }
+
+#ponencia{
+    background: rgb(0,159,227);
+    background: linear-gradient(0deg, rgba(0,159,227,1) 0%, rgba(9,9,121,1) 100%);
+    color: #fff;
+    padding: 20px 0 0px 0;
+    text-align: center;
+
+    .stream{
+        margin-top: 20px;
+        text-align: center;
+        padding: 10px;
+    }
+    .video-responsive {
+        position: relative;
+        padding-bottom: 56.25%; /* 16/9 ratio */
+        padding-top: 30px; /* IE6 workaround*/
+        height: 0;
+        overflow: hidden;
+        }       
+        .video-responsive iframe,
+        .video-responsive object,
+        .video-responsive embed,
+        .video-responsive video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        }
 }
+}
+
+
+
 @media (max-width:768px)
 {
     .video-principa

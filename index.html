@@ -43,16 +43,18 @@
           <span aria-hidden="true">&times;</span>
         </button>
       <div class="modal-body">
-        <!-- <div id="owl-slider" class="owl-carousel owl-theme">
+        <div id="owl-slider" class="owl-carousel owl-theme">
+          <div class="video-responsive">
+            <a href="https://www.coine.lat/protocolo_ss/" target="_blank"><video src="img/popUp/GIF_COINE_WEBSITE_FINAL_1.mp4" autoplay loop muted></video></a>
+            <!-- <video src="img/popUp/GIF_COINE_WEBSITE_FINAL_1.mp4" autoplay loop muted controls></video> -->
+            <!-- <iframe src="https://www.youtube.com/embed/Sb82mv-CFNA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                  -->
+          </div>
             <div class="item"><a href="juntos_impulsamos_mexico.html"><img src="img/popUp/carrusel/juntosimp.jpg" width="200" alt="#JuntosImpulsamosMéxico"></a></div>
-            <div class="item"><a href="flip/analisis_covid_280520/index.html" target="_blank"><img src="img/popUp/carrusel/analisismacro.jpg" width="200" alt="Analisis Macroeconómico COINE"></a></div>
+            <div class="item"><a href="flip/analisis_covid_190620/index.html" target="_blank"><img src="img/popUp/carrusel/analisismacro.jpg" width="200" alt="Analisis Macroeconómico COINE"></a></div>
             <div class="item"><a href="manual.html"><img src="img/popUp/carrusel/manualpopup.jpg" width="200" alt="Manual COINE"></a></div>
-        </div>       -->
-        <div class="video-responsive">
-          <a href="https://www.coine.lat/protocolo_ss/" target="_blank"><video src="img/popUp/GIF_COINE_WEBSITE_FINAL_1.mp4" autoplay loop muted></video></a>
-          <!-- <video src="img/popUp/GIF_COINE_WEBSITE_FINAL_1.mp4" autoplay loop muted controls></video> -->
-          <!-- <iframe src="https://www.youtube.com/embed/Sb82mv-CFNA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                  -->
-        </div>
+            
+        </div>      
+        
 
 
       </div>
@@ -190,18 +192,26 @@
 <!-- ponencia  -->
  <section  id="ponencia">
   <div class="container">
-    <div class="content-title">
-      <!-- <h4 class=" d-flex justify-content-center" ><strong>Transmisión en vivo</strong></h4> -->
+    <!-- <div class="content-title">
+      <h4 class=" d-flex justify-content-center" ><strong>Transmisión en vivo</strong></h4>
       <h2 class=" d-flex justify-content-center" ><strong>FORO VIRTUAL DE ENERGÍAS LIMPIAS</strong></h2>
       <h2 class=" d-flex justify-content-center" ><strong>"LA NUEVA RIQUEZA DE MÉXICO"</strong></h2>
       <h4 class=" d-flex justify-content-center text-center" >Tema: La visión del empresario sobre la cancelación y obstrucción<br>
                                                        de proyectos de energías renovables en México y LATAM</h4>
+    </div>  -->
+    <div class="content-title">
+      <!-- <h4 class=" d-flex justify-content-center" ><strong>Transmisión en vivo</strong></h4> -->
+      <!-- <h2 class=" d-flex justify-content-center" ><strong>FORO VIRTUAL DE ENERGÍAS LIMPIAS</strong></h2> -->
+      <h2 class=" d-flex justify-content-center" ><strong>ENTORNO AL DINERO</strong></h2>
+      <h4 class=" d-flex justify-content-center text-center" >Con Eduardo Torreblanca</h4>
+      <p class="d-flex text-center justify-content-center">Ha transcurrido el primer semestre de este 2020 y las empresas han tenido que enfrentar panoramas adversos que las han obligado a reinventarse. Retomando esta situación, el C.P. Martín Rodríguez Sánchez, 
+        platicará sobre la innovación empresarial ante los cambios por el COVID-19, en entrevista en vivo para el canal de televisión GIN TV.</p>
     </div> 
      
       <div class="row stream">
           <div class="col-12 video-responsive">
-            <!-- <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FMartinRSmx%2Fvideos%2F871211186709779%2F&show_text=0&width=560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe> -->
-            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FMartinRSmx%2Fvideos%2F703419470446185%2F&show_text=0&width=560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FMartinRSmx%2Fvideos%2F901910253625401%2F&show_text=0&width=560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+            <!-- <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FMartinRSmx%2Fvideos%2F703419470446185%2F&show_text=0&width=560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe> -->
             <!-- <h4 style="margin-top: 20px;">12° Encuentro de emprendedores EBC</h4> -->
               <!-- <h2>14 y 15 de Noviembre</h2> -->
            <!-- </div> -->
@@ -1046,7 +1056,8 @@ $("#owl-slider").owlCarousel({
   loop:true,
       margin:0,
       autoplay:true,
-      autoplayTimeout:3000,
+      autoplayTimeout:5000,
+      autoplayHoverPause: true, // Stops autoplay
       nav:false,
       dots:false,
       responsive:{

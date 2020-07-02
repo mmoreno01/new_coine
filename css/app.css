@@ -75,6 +75,30 @@
   height: 95%;
   text-align: center;
 }
+#ponencia .streamx {
+  margin-top: 20px;
+  text-align: center;
+}
+#ponencia .video-responsivex {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16/9 ratio */
+  padding-top: 30px;
+  /* IE6 workaround*/
+  height: 0;
+  overflow: hidden;
+}
+#ponencia .video-responsivex iframe,
+#ponencia .video-responsivex object,
+#ponencia .video-responsivex embed,
+#ponencia .video-responsivex video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98%;
+  height: 98%;
+  text-align: center;
+}
 
 #seccion-texto-imagen {
   position: relative;

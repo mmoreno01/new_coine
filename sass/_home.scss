@@ -64,17 +64,40 @@
         height: 0;
         overflow: hidden;
         }       
-        .video-responsive iframe,
-        .video-responsive object,
-        .video-responsive embed,
-        .video-responsive video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 95%;
-        height: 95%;
-        text-align: center;
+    .video-responsive iframe,
+    .video-responsive object,
+    .video-responsive embed,
+    .video-responsive video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 95%;
+    text-align: center;
         }
+    .streamx{
+        margin-top: 20px;
+        text-align: center;
+        // padding-left: 20%;
+    }
+    .video-responsivex {
+        position: relative;
+        padding-bottom: 56.25%; /* 16/9 ratio */
+        padding-top: 30px; /* IE6 workaround*/
+        height: 0;
+        overflow: hidden;
+        }       
+    .video-responsivex iframe,
+    .video-responsivex object,
+    .video-responsivex embed,
+    .video-responsivex video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98%;
+    height: 98%;
+    text-align: center;
+    }
 }
 
 #seccion-texto-imagen

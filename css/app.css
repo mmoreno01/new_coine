@@ -929,7 +929,7 @@
   width: 100%;
 }
 #mostrarmodal .modal-dialog {
-  max-width: 800px;
+  max-width: 600px;
 }
 #mostrarmodal .modal-content {
   position: relative;

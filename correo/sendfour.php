@@ -100,13 +100,10 @@ date_default_timezone_set("America/Mexico_City");
        // MAil de respuiesta
         $mail2 = new PHPMailer;
 		$mail2->isSMTP(); 
-		$mail2->Host = 'mail.coine.lat';
-		$mail2->SMTPAuth = true;
-	    $mail2->Mailer = 'smtp';
-		$mail2->Username = 'web@coine.lat'; // Correo completo a utilizar
-		$mail2->Password = 'zA422/*1x'; // Contraseña
-        $mail2->SMTPSecure = 'ttl';
-        $mail2->Port = 26; // Puerto a utilizar
+        $mail->Host = 'localhost';
+        $mail->SMTPAuth = false;
+        $mail->SMTPAutoTLS = false; 
+        $mail->Port = 25; 
         $mail2->addReplyTo('info.contacto@coine.lat');
 		$mail2->From = 'info.contacto@coine.lat';
         $mail2->FromName = 'COINE';

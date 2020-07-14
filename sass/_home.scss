@@ -26,6 +26,7 @@
     position: relative;
 }
 
+.pl-20{padding-left: 20%;}
 #texto-principal
 {
     position: relative;
@@ -46,7 +47,7 @@
 }
 
 #ponencia{
-    background-image: url('../img/otros/ponenciabg.png');
+    background-image: url('../img/otros/vasebg.png');
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
@@ -55,7 +56,7 @@
     .stream{
         margin-top: 20px;
         text-align: center;
-        padding-left: 20%;
+        padding-left: 25%;
     }
     .video-responsive {
         position: relative;
@@ -792,10 +793,13 @@ background-color: #f4f4f4;
         }   
     }
 }
+.pl-20{padding-left: 0%;}
 
 #ponencia{
-    background: rgb(0,159,227);
-    background: linear-gradient(0deg, rgba(0,159,227,1) 0%, rgba(9,9,121,1) 100%);
+    //background: rgb(0,159,227);
+    //background: linear-gradient(0deg, rgba(0,159,227,1) 0%, rgba(9,9,121,1) 100%);
+    background: rgb(3,22,58);
+    background: linear-gradient(180deg, rgba(3,22,58,1) 42%, rgba(161,130,48,1) 100%);
     color: #fff;
     padding: 20px 0 0px 0;
     text-align: center;

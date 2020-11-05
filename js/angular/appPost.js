@@ -7,7 +7,7 @@ myApp.controller('entradas', ['$scope','$window','$http', function($scope,$windo
   $scope.loading = true;
   // console.log($scope.loading);
 
-  $http.get('https://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed&categories=98', {
+  $http.get('https://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed&categories=98&per_page=100', {
     headers: {'Authorization': 'Basic '+btoa('coine_blog:zA422/*1x') }
    
 
@@ -27,7 +27,7 @@ myApp.controller('infocoine', ['$scope','$window','$http', function($scope,$wind
   $scope.loading = true;
   // console.log($scope.loading);
 
-  $http.get('https://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed&categories=119', {
+  $http.get('https://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed&categories=119&per_page=100', {
     headers: {'Authorization': 'Basic '+btoa('coine_blog:zA422/*1x') }
    
 
@@ -44,7 +44,7 @@ myApp.controller('amlocoine', ['$scope','$window','$http', function($scope,$wind
   $scope.loading = true;
   // console.log($scope.loading);
 
-  $http.get('https://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed&categories=135', {
+  $http.get('https://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed&categories=135&per_page=100', {
     headers: {'Authorization': 'Basic '+btoa('coine_blog:zA422/*1x') }
    
 
@@ -61,7 +61,7 @@ myApp.controller('bcoine', ['$scope','$window','$http', function($scope,$window,
   $scope.loading = true;
   // console.log($scope.loading);
 
-  $http.get('https://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed&categories=129', {
+  $http.get('https://www.coine.lat/blog/?rest_route=/wp/v2/posts&_embed&categories=129&per_page=100', {
     headers: {'Authorization': 'Basic '+btoa('coine_blog:zA422/*1x') }
    
 
